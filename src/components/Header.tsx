@@ -185,9 +185,16 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div className={cn(
-        "fixed inset-0 bg-charcoal z-40 flex flex-col items-center justify-center transition-transform duration-500 lg:hidden",
+        "fixed inset-0 bg-charcoal z-[100] flex flex-col items-center justify-center transition-transform duration-500 lg:hidden",
         isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
       )}>
+        <button 
+          className="absolute top-8 right-6 text-white hover:text-brand-red transition-colors"
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          <X size={32} />
+        </button>
         <nav className="flex flex-col items-center space-y-8">
           {["About", "Solutions", "Media", "Sustainability", "Careers", "News"].map((item) => (
             <Link 
