@@ -113,8 +113,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red via-brand-blue to-transparent opacity-50" />
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl pt-32 pb-20">
+      <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 items-center gap-12">
+        <div className="pt-32 pb-20">
           <div className="inline-flex items-center space-x-2 bg-brand-blue/20 px-4 py-1 rounded-full mb-6 border border-brand-blue/40">
             <span className="w-2 h-2 bg-brand-red rounded-full animate-pulse" />
             <span className="text-xs font-bold tracking-widest uppercase text-white">Next-Gen Packaging</span>
@@ -162,6 +162,17 @@ export default function Hero() {
               </button>
             </div>
           </div>
+        </div>
+
+        {/* Hero Machine Image */}
+        <div className="hidden lg:block relative h-[600px] w-full pt-20">
+          <Image 
+            src="/featured-machine.png" 
+            alt="Advanced Packaging Machine" 
+            fill 
+            className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+            priority
+          />
         </div>
       </div>
     </section>
