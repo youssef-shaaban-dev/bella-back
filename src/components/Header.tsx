@@ -42,10 +42,7 @@ export default function Header() {
                 src="/logo.png" 
                 alt="Bella Pack" 
                 fill 
-                className={cn(
-                  "object-contain transition-all duration-500",
-                  isScrolled ? "brightness-100" : "brightness-0 invert"
-                )} 
+                className="object-contain transition-all duration-500" 
                 priority
              />
           </div>
