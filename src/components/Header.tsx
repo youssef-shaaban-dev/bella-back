@@ -55,30 +55,19 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-6">
           {[
-            { name: "About", href: "/about" },
+            { name: "About Bella Pack", href: "/about" },
             { 
               name: "Solutions", 
               hasMega: true,
               columns: [
                 {
-                  title: "Technology",
-                  items: [
-                    { name: "Pouching & Bagging", isCategory: true },
-                    { name: "Horizontal Flat Pouching", href: "/solutions/flat" },
-                    { name: "Horizontal Stand-up Pouching", href: "/solutions/stand-up" },
-                    { name: "Custom Engineering", href: "/solutions/custom", isCategory: true },
-                    { name: "Integrated Projects", href: "/solutions/projects" },
-                  ]
-                },
-                {
-                  title: "Industry",
+                  title: "Industries Served",
                   items: [
                     { name: "Food & Beverage", href: "/industries/food-beverage" },
                     { name: "Spices & Coffee", href: "/industries/spices-coffee" },
                     { name: "Snacks & Granules", href: "/industries/snacks-granules" },
-                    { name: "Detergents & Chemicals", href: "/industries/detergents-chemicals" },
-                    { name: "Cosmetics & Pharma", href: "/industries/cosmetics-pharma" },
-                    { name: "Pet Food", href: "/industries/pet-food" },
+                    { name: "Detergents & Chemical Products", href: "/industries/detergents-chemicals" },
+                    { name: "Cosmetics & Pharmaceuticals", href: "/industries/cosmetics-pharma" },
                   ]
                 },
                 {
@@ -90,19 +79,29 @@ export default function Header() {
                     { name: "BSS Series", href: "/machines/bss" },
                     { name: "BW Series", href: "/machines/bw" },
                     { name: "BP Series", href: "/machines/bp" },
+                    { name: "Technical Downloads", href: "/downloads" },
+                  ]
+                },
+                {
+                  title: "Project Solutions",
+                  items: [
+                    { name: "Integrated Project Solutions", isCategory: true },
+                    { name: "Custom Engineering", href: "/solutions/custom" },
+                    { name: "Technical and Performance tools", href: "/solutions/tools" },
                   ]
                 }
               ]
             },
             { name: "Media", href: "/media" },
-            { name: "Sustainability", href: "/sustainability" },
-            { name: "Exhibitions", href: "/news" },
-            { name: "Careers", href: "/careers" },
             { name: "News", href: "/news" },
+            { name: "Sustainability", href: "/sustainability" },
+            { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
+            { name: "Contact Us", href: "/contact" },
           ].map((item) => (
             <div key={item.name} className="group relative py-2">
               <Link
                 href={item.href || "#"}
+                target={item.external ? "_blank" : undefined}
                 className={cn(
                   "font-heading text-[11px] font-bold flex items-center space-x-1 transition-colors uppercase tracking-[0.1em]",
                   isScrolled ? "text-charcoal hover:text-brand-red" : "text-white hover:text-brand-red"
@@ -195,20 +194,29 @@ export default function Header() {
         >
           <X size={32} />
         </button>
-        <nav className="flex flex-col items-center space-y-8">
-          {["About", "Solutions", "Media", "Sustainability", "Careers", "News"].map((item) => (
+        <nav className="flex flex-col items-center space-y-6 overflow-y-auto max-h-[80vh] py-8 w-full px-6">
+          {[
+            { name: "About Bella Pack", href: "/about" },
+            { name: "Solutions", href: "/solutions" },
+            { name: "Media", href: "/media" },
+            { name: "News", href: "/news" },
+            { name: "Sustainability", href: "/sustainability" },
+            { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
+            { name: "Contact Us", href: "/contact" },
+          ].map((item) => (
             <Link 
-              key={item} 
-              href={`/${item.toLowerCase()}`} 
-              className="text-white font-heading text-2xl font-bold hover:text-brand-red"
+              key={item.name} 
+              href={item.href} 
+              target={item.external ? "_blank" : undefined}
+              className="text-white font-heading text-2xl font-bold hover:text-brand-red text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="bg-brand-red text-white px-10 py-4 rounded-sm font-heading font-bold text-xl"
+            className="bg-brand-red text-white px-10 py-4 rounded-sm font-heading font-bold text-xl mt-4 shrink-0"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             GET A QUOTE
