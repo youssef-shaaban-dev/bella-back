@@ -9,24 +9,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 const industries = [
   {
-    title: "ROTARY PREMADE POUCH",
+    title: "Food & Beverage",
     img: "/PacProcess 2025/ 1.jpeg",
-    desc: "High-performance rotary systems for versatile premade pouch filling.",
+    desc: "Precision filling for liquids, powders, and solid food products.",
   },
   {
-    title: "HORIZONTAL FORM FILL",
+    title: "Spices & Dry Products",
     img: "/PacProcess 2025/ 2.jpeg",
-    desc: "Compact HFFS machines delivering high-speed sealing and accuracy.",
+    desc: "Handling delicate granules and fine powders with zero material waste.",
   },
   {
-    title: "VERTICAL SACHET",
+    title: "Chemicals & Detergents",
     img: "/PacProcess 2025/ 3.jpeg",
-    desc: "Precision VFFS technology for continuous motion granular and powder filling.",
+    desc: "Robust packaging solutions for corrosive and viscous chemical liquids.",
   },
   {
-    title: "INTEGRATED SYSTEMS",
+    title: "Cosmetics & Personal Care",
     img: "/PacProcess 2025/ 4.jpeg",
-    desc: "Custom-engineered turnkey packaging lines built to specification.",
+    desc: "High-accuracy dosing for creams, gels, and beauty products.",
+  },
+  {
+    title: "Pharmaceutical Products",
+    img: "/PacProcess 2025/ 5.jpeg",
+    desc: "Meeting strict hygiene standards and pharmaceutical compliance.",
   },
 ];
 
@@ -56,17 +61,17 @@ export default function IndustriesOverview() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Machinery</h3>
+            <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Markets</h3>
             <h2 className="text-5xl md:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter">
-              THE CORE <span className="text-brand-red">RANGE.</span>
+              INDUSTRIES <span className="text-brand-red">OVERVIEW.</span>
             </h2>
           </div>
           <p className="text-charcoal/50 max-w-sm font-body text-lg">
-            Delivering specialized packaging technologies and machines built with uncompromising precision.
+            Our packaging machines are optimized to meet industry standards, hygiene requirements, and production efficiency goals across diverse sectors.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {industries.map((industry, i) => (
             <div key={i} className="industry-card group relative h-[500px] overflow-hidden rounded-sm cursor-pointer">
               {/* Background Image */}

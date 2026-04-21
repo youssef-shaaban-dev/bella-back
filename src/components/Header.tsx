@@ -37,8 +37,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
-          <div className="relative h-12 w-40">
-             {/* @ts-ignore */}
+          <div className="relative h-20 w-40">
              <Image 
                 src="/logo.png" 
                 alt="Bella Pack" 

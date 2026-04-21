@@ -67,22 +67,37 @@ export default function OperationalExcellence() {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="stat-item flex flex-col items-center">
-            <span className="text-6xl font-heading font-bold mb-2">16</span>
-            <span className="text-sm tracking-widest uppercase font-bold text-white/70">Years of Exp</span>
+        <div className="mb-20">
+          <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Operational Excellence</h3>
+          <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase mb-6">
+            BSS <span className="text-brand-red">SERIES</span> PERFORMANCE
+          </h2>
+          <p className="text-white/60 max-w-2xl mx-auto font-body text-lg">
+            Experience in performance with our high-speed BSS Series, designed for continuous industrial production with minimal downtime.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="stat-item flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-sm">
+            <span className="text-brand-red mb-4">
+              <ShieldCheck size={48} />
+            </span>
+            <h4 className="text-2xl font-bold font-heading mb-2 uppercase">Precision Filling</h4>
+            <p className="text-white/50 text-sm">Extreme accuracy in volumetric and weight-based dosing.</p>
           </div>
-          <div className="stat-item flex flex-col items-center border-l border-white/20">
-            <span className="text-6xl font-heading font-bold mb-2">23</span>
-            <span className="text-sm tracking-widest uppercase font-bold text-white/70">Countries</span>
+          <div className="stat-item flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-sm">
+            <span className="text-brand-red mb-4">
+              <Cpu size={48} />
+            </span>
+            <h4 className="text-2xl font-bold font-heading mb-2 uppercase">Accurate Forming</h4>
+            <p className="text-white/50 text-sm">Perfect pouch geometry with servo-driven precision.</p>
           </div>
-          <div className="stat-item flex flex-col items-center border-l border-white/20">
-            <span className="text-6xl font-heading font-bold mb-2">53</span>
-            <span className="text-sm tracking-widest uppercase font-bold text-white/70">Machine Types</span>
-          </div>
-          <div className="stat-item flex flex-col items-center border-l border-white/20">
-            <span className="text-6xl font-heading font-bold mb-2">33</span>
-            <span className="text-sm tracking-widest uppercase font-bold text-white/70">Awards</span>
+          <div className="stat-item flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-sm">
+            <span className="text-brand-red mb-4">
+              <FlaskConical size={48} />
+            </span>
+            <h4 className="text-2xl font-bold font-heading mb-2 uppercase">Consistent Sealing</h4>
+            <p className="text-white/50 text-sm">Hermetic seals ensured by advanced thermal control.</p>
           </div>
         </div>
       </div>

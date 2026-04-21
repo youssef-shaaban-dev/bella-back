@@ -10,10 +10,27 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const products = [
-  { id: 1, title: "VFFS SERIES", category: "Vertical Filling", img: "/pouch1.png" },
-  { id: 2, title: "RP-8 ROTARY", category: "Pouch Packaging", img: "/pouch2.png" },
-  { id: 3, title: "HFFS COMPACT", category: "Horizontal Filling", img: "/pouch3.png" },
-  { id: 4, title: "CW-500 CHECK", category: "Weight Control", img: "/pouch4.png" },
+  { 
+    id: 1, 
+    title: "B Series", 
+    category: "Standard Pouch Packaging", 
+    img: "/PacProcess 2025/ 1.jpeg",
+    desc: "Versatile systems for standard pouch formats."
+  },
+  { 
+    id: 2, 
+    title: "BS Series", 
+    category: "Cap Insertion Solutions", 
+    img: "/PacProcess 2025/ 2.jpeg",
+    desc: "Specialized machines for spouted pouch applications."
+  },
+  { 
+    id: 3, 
+    title: "BP Series", 
+    category: "Powder Filling Specialists", 
+    img: "/PacProcess 2025/ 3.jpeg",
+    desc: "High-precision auger and vacuum powder filling."
+  },
 ];
 
 export default function ProductGrid() {
@@ -41,17 +58,13 @@ export default function ProductGrid() {
     <section ref={sectionRef} className="py-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl font-bold text-charcoal font-heading tracking-wide uppercase">MACHINE FINDER</h2>
-          <div className="h-1 w-20 bg-brand-red mx-auto mt-4" />
+          <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Advanced Machinery</h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-charcoal font-heading tracking-tight uppercase">CORE PRODUCT RANGE</h2>
+          <div className="h-1 w-20 bg-brand-red mx-auto mt-6" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-             { id: 1, title: "HFFS Machine", img: "/PacProcess 2025/ 1.jpeg" },
-             { id: 2, title: "VFFS Machine", img: "/PacProcess 2025/ 2.jpeg" },
-             { id: 3, title: "Premade Pouch", img: "/PacProcess 2025/ 3.jpeg" },
-             { id: 4, title: "Integrated Systems", img: "/PacProcess 2025/ 4.jpeg" }
-          ].map((product) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {products.map((product) => (
             <div key={product.id} className="product-card group cursor-pointer bg-white p-2 rounded-sm shadow-sm hover:shadow-md transition-shadow">
               <div className="relative aspect-video w-full mb-4 overflow-hidden rounded-sm">
                 <Image

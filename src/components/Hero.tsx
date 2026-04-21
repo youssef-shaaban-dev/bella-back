@@ -124,17 +124,32 @@ export default function Hero() {
             ref={titleRef}
             className="text-6xl md:text-8xl font-bold leading-[0.9] mb-8 overflow-hidden"
           >
-            PRECISION <br />
-            <span className="text-brand-red">PERFORMANCE</span> <br />
-            PACKAGING.
+            PRECISION PACKAGING <br />
+            <span className="text-brand-red">FOR RELIABLE</span> <br />
+            PERFORMANCE.
           </h1>
 
           <p 
             ref={subtitleRef}
-            className="text-lg text-white/80 font-body max-w-lg mb-10 leading-relaxed"
+            className="text-lg text-white/80 font-body max-w-2xl mb-8 leading-relaxed"
           >
-            Engineered for excellence. Bella Pack provides ultra-modern industrial solutions that redefine speed, accuracy, and reliability in the global packaging industry.
+            At Bella Pack, we deliver high-performance packaging machines and filling solutions engineered to handle a wide range of product viscosities and textures, ensuring consistent output, accuracy, and production efficiency.
           </p>
+
+          <div className="mb-10 space-y-3">
+            {[
+              "Improve production speed",
+              "Reduce material waste",
+              "Ensure consistent sealing and filling accuracy"
+            ].map((benefit, i) => (
+              <div key={i} className="flex items-center space-x-3 text-white/90">
+                <div className="w-5 h-5 rounded-full bg-brand-red flex items-center justify-center shrink-0">
+                  <ArrowRight size={12} className="text-white" />
+                </div>
+                <span className="font-body font-medium">{benefit}</span>
+              </div>
+            ))}
+          </div>
 
           <div ref={ctaRef} className="flex flex-wrap gap-4 items-center">
             <Link 
