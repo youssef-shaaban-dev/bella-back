@@ -144,18 +144,6 @@ export default function Header() {
 
         {/* Actions */}
         <div className="hidden lg:flex items-center space-x-6">
-          <button className={cn(
-            "transition-colors flex items-center space-x-1 px-2",
-            isScrolled ? "text-charcoal hover:text-brand-red" : "text-white hover:text-brand-red"
-          )}>
-            <Search size={18} />
-          </button>
-          <button className={cn(
-            "transition-colors flex items-center space-x-1 px-2 mr-2",
-            isScrolled ? "text-charcoal hover:text-brand-red" : "text-white hover:text-brand-red"
-          )}>
-            <Globe size={18} />
-          </button>
           <Link
             href="/contact"
             className={cn(
