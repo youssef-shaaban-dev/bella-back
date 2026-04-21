@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* =========================================
+     GLOBAL COLOR PALETTE
+     Change the hex codes below to automatically 
+     update the colors across the entire website.
+     ========================================= */
+  --background: #FFFFFF;
+  --foreground: #2C3E50;
+  
+  --primary-red: #FE2638;    /* Used for buttons, accents, CTA */
+  --secondary-blue: #3457A7; /* Used for headings, subtle backgrounds */
+  --dark-charcoal: #2C3E50;  /* Used for dark sections, main text */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  /* Maps the variables above to Tailwind classes (e.g. bg-brand-red) */
+  --color-brand-red: var(--primary-red);
+  --color-brand-blue: var(--secondary-blue);
+  --color-charcoal: var(--dark-charcoal);
+  
+  --font-heading: var(--font-agdasima);
+  --font-body: var(--font-montserrat);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GSAP Helper Classes */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.mega-menu-shadow {
+  box-shadow: 0 10px 30px -5px rgba(44, 62, 80, 0.1);
+}
+
+/* Optimization for GSAP/ScrollTrigger */
+.parallax-img, .product-card, .reveal-up {
+  will-change: transform, opacity;
+}
+
