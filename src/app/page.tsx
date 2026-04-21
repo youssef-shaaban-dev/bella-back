@@ -13,19 +13,26 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* 1. Core Value Proposition (Video Hero) */}
       <Hero />
-      
-      {/* 2. Industries Overview (Pouch Formats & Applications) */}
+
+      {/* Pouch Formats (formerly Section 4) */}
       <PouchSelection />
 
-      {/* 3. Operational Excellence */}
+      {/* Flagship Machine Showcase (Video Section) */}
+      <FeaturedMachine />
+
+      {/* Core Range (formerly Industries Overview) */}
+      <IndustriesOverview />
+
+      {/* Operational Excellence */}
       <OperationalExcellence />
 
-      {/* 4. Core Product Range (Machine Finder) */}
       <ProductGrid />
 
-      {/* 5. CTA */}
+      {/* News & Exhibitions */}
+      <NewsExhibitions />
+
+      {/* Sitemap Section 6: Final CTA */}
       <section className="py-24 bg-brand-blue relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#fff_1px,transparent_1px)] [background-size:32px_32px]" />
@@ -38,15 +45,15 @@ export default function Home() {
             Consult with our engineering team today and discover how Bella Pack's precision technology can transform your operational efficiency.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="bg-white text-brand-blue px-10 py-5 rounded-sm font-heading font-bold text-lg hover:bg-charcoal hover:text-white transition-all duration-500 shadow-2xl flex items-center group"
             >
               <span>REQUEST A QUOTE</span>
               <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" />
             </Link>
-            <Link 
-              href="/solutions" 
+            <Link
+              href="/solutions"
               className="border-2 border-white text-white px-10 py-5 rounded-sm font-heading font-bold text-lg hover:bg-white hover:text-brand-red transition-all duration-500"
             >
               EXPLORE SOLUTIONS
