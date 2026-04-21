@@ -36,24 +36,15 @@ export default function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Split text reveal for title
-      const titleChars = titleRef.current?.innerText.split("") || [];
-      if (titleRef.current) {
-        titleRef.current.innerHTML = titleChars
-          .map((char) => `<span class="inline-block">${char === " " ? "&nbsp;" : char}</span>`)
-          .join("");
-      }
-
       const tl = gsap.timeline();
 
       tl.fromTo(
-        titleRef.current?.children || [],
-        { y: 100, opacity: 0 },
+        titleRef.current,
+        { y: 50, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 1,
-          stagger: 0.02,
+          duration: 1.2,
           ease: "power4.out",
         }
       )
@@ -97,17 +88,7 @@ export default function Hero() {
       ref={containerRef}
       className="relative min-h-screen flex items-center overflow-hidden bg-charcoal text-white"
     >
-      {/* Video Background */}
-      <video
-        ref={videoRef}
-        autoPlay
-        muted={isMuted}
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-60 scale-105"
-      >
-        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
-      </video>
+
 
       {/* Background Decor & Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent" />
@@ -179,15 +160,20 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Machine Image */}
-        <div className="hidden lg:block relative h-[600px] w-full pt-20">
-          <Image 
-            src="/featured-machine.png" 
-            alt="Advanced Packaging Machine" 
-            fill 
-            className="object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
-            priority
-          />
+        {/* Hero Machine Video */}
+        <div className="hidden lg:block relative h-[500px] w-full pt-20 fade-up">
+          <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl border border-white/10 group">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-brand-red/10 group-hover:bg-transparent transition-colors duration-500" />
+          </div>
         </div>
       </div>
     </section>
