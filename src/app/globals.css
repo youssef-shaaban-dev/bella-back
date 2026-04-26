@@ -7,11 +7,11 @@
      update the colors across the entire website.
      ========================================= */
   --background: #FFFFFF;
-  --foreground: #2C3E50;
+  --foreground: #1E293B; /* Slightly lighter charcoal for better readability */
   
-  --primary-red: #FE2638;    /* Used for buttons, accents, CTA */
-  --secondary-blue: #3457A7; /* Used for headings, subtle backgrounds */
-  --dark-charcoal: #2C3E50;  /* Used for dark sections, main text */
+  --primary-red: #E61E2E;    /* A deeper, richer shade of red */
+  --secondary-blue: #2A4365; /* A deeper, darker navy blue */
+  --dark-charcoal: #1E293B;  /* Matching the foreground for consistency */
 }
 
 @theme {

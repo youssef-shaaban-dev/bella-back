@@ -99,7 +99,7 @@ export default function Hero() {
           playsInline
           className="w-full h-full object-cover opacity-80"
         >
-          <source src="/PacProcess 2025/videos/PROMO  1_1.mp4" type="video/mp4" />
+          <source src="/PacProcess 2025/videos/ v5.mp4" type="video/mp4" />
         </video>
         {/* Gradient Overlay for smooth transition */}
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-transparent to-transparent lg:from-charcoal lg:to-transparent" />

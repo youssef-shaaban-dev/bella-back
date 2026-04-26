@@ -37,7 +37,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
-          <div className="relative h-20 w-40">
+          <div className="relative h-28 w-56">
              <Image 
                 src="/logo.png" 
                 alt="Bella Pack" 
@@ -51,7 +51,7 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center space-x-6">
           {[
-            { name: "About Bella Pack", href: "/about" },
+            { name: "About us", href: "/about" },
             { 
               name: "Solutions", 
               hasMega: true,
@@ -67,14 +67,11 @@ export default function Header() {
                   ]
                 },
                 {
-                  title: "Machine Series",
+                  title: "Technology",
                   items: [
-                    { name: "B Series", href: "/machines/b" },
-                    { name: "BS Series", href: "/machines/bs" },
-                    { name: "BSH Series", href: "/machines/bsh" },
-                    { name: "BSS Series", href: "/machines/bss" },
-                    { name: "BW Series", href: "/machines/bw" },
-                    { name: "BP Series", href: "/machines/bp" },
+                    { name: "Horizontal flat pouches", href: "/technology/horizontal-flat" },
+                    { name: "Horizontal stand-up pouches", href: "/technology/horizontal-standup" },
+                    { name: "Vertical machines", href: "/technology/vertical" },
                     { name: "Technical Downloads", href: "/downloads" },
                   ]
                 },
@@ -88,18 +85,18 @@ export default function Header() {
                 }
               ]
             },
-            { name: "Media", href: "/media" },
-            { name: "News", href: "/news" },
+            { name: "Services", href: "/services" },
             { name: "Sustainability", href: "/sustainability" },
             { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
-            { name: "Contact Us", href: "/contact" },
+            { name: "News", href: "/news" },
+            { name: "Media", href: "/media" },
           ].map((item) => (
             <div key={item.name} className="group relative py-2">
               <Link
                 href={item.href || "#"}
                 target={item.external ? "_blank" : undefined}
                 className={cn(
-                  "font-heading text-[11px] font-bold flex items-center space-x-1 transition-colors uppercase tracking-[0.1em]",
+                  "font-heading text-[12px] font-bold flex items-center space-x-1 transition-colors uppercase tracking-[0.1em]",
                   isScrolled ? "text-charcoal hover:text-brand-red" : "text-white hover:text-brand-red"
                 )}
               >
@@ -112,14 +109,14 @@ export default function Header() {
                   <div className="bg-white text-charcoal w-[900px] p-10 grid grid-cols-3 gap-12 mega-menu-shadow rounded-sm border-t-4 border-brand-red">
                     {item.columns?.map((col, idx) => (
                       <div key={idx} className="space-y-6">
-                        <h4 className="text-brand-red font-bold text-[10px] tracking-[0.2em] uppercase border-b border-gray-100 pb-2">{col.title}</h4>
+                        <h4 className="text-brand-red font-bold text-[11px] tracking-[0.2em] uppercase border-b border-gray-100 pb-2">{col.title}</h4>
                         <ul className="space-y-4">
                           {col.items.map((sub, sIdx) => (
                             <li key={sIdx}>
                               {sub.isCategory ? (
-                                <span className="text-[10px] font-bold text-gray-400 block mb-1 uppercase tracking-wider">{sub.name}</span>
+                                <span className="text-[11px] font-bold text-gray-400 block mb-1 uppercase tracking-wider">{sub.name}</span>
                               ) : (
-                                <Link href={sub.href || "#"} className="text-xs font-bold hover:text-brand-red transition-colors block py-1 border-l border-transparent hover:border-brand-red pl-0 hover:pl-3 transition-all">
+                                <Link href={sub.href || "#"} className="text-[13px] font-bold hover:text-brand-red transition-colors block py-1 border-l border-transparent hover:border-brand-red pl-0 hover:pl-3 transition-all">
                                   {sub.name}
                                 </Link>
                               )}
@@ -129,8 +126,8 @@ export default function Header() {
                       </div>
                     ))}
                     <div className="col-span-3 mt-4 pt-6 border-t border-gray-100 flex justify-between items-center">
-                       <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">Need a custom solution?</p>
-                       <Link href="/contact" className="text-brand-red text-xs font-bold hover:underline flex items-center space-x-2">
+                       <p className="text-[11px] text-gray-400 font-bold uppercase tracking-widest">Need a custom solution?</p>
+                       <Link href="/contact" className="text-brand-red text-[13px] font-bold hover:underline flex items-center space-x-2">
                          <span>View all solutions</span>
                          <ArrowRight size={14} />
                        </Link>
@@ -180,12 +177,13 @@ export default function Header() {
         </button>
         <nav className="flex flex-col items-center space-y-6 overflow-y-auto max-h-[80vh] py-8 w-full px-6">
           {[
-            { name: "About Bella Pack", href: "/about" },
+            { name: "About us", href: "/about" },
             { name: "Solutions", href: "/solutions" },
-            { name: "Media", href: "/media" },
-            { name: "News", href: "/news" },
+            { name: "Services", href: "/services" },
             { name: "Sustainability", href: "/sustainability" },
             { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
+            { name: "News", href: "/news" },
+            { name: "Media", href: "/media" },
             { name: "Contact Us", href: "/contact" },
           ].map((item) => (
             <Link 
@@ -210,3 +208,4 @@ export default function Header() {
     </header>
   );
 }
+

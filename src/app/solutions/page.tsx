@@ -12,13 +12,10 @@ const industries = [
   "Cosmetics & Pharmaceuticals"
 ];
 
-const machineSeries = [
-  { name: "B Series", desc: "Standard entry-level packaging solutions." },
-  { name: "BS Series", desc: "High-speed servo-driven machinery." },
-  { name: "BSH Series", desc: "Horizontal solutions for complex pouches." },
-  { name: "BSS Series", desc: "Specialized systems for sensitive products." },
-  { name: "BW Series", desc: "Wide-format packaging for larger volumes." },
-  { name: "BP Series", desc: "Premium flagship multi-lane models." }
+const technologySeries = [
+  { name: "Horizontal flat pouches", desc: "Standard entry-level packaging solutions." },
+  { name: "Horizontal stand-up pouches", desc: "High-speed servo-driven machinery." },
+  { name: "Vertical machines", desc: "Horizontal solutions for complex pouches." },
 ];
 
 export default function SolutionsPage() {
@@ -56,11 +53,11 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      {/* Machine Series */}
+      {/* Technology */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="mb-16">
-            <h2 className="text-4xl font-bold font-heading text-charcoal mb-4 uppercase">Machine Series Directory</h2>
+            <h2 className="text-4xl font-bold font-heading text-charcoal mb-4 uppercase">Technology</h2>
             <div className="h-1 w-20 bg-brand-blue mb-6" />
             <p className="text-gray-600 max-w-2xl">
               From entry-level to flagship multi-lane systems, our machine series are categorized to help you find the exact fit for your production needs. Technical downloads are available upon request for each series.
@@ -68,7 +65,7 @@ export default function SolutionsPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {machineSeries.map((series, idx) => (
+            {technologySeries.map((series, idx) => (
               <div key={idx} className="group border-2 border-gray-100 p-8 rounded-sm hover:border-brand-red transition-colors relative overflow-hidden">
                 <h3 className="text-2xl font-bold font-heading text-charcoal mb-3 uppercase group-hover:text-brand-red transition-colors">{series.name}</h3>
                 <p className="text-gray-500 mb-8">{series.desc}</p>

@@ -15,8 +15,8 @@ export default function AboutPage() {
             <h1 className="text-5xl md:text-7xl font-bold font-heading mb-6 uppercase tracking-tighter">
               COMPANY <span className="text-brand-red">OVERVIEW</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/80 font-body leading-relaxed">
-              Bella Pack is a leading innovator in the packaging industry, engineering robust and high-speed machinery tailored for global markets. We blend cutting-edge technology with rigorous engineering standards to deliver unmatched operational excellence.
+            <p className="text-xl md:text-2xl text-white/80 font-body leading-relaxed mt-10">
+              Bella Pack is a leading innovator in the packaging industry, engineering robust and high-speed machinery tailored for global industries. We blend cutting-edge technology with rigorous engineering standards to deliver unmatched operational excellence.
             </p>
           </div>
         </div>
