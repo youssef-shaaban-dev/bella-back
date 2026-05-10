@@ -268,16 +268,7 @@ export default function Hero() {
                     />
                   </div>
 
-                  <span className="block text-[10px] md:text-xs font-bold tracking-widest text-white/40 uppercase mb-1">
-                    {`0${slide.id} / ${isActive ? "Active" : "Slide"}`}
-                  </span>
-                  <span
-                    className={`block font-heading font-bold text-sm md:text-base tracking-wider transition-all duration-300 uppercase line-clamp-1 ${
-                      isActive ? "text-white" : "text-white/60 group-hover:text-white/95"
-                    }`}
-                  >
-                    {slide.tabLabel}
-                  </span>
+                 
                 </button>
               );
             })}
