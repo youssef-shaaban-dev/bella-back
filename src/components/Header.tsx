@@ -150,7 +150,7 @@ export default function Header() {
                 : "bg-white text-charcoal hover:bg-brand-red hover:text-white"
             )}
           >
-            GET A QUOTE
+            Contact us
           </Link>
         </div>
 
@@ -201,7 +201,7 @@ export default function Header() {
             className="bg-brand-red text-white px-10 py-4 rounded-sm font-heading font-bold text-xl mt-4 shrink-0"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            GET A QUOTE
+            Contact us
           </Link>
         </nav>
       </div>
