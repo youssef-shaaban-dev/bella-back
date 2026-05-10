@@ -7,31 +7,21 @@ import { ArrowUpRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const industries = [
+const solutions = [
   {
-    title: "Food & Beverage",
-    img: "/PacProcess 2025/ 1.jpeg",
-    desc: "Precision filling for liquids, powders, and solid food products.",
+    title: "Industries Served",
+    img: "/solution1.png",
+    desc: "Comprehensive packaging lines tailored for food, chemical, and pharmaceutical sectors.",
   },
   {
-    title: "Spices & Dry Products",
-    img: "/PacProcess 2025/ 2.jpeg",
-    desc: "Handling delicate granules and fine powders with zero material waste.",
+    title: "Technology",
+    img: "/solution2.png",
+    desc: "Cutting-edge IoT-enabled mechanics ensuring peak automation efficiency.",
   },
   {
-    title: "Chemicals & Detergents",
-    img: "/PacProcess 2025/ 3.jpeg",
-    desc: "Robust packaging solutions for corrosive and viscous chemical liquids.",
-  },
-  {
-    title: "Cosmetics & Personal Care",
-    img: "/PacProcess 2025/ 4.jpeg",
-    desc: "High-accuracy dosing for creams, gels, and beauty products.",
-  },
-  {
-    title: "Pharmaceutical Products",
-    img: "/PacProcess 2025/ 5.jpeg",
-    desc: "Meeting strict hygiene standards and pharmaceutical compliance.",
+    title: "Project Solutions",
+    img: "/solution3.png",
+    desc: "Turnkey manufacturing solutions engineered end-to-end for scalable operations.",
   },
 ];
 
@@ -59,25 +49,23 @@ export default function IndustriesOverview() {
   return (
     <section ref={containerRef} className="py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
-          <div className="max-w-2xl">
-            <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Markets</h3>
-            <h2 className="text-5xl md:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter">
-              INDUSTRIES <span className="text-brand-red">OVERVIEW.</span>
-            </h2>
-          </div>
-          <p className="text-charcoal/50 max-w-sm font-body text-lg">
-            Our packaging machines are optimized to meet industry standards, hygiene requirements, and production efficiency goals across diverse sectors.
+        <div className="max-w-3xl mb-20">
+          <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">What We Offer</h3>
+          <h2 className="text-5xl md:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter mb-6">
+            OUR <span className="text-brand-red">SOLUTIONS.</span>
+          </h2>
+          <p className="text-charcoal/50 max-w-xl font-body text-lg leading-relaxed">
+            Explore our integrated approach that combines sector-specific expertise, state-of-the-art engineering, and end-to-end implementation.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-          {industries.map((industry, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {solutions.map((solution, i) => (
             <div key={i} className="industry-card group relative h-[500px] overflow-hidden rounded-sm cursor-pointer">
               {/* Background Image */}
               <img 
-                src={industry.img} 
-                alt={industry.title}
+                src={solution.img} 
+                alt={solution.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
               {/* Overlay */}
@@ -86,14 +74,14 @@ export default function IndustriesOverview() {
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="mb-4 translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                  <h4 className="text-2xl font-bold text-white mb-2 font-heading">{industry.title}</h4>
-                  <p className="text-white/60 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {industry.desc}
+                  <h4 className="text-3xl font-bold text-white mb-2 font-heading uppercase">{solution.title}</h4>
+                  <p className="text-white/70 text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {solution.desc}
                   </p>
                 </div>
                 <div className="flex items-center text-brand-red font-bold text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                  <span>Explore Solutions</span>
-                  <ArrowUpRight size={16} className="ml-2" />
+                  <span>Explore Solution</span>
+                  <ArrowUpRight size={18} className="ml-2" />
                 </div>
               </div>
 

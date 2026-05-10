@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/Hero";
+import AboutSection from "@/components/AboutSection";
 import ProductGrid from "@/components/ProductGrid";
 import FeaturedMachine from "@/components/FeaturedMachine";
 import PouchSelection from "@/components/PouchSelection";
@@ -13,6 +14,9 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
+
+      {/* About Us Section */}
+      <AboutSection />
 
       {/* Industries Overview */}
       <IndustriesOverview />
