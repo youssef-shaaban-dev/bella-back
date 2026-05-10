@@ -3,12 +3,12 @@
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import ProductGrid from "@/components/ProductGrid";
-import FeaturedMachine from "@/components/FeaturedMachine";
 import PouchSelection from "@/components/PouchSelection";
 import IndustriesOverview from "@/components/IndustriesOverview";
 import OperationalExcellence from "@/components/OperationalExcellence";
 import NewsExhibitions from "@/components/NewsExhibitions";
 import FinalCTA from "@/components/FinalCTA";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -21,8 +21,8 @@ export default function Home() {
       {/* Industries Overview */}
       <IndustriesOverview />
 
-      {/* Flagship Machine Showcase (Machine Operation Video) */}
-      <FeaturedMachine />
+      {/* World-Class Services */}
+      <Services />
 
       {/* Operational Excellence */}
       <OperationalExcellence />

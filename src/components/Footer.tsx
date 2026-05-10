@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Printer } from "lucide-react";
 import Image from "next/image";
 
 const Facebook = ({ size = 24, ...props }) => (
@@ -129,21 +129,28 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">Locations</h4>
+            <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">CONTACT</h4>
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">
                 <MapPin className="text-brand-red mt-1 shrink-0" size={20} />
                 <span className="text-white/60 text-sm font-body leading-relaxed">
-                  1234 Industrial Boulevard, <br /> Engineering District, NY 10001
+                  Industrial zone (c6) plot 75,<br />10th of Ramadan city Egypt
                 </span>
               </li>
               <li className="flex items-center space-x-4">
-                <Phone className="text-brand-red shrink-0" size={20} />
-                <span className="text-white/60 text-sm font-body">+1 (800) BELLA-PK</span>
+                <Mail className="text-brand-red shrink-0" size={20} />
+                <span className="text-white/60 text-sm font-body">info@bellapacktec.com</span>
               </li>
               <li className="flex items-center space-x-4">
-                <Mail className="text-brand-red shrink-0" size={20} />
-                <span className="text-white/60 text-sm font-body">sales@bellapack.com</span>
+                <Phone className="text-brand-red shrink-0" size={20} />
+                <span className="text-white/60 text-sm font-body">+20 15 380692</span>
+              </li>
+              <li className="flex items-center space-x-4">
+                <Printer className="text-brand-red shrink-0" size={20} />
+                <div className="flex items-center space-x-2">
+                  <span className="text-[9px] border border-white/20 px-1 rounded-sm uppercase tracking-widest text-white/40">Fax</span>
+                  <span className="text-white/60 text-sm font-body">+20 15 380693</span>
+                </div>
               </li>
             </ul>
           </div>
