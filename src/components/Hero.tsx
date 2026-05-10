@@ -200,11 +200,6 @@ export default function Hero() {
                     : "opacity-0 pointer-events-none z-0"
                 }`}
               >
-                <div className="inline-flex self-start items-center space-x-2 bg-brand-blue/20 px-4 py-1.5 rounded-full mb-6 border border-brand-blue/40 backdrop-blur-sm">
-                  <span className="w-2 h-2 bg-brand-red rounded-full animate-pulse" />
-                  <span className="text-xs font-bold tracking-widest uppercase text-white">Next-Gen Packaging</span>
-                </div>
-
                 <h1 className="slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading">
                   {slide.title} <br />
                   <span className="text-brand-red">{slide.highlightTitle}</span>
