@@ -1,5 +1,79 @@
 import Link from "next/link";
-import { Globe, Send, Briefcase, Camera, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+
+const Facebook = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
+const Instagram = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
+const Linkedin = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
+
+const Youtube = ({ size = 24, ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+    <path d="m10 15 5-3-5-3z" />
+  </svg>
+);
 
 export default function Footer() {
   return (
@@ -9,18 +83,15 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-8">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-brand-red flex items-center justify-center rounded-sm">
-                <span className="text-white font-heading font-bold text-2xl">B</span>
+              <div className="flex items-center justify-center rounded-sm relative">
+                <Image src="/logo.png" alt="Bella Pack" width={200} height={200} className="object-contain" />
               </div>
-              <span className="font-heading text-2xl font-bold tracking-tighter">
-                BELLA <span className="text-brand-red">PACK</span>
-              </span>
             </Link>
             <p className="text-white/40 font-body leading-relaxed text-sm">
               Global leaders in industrial packaging machinery. Providing ultra-modern solutions for the food, pharmaceutical, and chemical industries since 1999.
             </p>
             <div className="flex space-x-4">
-              {[Globe, Send, Briefcase, Camera].map((Icon, i) => (
+              {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
                 <Link key={i} href="#" className="w-10 h-10 border border-white/10 rounded-sm flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition-all duration-300">
                   <Icon size={18} />
                 </Link>
@@ -30,9 +101,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">NAVIGATION</h4>
+            <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">Quick Links</h4>
             <ul className="space-y-4">
-              {["About", "Solutions", "Media", "Sustainability", "Careers", "News", "Contact"].map((item) => (
+              {["About us", "services", "Sustainability", "Careers", "News", "media"].map((item) => (
                 <li key={item}>
                   <Link href={`/${item.toLowerCase()}`} className="text-white/60 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">
                     {item}
@@ -58,7 +129,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">HEADQUARTERS</h4>
+            <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">Locations</h4>
             <ul className="space-y-6">
               <li className="flex items-start space-x-4">
                 <MapPin className="text-brand-red mt-1 shrink-0" size={20} />
@@ -83,8 +154,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} BELLA PACK MACHINERY CORP. ALL RIGHTS RESERVED.
           </p>
           <div className="flex space-x-8 text-white/20 text-xs font-body">
-            <Link href="#" className="hover:text-white transition-colors">PRIVACY POLICY</Link>
-            <Link href="#" className="hover:text-white transition-colors">TERMS OF SERVICE</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">PRIVACY POLICY</Link>
           </div>
         </div>
       </div>

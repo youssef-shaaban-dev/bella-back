@@ -125,13 +125,6 @@ export default function Header() {
                         </ul>
                       </div>
                     ))}
-                    <div className="col-span-3 mt-4 pt-6 border-t border-gray-100 flex justify-between items-center">
-                       <p className="text-[11px] text-gray-400 font-bold uppercase tracking-widest">Need a custom solution?</p>
-                       <Link href="/contact" className="text-brand-red text-[13px] font-bold hover:underline flex items-center space-x-2">
-                         <span>View all solutions</span>
-                         <ArrowRight size={14} />
-                       </Link>
-                    </div>
                   </div>
                 </div>
               )}

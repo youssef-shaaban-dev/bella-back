@@ -58,8 +58,8 @@ export default function ProductGrid() {
     <section ref={sectionRef} className="py-24 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Advanced Machinery</h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-charcoal font-heading tracking-tight uppercase">CORE PRODUCT RANGE</h2>
+          <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">Visual Media</h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-charcoal font-heading tracking-tight uppercase">MEDIA</h2>
           <div className="h-1 w-20 bg-brand-red mx-auto mt-6" />
         </div>
 
