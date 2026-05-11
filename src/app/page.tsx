@@ -1,14 +1,14 @@
 "use client";
 
-import Hero from "@/components/Hero";
-import AboutSection from "@/components/AboutSection";
-import ProductGrid from "@/components/ProductGrid";
-import PouchSelection from "@/components/PouchSelection";
-import IndustriesOverview from "@/components/IndustriesOverview";
-import OperationalExcellence from "@/components/OperationalExcellence";
-import NewsExhibitions from "@/components/NewsExhibitions";
-import FinalCTA from "@/components/FinalCTA";
-import Services from "@/components/Services";
+import Hero from "@/components/home/Hero";
+import AboutSection from "@/components/home/AboutSection";
+import ProductGrid from "@/components/home/ProductGrid";
+import PouchSelection from "@/components/home/PouchSelection";
+import IndustriesOverview from "@/components/home/IndustriesOverview";
+import OperationalExcellence from "@/components/home/OperationalExcellence";
+import NewsExhibitions from "@/components/home/NewsExhibitions";
+import FinalCTA from "@/components/home/FinalCTA";
+import Services from "@/components/home/Services";
 
 export default function Home() {
   return (

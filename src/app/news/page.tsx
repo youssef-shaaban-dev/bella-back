@@ -1,12 +1,12 @@
 "use client";
 
-import NewsExhibitions from "@/components/NewsExhibitions";
+import NewsExhibitions from "@/components/home/NewsExhibitions";
 
 export default function NewsPage() {
   return (
-    <main className="min-h-screen pt-24 bg-white">
+    <main className="min-h-screen bg-white">
       {/* Header */}
-      <section className="bg-brand-red py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-brand-red pt-40 pb-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#fff_1px,transparent_1px)] [background-size:24px_24px]" />
         </div>

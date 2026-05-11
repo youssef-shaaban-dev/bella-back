@@ -20,9 +20,9 @@ const technologySeries = [
 
 export default function SolutionsPage() {
   return (
-    <main className="min-h-screen pt-24 bg-white">
+    <main className="min-h-screen bg-white">
       {/* Hero Header */}
-      <section className="bg-brand-blue py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-brand-blue pt-40 pb-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#fff_1px,transparent_1px)] [background-size:32px_32px]" />
         </div>
@@ -107,12 +107,12 @@ export default function SolutionsPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-brand-red/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <div className="w-12 h-12 bg-brand-red/20 rounded-full flex items-center justify-center mr-4 shrink-0">
                     <Wrench className="w-6 h-6 text-brand-red" />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold font-heading uppercase mb-2">Custom Tooling</h4>
-                    <p className="text-white/60">Bespoke sealing jaws and dosing systems engineered specifically for your product's physical properties.</p>
+                    <p className="text-white/60">Bespoke sealing jaws and dosing systems engineered specifically for your product&apos;s physical properties.</p>
                   </div>
                 </div>
               </div>

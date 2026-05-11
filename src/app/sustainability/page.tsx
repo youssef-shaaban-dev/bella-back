@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function SustainabilityPage() {
   return (
-    <main className="min-h-screen pt-24 bg-white">
+    <main className="min-h-screen bg-white">
       {/* Hero Header */}
-      <section className="bg-charcoal py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-charcoal pt-40 pb-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image src="/PacProcess 2025/ 3.jpeg" alt="Sustainability Background" fill className="object-cover" />
         </div>

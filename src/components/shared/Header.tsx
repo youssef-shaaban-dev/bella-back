@@ -37,12 +37,12 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
-          <div className="relative h-28 w-56">
+          <div className={cn("relative transition-all duration-500", isScrolled ? "h-14 w-28" : "h-20 w-40")}>
              <Image 
                 src="/logo.png" 
                 alt="Bella Pack" 
                 fill 
-                className="object-contain transition-all duration-500" 
+                className="object-contain" 
                 priority
              />
           </div>

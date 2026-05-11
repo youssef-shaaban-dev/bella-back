@@ -13,9 +13,9 @@ const videos = [
 
 export default function MediaPage() {
   return (
-    <main className="min-h-screen pt-24 bg-gray-50">
+    <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-charcoal py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-charcoal pt-40 pb-24 text-white text-center relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold font-heading mb-6 uppercase tracking-tighter">
             MEDIA <span className="text-brand-red">LIBRARY</span>
