@@ -88,14 +88,13 @@ export default function Header() {
             },
             { name: "Services", href: "/services" },
             { name: "Sustainability", href: "/sustainability" },
-            { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
+            { name: "Careers", href: "/careers" },
             { name: "News", href: "/news" },
             { name: "Media", href: "/media" },
           ].map((item) => (
             <div key={item.name} className="group relative py-2">
               <Link
                 href={item.href || "#"}
-                target={item.external ? "_blank" : undefined}
                 className={cn(
                   "font-heading text-[12px] font-bold flex items-center space-x-1 transition-colors uppercase tracking-[0.1em]",
                   isScrolled ? "text-charcoal hover:text-brand-red" : "text-white hover:text-brand-red"

@@ -1,0 +1,93 @@
+"use client";
+
+import React from "react";
+import { Briefcase, UserCog, TrendingUp, GraduationCap, ExternalLink, ArrowRight } from "lucide-react";
+
+const opportunities = [
+  {
+    icon: UserCog,
+    title: "Engineering & Technical Roles",
+    desc: "Direct mechanical design, electrical drafting, and software PLC automation setups."
+  },
+  {
+    icon: Briefcase,
+    title: "Precision Technicians",
+    desc: "Hands-on machine fabrication, assembly, wiring, and on-site installation calibration."
+  },
+  {
+    icon: TrendingUp,
+    title: "Sales & Business Dev",
+    desc: "Managing local accounts, coordinating global shipments, and handling key industrial partnerships."
+  },
+  {
+    icon: GraduationCap,
+    title: "Internship Programs",
+    desc: "For high-potential engineering undergraduates looking for direct factory experience."
+  }
+];
+
+export default function OpportunitiesList() {
+  return (
+    <section className="py-24 bg-white border-b border-gray-200">
+      <div className="container mx-auto px-6">
+        
+        <div className="reveal flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 mb-16 border-b border-gray-100 pb-8">
+          <div>
+            <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading mb-3">Active Tracks</h3>
+            <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
+              Career <span className="text-brand-red">Opportunities</span>
+            </h2>
+          </div>
+          
+          <div className="flex flex-col gap-4 max-w-md">
+            <p className="text-gray-500 font-body text-sm font-semibold">
+              As part of the broader global industrial group, we facilitate immediate pathways to premier international roles.
+            </p>
+            
+            <a 
+              href="https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 text-xs font-heading font-bold uppercase tracking-widest text-brand-blue hover:text-brand-red transition-colors group"
+            >
+              <span>Browse Coesia Global Portal</span>
+              <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {opportunities.map((opp, idx) => (
+            <div 
+              key={idx} 
+              className="reveal flex items-start space-x-6 bg-gray-50 border border-gray-100 p-8 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-300 group"
+            >
+              <div className="w-14 h-14 rounded-sm bg-white border border-gray-100 shadow-sm flex items-center justify-center shrink-0 text-brand-red group-hover:bg-charcoal group-hover:text-white transition-colors duration-300">
+                <opp.icon size={24} />
+              </div>
+              <div>
+                <h3 className="text-xl font-heading font-bold uppercase text-charcoal mb-3 tracking-wide group-hover:text-brand-red transition-colors">
+                  {opp.title}
+                </h3>
+                <p className="text-gray-500 text-sm font-body leading-relaxed font-medium">
+                  {opp.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Note Prompt */}
+        <div className="reveal bg-gray-50 border border-gray-200/60 p-8 rounded-sm text-center max-w-3xl mx-auto">
+          <p className="text-charcoal font-heading font-bold text-base md:text-lg uppercase tracking-wide mb-2">
+            Can’t find a specific role matching your profile?
+          </p>
+          <p className="text-gray-500 text-xs md:text-sm font-body font-semibold">
+            Submit a general application below, and our HR unit will coordinate with you for direct future opportunities.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+}

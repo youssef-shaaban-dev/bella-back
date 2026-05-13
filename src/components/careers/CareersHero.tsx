@@ -1,0 +1,35 @@
+"use client";
+
+import React from "react";
+
+export default function CareersHero() {
+  return (
+    <section className="relative pt-48 pb-32 bg-charcoal text-white overflow-hidden">
+      {/* Visual accents for industrial careers feeling */}
+      <div className="absolute inset-0">
+        <img 
+          src="/PacProcess 2025/ 1.jpeg" 
+          alt="Join Bella Pack" 
+          className="w-full h-full object-cover opacity-20 grayscale select-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/90 to-charcoal/40"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10 text-center">
+        <div className="reveal flex items-center justify-center space-x-3 mb-6">
+          <span className="h-px w-8 bg-brand-red"></span>
+          <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Join The Mission</span>
+          <span className="h-px w-8 bg-brand-red"></span>
+        </div>
+
+        <h1 className="reveal text-5xl md:text-8xl font-bold font-heading uppercase tracking-tighter mb-8 max-w-5xl mx-auto leading-[0.95]">
+          Work at <span className="text-brand-red">Bella Pack</span>
+        </h1>
+
+        <p className="reveal text-lg md:text-xl text-white/70 font-body max-w-3xl mx-auto leading-relaxed">
+          At Bella Pack, we believe that our people are the foundation of our success. We are continuously looking for talented, motivated, and passionate individuals who want to contribute to the development of high-performance packaging machinery.
+        </p>
+      </div>
+    </section>
+  );
+}
