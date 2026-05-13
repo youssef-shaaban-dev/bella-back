@@ -1,29 +1,47 @@
 "use client";
 
-import NewsExhibitions from "@/components/home/NewsExhibitions";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NewsHero from "@/components/news/NewsHero";
+import TeamSection from "@/components/news/TeamSection";
+import ExhibitionsList from "@/components/news/ExhibitionsList";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function NewsPage() {
-  return (
-    <main className="min-h-screen bg-white">
-      {/* Header */}
-      <section className="bg-brand-red pt-40 pb-24 text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#fff_1px,transparent_1px)] [background-size:24px_24px]" />
-        </div>
-        <div className="container mx-auto px-6 relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold font-heading mb-6 uppercase tracking-tighter">
-            LATEST <span className="text-charcoal">NEWS</span>
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 font-body max-w-2xl mx-auto">
-            Stay updated with our upcoming exhibitions, technological breakthroughs, and corporate announcements.
-          </p>
-        </div>
-      </section>
+  const rootRef = useRef<HTMLDivElement>(null);
 
-      {/* Reusing the existing News component which contains the Exhibitions data */}
-      <div className="py-12">
-        <NewsExhibitions />
-      </div>
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const reveals = gsap.utils.toArray<HTMLElement>(".reveal");
+      reveals.forEach((el) => {
+        gsap.fromTo(
+          el,
+          { y: 40, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          }
+        );
+      });
+    }, rootRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
+      <NewsHero />
+      <TeamSection />
+      <ExhibitionsList />
     </main>
   );
 }
