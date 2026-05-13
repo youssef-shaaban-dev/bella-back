@@ -55,6 +55,7 @@ export default function Header() {
             { 
               name: "Solutions", 
               hasMega: true,
+              href: "/solutions",
               columns: [
                 {
                   title: "Industries Served",
