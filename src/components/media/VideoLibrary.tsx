@@ -67,7 +67,7 @@ export default function VideoLibrary() {
               Witness Precision in <span className="text-brand-red">Real-Time</span>
             </h2>
             <p className="text-gray-600 font-body leading-relaxed text-base">
-              Bella Pack's video archive brings the factory floor direct to you. Explore our videos to fully evaluate our extreme operating speeds, stable machine performance, and clean final production quality.
+              Bella Pack&apos;s video archive brings the factory floor direct to you. Explore our videos to fully evaluate our extreme operating speeds, stable machine performance, and clean final production quality.
             </p>
           </div>
           
