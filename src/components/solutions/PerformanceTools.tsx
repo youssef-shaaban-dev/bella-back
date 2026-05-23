@@ -19,20 +19,20 @@ export default function PerformanceTools() {
                 Technical & <span className="text-brand-red">Performance</span> Tools
               </h2>
               <p className="text-white/60 font-body text-sm md:text-base leading-relaxed mb-8 max-w-md">
-                Ensure seamless downstream integration at your facility. We provide complete CAD files, exact floor footprint schematics, and multi-page structural tech specs to verified engineers.
+                To support your production planning and integration, detailed machine specifications, PDF data sheets, and CAD layouts are fully available to engineering divisions.
               </p>
             </div>
 
             <div className="pt-4">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center px-8 py-4 bg-brand-red text-white font-heading font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-charcoal transition-all duration-300 group shadow-lg"
+                className="inline-flex items-center px-8 py-4 bg-brand-red text-white font-heading font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-charcoal transition-all duration-300 group shadow-lg animate-pulse"
               >
-                <span>Request Documentation Access</span>
+                <span>Request Technical Specs</span>
                 <ArrowRight size={14} className="ml-3 transition-transform group-hover:translate-x-1" />
               </Link>
               <span className="block text-[10px] text-white/30 font-body mt-3 italic">
-                * Secure access is granted via official firm credentials submission.
+                * Access to technical documents is available upon request via form submission.
               </span>
             </div>
           </div>
@@ -46,9 +46,9 @@ export default function PerformanceTools() {
 
             <div className="relative z-10 space-y-4">
               {[
-                { icon: FileText, title: "PDF Data Sheets", format: "Detailed system parameters." },
-                { icon: Box, title: "CAD Assembly Layouts", format: "Floor footprint matching." },
-                { icon: Layers, title: "Structural Tolerances", format: "Detailed machine metrics." },
+                { icon: FileText, title: "Detailed Specifications", format: "Complete system metrics." },
+                { icon: FileText, title: "PDF Data Sheets", format: "Quick performance guides." },
+                { icon: Box, title: "CAD Layouts", format: "Floor footprint matching." },
               ].map((doc, dIdx) => (
                 <div key={dIdx} className="flex items-center justify-between bg-white/[0.03] border border-white/5 p-4 rounded-sm hover:bg-white/[0.06] transition-colors group">
                   <div className="flex items-center space-x-4">

@@ -12,14 +12,14 @@ export default function CustomEngineering() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Image side */}
           <div className="reveal lg:col-span-5 relative group">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-2xl">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-2xl bg-charcoal/5">
               <Image 
-                src="/PacProcess 2025/ 2.jpeg" 
+                src="/solutions/spices & coffee/coffee bellapack pouch.png" 
                 alt="Bespoke Industrial Automation" 
                 fill 
-                className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover transition-all duration-700 scale-105 group-hover:scale-100"
               />
-              <div className="absolute inset-0 bg-charcoal/10 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-700"></div>
             </div>
             
             {/* Accent badge */}
@@ -43,7 +43,7 @@ export default function CustomEngineering() {
             </h2>
 
             <p className="text-gray-600 font-body text-lg leading-relaxed mb-10">
-              We believe that peak efficiency is achieved when machinery seamlessly matches the material properties. Beyond selling standalone setups, our dedicated engineering units operate deeply with clients to craft fully custom adaptations.
+              Tailored machine design, custom pouch formats, and adaptation to specific packaging materials. Our engineering team works closely with clients to deliver fully customized packaging solutions.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 mb-8">

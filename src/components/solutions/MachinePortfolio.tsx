@@ -8,35 +8,35 @@ const machines = [
     series: "B Series",
     title: "Standard Flat Pouch Machines",
     ideal: ["Four-side seal pouches", "Flat pouch packaging"],
-    summary: "Extremely reliable and cost-efficient, ideal for broad industrial packing applications.",
+    summary: "Reliable, efficient, and suitable for a wide range of products. Extremely cost-effective for flat packaging needs.",
     tag: "Standard"
   },
   {
     series: "BS Series",
     title: "Cap & Spout Pouch Machines",
     ideal: ["Easy-open / easy-close pouches", "Spout & cap insertion"],
-    summary: "Equipped with next-generation cap vibration sorting and advanced mechanical cap insertion modules.",
+    summary: "Designed for easy-open / easy-close pouches with spout and cap insertion. Equipped with advanced cap insertion and vibration capping systems.",
     tag: "Advanced"
   },
   {
     series: "BSH Series",
     title: "Custom Shaped Pouch Machines",
     ideal: ["Unique profile designs", "Brand differentiation"],
-    summary: "Features localized quick-change horizontal die-cutting systems allowing flexible multi-format runs.",
+    summary: "Engineered for unique pouch designs and brand differentiation. Featuring quick-change die cutting systems for flexible production.",
     tag: "Creative"
   },
   {
     series: "BSS Series",
     title: "Hybrid High-Speed Machines",
-    ideal: ["Shaped pouch capability", "In-line cap insertion"],
-    summary: "Combines custom profiling and spout assembly inside a single consolidated high-output production unit.",
+    ideal: ["Shaped pouch capability", "Cap insertion system"],
+    summary: "Combines shaped pouch capability and cap insertion system all in one high-speed, multi-function production unit.",
     tag: "Flagship"
   },
   {
     series: "BW Series",
     title: "Flexible Weight Solutions",
-    ideal: ["Variable weights", "Multiple product forms"],
-    summary: "Features adaptive continuous weighing systems and automated weight recall modules to limit reset lag.",
+    ideal: ["Variable weight requirements", "Different product forms"],
+    summary: "Designed for variable weight requirements and different product forms, ensuring flexibility across multiple production needs.",
     tag: "Dynamic"
   }
 ];

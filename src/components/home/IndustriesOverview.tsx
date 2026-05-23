@@ -9,20 +9,35 @@ gsap.registerPlugin(ScrollTrigger);
 
 const solutions = [
   {
-    title: "Industries Served",
+    title: "Food & Beverage",
+    img: "/solutions/Food & Beverage/ Food .jpeg",
+    desc: "High-hygiene filling and packing lines engineered for tomato paste, juices, ghee, edible oils, and grains.",
+    link: "/solutions"
+  },
+  {
+    title: "Spices & Coffee",
+    img: "/solutions/spices & coffee/coffee bellapack pouch.png",
+    desc: "High-precision powder filling solutions ensuring accurate dosing, aroma preservation, and zero waste.",
+    link: "/solutions"
+  },
+  {
+    title: "Snacks & Granules",
     img: "/Homepage/ Pouches .jpeg",
-    desc: "Comprehensive packaging lines tailored for food, chemical, and pharmaceutical sectors.",
+    desc: "High-speed packaging systems designed for continuous, reliable bagging of snacks, nuts, and candies.",
+    link: "/solutions"
   },
   {
-    title: "Technology",
-    img: "/Homepage/ Machine close up 2.jpeg",
-    desc: "Cutting-edge IoT-enabled mechanics ensuring peak automation efficiency.",
+    title: "Detergents & Chemicals",
+    img: "/solutions/ Detergents & Chemicals Products/ Detergents pouches.jpeg",
+    desc: "Heavy-duty titanium-reinforced packaging lines built specifically to handle liquid detergents and corrosive bleach.",
+    link: "/solutions"
   },
   {
-    title: "Project Solutions",
-    img: "/Homepage/ Horizontal machine .jpeg",
-    desc: "Turnkey manufacturing solutions engineered end-to-end for scalable operations.",
-  },
+    title: "Cosmetics & Pharma",
+    img: "/Homepage/closeup flowmeter.png",
+    desc: "Ultra-sanitary dosing systems tailored for high-hygiene creams, gels, and pharmaceutical liquids.",
+    link: "/solutions"
+  }
 ];
 
 export default function IndustriesOverview() {
@@ -37,7 +52,7 @@ export default function IndustriesOverview() {
         },
         y: 60,
         opacity: 0,
-        stagger: 0.2,
+        stagger: 0.15,
         duration: 1.2,
         ease: "power4.out",
       });
@@ -59,23 +74,27 @@ export default function IndustriesOverview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Premium Flex Wrap Grid that centers items beautifully */}
+        <div className="flex flex-wrap justify-center gap-6">
           {solutions.map((solution, i) => (
-            <div key={i} className="industry-card group relative h-[500px] overflow-hidden rounded-sm cursor-pointer">
+            <div
+              key={i}
+              className="industry-card group relative w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] h-[500px] overflow-hidden rounded-sm cursor-pointer shrink-0"
+            >
               {/* Background Image */}
-              <img 
-                src={solution.img} 
+              <img
+                src={solution.img}
                 alt={solution.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
-              
+
               {/* Content */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="mb-4 translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                  <h4 className="text-3xl font-bold text-white mb-2 font-heading uppercase">{solution.title}</h4>
-                  <p className="text-white/70 text-base opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h4 className="text-2xl md:text-3xl font-bold text-white mb-2 font-heading uppercase">{solution.title}</h4>
+                  <p className="text-white/70 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 leading-relaxed font-body">
                     {solution.desc}
                   </p>
                 </div>

@@ -1,31 +1,47 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function SolutionsHero() {
   return (
-    <section className="relative pt-48 pb-32 text-white overflow-hidden">
-      {/* Custom layered background with brand red blur and charcoal base */}
-      <div className="absolute inset-0 bg-charcoal">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)]bg-size-[40px_40px] opacity-30"></div>
-        <div className="absolute -right-48 top-0 w-[600px] h-[600px] bg-brand-red filter blur-[120px] opacity-10 rounded-full"></div>
+    <section className="hero-section relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Parallax Background using slide banner 4 */}
+      <div className="parallax-bg absolute inset-0 z-0 scale-110">
+        <Image
+          src="/Homepage/slide banner 4.png"
+          alt="Bella Pack Integrated Packaging Solutions"
+          fill
+          className="object-cover brightness-[0.25] saturate-[0.8]"
+          priority
+        />
       </div>
-
-      <div className="container mx-auto px-6 relative z-10 text-center lg:text-left">
-        <div className="reveal flex items-center space-x-3 mb-6 justify-center lg:justify-start">
-          <span className="h-px w-8 bg-brand-red"></span>
-          <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">System Integration</span>
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+      
+      <div className="container relative z-10 px-6">
+        {/* Tagline pill matching AboutHero */}
+        <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">
+          <span className="w-2 h-2 rounded-full bg-brand-red"></span>
+          <span className="text-xs font-heading font-bold tracking-[0.3em] uppercase text-white/90">Solutions Overview</span>
         </div>
+        
+        <h1 className="reveal text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.9] mb-6 uppercase">
+          INTEGRATED <br />
+          <span className="text-brand-red drop-shadow-[0_2px_20px_rgba(230,30,46,0.3)]">PACKAGING</span> SOLUTIONS
+        </h1>
+        
+        <p className="reveal text-xl md:text-3xl font-heading font-bold uppercase tracking-widest mb-4 text-brand-red">
+          Tailored High-Performance Systems
+        </p>
 
-        <div className="max-w-4xl">
-          <h1 className="reveal text-5xl md:text-8xl font-bold font-heading uppercase tracking-tighter mb-8 leading-[0.95]">
-            Integrated <span className="text-brand-red">Packaging</span> Solutions
-          </h1>
+        <p className="reveal text-sm md:text-base font-body max-w-3xl mx-auto font-medium leading-relaxed text-gray-300">
+          At Bella Pack Tec, we deliver advanced packaging solutions tailored to meet the specific requirements of diverse industries, product types, and production capacities.
+        </p>
 
-          <p className="reveal text-lg md:text-xl text-white/75 font-body max-w-3xl leading-relaxed">
-            At Bella Pack Tec, we deliver advanced, custom-tailored packaging systems engineered to meet the exact parameters of diverse product compositions, speeds, and factory scales.
-          </p>
-        </div>
+        <div className="reveal h-px w-24 bg-brand-red mx-auto mt-8 mb-4"></div>
+        <p className="reveal text-xl md:text-2xl font-heading font-bold italic tracking-wider">
+          &quot;Optimized Performance. Industrial Scale.&quot;
+        </p>
       </div>
     </section>
   );
