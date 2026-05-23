@@ -10,6 +10,7 @@ import OperationalExcellence from "@/components/home/OperationalExcellence";
 import BrandsPackaged from "@/components/home/BrandsPackaged";
 import FinalCTA from "@/components/home/FinalCTA";
 import Services from "@/components/home/Services";
+import NewsExhibitions from "@/components/home/NewsExhibitions";
 
 export default function Home() {
   return (
@@ -40,6 +41,9 @@ export default function Home() {
 
       {/* Interactive Packaged Brands Showcase Section */}
       <BrandsPackaged />
+
+      {/* Exhibitions & Events Showcase Section */}
+      {/* <NewsExhibitions /> */}
 
       {/* Final Call to Action Section */}
       <FinalCTA />

@@ -5,48 +5,23 @@ import { Play, Film, Layers, Tv } from "lucide-react";
 
 const videoCategories = [
   { id: "all", name: "All Media" },
-  { id: "operation", name: "Machine Operations" },
   { id: "exhibition", name: "Exhibitions & Events" },
-  { id: "application", name: "Client Applications" },
+  { id: "application", name: "Client Applications & Operations" },
 ];
 
 const videos = [
   { 
-    title: "Horizontal Form Fill Seal Operation", 
-    category: "operation", 
-    desc: "High-speed HFFS machine processing real liquid products with high precision.",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" 
-  },
-  { 
-    title: "PacProcess 2025 Highlights", 
+    title: "Interpack - Pacprocess MEA 2024 Showcase", 
     category: "exhibition", 
-    desc: "Highlights from our official pavilion, showcasing full filling lines to international buyers.",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" 
+    desc: "Complete exhibition logbook video capturing live machinery demonstrations, client negotiations, and our high-frequency turnkey sachet models in action at the international exhibition.",
+    src: "/Media/Pacprocess -Interpack2024.mp4" 
   },
   { 
-    title: "VFFS End-to-End Customer Line", 
+    title: "Colorx Liquid Detergent Stand-up Pouch Line", 
     category: "application", 
-    desc: "Complete operational turnkey solution integrated directly at a customer's confectionery facility.",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" 
-  },
-  { 
-    title: "Granule Packaging Performance Test", 
-    category: "operation", 
-    desc: "High-precision dosing and high-output test run on multi-head granules packaging machines.",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" 
-  },
-  { 
-    title: "Gulfood Manufacturing Showcase", 
-    category: "exhibition", 
-    desc: "Live machinery demonstrations and stakeholder discussions on the floor.",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" 
-  },
-  { 
-    title: "Cosmetics Liquid Filling Assembly", 
-    category: "application", 
-    desc: "Automated cosmetic pouch filling machine operating in sterile manufacturing environment.",
-    src: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4" 
-  },
+    desc: "High-precision HFFS liquid dosing and horizontal stand-up pouch sealing line packaging Colorx liquid detergents in real-time operation.",
+    src: "/Media/ COLORX .mp4" 
+  }
 ];
 
 export default function VideoLibrary() {
@@ -102,8 +77,12 @@ export default function VideoLibrary() {
           ))}
         </div>
 
-        {/* Video Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Video Grid with dynamic styling for visual balance */}
+        <div className={`grid gap-8 ${
+          filteredVideos.length === 1 
+            ? "max-w-2xl mx-auto grid-cols-1" 
+            : "max-w-5xl mx-auto grid-cols-1 md:grid-cols-2"
+        }`}>
           {filteredVideos.map((video, idx) => (
             <div 
               key={idx} 
@@ -113,8 +92,7 @@ export default function VideoLibrary() {
                 <video 
                   src={video.src}
                   controls
-                  preload="none"
-                  poster="/PacProcess 2025/ 1.jpeg"
+                  preload="metadata"
                   className="w-full h-full object-cover opacity-85 group-hover:opacity-100 transition-opacity"
                 />
               </div>
@@ -122,7 +100,7 @@ export default function VideoLibrary() {
               <div className="p-6 flex-grow flex flex-col justify-between">
                 <div>
                   <span className="inline-block bg-brand-red/10 text-brand-red px-3 py-1 text-[10px] font-bold tracking-widest uppercase rounded-full mb-3">
-                    {videoCategories.find(c => c.id === video.category)?.name.replace("s & Events", "").replace(" Applications", "").replace(" Machine", "") || video.category}
+                    {videoCategories.find(c => c.id === video.category)?.name.replace("s & Events", "").replace(" Applications & Operations", "Applications") || video.category}
                   </span>
                   <h3 className="text-lg font-bold font-heading text-charcoal uppercase tracking-wide leading-tight mb-2 group-hover:text-brand-red transition-colors">
                     {video.title}
