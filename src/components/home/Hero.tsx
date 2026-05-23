@@ -16,8 +16,8 @@ const slides = [
     description: "At Bella Pack, we deliver high-performance packaging machines and filling solutions engineered to handle a wide range of product viscosities and textures, ensuring consistent output, accuracy, and production efficiency.",
     buttonText: "EXPLORE SOLUTIONS",
     link: "/solutions",
-    image: "/PacProcess 2025/ 1.jpeg",
-    tabLabel: "Precision Packaging",
+    image: "/Homepage/slide banner1.png",
+    tabLabel: "BP Series Rotary",
     benefits: [
       "Improve production speed",
       "Reduce material waste",
@@ -31,8 +31,8 @@ const slides = [
     description: "Designed for high-speed automated production with exceptional dosing accuracy. Experience seamless performance tailored to your products.",
     buttonText: "OUR SOLUTIONS",
     link: "/solutions",
-    image: "/PacProcess 2025/ 2.jpeg",
-    tabLabel: "Filling Technology",
+    image: "/Homepage/slide banner2.png",
+    tabLabel: "Horizontal Flow Pack",
     benefits: [
       "Advanced PLC touch control",
       "High dosing accuracy (+/- 0.5%)",
@@ -46,8 +46,8 @@ const slides = [
     description: "Engineered using high-grade stainless steel and robust mechanical components to withstand continuous heavy-duty industrial operation.",
     buttonText: "ABOUT BELLA PACK",
     link: "/about",
-    image: "/PacProcess 2025/ 3.jpeg",
-    tabLabel: "Engineered to Last",
+    image: "/Homepage/slide banner3.png",
+    tabLabel: "Precision Dosing",
     benefits: [
       "Heavy-duty stainless steel build",
       "24/7 continuous operation",
@@ -61,8 +61,8 @@ const slides = [
     description: "From food & beverage and cosmetics to pharmaceuticals & chemicals, we customize our pouching and bottling lines to fit your exact production space and requirements.",
     buttonText: "CONTACT US",
     link: "/contact",
-    image: "/PacProcess 2025/ 4.jpeg",
-    tabLabel: "Custom Automation",
+    image: "/Homepage/slide banner 4.png",
+    tabLabel: "Sustainable Tech",
     benefits: [
       "Custom engineering & layouts",
       "Multi-industry application",
@@ -268,7 +268,12 @@ export default function Hero() {
                     />
                   </div>
 
-                 
+                  <span className="text-[10px] md:text-xs font-heading font-bold uppercase tracking-widest text-white/50 group-hover:text-white transition-colors block mb-1">
+                    0{index + 1}
+                  </span>
+                  <span className="font-heading font-bold uppercase text-xs md:text-sm tracking-wide text-white group-hover:text-brand-red transition-colors block">
+                    {slide.tabLabel}
+                  </span>
                 </button>
               );
             })}

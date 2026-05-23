@@ -54,7 +54,7 @@ export default function AboutSection() {
           <div ref={imageRef} className="relative group max-w-xl mx-auto lg:mx-0 w-full">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
               <Image 
-                src="/PacProcess 2025/ 1.jpeg" 
+                src="/Homepage/closeup flowmeter.png" 
                 alt="Precision Industrial Manufacturing" 
                 fill 
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

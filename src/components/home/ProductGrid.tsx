@@ -9,9 +9,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const mediaItems = [
-  { id: 1, type: 'image', src: "/PacProcess 2025/ 1.jpeg", title: "Production Line Overview" },
-  { id: 2, type: 'video', src: "/PacProcess 2025/ 2.jpeg", title: "High Speed Processing" },
-  { id: 3, type: 'image', src: "/PacProcess 2025/ 3.jpeg", title: "Factory Floor Details" },
+  { id: 1, type: 'image', src: "/Homepage/ BP-2500.jpeg", title: "BP-2500 Rotary Sachet Machine" },
+  { id: 2, type: 'video', src: "/Homepage/ machine.jpeg", title: "Automated Packaging Line" },
+  { id: 3, type: 'image', src: "/Homepage/ Horizontal machine .jpeg", title: "Horizontal Flow Pack Machine" },
 ];
 
 export default function ProductGrid() {

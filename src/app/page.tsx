@@ -2,35 +2,46 @@
 
 import Hero from "@/components/home/Hero";
 import AboutSection from "@/components/home/AboutSection";
+import StatsSection from "@/components/home/StatsSection";
+import ClientLogos from "@/components/home/ClientLogos";
 import ProductGrid from "@/components/home/ProductGrid";
-import PouchSelection from "@/components/home/PouchSelection";
 import IndustriesOverview from "@/components/home/IndustriesOverview";
 import OperationalExcellence from "@/components/home/OperationalExcellence";
-import NewsExhibitions from "@/components/home/NewsExhibitions";
+import BrandsPackaged from "@/components/home/BrandsPackaged";
 import FinalCTA from "@/components/home/FinalCTA";
 import Services from "@/components/home/Services";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* Premium Hero Slider Section */}
       <Hero />
 
       {/* About Us Section */}
       <AboutSection />
 
-      {/* Industries Overview */}
+      {/* Real-time GSAP Stats Counter Section */}
+      <StatsSection />
+
+      {/* Infinite Horizontal Client Logos Marquee */}
+      <ClientLogos />
+
+      {/* Industries Overview Section */}
       <IndustriesOverview />
 
-      {/* World-Class Services */}
+      {/* World-Class Services Section */}
       <Services />
 
-      {/* Operational Excellence */}
+      {/* Environmental & Operational Excellence Section */}
       <OperationalExcellence />
 
-      {/* Core Product Range */}
+      {/* Core Machine Product Gallery Section */}
       <ProductGrid />
 
-      {/* Final CTA */}
+      {/* Interactive Packaged Brands Showcase Section */}
+      <BrandsPackaged />
+
+      {/* Final Call to Action Section */}
       <FinalCTA />
     </main>
   );

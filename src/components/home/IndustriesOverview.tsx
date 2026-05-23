@@ -10,17 +10,17 @@ gsap.registerPlugin(ScrollTrigger);
 const solutions = [
   {
     title: "Industries Served",
-    img: "/solution1.png",
+    img: "/Homepage/ Pouches .jpeg",
     desc: "Comprehensive packaging lines tailored for food, chemical, and pharmaceutical sectors.",
   },
   {
     title: "Technology",
-    img: "/solution2.png",
+    img: "/Homepage/ Machine close up 2.jpeg",
     desc: "Cutting-edge IoT-enabled mechanics ensuring peak automation efficiency.",
   },
   {
     title: "Project Solutions",
-    img: "/solution3.png",
+    img: "/Homepage/ Horizontal machine .jpeg",
     desc: "Turnkey manufacturing solutions engineered end-to-end for scalable operations.",
   },
 ];
