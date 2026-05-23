@@ -7,47 +7,50 @@ const serviceOfferings = [
   {
     icon: Wrench,
     title: "Maintenance",
-    description: "Our specialized mechanical and electrical engineering group is fully equipped to stabilize operations and prolong machine lifespan.",
+    description: "Mechanical and electrical support to keep your production line running at full capacity, ensuring maximum operational reliability.",
     points: [
-      "Diagnose technical issues directly",
-      "On-site & remote troubleshooting",
-      "Rapid intervention, minimal downtime",
+      "On-site maintenance",
+      "Rapid response to minimize production downtime",
+      "Full mechanical and electrical servicing",
     ],
     accent: "text-brand-red",
     bg: "bg-brand-red/5"
   },
   {
     icon: BookOpen,
-    title: "Training & Docs",
-    description: "Structured transfer of expertise to ensure your operational staff can run and maintain packing lines efficiently and safely.",
+    title: "Training & Documentation",
+    description: "Ensuring your team can operate and maintain every machine efficiently and safely, with complete diagrammatic charts.",
     points: [
-      "Operator and maintenance training",
-      "Detailed manuals & guides",
-      "Pneumatic, electrical & mechanical diagrams",
+      "Machine operation & troubleshooting",
+      "Preventive maintenance procedures",
+      "User manuals & maintenance guides",
+      "Mechanical, electrical, and pneumatic diagrams"
     ],
+    note: "All documentation is available upon purchase or on request.",
     accent: "text-brand-blue",
     bg: "bg-brand-blue/5"
   },
   {
     icon: Cpu,
-    title: "Original Spare Parts",
-    description: "Full inventory management for critical spare parts to ensure continuous zero-lag supply chain fulfillments.",
+    title: "Spare Parts",
+    description: "Available on demand to ensure uninterrupted production and stable supply chain fulfillments across your factories.",
     points: [
-      "Guaranteed quality components",
-      "Expedited local & global shipping",
-      "Consumable, mechanical & electrical sets",
+      "Components with guaranteed quality and reliability",
+      "Fast delivery and fulfilment",
+      "Mechanical, electrical, and consumable components"
     ],
+    note: "Our inventory system is designed to minimize downtime and maximize production continuity.",
     accent: "text-charcoal",
     bg: "bg-charcoal/5"
   },
   {
     icon: LifeBuoy,
     title: "Technical Support",
-    description: "Fast-response tier-2 and tier-3 specialized engineering backup for advanced systemic architecture.",
+    description: "Fast and reliable support to resolve issues quickly and minimize production downtime through tier-2 specialized engineering backup.",
     points: [
-      "Specialized PLC & programming tuning",
-      "Advanced electronic diagnosis",
-      "Direct remote control assistance",
+      "Mechanical, electrical, and electronic diagnosis",
+      "PLC and control system support",
+      "Remote and on-site assistance"
     ],
     accent: "text-brand-red",
     bg: "bg-brand-red/5"
@@ -55,12 +58,13 @@ const serviceOfferings = [
   {
     icon: Lightbulb,
     title: "Consultancy Services",
-    description: "Providing expert knowledge pools to dynamically maximize ROI and improve raw performance across factories.",
+    description: "Expert guidance to help you get the absolute most out of your packaging operations and maximize total system ROI.",
     points: [
-      "Production efficiency reviews",
-      "Optimal configuration matching",
-      "Packaging waste reduction",
+      "Optimize production efficiency",
+      "Select the right machine configuration",
+      "Improve packaging performance"
     ],
+    note: "Our goal is to help you achieve maximum ROI from your packaging line.",
     accent: "text-brand-blue",
     bg: "bg-brand-blue/5"
   }
@@ -82,7 +86,6 @@ export default function ServicesGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviceOfferings.map((svc, index) => {
-            const isLastOdd = index === serviceOfferings.length - 1 && index % 3 === 2; // Just logic checking, let's actually make last items nicely spaced
             return (
               <div 
                 key={index} 
@@ -102,14 +105,22 @@ export default function ServicesGrid() {
                   </p>
                 </div>
 
-                <ul className="space-y-3 pt-4 border-t border-gray-100">
-                  {svc.points.map((pt, pIdx) => (
-                    <li key={pIdx} className="flex items-start space-x-3">
-                      <Check size={14} className="text-brand-red mt-1 shrink-0" />
-                      <span className="text-xs font-heading font-bold text-charcoal/80 uppercase tracking-wide">{pt}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div>
+                  <ul className="space-y-3 pt-4 border-t border-gray-100 mb-4">
+                    {svc.points.map((pt, pIdx) => (
+                      <li key={pIdx} className="flex items-start space-x-3">
+                        <Check size={14} className="text-brand-red mt-1 shrink-0" />
+                        <span className="text-xs font-heading font-bold text-charcoal/80 uppercase tracking-wide text-left">{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {svc.note && (
+                    <p className="mt-4 pt-3 border-t border-dashed border-gray-100 text-[10px] text-gray-400 font-body font-semibold italic text-left">
+                      Note: {svc.note}
+                    </p>
+                  )}
+                </div>
               </div>
             );
           })}

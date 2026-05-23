@@ -1,28 +1,35 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function ServicesHero() {
   return (
-    <section className="relative pt-48 pb-32 bg-charcoal text-white overflow-hidden">
-      {/* Geometric patterns for advanced engineering theme */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="absolute right-0 top-0 w-[600px] h-[600px] bg-[radial-gradient(circle,_theme(colors.brand-red)_1px,_transparent_1px)] [background-size:24px_24px]"></div>
+    <section className="hero-section relative h-[75vh] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Parallax Background using Company Servicing Assembly Floor */}
+      <div className="parallax-bg absolute inset-0 z-0 scale-110">
+        <Image
+          src="/ about us/company overview.png"
+          alt="Bella Pack Technical Servicing Hall"
+          fill
+          className="object-cover brightness-[0.23] saturate-[0.8]"
+          priority
+        />
       </div>
-      
-      <div className="container mx-auto px-6 relative z-10 text-center">
-        <div className="reveal flex items-center justify-center space-x-3 mb-6">
-          <span className="h-px w-8 bg-brand-red"></span>
-          <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Lifecycle Excellence</span>
-          <span className="h-px w-8 bg-brand-red"></span>
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+
+      <div className="container relative z-10 px-6">
+        <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">
+          <span className="w-2 h-2 rounded-full bg-brand-red"></span>
+          <span className="text-xs font-heading font-bold tracking-[0.3em] uppercase text-white/90">Lifecycle Excellence</span>
         </div>
 
-        <h1 className="reveal text-5xl md:text-8xl font-bold font-heading uppercase tracking-tighter mb-8 max-w-6xl mx-auto leading-[0.95]">
-          Support & <span className="text-brand-red">Service</span>
+        <h1 className="reveal text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.9] mb-6 uppercase">
+          Support & <span className="text-brand-red drop-shadow-[0_2px_20px_rgba(230,30,46,0.3)]">Service</span>
         </h1>
 
-        <p className="reveal text-lg md:text-xl text-white/70 font-body max-w-3xl mx-auto leading-relaxed">
-          At Bella Pack Tec, we are committed to delivering end-to-end service excellence. We ensure maximum machine performance, operational reliability, and long-term value while minimizing production downtime.
+        <p className="reveal text-sm md:text-base font-body max-w-3xl mx-auto font-medium leading-relaxed text-gray-300">
+          At Bella Pack Tec, we are committed to delivering End-to-End service excellence. We ensure our customers achieve maximum machine performance, operational reliability, and long-term value, while minimizing downtime through fast, responsive, and proactive support.
         </p>
       </div>
     </section>
