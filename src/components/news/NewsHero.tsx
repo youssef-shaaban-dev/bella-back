@@ -1,27 +1,34 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function NewsHero() {
   return (
-    <section className="relative pt-48 pb-32 bg-[#0C111B] text-white overflow-hidden border-b border-white/5">
-      {/* Clean abstract geometry overlay */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute right-0 bottom-0 w-[800px] h-[800px] border border-dashed border-brand-red/30 rounded-full translate-x-1/4 translate-y-1/4 animate-[spin_240s_linear_infinite]"></div>
+    <section className="hero-section relative h-[75vh] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Parallax Background using their actual PacProcess 2025 stand photo */}
+      <div className="parallax-bg absolute inset-0 z-0 scale-110">
+        <Image
+          src="/News/InterPack-PacProcess 2025 .jpeg"
+          alt="Bella Pack Exhibition Stand"
+          fill
+          className="object-cover brightness-[0.23] saturate-[0.8]"
+          priority
+        />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
-      <div className="container mx-auto px-6 relative z-10 text-center">
-        <div className="reveal flex items-center justify-center space-x-3 mb-6">
-          <span className="h-px w-8 bg-brand-red"></span>
-          <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Official Updates</span>
-          <span className="h-px w-8 bg-brand-red"></span>
+      <div className="container relative z-10 px-6">
+        <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">
+          <span className="w-2 h-2 rounded-full bg-brand-red"></span>
+          <span className="text-xs font-heading font-bold tracking-[0.3em] uppercase text-white/90">Official Updates</span>
         </div>
 
-        <h1 className="reveal text-5xl md:text-8xl font-bold font-heading uppercase tracking-tighter mb-8 max-w-5xl mx-auto leading-none">
-          News & <span className="text-brand-red">Exhibitions</span>
+        <h1 className="reveal text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.9] mb-6 uppercase">
+          News & <span className="text-brand-red drop-shadow-[0_2px_20px_rgba(230,30,46,0.3)]">Exhibitions</span>
         </h1>
 
-        <p className="reveal text-lg md:text-xl text-white/75 font-body max-w-2xl mx-auto leading-relaxed">
+        <p className="reveal text-sm md:text-base font-body max-w-3xl mx-auto font-medium leading-relaxed text-gray-300">
           Keep track of Bella Pack Tec&apos;s upcoming trade fair appearances, global launches, and major technological milestones on the international stage.
         </p>
       </div>

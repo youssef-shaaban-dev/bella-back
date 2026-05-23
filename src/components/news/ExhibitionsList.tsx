@@ -13,7 +13,7 @@ const exhibitions = [
     booth: "Hall 2 - Official Pavilion",
     description: "Bella Pack is pleased to announce its participation in PACPROCESS MEA 2026, held at the Egypt International Exhibition Center, one of the leading platforms for processing and packaging technologies in the Middle East and Africa. This participation marks a key opportunity to present Bella Pack’s latest advancements in horizontal form-fill-seal (HFFS) packaging technologies, and to demonstrate how our engineering expertise supports manufacturers in improving efficiency, accuracy, and production reliability.",
     status: "upcoming",
-    media: []
+    media: ["/News/interpack - pacprocess 2026 announcement.png"]
   },
   {
     id: "pacprocess2025",
@@ -23,7 +23,7 @@ const exhibitions = [
     booth: "Hall 2, Booth C12",
     description: "A highly successful run where we live-demonstrated continuous liquid and powder filling operations to hundreds of regional stakeholders and buyers.",
     status: "past",
-    media: ["/PacProcess 2025/ 1.jpeg", "/PacProcess 2025/ 2.jpeg"]
+    media: ["/News/InterPack-PacProcess 2025 .jpeg"]
   },
   {
     id: "propak2024",
@@ -33,7 +33,7 @@ const exhibitions = [
     booth: "Hall 3, Booth D45",
     description: "Showcasing variable-weight and high-frequency custom tooling arrays designed directly by our local engineering units.",
     status: "past",
-    media: ["/PacProcess 2025/ 2.jpeg"]
+    media: ["/News/ProPak Mena .jpeg"]
   },
   {
     id: "pacprocess2024",
@@ -43,7 +43,7 @@ const exhibitions = [
     booth: "Hall 2, Booth F10",
     description: "Launching the updated BP Series platform to critical acclaim, facilitating multiple immediate regional production unit placements.",
     status: "past",
-    media: ["/PacProcess 2025/ 1.jpeg"]
+    media: ["/News/ InterPack- PacProcess 2024.jpeg"]
   }
 ];
 
@@ -151,14 +151,20 @@ export default function ExhibitionsList() {
                           <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block flex items-center gap-2">
                             <ImageIcon size={12} /> Captured Moments
                           </span>
-                          <div className="grid grid-cols-2 gap-3">
+                          <div className={expo.media.length === 1 ? "w-full" : "grid grid-cols-2 gap-3"}>
                             {expo.media.map((imgUrl, mIdx) => (
-                              <div key={mIdx} className="relative aspect-[4/3] rounded-sm overflow-hidden shadow-md group/img border border-gray-100">
+                              <div 
+                                key={mIdx} 
+                                className={`relative rounded-sm overflow-hidden shadow-md group/img border border-gray-100 ${
+                                  expo.media.length === 1 ? "aspect-[16/10]" : "aspect-[4/3]"
+                                }`}
+                              >
                                 <Image 
                                   src={imgUrl} 
                                   alt={`Exhibition capture ${mIdx}`} 
                                   fill 
-                                  className="object-cover group-hover/img:scale-110 transition-transform duration-500" 
+                                  sizes="(max-width: 1024px) 100vw, 400px"
+                                  className="object-cover group-hover/img:scale-105 transition-transform duration-500" 
                                 />
                               </div>
                             ))}
