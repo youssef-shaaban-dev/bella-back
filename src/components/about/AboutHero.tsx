@@ -5,7 +5,7 @@ export default function AboutHero() {
     <section className="hero-section relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="parallax-bg absolute inset-0 z-0 scale-110">
         <Image
-          src="/PacProcess 2025/ 1.jpeg"
+          src="/ about us/ flags.jpeg"
           alt="Bella Pack Manufacturing Facility"
           fill
           className="object-cover brightness-[0.35] saturate-[0.8]"
@@ -20,13 +20,19 @@ export default function AboutHero() {
           <span className="text-xs font-heading font-bold tracking-[0.3em] uppercase text-white/90">Established 2000</span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.9] mb-6 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.9] mb-6 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards] uppercase">
           ABOUT <br />
-          <span className="text-brand-red drop-shadow-[0_2px_20px_rgba(230,30,46,0.4)]">BELLA PACK</span> TEC
+          <span className="text-brand-red drop-shadow-[0_2px_20px_rgba(230,30,46,0.4)]">BELLA PACK</span>
         </h1>
-        <p className="text-lg md:text-2xl font-body max-w-2xl mx-auto font-light opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] text-gray-200">
-          Packaging Machine Manufacturer in Egypt.
+        
+        <p className="text-xl md:text-3xl font-heading font-bold uppercase tracking-widest mb-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards] text-brand-red">
+          Advanced Packaging Machinery
         </p>
+
+        <p className="text-sm md:text-base font-body max-w-3xl mx-auto font-light leading-relaxed opacity-0 animate-[fadeInUp_0.8s_ease-out_0.5s_forwards] text-gray-300">
+          We are Bella Pack Tec — a precision packaging machinery manufacturer and long-term operational partner to the food, beverage, chemical, cosmetics, and pharmaceutical industries.
+        </p>
+
         <div className="h-px w-24 bg-brand-red mx-auto mt-8 mb-4 scale-x-0 animate-[scaleX_1s_ease-out_0.6s_forwards]"></div>
         <p className="text-xl md:text-2xl font-heading font-bold italic tracking-wider opacity-0 animate-[fadeInUp_0.8s_ease-out_0.7s_forwards]">
           &quot;Your Production. Our Precision.&quot;

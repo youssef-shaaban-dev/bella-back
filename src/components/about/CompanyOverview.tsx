@@ -10,8 +10,8 @@ export default function CompanyOverview() {
           <div className="lg:col-span-5 relative reveal">
             <div className="relative aspect-[4/5] overflow-hidden shadow-2xl rounded-sm group">
               <Image
-                src="/PacProcess 2025/ 2.jpeg"
-                alt="HFFS Machines"
+                src="/ about us/company overview.png"
+                alt="Bella Pack Assembly Facility"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -30,19 +30,20 @@ export default function CompanyOverview() {
                 <h2 className="text-brand-red font-heading font-bold uppercase tracking-widest text-sm">Company Overview</h2>
               </div>
               <h3 className="text-4xl md:text-5xl font-heading font-bold text-charcoal leading-none">
-                ENGINEERING THE FUTURE OF <span className="text-brand-red">EGYPTIAN</span> MANUFACTURING
+                OVER TWO DECADES OF PACKAGING <br />
+                <span className="text-brand-red">ENGINEERING EXCELLENCE</span>
               </h3>
             </div>
 
-            <div className="space-y-6 text-gray-600 font-body text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-600 font-body text-base md:text-lg leading-relaxed">
               <p>
-                <strong className="text-charcoal">Established in 2000</strong>, Bella Pack Tec is a 100% Egyptian-owned packaging machine manufacturer, specializing in horizontal form fill seal (HFFS) packaging machines and advanced filling solutions.
+                <strong className="text-charcoal">Bella Pack</strong> is a specialized manufacturer of high-performance packaging machinery, <strong className="text-charcoal">established in 2000</strong> in Egypt. With over 25 years of focused engineering experience, we design and build horizontal form fill seal (HFFS), vertical packaging machines, and advanced filling solutions for the food, beverage, chemical, cosmetics, and pharmaceutical industries.
               </p>
               <p>
-                With over 25 years of experience, we provide high-performance packaging machines designed to meet the demands of modern industries, including <span className="font-bold text-charcoal">food, beverage, chemicals, cosmetics, and pharmaceutical products</span>.
+                Our machines are built with high standards and are backed by full after-sales support, spare parts supply, and operator training. 
               </p>
               <p>
-                Our focus is on delivering reliable, efficient, and scalable production solutions that help businesses grow and compete in local and international markets.
+                We manufacture entirely in-house at our dedicated facility in 10th of Ramadan City, Egypt, maintaining full control over engineering quality from component machining to final assembly and pre-shipment validation.
               </p>
             </div>
             
@@ -52,8 +53,8 @@ export default function CompanyOverview() {
                   <Factory size={24} className="text-brand-red" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-charcoal tracking-wider">HFFS EXPERTS</h4>
-                  <p className="text-xs text-gray-500 uppercase">Precision Solutions</p>
+                  <h4 className="font-heading font-bold text-charcoal tracking-wider uppercase">In-house Production</h4>
+                  <p className="text-xs text-gray-500 uppercase">100% Control</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -61,8 +62,8 @@ export default function CompanyOverview() {
                   <Globe size={24} className="text-brand-red" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-charcoal tracking-wider">LOCAL & GLOBAL</h4>
-                  <p className="text-xs text-gray-500 uppercase">Market Ready</p>
+                  <h4 className="font-heading font-bold text-charcoal tracking-wider uppercase">After-sales Support</h4>
+                  <p className="text-xs text-gray-500 uppercase">Life-long Care</p>
                 </div>
               </div>
             </div>

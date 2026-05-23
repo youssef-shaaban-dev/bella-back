@@ -13,7 +13,7 @@ export default function ManufacturingFacility() {
                 <div className="h-px w-12 bg-brand-red"></div>
                 <h2 className="text-brand-red font-heading font-bold uppercase tracking-widest text-sm">The Hub of Production</h2>
               </div>
-              <h3 className="text-4xl md:text-5xl font-heading font-bold text-charcoal tracking-tight leading-none">
+              <h3 className="text-4xl md:text-5xl font-heading font-bold text-charcoal tracking-tight leading-none uppercase">
                 MANUFACTURING <br />FACILITY
               </h3>
               <p className="text-lg font-heading font-semibold text-brand-blue uppercase tracking-wider">
@@ -21,21 +21,21 @@ export default function ManufacturingFacility() {
               </p>
             </div>
 
-            <p className="text-gray-600 font-body leading-relaxed">
-              Our centralized advanced manufacturing hub drives the realization of each high-complexity machine. The facility integrates rigorous logistics and heavy-precision engineering.
+            <p className="text-gray-600 font-body leading-relaxed text-base md:text-lg">
+              Every Bella Pack machine is designed, manufactured, and quality-tested at our dedicated production facility in the Industrial Zone of 10th of Ramadan City, Egypt. Full in-house manufacturing means uncompromising control over engineering quality at every stage.
             </p>
 
             <div className="space-y-6 pt-4">
               {[
-                { title: "Precision CNC machining", value: "Every metal component aligns to microns." },
-                { title: "Advanced assembly processes", value: "Streamlined ergonomic flow for build integrity." },
-                { title: "Strict quality control systems", value: "Multiple checkpoint validation before dispatch." }
+                { title: "Precision CNC Machining", value: "Every metal component manufactured to micron-level tolerances." },
+                { title: "Controlled Assembly", value: "Streamlined build flow ensuring structural integrity and system alignment." },
+                { title: "Multi-Stage Quality Control", value: "Rigorous validation at every checkpoint before dispatch." }
               ].map((item, idx) => (
                 <div key={idx} className="flex space-x-4 border-b border-gray-100 pb-4">
                   <div className="text-brand-red font-heading font-bold text-2xl">0{idx + 1}</div>
                   <div>
                     <h4 className="font-heading font-bold text-charcoal uppercase tracking-wide mb-1">{item.title}</h4>
-                    <p className="text-sm text-gray-500">{item.value}</p>
+                    <p className="text-sm text-gray-500 font-body">{item.value}</p>
                   </div>
                 </div>
               ))}
@@ -50,18 +50,18 @@ export default function ManufacturingFacility() {
           </div>
 
           <div className="order-1 lg:order-2 relative reveal">
-            <div className="relative aspect-square md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden rounded-sm">
+            <div className="relative aspect-square md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden rounded-sm group shadow-2xl">
               <Image
-                src="/PacProcess 2025/ 4.jpeg"
+                src="/ about us/facility.jpeg"
                 alt="Bella Pack Manufacturing Facility View"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent"></div>
             </div>
             {/* Geometric Overlay decorative */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-red -z-10"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-100 -z-10"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-red -z-10 rounded-sm"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-100 -z-10 rounded-sm"></div>
           </div>
 
         </div>
