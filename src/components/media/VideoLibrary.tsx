@@ -14,13 +14,13 @@ const videos = [
     title: "Interpack - Pacprocess MEA 2024 Showcase", 
     category: "exhibition", 
     desc: "Complete exhibition logbook video capturing live machinery demonstrations, client negotiations, and our high-frequency turnkey sachet models in action at the international exhibition.",
-    src: "/Media/Pacprocess -Interpack2024.mp4" 
+    src: "https://drive.google.com/file/d/1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1/preview" 
   },
   { 
     title: "Colorx Liquid Detergent Stand-up Pouch Line", 
     category: "application", 
     desc: "High-precision HFFS liquid dosing and horizontal stand-up pouch sealing line packaging Colorx liquid detergents in real-time operation.",
-    src: "/Media/ COLORX .mp4" 
+    src: "https://drive.google.com/file/d/1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf/preview" 
   }
 ];
 
@@ -89,11 +89,12 @@ export default function VideoLibrary() {
               className="reveal bg-white border border-gray-100 hover:border-gray-200 rounded-sm overflow-hidden group hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               <div className="relative aspect-video bg-black overflow-hidden">
-                <video 
+                <iframe 
                   src={video.src}
-                  controls
-                  preload="metadata"
-                  className="w-full h-full object-cover opacity-85 group-hover:opacity-100 transition-opacity"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="w-full h-full"
+                  style={{ border: 'none' }}
                 />
               </div>
               

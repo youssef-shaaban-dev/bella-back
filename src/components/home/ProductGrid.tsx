@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Play, Maximize2, Film, Image as ImageIcon, X, Volume2, VolumeX } from "lucide-react";
+import { Play, Maximize2, Film, Image as ImageIcon, X } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -12,7 +12,8 @@ const mediaItems = [
   { 
     id: 1, 
     type: 'video', 
-    src: "/Media/ COLORX .mp4", 
+    src: "https://drive.google.com/file/d/1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf/preview",
+    driveId: "1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf",
     thumbnail: "/News/InterPack-PacProcess 2025 .jpeg",
     title: "Colorx Liquid Detergent Pouch Line",
     desc: "High-precision HFFS liquid dosing and horizontal stand-up pouch sealing line."
@@ -20,7 +21,8 @@ const mediaItems = [
   { 
     id: 2, 
     type: 'video', 
-    src: "/Media/Pacprocess -Interpack2024.mp4", 
+    src: "https://drive.google.com/file/d/1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1/preview",
+    driveId: "1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1",
     thumbnail: "/News/interpack - pacprocess 2026 announcement.png",
     title: "Interpack - Pacprocess MEA 2024 Showcase",
     desc: "Turnkey packaging machinery running live demonstrations on the international expo floor."
@@ -38,8 +40,6 @@ const mediaItems = [
 export default function ProductGrid() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [selectedMedia, setSelectedMedia] = useState<typeof mediaItems[0] | null>(null);
-  const [isMuted, setIsMuted] = useState(false);
-  const modalVideoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -77,14 +77,6 @@ export default function ProductGrid() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  const toggleMute = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (modalVideoRef.current) {
-      modalVideoRef.current.muted = !modalVideoRef.current.muted;
-      setIsMuted(modalVideoRef.current.muted);
-    }
-  };
-
   return (
     <section ref={sectionRef} className="py-24 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6">
@@ -113,13 +105,13 @@ export default function ProductGrid() {
               onClick={() => setSelectedMedia(item)}
               className="media-tile group relative overflow-hidden rounded-sm bg-charcoal cursor-pointer aspect-[4/3] border border-gray-100 hover:border-brand-red transition-all duration-500 shadow-md hover:shadow-xl"
             >
-              {item.type === 'video' ? (
-                <video 
+              {item.type === 'video' && item.driveId ? (
+                <iframe
                   src={item.src}
-                  preload="metadata"
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover transition-all duration-750 group-hover:scale-105 group-hover:opacity-90"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full pointer-events-none"
+                  style={{ border: 'none' }}
                 />
               ) : (
                 <Image
@@ -189,28 +181,17 @@ export default function ProductGrid() {
             onClick={(e) => e.stopPropagation()}
             className="relative w-full max-w-4xl bg-charcoal rounded-sm overflow-hidden border border-white/10 shadow-2xl flex flex-col md:aspect-video"
           >
-            {selectedMedia.type === 'video' ? (
+            {selectedMedia.type === 'video' && selectedMedia.driveId ? (
               <div className="relative w-full h-full bg-black flex items-center justify-center">
-                {/* Note the precise leading/trailing spaces matching physical files */}
-                <video 
-                  ref={modalVideoRef}
+                <iframe
                   src={selectedMedia.src}
-                  controls
-                  autoPlay
-                  playsInline
-                  muted={isMuted}
-                  className="w-full h-full object-contain"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  className="w-full h-full min-h-[300px] md:min-h-0"
+                  style={{ border: 'none' }}
                 />
-
-                {/* Custom Mute overlay toggle for premium UX */}
-                <button
-                  onClick={toggleMute}
-                  className="absolute bottom-16 right-4 md:bottom-6 md:right-6 bg-black/60 hover:bg-brand-red text-white p-3 rounded-full backdrop-blur-md border border-white/10 transition-colors z-50"
-                  aria-label={isMuted ? "Unmute Video" : "Mute Video"}
-                >
-                  {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
-                </button>
               </div>
+
             ) : (
               <div className="relative w-full h-full bg-charcoal flex items-center justify-center p-4">
                 <div className="relative w-full h-full min-h-[300px] md:min-h-auto">
