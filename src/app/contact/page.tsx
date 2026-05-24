@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactDetails from "@/components/contact/ContactDetails";
-import InquiryForm from "@/components/contact/InquiryForm";
 import ContactCTA from "@/components/contact/ContactCTA";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -63,16 +62,8 @@ export default function ContactPage() {
       {/* Content Section */}
       <section className="content-grid bg-white relative z-20 pb-24 -mt-12">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-            {/* Left column: Info (spanning 5 cols) */}
-            <div className="content-reveal lg:col-span-5 lg:pt-12">
-              <ContactDetails />
-            </div>
-            
-            {/* Right column: Form (spanning 7 cols) */}
-            <div className="content-reveal lg:col-span-7 relative z-30">
-              <InquiryForm />
-            </div>
+          <div className="content-reveal max-w-3xl mx-auto pt-12">
+            <ContactDetails />
           </div>
         </div>
       </section>

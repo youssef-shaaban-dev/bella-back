@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CareersHero from "@/components/careers/CareersHero";
 import OpportunitiesList from "@/components/careers/OpportunitiesList";
-import GeneralApplication from "@/components/careers/GeneralApplication";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,7 +40,6 @@ export default function CareersPage() {
     <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
       <CareersHero />
       <OpportunitiesList />
-      <GeneralApplication />
     </main>
   );
 }
