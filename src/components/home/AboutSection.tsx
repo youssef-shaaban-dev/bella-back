@@ -20,12 +20,12 @@ export default function AboutSection() {
       gsap.from(contentRef.current?.children || [], {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 75%",
+          start: "top 85%",
         },
-        y: 40,
+        y: 18,
         opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
+        duration: 0.4,
+        stagger: 0.06,
         ease: "power3.out",
       });
 
@@ -33,11 +33,11 @@ export default function AboutSection() {
       gsap.from(imageRef.current, {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 75%",
+          start: "top 85%",
         },
-        scale: 1.1,
+        scale: 1.05,
         opacity: 0,
-        duration: 1.5,
+        duration: 0.6,
         ease: "power2.out",
       });
     }, sectionRef);

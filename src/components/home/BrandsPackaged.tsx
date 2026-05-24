@@ -153,36 +153,36 @@ export default function BrandsPackaged() {
       gsap.from(".brands-header-content", {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 85%",
+          start: "top 93%",
         },
-        y: 30,
+        y: 15,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.4,
         ease: "power3.out"
       });
 
       gsap.from(".brands-tabs-container", {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
+          start: "top 90%",
         },
-        y: 20,
+        y: 10,
         opacity: 0,
-        duration: 0.6,
+        duration: 0.35,
         ease: "power3.out"
       });
 
       gsap.from(gridRef.current, {
         scrollTrigger: {
           trigger: gridRef.current,
-          start: "top 80%",
+          start: "top 90%",
         },
-        y: 40,
+        y: 18,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.4,
         ease: "power3.out",
         onComplete: () => {
-          ScrollTrigger.refresh(); // Refresh triggers after layout settles
+          ScrollTrigger.refresh();
         }
       });
     }, sectionRef);
@@ -197,8 +197,8 @@ export default function BrandsPackaged() {
 
     const ctx = gsap.context(() => {
       gsap.fromTo(cards, 
-        { opacity: 0, scale: 0.95, y: 15 },
-        { opacity: 1, scale: 1, y: 0, duration: 0.4, stagger: 0.05, ease: "power2.out" }
+        { opacity: 0, scale: 0.97, y: 8 },
+        { opacity: 1, scale: 1, y: 0, duration: 0.3, stagger: 0.03, ease: "power2.out" }
       );
     });
 

@@ -37,18 +37,18 @@ export default function Services() {
     const ctx = gsap.context(() => {
       gsap.fromTo(".service-card", 
         {
-          y: 40,
+          y: 18,
           opacity: 0,
         },
         {
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 90%",
+            start: "top 93%",
           },
           y: 0,
           opacity: 1,
-          duration: 1,
-          stagger: 0.2,
+          duration: 0.4,
+          stagger: 0.08,
           ease: "power3.out",
           force3D: true
         }

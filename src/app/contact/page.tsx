@@ -17,16 +17,16 @@ export default function ContactPage() {
       // Smooth stagger entrance for the main content block
       gsap.fromTo(
         ".content-reveal",
-        { y: 60, opacity: 0 },
+        { y: 20, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 1,
+          duration: 0.45,
           ease: "power3.out",
-          stagger: 0.2,
+          stagger: 0.08,
           scrollTrigger: {
             trigger: ".content-grid",
-            start: "top 80%",
+            start: "top 90%",
           },
         }
       );
@@ -36,15 +36,15 @@ export default function ContactPage() {
       reveals.forEach((el) => {
         gsap.fromTo(
           el,
-          { y: 40, opacity: 0 },
+          { y: 18, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 0.4,
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 85%",
+              start: "top 93%",
               toggleActions: "play none none none",
             },
           }

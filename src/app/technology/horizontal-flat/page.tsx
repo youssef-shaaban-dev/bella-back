@@ -20,15 +20,15 @@ export default function HorizontalFlatPage() {
       reveals.forEach((el) => {
         gsap.fromTo(
           el,
-          { y: 30, opacity: 0 },
+          { y: 12, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 0.8,
+            duration: 0.4,
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 85%",
+              start: "top 93%",
               toggleActions: "play none none none",
             },
           }

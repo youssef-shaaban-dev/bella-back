@@ -22,15 +22,15 @@ export default function AboutPage() {
       reveals.forEach((elem) => {
         gsap.fromTo(
           elem,
-          { y: 50, opacity: 0 },
+          { y: 18, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 1,
+            duration: 0.45,
             ease: "power3.out",
             scrollTrigger: {
               trigger: elem,
-              start: "top 85%",
+              start: "top 93%",
               toggleActions: "play none none reverse",
             },
           }
@@ -40,17 +40,17 @@ export default function AboutPage() {
       // Custom stagger for the "Why Choose" cards using fromTo for reliability
       gsap.fromTo(
         ".stat-card",
-        { scale: 0.9, opacity: 0 },
+        { scale: 0.95, opacity: 0 },
         {
           scrollTrigger: {
             trigger: ".stats-grid",
-            start: "top 85%",
+            start: "top 93%",
             toggleActions: "play none none none",
           },
           scale: 1,
           opacity: 1,
-          duration: 0.8,
-          stagger: 0.15,
+          duration: 0.4,
+          stagger: 0.06,
           ease: "power3.out",
         }
       );

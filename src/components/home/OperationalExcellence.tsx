@@ -34,12 +34,12 @@ export default function OperationalExcellence() {
       gsap.from(".stat-item", {
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 80%",
+          start: "top 90%",
         },
-        y: 30,
+        y: 15,
         opacity: 0,
-        stagger: 0.2,
-        duration: 1,
+        stagger: 0.08,
+        duration: 0.4,
         ease: "power2.out",
       });
     }, containerRef);

@@ -46,17 +46,17 @@ export default function ProductGrid() {
       gsap.fromTo(".media-tile", 
         {
           opacity: 0,
-          y: 30,
+          y: 15,
         },
         {
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 85%",
+            start: "top 93%",
           },
           opacity: 1,
           y: 0,
-          duration: 0.8,
-          stagger: 0.15,
+          duration: 0.4,
+          stagger: 0.06,
           ease: "power2.out",
           force3D: true
         }

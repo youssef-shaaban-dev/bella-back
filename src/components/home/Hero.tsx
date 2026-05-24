@@ -115,31 +115,31 @@ export default function Hero() {
 
       tl.fromTo(
         title,
-        { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }
       )
       .fromTo(
         subtitle,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" },
-        "-=0.4"
+        { y: 15, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" },
+        "-=0.25"
       );
 
       if (benefits && benefits.children.length > 0) {
         tl.fromTo(
           benefits.children,
-          { x: -25, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.4, stagger: 0.1, ease: "power2.out" },
-          "-=0.4"
+          { x: -12, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.25, stagger: 0.05, ease: "power2.out" },
+          "-=0.2"
         );
       }
 
       if (cta) {
         tl.fromTo(
           cta,
-          { scale: 0.95, opacity: 0 },
-          { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.5)" },
-          "-=0.3"
+          { scale: 0.97, opacity: 0 },
+          { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(1.5)" },
+          "-=0.15"
         );
       }
     }, activeSlideEl as HTMLElement);

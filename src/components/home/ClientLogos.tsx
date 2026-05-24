@@ -36,11 +36,11 @@ export default function ClientLogos() {
       gsap.from(sectionRef.current, {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 90%",
+          start: "top 93%",
         },
         opacity: 0,
-        y: 30,
-        duration: 0.8,
+        y: 15,
+        duration: 0.4,
         ease: "power2.out",
       });
     }, sectionRef);

@@ -25,12 +25,12 @@ export default function PouchSelection() {
       gsap.from(itemsRef.current, {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
+          start: "top 90%",
         },
-        y: 50,
+        y: 20,
         opacity: 0,
-        stagger: 0.1,
-        duration: 0.8,
+        stagger: 0.05,
+        duration: 0.4,
         ease: "power3.out",
       });
     }, sectionRef);
@@ -64,7 +64,6 @@ export default function PouchSelection() {
             >
               <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-brand-blue flex items-center justify-center p-4 transition-all duration-500 group-hover:border-brand-red group-hover:scale-105 shadow-lg group-hover:shadow-brand-red/20">
                 <div className="relative w-full h-full rounded-full overflow-hidden bg-gray-50">
-                 {/* @ts-ignore */}
                  <Image
                     src={pouch.img}
                     alt={pouch.name}

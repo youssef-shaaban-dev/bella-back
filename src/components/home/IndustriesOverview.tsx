@@ -48,12 +48,12 @@ export default function IndustriesOverview() {
       gsap.from(".industry-card", {
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 80%",
+          start: "top 90%",
         },
-        y: 60,
+        y: 20,
         opacity: 0,
-        stagger: 0.15,
-        duration: 1.2,
+        stagger: 0.06,
+        duration: 0.45,
         ease: "power4.out",
       });
     }, containerRef);

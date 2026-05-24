@@ -26,10 +26,10 @@ export default function StatsSection() {
         if (counterEl) {
           gsap.to(target, {
             val: endVal,
-            duration: 2,
+            duration: 1,
             scrollTrigger: {
               trigger: sectionRef.current,
-              start: "top 80%",
+              start: "top 90%",
             },
             onUpdate: () => {
               counterEl.innerText = Math.floor(target.val).toLocaleString();
@@ -42,11 +42,11 @@ export default function StatsSection() {
       // Background reveal
       gsap.from(".stats-bg", {
         scaleX: 0,
-        duration: 1.5,
+        duration: 0.7,
         ease: "expo.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
+          start: "top 90%",
         },
       });
     }, sectionRef);
