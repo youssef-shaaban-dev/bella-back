@@ -174,7 +174,8 @@ export default function Hero() {
                 src={slide.image}
                 alt={slide.tabLabel}
                 fill
-                priority={index === 0}
+                priority
+                sizes="100vw"
                 className="object-cover opacity-45 lg:opacity-65"
               />
             </div>
