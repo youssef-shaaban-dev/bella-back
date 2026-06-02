@@ -100,13 +100,15 @@ export default function SpicesCoffeePage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative aspect-square w-full bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Spices & Coffee packaging gallery"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
+                  className="transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
