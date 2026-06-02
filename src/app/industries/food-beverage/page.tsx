@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Beef, CheckCircle2, ChevronRight, Settings2, ShieldCheck, Zap, ArrowLeft } from "lucide-react";
+import { CheckCircle2, ChevronRight, ArrowLeft } from "lucide-react";
 
 export default function FoodBeveragePage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
@@ -26,7 +26,7 @@ export default function FoodBeveragePage() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
         <div className="container relative z-10 px-6">
           <div className="inline-flex items-center space-x-2 mb-4 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-1.5 rounded-full">
@@ -98,13 +98,15 @@ export default function FoodBeveragePage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative aspect-square w-full bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Food & Beverage packaging gallery"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                  className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
+                  className="transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
