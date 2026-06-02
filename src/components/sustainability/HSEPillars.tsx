@@ -27,28 +27,28 @@ export default function HSEPillars() {
               icon: ShieldCheck,
               title: "Safety Systems",
               desc: "Integrated with advanced light curtains, magnetic safety interlocks, quick-vent pneumatics, and dynamic dual-channel emergency stop loops for ultimate safety.",
-              color: "text-brand-blue",
-              bg: "bg-brand-blue/5"
+              color: "text-brand-red",
+              bg: "bg-brand-red/5"
             },
             {
               icon: Leaf,
               title: "Environmental Protection",
               desc: "Full support for compostable materials, 30% electrical power saving in standby, closed-loop systems, and optimized tooling preventing duplication.",
-              color: "text-green-600",
-              bg: "bg-green-50"
+              color: "text-brand-red",
+              bg: "bg-brand-red/5"
             }
           ].map((pillar, idx) => (
-            <div key={idx} className="reveal bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow text-left">
+            <div key={idx} className="reveal bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group text-left">
               <div>
-                <div className={`w-12 h-12 rounded-sm ${pillar.bg} ${pillar.color} flex items-center justify-center mb-6`}>
+                <div className={`w-12 h-12 rounded-sm ${pillar.bg} ${pillar.color} flex items-center justify-center mb-6 group-hover:bg-charcoal group-hover:text-white transition-colors duration-300`}>
                   <pillar.icon size={24} />
                 </div>
-                <h4 className="font-heading font-bold uppercase text-charcoal text-lg tracking-tight mb-4">{pillar.title}</h4>
+                <h4 className="font-heading font-bold uppercase text-charcoal text-lg tracking-tight mb-4 group-hover:text-brand-red transition-colors">{pillar.title}</h4>
                 <p className="text-gray-500 font-body text-xs leading-relaxed font-semibold">{pillar.desc}</p>
               </div>
               <div className="border-t border-gray-100 pt-6 mt-6 flex items-center text-[10px] font-heading font-bold uppercase tracking-widest text-brand-red space-x-2">
                 <span>Validated Standard</span>
-                <ArrowRight size={10} />
+                <ArrowRight size={10} className="group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
           ))}

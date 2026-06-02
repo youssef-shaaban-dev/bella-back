@@ -38,22 +38,6 @@ export default function OpportunitiesList() {
               Career <span className="text-brand-red">Opportunities</span>
             </h2>
           </div>
-          
-          <div className="flex flex-col gap-4 max-w-md">
-            <p className="text-gray-500 font-body text-sm font-semibold">
-              As part of the broader global industrial group, we facilitate immediate pathways to premier international roles.
-            </p>
-            
-            <a 
-              href="https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-xs font-heading font-bold uppercase tracking-widest text-brand-blue hover:text-brand-red transition-colors group"
-            >
-              <span>Browse Coesia Global Portal</span>
-              <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
-            </a>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
