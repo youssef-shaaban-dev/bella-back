@@ -5,7 +5,7 @@ import AboutSection from "@/components/home/AboutSection";
 import StatsSection from "@/components/home/StatsSection";
 import ClientLogos from "@/components/home/ClientLogos";
 import ProductGrid from "@/components/home/ProductGrid";
-import IndustriesOverview from "@/components/home/IndustriesOverview";
+import OurSolutions from "@/components/home/OurSolutions";
 import OperationalExcellence from "@/components/home/OperationalExcellence";
 import BrandsPackaged from "@/components/home/BrandsPackaged";
 import FinalCTA from "@/components/home/FinalCTA";
@@ -28,7 +28,7 @@ export default function Home() {
       <ClientLogos />
 
       {/* Industries Overview Section */}
-      <IndustriesOverview />
+      <OurSolutions />
 
       {/* World-Class Services Section */}
       <Services />

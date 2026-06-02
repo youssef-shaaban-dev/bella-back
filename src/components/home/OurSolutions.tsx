@@ -41,7 +41,7 @@ const solutions = [
   }
 ];
 
-export default function IndustriesOverview() {
+export default function OurSolutions() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
