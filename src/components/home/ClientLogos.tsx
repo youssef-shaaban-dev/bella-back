@@ -95,7 +95,7 @@ export default function ClientLogos() {
           {marqueeLogos.map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}
-              className="relative w-40 h-20 md:w-48 md:h-24 bg-gray-50/50 hover:bg-white border border-gray-100 hover:border-gray-200 p-6 rounded-sm flex items-center justify-center transition-all duration-300 group cursor-pointer shadow-sm hover:shadow-md shrink-0"
+              className="relative w-40 h-20 md:w-48 md:h-24 p-2 md:p-4 flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0"
             >
               <div className="relative w-full h-full">
                 <Image
@@ -103,7 +103,7 @@ export default function ClientLogos() {
                   alt={`${logo.name} logo`}
                   fill
                   sizes="(max-width: 768px) 160px, 192px"
-                  className="object-contain transition-all duration-500 transform group-hover:scale-105"
+                  className="object-contain mix-blend-multiply transition-all duration-500 transform group-hover:scale-110"
                 />
               </div>
             </div>
