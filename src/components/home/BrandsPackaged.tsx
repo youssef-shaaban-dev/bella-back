@@ -18,7 +18,8 @@ const products = [
     category: "DETERGENTS",
     img: "/Homepage/Products/persil.png",
     glow: "shadow-green-500/20 hover:border-green-500/30",
-    desc: "Precision gel-filling at high velocities with drop-tight seal execution."
+    desc: "Precision gel-filling at high velocities with drop-tight seal execution.",
+    customScale: 1.2
   },
   {
     name: "Pril Dishwashing Liquid",
@@ -26,7 +27,8 @@ const products = [
     category: "DETERGENTS",
     img: "/Homepage/Products/pril no spout.png",
     glow: "shadow-blue-500/20 hover:border-blue-500/30",
-    desc: "Continuous high-speed flow packing with dynamic viscosity adjustment."
+    desc: "Continuous high-speed flow packing with dynamic viscosity adjustment.",
+    customScale: 1.2
   },
   {
     name: "Clorox Bleach Pouch",
@@ -34,7 +36,8 @@ const products = [
     category: "DETERGENTS",
     img: "/Homepage/Products/clorox.png",
     glow: "shadow-blue-600/20 hover:border-blue-600/30",
-    desc: "Chemical-resistant filling lines built with anti-corrosion stainless steel."
+    desc: "Chemical-resistant filling lines built with anti-corrosion stainless steel.",
+    customScale: 0.85
   },
   {
     name: "Dosh Liquid Gel",
@@ -42,7 +45,8 @@ const products = [
     category: "DETERGENTS",
     img: "/Homepage/Products/Dosh.png",
     glow: "shadow-teal-500/20 hover:border-teal-500/30",
-    desc: "Multi-head nozzle dosing ensuring absolute zero product giveaway."
+    desc: "Multi-head nozzle dosing ensuring absolute zero product giveaway.",
+    customScale: 1.5
   },
   {
     name: "Bahi White Liquid",
@@ -50,7 +54,8 @@ const products = [
     category: "DETERGENTS",
     img: "/Homepage/Products/Bahi White .png",
     glow: "shadow-blue-400/20 hover:border-blue-400/30",
-    desc: "Robust stand-up sachet form-fill-seal optimized for home care products."
+    desc: "Robust stand-up sachet form-fill-seal optimized for home care products.",
+    customScale: 1.2
   },
 
   // Food & Dairy
@@ -60,7 +65,8 @@ const products = [
     category: "FOOD & DAIRY",
     img: "/Homepage/Products/ gardino.png",
     glow: "shadow-red-500/20 hover:border-red-500/30",
-    desc: "Aseptic hot-fill sachet packaging maintaining taste and natural aroma."
+    desc: "Aseptic hot-fill sachet packaging maintaining taste and natural aroma.",
+    customScale: 1
   },
   {
     name: "El Hanem Margarine",
@@ -68,7 +74,8 @@ const products = [
     category: "FOOD & DAIRY",
     img: "/Homepage/Products/el hanem 2.png",
     glow: "shadow-yellow-500/20 hover:border-yellow-500/30",
-    desc: "High-accuracy high-viscosity paste dosing for shortening and margarines."
+    desc: "High-accuracy high-viscosity paste dosing for shortening and margarines.",
+    customScale: 1.3
   },
   {
     name: "Rwaby Margarine",
@@ -76,7 +83,8 @@ const products = [
     category: "FOOD & DAIRY",
     img: "/Homepage/Products/rwaby.png",
     glow: "shadow-green-600/20 hover:border-green-600/30",
-    desc: "Robust oxygen barrier sealing for long shelf-life dairy and butter spreads."
+    desc: "Robust oxygen barrier sealing for long shelf-life dairy and butter spreads.",
+    customScale: 1.3
   },
   {
     name: "Janah Shortening",
@@ -84,7 +92,8 @@ const products = [
     category: "FOOD & DAIRY",
     img: "/Homepage/Products/janah.png",
     glow: "shadow-orange-500/20 hover:border-orange-500/30",
-    desc: "Servo-driven multi-lane filling lines with hot jacketed hopper systems."
+    desc: "Servo-driven multi-lane filling lines with hot jacketed hopper systems.",
+    customScale: 1.3
   },
   {
     name: "Crystal Ghee",
@@ -92,7 +101,8 @@ const products = [
     category: "FOOD & DAIRY",
     img: "/Homepage/Products/Crystal.png",
     glow: "shadow-yellow-600/20 hover:border-yellow-600/30",
-    desc: "Advanced volumetric pump filling engineered for liquid butter products."
+    desc: "Advanced volumetric pump filling engineered for liquid butter products.",
+    customScale: 1.6
   },
   {
     name: "Malezy Butter",
@@ -100,7 +110,8 @@ const products = [
     category: "FOOD & DAIRY",
     img: "/Homepage/Products/malezy.png",
     glow: "shadow-amber-500/20 hover:border-amber-500/30",
-    desc: "Perfect pillow-pack format with high speed and zero seal integrity leaks."
+    desc: "Perfect pillow-pack format with high speed and zero seal integrity leaks.",
+    customScale: 0.7
   },
 
   // Beverages & Spices
@@ -110,7 +121,8 @@ const products = [
     category: "BEVERAGES & SPICES",
     img: "/Homepage/Products/ahmed el sheikh coffee.jpeg",
     glow: "shadow-amber-900/20 hover:border-amber-900/30",
-    desc: "Nitrogen gas flushing to protect aroma and roast quality in coffee pouches."
+    desc: "Nitrogen gas flushing to protect aroma and roast quality in coffee pouches.",
+    customScale: 0.65
   },
   {
     name: "Brix Instant Drink",
@@ -118,7 +130,8 @@ const products = [
     category: "BEVERAGES & SPICES",
     img: "/Homepage/Products/brix .png",
     glow: "shadow-purple-500/20 hover:border-purple-500/30",
-    desc: "Multi-lane powder auger filling with fast dust extraction and high output."
+    desc: "Multi-lane powder auger filling with fast dust extraction and high output.",
+    customScale: 1.3
   },
   {
     name: "Miro Milk Powder",
@@ -126,7 +139,8 @@ const products = [
     category: "BEVERAGES & SPICES",
     img: "/Homepage/Products/miro milk.jpeg",
     glow: "shadow-cyan-400/20 hover:border-cyan-400/30",
-    desc: "Hygienic powder packaging with strict hermetic seal validation."
+    desc: "Hygienic powder packaging with strict hermetic seal validation.",
+    customScale: 0.65
   },
   {
     name: "Qamaren Nectar Pouch",
@@ -134,7 +148,8 @@ const products = [
     category: "BEVERAGES & SPICES",
     img: "/Homepage/Products/Qamaren .png",
     glow: "shadow-orange-600/20 hover:border-orange-600/30",
-    desc: "Spouted liquid pouch filling with high-accuracy flowmeter controls."
+    desc: "Spouted liquid pouch filling with high-accuracy flowmeter controls.",
+    customScale: 1.6
   }
 ];
 
@@ -209,18 +224,18 @@ export default function BrandsPackaged() {
     <section ref={sectionRef} className="py-24 bg-gray-50 overflow-hidden relative border-t border-gray-100">
       {/* Absolute Decorative Grid backgrounds for premium technical feeling */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-brand-red/5 to-transparent rounded-full filter blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-linear-to-bl from-brand-red/5 to-transparent rounded-full filter blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 brands-header-content">
           <div className="inline-flex items-center space-x-3 mb-4 justify-center w-full">
-            <span className="w-8 h-[1px] bg-brand-red"></span>
+            <span className="w-8 h-px bg-brand-red"></span>
             <span className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading flex items-center gap-1.5">
               <Sparkles size={12} /> PROUDLY PACKAGED BY BELLA PACK
             </span>
-            <span className="w-8 h-[1px] bg-brand-red"></span>
+            <span className="w-8 h-px bg-brand-red"></span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tight mb-6">
             BRANDS TRUST <span className="text-brand-red">OUR MACHINES.</span>
@@ -255,28 +270,33 @@ export default function BrandsPackaged() {
           {filteredProducts.map((prod) => (
             <div
               key={prod.name}
-              className={`product-card-item bg-white border border-gray-100 p-6 rounded-sm shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl ${prod.glow} flex flex-col group`}
+              className="product-card-item bg-white border border-gray-100 p-6 rounded-sm shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300 flex flex-col group"
             >
-              {/* Image Container with high contrast and smooth zoom */}
-              <div className="relative aspect-square w-full bg-gray-50 rounded-sm overflow-hidden mb-6 flex items-center justify-center p-6 border border-gray-50 group-hover:border-transparent transition-colors">
-                <Image
-                  src={prod.img}
-                  alt={prod.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-contain p-4 group-hover:scale-110 group-hover:rotate-2 transition-all duration-500"
-                />
+              {/* Image Container unified height and transparent background */}
+              <div className="relative h-56 w-full bg-transparent overflow-hidden mb-6 flex items-center justify-center transition-colors">
+                <div 
+                  className="relative w-full h-full flex items-center justify-center"
+                  style={{ transform: `scale(${(prod).customScale || 1})` }}
+                >
+                  <Image
+                    src={prod.img}
+                    alt={prod.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    className="object-contain p-2 mix-blend-multiply group-hover:scale-110 transition-all duration-500"
+                  />
+                </div>
               </div>
 
               {/* Product Info */}
-              <div className="flex-grow flex flex-col">
+              <div className="grow flex flex-col">
                 <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-brand-red mb-1">
                   {prod.brand}
                 </span>
                 <h4 className="text-lg font-bold font-heading text-charcoal uppercase tracking-wide group-hover:text-brand-red transition-colors mb-3 leading-snug">
                   {prod.name}
                 </h4>
-                <p className="text-gray-500 text-xs font-body leading-relaxed flex-grow">
+                <p className="text-gray-500 text-xs font-body leading-relaxed grow">
                   {prod.desc}
                 </p>
               </div>
