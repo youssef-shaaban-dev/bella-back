@@ -175,15 +175,15 @@ export default function MachinePortfolioGrid() {
           {filteredModels.map((item) => (
             <div 
               key={item.id} 
-              className="bg-white border border-gray-200 hover:border-brand-red rounded-sm overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all duration-300 group animate-[fadeIn_0.4s_ease-out]"
+              className="bg-white border border-gray-200 hover:border-gray-300 rounded-sm overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all duration-300 group animate-[fadeIn_0.4s_ease-out]"
             >
-              <div className="relative aspect-[4/3] bg-charcoal overflow-hidden border-b border-gray-100">
+              <div className="relative aspect-[4/3] bg-gray-50 flex items-center justify-center overflow-hidden border-b border-gray-100 p-4">
                 <Image 
                   src={item.img} 
                   alt={item.name} 
                   fill 
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                  className="object-contain mix-blend-multiply group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-500 drop-shadow-sm" 
                 />
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md border border-white/10 text-white text-[9px] font-heading font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   {categories.find(c => c.id === item.category)?.name.replace(" Series", "").replace("Flagship ", "").replace("Custom ", "")}
@@ -192,7 +192,7 @@ export default function MachinePortfolioGrid() {
 
               <div className="p-6 flex-grow flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold font-heading uppercase text-charcoal mb-3 group-hover:text-brand-red transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-heading uppercase text-charcoal mb-3 transition-colors duration-300">
                     {item.name}
                   </h3>
                   <p className="text-gray-500 text-sm font-body line-clamp-3 mb-6 leading-relaxed">

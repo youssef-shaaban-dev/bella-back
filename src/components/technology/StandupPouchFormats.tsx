@@ -11,12 +11,15 @@ export default function StandupPouchFormats() {
           
           {/* Left Box: Graphic */}
           <div className="relative group max-w-xl mx-auto lg:mx-0 w-full">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg">
+            <div className="relative w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg bg-gray-50 p-6">
               <Image 
                 src="/solutions/spices & coffee/coffee bellapack pouch.png" 
                 alt="Custom Stand-up Pouch Format" 
-                fill 
-                className="object-contain p-6 transition-transform duration-700 group-hover:scale-105 bg-gray-50"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+                className="transition-transform duration-700 group-hover:scale-105"
               />
             </div>
             
