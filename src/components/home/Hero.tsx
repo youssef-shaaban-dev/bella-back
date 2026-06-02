@@ -159,7 +159,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-charcoal text-white">
       {/* Background Media Container with Cross-Fade */}
-      <div className="absolute right-0 top-0 w-full lg:w-3/4 h-full z-0 overflow-hidden">
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         {slides.map((slide, index) => {
           const isActive = index === activeSlide;
           return (
