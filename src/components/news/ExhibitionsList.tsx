@@ -121,9 +121,9 @@ export default function ExhibitionsList() {
                 {/* Expandable Content Area */}
                 {isExpanded && (
                   <div className="px-6 pb-8 md:px-8 md:pb-12 animate-[fadeIn_0.3s_ease-out] border-t border-gray-100 pt-8">
-                    <div className="grid lg:grid-cols-12 gap-8 items-start">
-                      
-                      <div className={expo.media.length > 0 ? "lg:col-span-7" : "lg:col-span-12"}>
+                    <div className="flex flex-col gap-8">
+                      {/* Description and Location */}
+                      <div className="w-full">
                         <div className="bg-gray-50 p-6 border border-gray-100 rounded-sm mb-6">
                           <h4 className="text-xs font-bold font-heading text-brand-red uppercase tracking-widest mb-3 flex items-center">
                             <span>📄 Description & Scope</span>
@@ -147,24 +147,24 @@ export default function ExhibitionsList() {
 
                       {/* Exhibition Images Side */}
                       {expo.media.length > 0 && (
-                        <div className="lg:col-span-5 space-y-4">
+                        <div className="w-full space-y-4 border-t border-gray-100 pt-6 mt-2">
                           <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block flex items-center gap-2">
                             <ImageIcon size={12} /> Captured Moments
                           </span>
-                          <div className={expo.media.length === 1 ? "w-full" : "grid grid-cols-2 gap-3"}>
+                          <div className={expo.media.length === 1 ? "w-full" : "grid grid-cols-2 md:grid-cols-3 gap-4"}>
                             {expo.media.map((imgUrl, mIdx) => (
-                              <div 
-                                key={mIdx} 
-                                className={`relative rounded-sm overflow-hidden shadow-md group/img border border-gray-100 ${
-                                  expo.media.length === 1 ? "aspect-[16/10]" : "aspect-[4/3]"
-                                }`}
+                              <div
+                                key={mIdx}
+                                className="relative rounded-sm overflow-hidden shadow-sm group/img border border-gray-100 bg-gray-50 flex items-center justify-center"
                               >
-                                <Image 
-                                  src={imgUrl} 
-                                  alt={`Exhibition capture ${mIdx}`} 
-                                  fill 
-                                  sizes="(max-width: 1024px) 100vw, 400px"
-                                  className="object-cover group-hover/img:scale-105 transition-transform duration-500" 
+                                <Image
+                                  src={imgUrl}
+                                  alt={`Exhibition capture ${mIdx}`}
+                                  width={0}
+                                  height={0}
+                                  sizes="100vw"
+                                  style={{ width: '100%', height: 'auto' }}
+                                  className="group-hover/img:scale-105 transition-transform duration-500 mix-blend-multiply"
                                 />
                               </div>
                             ))}
