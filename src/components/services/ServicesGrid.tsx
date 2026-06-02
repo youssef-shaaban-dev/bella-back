@@ -27,8 +27,8 @@ const serviceOfferings = [
       "Mechanical, electrical, and pneumatic diagrams"
     ],
     note: "All documentation is available upon purchase or on request.",
-    accent: "text-brand-blue",
-    bg: "bg-brand-blue/5"
+    accent: "text-brand-red",
+    bg: "bg-brand-red/5"
   },
   {
     icon: Cpu,
@@ -40,8 +40,8 @@ const serviceOfferings = [
       "Mechanical, electrical, and consumable components"
     ],
     note: "Our inventory system is designed to minimize downtime and maximize production continuity.",
-    accent: "text-charcoal",
-    bg: "bg-charcoal/5"
+    accent: "text-brand-red",
+    bg: "bg-brand-red/5"
   },
   {
     icon: LifeBuoy,
@@ -65,8 +65,8 @@ const serviceOfferings = [
       "Improve packaging performance"
     ],
     note: "Our goal is to help you achieve maximum ROI from your packaging line.",
-    accent: "text-brand-blue",
-    bg: "bg-brand-blue/5"
+    accent: "text-brand-red",
+    bg: "bg-brand-red/5"
   }
 ];
 
