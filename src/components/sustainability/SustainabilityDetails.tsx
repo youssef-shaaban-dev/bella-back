@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 
@@ -49,13 +48,15 @@ export default function SustainabilityDetails() {
 
           {/* Right Column: Visual Frame */}
           <div className="lg:col-span-5 reveal">
-            <div className="relative aspect-square w-full rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
+            <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group p-6">
               <Image
                 src="/Sustainability/sustainability pouches.png"
                 alt="Sustainably packed pouches mockup"
-                fill
-                sizes="(max-width: 1024px) 100vw, 35vw"
-                className="object-cover transition-transform duration-700 scale-105 group-hover:scale-100"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+                className="mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
                 priority
               />
             </div>
