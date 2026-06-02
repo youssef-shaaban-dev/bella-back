@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function NewsHero() {
   return (
-    <section className="hero-section relative h-[75vh] flex items-center justify-center text-center text-white overflow-hidden">
+    <section className="hero-section relative h-[75vh] flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
       {/* Parallax Background using their actual PacProcess 2025 stand photo */}
-      <div className="parallax-bg absolute inset-0 z-0 scale-110">
+      <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
           src="/News/InterPack-PacProcess 2025 .jpeg"
           alt="Bella Pack Exhibition Stand"
@@ -18,7 +18,7 @@ export default function NewsHero() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
-      <div className="container relative z-10 px-6">
+      <div className="container relative z-10 px-6 pt-32 md:pt-40">
         <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">
           <span className="w-2 h-2 rounded-full bg-brand-red"></span>
           <span className="text-xs font-heading font-bold tracking-[0.3em] uppercase text-white/90">Official Updates</span>

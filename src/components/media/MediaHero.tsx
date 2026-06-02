@@ -6,11 +6,7 @@ import { Play } from "lucide-react";
 export default function MediaHero() {
   return (
     <section className="relative bg-charcoal pt-48 pb-28 text-white text-center overflow-hidden">
-      {/* Background accents */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
-        <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-brand-red filter blur-[100px]"></div>
-        <div className="absolute -left-32 -bottom-32 w-96 h-96 rounded-full bg-brand-blue filter blur-[100px]"></div>
-      </div>
+      {/* Background accents removed per user request */}
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="reveal flex items-center justify-center space-x-3 mb-6">
