@@ -59,10 +59,10 @@ export default function StatsSection() {
       <div className="absolute inset-0 stats-bg bg-brand-blue origin-left" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12">
           {stats.map((stat, i) => (
             <div key={i} className="text-center text-white">
-              <div className="flex items-center justify-center font-heading font-bold text-6xl md:text-8xl mb-4">
+              <div className="flex items-center justify-center font-heading font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-4">
                 <span id={`counter-${i}`}>0</span>
                 <span>{stat.suffix}</span>
               </div>

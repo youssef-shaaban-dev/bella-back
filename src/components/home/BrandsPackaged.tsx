@@ -251,7 +251,7 @@ export default function BrandsPackaged() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-3 font-heading font-bold text-sm tracking-widest uppercase transition-all duration-300 rounded-sm cursor-pointer border ${
+              className={`px-3 py-2 md:px-6 md:py-3 font-heading font-bold text-[11px] md:text-sm tracking-widest uppercase transition-all duration-300 rounded-sm cursor-pointer border ${
                 activeCategory === cat 
                   ? "bg-charcoal text-white border-charcoal shadow-lg shadow-charcoal/20" 
                   : "bg-white text-gray-500 border-gray-100 hover:text-charcoal hover:bg-gray-100 hover:border-gray-200"

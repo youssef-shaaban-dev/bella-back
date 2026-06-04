@@ -37,7 +37,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center shrink-0">
-          <div className={cn("relative transition-all duration-500", isScrolled ? "h-24 w-52" : "h-28 w-60")}>
+          <div className={cn("relative transition-all duration-500", isScrolled ? "h-16 w-36 md:h-24 md:w-52" : "h-18 w-40 md:h-28 md:w-60")}>
              <Image 
                 src="/logo.png" 
                 alt="Bella Pack" 
@@ -50,7 +50,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center space-x-6">
+        <nav className="hidden xl:flex items-center space-x-6">
           {[
             { name: "About us", href: "/about" },
             { 
@@ -107,7 +107,7 @@ export default function Header() {
               
               {item.hasMega && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
-                  <div className="bg-white text-charcoal w-[900px] p-10 grid grid-cols-3 gap-12 mega-menu-shadow rounded-sm border-t-4 border-brand-red">
+                  <div className="bg-white text-charcoal w-[900px] max-w-[calc(100vw-3rem)] p-6 lg:p-10 grid grid-cols-3 gap-6 lg:gap-12 mega-menu-shadow rounded-sm border-t-4 border-brand-red">
                     {item.columns?.map((col, idx) => (
                       <div key={idx} className="space-y-6">
                         <h4 className="text-brand-red font-bold text-[11px] tracking-[0.2em] uppercase border-b border-gray-100 pb-2">{col.title}</h4>
@@ -134,7 +134,7 @@ export default function Header() {
         </nav>
 
         {/* Actions */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden xl:flex items-center space-x-6">
           <Link
             href="/contact"
             className={cn(
@@ -148,28 +148,40 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
         <button 
-          className="lg:hidden text-brand-red"
+          className="xl:hidden text-brand-red p-2 -mr-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          {isMobileMenuOpen ? <X size={34} /> : <Menu size={34} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Backdrop Overlay */}
+      <div 
+        className={cn(
+          "fixed inset-0 bg-black/50 backdrop-blur-sm z-[99] transition-opacity duration-400 xl:hidden",
+          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
+
+      {/* Mobile Menu — Right-side Drawer */}
       <div className={cn(
-        "fixed inset-0 bg-charcoal z-[100] flex flex-col items-center justify-center transition-transform duration-500 lg:hidden",
+        "fixed top-0 right-0 h-full w-[320px] max-w-[85vw] bg-charcoal z-[100] flex flex-col transition-transform duration-400 ease-in-out xl:hidden shadow-2xl",
         isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
       )}>
-        <button 
-          className="absolute top-8 right-6 text-white hover:text-brand-red transition-colors"
-          onClick={() => setIsMobileMenuOpen(false)}
-          aria-label="Close menu"
-        >
-          <X size={32} />
-        </button>
-        <nav className="flex flex-col items-center space-y-6 overflow-y-auto max-h-[80vh] py-8 w-full px-6">
+        <div className="flex items-center justify-between px-6 py-6 border-b border-white/10">
+          <span className="font-heading font-bold text-white text-sm tracking-widest uppercase">Menu</span>
+          <button 
+            className="text-white/70 hover:text-brand-red transition-colors p-1"
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <X size={28} />
+          </button>
+        </div>
+        <nav className="flex flex-col overflow-y-auto flex-1 py-6 px-6">
           {[
             { name: "About us", href: "/about" },
             { name: "Solutions", href: "/solutions" },
@@ -178,13 +190,12 @@ export default function Header() {
             { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
             { name: "News", href: "/news" },
             { name: "Media", href: "/media" },
-            { name: "Contact Us", href: "/contact" },
           ].map((item) => (
             <Link 
               key={item.name} 
               href={item.href} 
               target={item.external ? "_blank" : undefined}
-              className="text-white font-heading text-2xl font-bold hover:text-brand-red text-center"
+              className="text-white font-heading text-lg font-bold hover:text-brand-red transition-colors py-3 border-b border-white/5"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {item.name}
@@ -192,7 +203,7 @@ export default function Header() {
           ))}
           <Link
             href="/contact"
-            className="bg-brand-red text-white px-10 py-4 rounded-sm font-heading font-bold text-xl mt-4 shrink-0"
+            className="bg-brand-red text-white px-8 py-4 rounded-sm font-heading font-bold text-base mt-8 text-center shrink-0 hover:bg-white hover:text-charcoal transition-colors duration-300"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Contact us

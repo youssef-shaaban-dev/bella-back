@@ -67,7 +67,7 @@ export default function OurSolutions() {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
           <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">What We Offer</h3>
-          <h2 className="text-5xl md:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter mb-6">
             OUR <span className="text-brand-red">SOLUTIONS.</span>
           </h2>
           <p className="text-charcoal/50 max-w-xl font-body text-lg leading-relaxed">
@@ -80,7 +80,7 @@ export default function OurSolutions() {
           {solutions.map((solution, i) => (
             <div
               key={i}
-              className="industry-card group relative w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] h-[500px] overflow-hidden rounded-sm cursor-pointer shrink-0"
+              className="industry-card group relative w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] h-[350px] sm:h-[420px] lg:h-[500px] overflow-hidden rounded-sm cursor-pointer shrink-0"
             >
               {/* Background Image */}
               <Image

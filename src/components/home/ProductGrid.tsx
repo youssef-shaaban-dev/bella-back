@@ -179,7 +179,7 @@ export default function ProductGrid() {
           {/* Modal Container */}
           <div 
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-4xl bg-charcoal rounded-sm overflow-hidden border border-white/10 shadow-2xl flex flex-col md:aspect-video"
+            className="relative w-full max-w-4xl bg-charcoal rounded-sm overflow-hidden border border-white/10 shadow-2xl flex flex-col aspect-video"
           >
             {selectedMedia.type === 'video' && selectedMedia.driveId ? (
               <div className="relative w-full h-full bg-black flex items-center justify-center">

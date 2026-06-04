@@ -183,13 +183,13 @@ export default function Hero() {
         })}
 
         {/* Gradient Overlays for perfect legibility and blending */}
-        <div className="absolute inset-0 z-20 bg-gradient-to-r from-charcoal via-charcoal/95 to-transparent lg:from-charcoal lg:via-charcoal/30 lg:to-transparent" />
-        <div className="absolute inset-0 z-20 bg-gradient-to-b from-charcoal/20 via-transparent to-charcoal/80" />
+        <div className="absolute inset-0 z-20 bg-linear-to-r from-charcoal via-charcoal/95 to-transparent lg:from-charcoal lg:via-charcoal/30 lg:to-transparent" />
+        <div className="absolute inset-0 z-20 bg-linear-to-b from-charcoal/20 via-transparent to-charcoal/80" />
       </div>
 
       {/* Content Container with Grid Stacking */}
       <div className="container mx-auto px-6 relative z-30 w-full">
-        <div className="max-w-3xl pt-32 pb-32 md:pb-40 grid grid-cols-1 grid-rows-1">
+        <div className="max-w-3xl pt-32 pb-44 md:pb-40 grid grid-cols-1 grid-rows-1">
           {slides.map((slide, index) => {
             const isActive = index === activeSlide;
             return (
@@ -257,7 +257,7 @@ export default function Hero() {
                   key={slide.id}
                   type="button"
                   onClick={() => handleTabClick(index)}
-                  className="group text-left focus:outline-none relative pt-1 cursor-pointer pointer-events-auto z-40 block w-full"
+                  className="group text-left focus:outline-none relative pt-3 md:pt-1 cursor-pointer pointer-events-auto z-40 block w-full"
                 >
                   {/* Dynamic Progress Line */}
                   <div className="absolute top-[-17px] left-0 right-0 h-[2px] bg-white/10 group-hover:bg-white/25 transition-colors">

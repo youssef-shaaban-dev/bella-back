@@ -64,7 +64,7 @@ export default function AboutSection() {
             </div>
             
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-10 -right-6 bg-charcoal text-white p-8 shadow-2xl border-b-4 border-brand-red max-w-xs hidden md:block z-20">
+            <div className="absolute -bottom-10 -right-6 bg-charcoal text-white p-8 shadow-2xl border-b-4 border-brand-red max-w-xs hidden lg:block z-20">
               <span className="text-5xl font-bold font-heading text-brand-red block mb-2">25+</span>
               <span className="text-sm font-body font-semibold tracking-wider uppercase text-white/80">
                 Years of engineering excellence in packaging
