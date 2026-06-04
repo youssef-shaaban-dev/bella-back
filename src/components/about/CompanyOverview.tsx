@@ -13,6 +13,7 @@ export default function CompanyOverview() {
                 src="/ about us/company overview.png"
                 alt="Bella Pack Assembly Facility"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 border-8 border-white/20 m-4 pointer-events-none"></div>

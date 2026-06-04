@@ -64,7 +64,7 @@ export default function ClientLogos() {
           }
         }
         .animate-marquee-scroll {
-          animation: marquee-scroll 48s linear infinite;
+          animation: marquee-scroll 45s linear infinite;
         }
         .animate-marquee-scroll:hover {
           animation-play-state: paused;
@@ -90,18 +90,18 @@ export default function ClientLogos() {
         {/* Scrolling Inner Container */}
         <div className="flex animate-marquee-scroll w-max">
           {/* First loop of logos */}
-          <div className="flex gap-10 md:gap-16 items-center shrink-0 pr-10 md:pr-16">
+          <div className="flex gap-8 items-center shrink-0 pr-8">
             {clientLogos.map((logo, index) => (
               <div
                 key={`${logo.name}-1-${index}`}
-                className="relative w-44 h-22 md:w-56 md:h-28 p-1 md:p-2 flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0"
+                className="relative w-40 h-20 md:w-48 md:h-24 p-2 md:p-4 flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0"
               >
                 <div className="relative w-full h-full">
                   <Image
                     src={logo.img}
                     alt={`${logo.name} logo`}
                     fill
-                    sizes="(max-width: 768px) 200px, 300px"
+                    sizes="(max-width: 768px) 160px, 192px"
                     className="object-contain mix-blend-multiply transition-all duration-500 transform group-hover:scale-110"
                     priority={index < 5}
                   />
@@ -111,18 +111,18 @@ export default function ClientLogos() {
           </div>
 
           {/* Second loop of logos (seamless connection) */}
-          <div className="flex gap-10 md:gap-16 items-center shrink-0 pr-10 md:pr-16">
+          <div className="flex gap-8 items-center shrink-0 pr-8">
             {clientLogos.map((logo, index) => (
               <div
                 key={`${logo.name}-2-${index}`}
-                className="relative w-44 h-22 md:w-56 md:h-28 p-1 md:p-2 flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0"
+                className="relative w-40 h-20 md:w-48 md:h-24 p-2 md:p-4 flex items-center justify-center transition-all duration-300 group cursor-pointer shrink-0"
               >
                 <div className="relative w-full h-full">
                   <Image
                     src={logo.img}
                     alt={`${logo.name} logo`}
                     fill
-                    sizes="(max-width: 768px) 200px, 300px"
+                    sizes="(max-width: 768px) 160px, 192px"
                     className="object-contain mix-blend-multiply transition-all duration-500 transform group-hover:scale-110"
                   />
                 </div>

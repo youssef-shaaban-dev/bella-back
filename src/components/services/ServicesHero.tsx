@@ -12,6 +12,7 @@ export default function ServicesHero() {
           src="/ about us/company overview.png"
           alt="Bella Pack Technical Servicing Hall"
           fill
+          sizes="100vw"
           className="object-cover brightness-[0.23] saturate-[0.8]"
           priority
         />
