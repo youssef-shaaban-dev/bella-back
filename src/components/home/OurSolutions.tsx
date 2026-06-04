@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,31 +14,31 @@ const solutions = [
     title: "Food & Beverage",
     img: "/Homepage/3.png",
     desc: "High-hygiene filling and packing lines engineered for tomato paste, juices, ghee, edible oils, and grains.",
-    link: "/solutions"
+    link: "/industries/food-beverage"
   },
   {
     title: "Spices & Coffee",
     img: "/Homepage/4.png",
     desc: "High-precision powder filling solutions ensuring accurate dosing, aroma preservation, and zero waste.",
-    link: "/solutions"
+    link: "/industries/spices-coffee"
   },
   {
     title: "Snacks & Granules",
     img: "/Homepage/5.png",
     desc: "High-speed packaging systems designed for continuous, reliable bagging of snacks, nuts, and candies.",
-    link: "/solutions"
+    link: "/industries/snacks-granules"
   },
   {
     title: "Detergents & Chemicals",
     img: "/Homepage/6.png",
     desc: "Heavy-duty titanium-reinforced packaging lines built specifically to handle liquid detergents and corrosive bleach.",
-    link: "/solutions"
+    link: "/industries/detergents-chemicals"
   },
   {
     title: "Cosmetics & Pharma",
     img: "/Homepage/7.png",
     desc: "Ultra-sanitary dosing systems tailored for high-hygiene creams, gels, and pharmaceutical liquids.",
-    link: "/solutions"
+    link: "/industries/cosmetics-pharma"
   }
 ];
 
@@ -78,9 +79,10 @@ export default function OurSolutions() {
         {/* Premium Flex Wrap Grid that centers items beautifully */}
         <div className="flex flex-wrap justify-center gap-6">
           {solutions.map((solution, i) => (
-            <div
+            <Link
               key={i}
-              className="industry-card group relative w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] h-[350px] sm:h-[420px] lg:h-[500px] overflow-hidden rounded-sm cursor-pointer shrink-0"
+              href={solution.link}
+              className="industry-card group relative w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] h-[350px] sm:h-[420px] lg:h-[500px] overflow-hidden rounded-sm cursor-pointer shrink-0 block"
             >
               {/* Background Image */}
               <Image
@@ -109,7 +111,7 @@ export default function OurSolutions() {
 
               {/* Top Accent */}
               <div className="absolute top-0 left-0 w-full h-1 bg-brand-red transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
