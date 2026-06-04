@@ -77,7 +77,7 @@ const Youtube = ({ size = 24, ...props }) => (
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-white pt-24 pb-12 overflow-hidden ">
+    <footer className="bg-charcoal text-white pt-16 pb-8 md:pt-24 md:pb-12 overflow-hidden ">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-16 mb-20">
           {/* Brand Info */}

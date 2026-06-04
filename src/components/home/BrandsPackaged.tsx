@@ -221,7 +221,7 @@ export default function BrandsPackaged() {
   }, [activeCategory]);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-gray-50 overflow-hidden relative border-t border-gray-100">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50 overflow-hidden relative border-t border-gray-100">
       {/* Absolute Decorative Grid backgrounds for premium technical feeling */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-linear-to-bl from-brand-red/5 to-transparent rounded-full filter blur-3xl pointer-events-none" />

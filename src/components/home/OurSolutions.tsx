@@ -63,7 +63,7 @@ export default function OurSolutions() {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-32 bg-white overflow-hidden">
+    <section ref={containerRef} className="bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
           <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">What We Offer</h3>

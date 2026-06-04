@@ -47,7 +47,7 @@ export default function OperationalExcellence() {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-24 relative overflow-hidden text-white text-center">
+    <section ref={containerRef} className="py-16 md:py-24 relative overflow-hidden text-white text-center">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image fill src="/Homepage/sustainability in packaging.png" alt="Machine Line" className="w-full h-full object-cover opacity-60" />

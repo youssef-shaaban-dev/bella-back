@@ -55,7 +55,7 @@ export default function StatsSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative py-24 bg-brand-red overflow-hidden">
+    <section ref={sectionRef} className="relative py-16 md:py-24 bg-brand-red overflow-hidden">
       <div className="absolute inset-0 stats-bg bg-brand-blue origin-left" />
       
       <div className="container mx-auto px-6 relative z-10">

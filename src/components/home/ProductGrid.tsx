@@ -78,7 +78,7 @@ export default function ProductGrid() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-white overflow-hidden relative">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6">
         
         <div className="text-center mb-20">

@@ -58,7 +58,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-gray-50 text-charcoal overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50 text-charcoal overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase font-heading">Value Added</h3>

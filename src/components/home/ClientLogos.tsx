@@ -54,7 +54,7 @@ export default function ClientLogos() {
   return (
     <section 
       ref={sectionRef} 
-      className="py-16 bg-white overflow-hidden border-b border-gray-100 relative"
+      className="py-10 md:py-16 bg-white overflow-hidden border-b border-gray-100 relative"
     >
       {/* Bulletproof self-contained CSS styles for marquee scroll animation */}
       <style dangerouslySetInnerHTML={{ __html: `
