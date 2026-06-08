@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ServicesHero() {
   return (
-    <section className="hero-section relative h-[75vh] flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
+    <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
       {/* Parallax Background using Company Servicing Assembly Floor */}
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image

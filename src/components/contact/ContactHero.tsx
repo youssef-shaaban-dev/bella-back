@@ -1,22 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 export default function ContactHero() {
   return (
-    <section className="relative pt-48 pb-32 text-white overflow-hidden">
+    <section className="relative h-inner-hero min-h-inner-hero text-white overflow-hidden flex items-center justify-center">
       {/* High quality industrial background overlay */}
       <div className="absolute inset-0">
-        <img 
+        <Image 
           src="/PacProcess 2025/ 1.jpeg" 
           alt="Bella Pack Contact Support" 
           className="w-full h-full object-cover opacity-80 scale-105 animate-[pulse_12s_ease-in-out_infinite]" 
+          priority
+          fill
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/95 to-charcoal/80" />
+        <div className="absolute inset-0 bg-linear-to-r from-charcoal via-charcoal/95 to-charcoal/80" />
         <div className="absolute inset-0 bg-charcoal/20 mix-blend-overlay" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
+      <div className="container mx-auto px-6 relative z-10 text-center md:text-left pt-32 md:pt-40">
         <div className="reveal flex items-center space-x-3 mb-6 justify-center md:justify-start">
           <span className="h-px w-8 bg-brand-red"></span>
           <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Connect with us</span>

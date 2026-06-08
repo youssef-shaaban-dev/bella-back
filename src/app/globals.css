@@ -12,6 +12,10 @@
   --primary-red: #E61E2E;    /* A deeper, richer shade of red */
   --secondary-blue: #2A4365; /* A deeper, darker navy blue */
   --dark-charcoal: #1E293B;  /* Matching the foreground for consistency */
+
+  /* Inner Page Hero height variables */
+  --inner-hero-height: 85vh;
+  --inner-hero-min-height: 440px;
 }
 
 @theme {
@@ -22,6 +26,10 @@
   
   --font-heading: var(--font-agdasima);
   --font-body: var(--font-montserrat);
+
+  /* Inner Page Hero height mappings */
+  --height-inner-hero: var(--inner-hero-height);
+  --min-height-inner-hero: var(--inner-hero-min-height);
 }
 
 body {

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function SolutionsHero() {
   return (
-    <section className="hero-section relative h-[90vh] flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
+    <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
       {/* Parallax Background using slide banner 4 */}
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
@@ -16,7 +16,7 @@ export default function SolutionsHero() {
           priority
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
       
       <div className="container relative z-10 px-6 pt-32 md:pt-40">
         {/* Tagline pill matching AboutHero */}

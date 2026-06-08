@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function StandupHero() {
   return (
-    <section className="relative h-[80vh] min-h-[450px] bg-charcoal text-white flex items-center justify-center overflow-hidden">
+    <section className="relative h-inner-hero min-h-inner-hero bg-charcoal text-white flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <Image 
           fill
@@ -14,7 +14,7 @@ export default function StandupHero() {
           className="w-full h-full object-cover opacity-35 transform scale-105 hover:scale-100 transition-transform duration-1000"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/80 to-charcoal/90" />
+        <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-charcoal/80 to-charcoal/90" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">

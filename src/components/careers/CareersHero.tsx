@@ -1,21 +1,24 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 export default function CareersHero() {
   return (
-    <section className="relative pt-48 pb-32 bg-charcoal text-white overflow-hidden">
+    <section className="relative h-inner-hero min-h-inner-hero bg-charcoal text-white overflow-hidden flex items-center justify-center">
       {/* Visual accents for industrial careers feeling */}
       <div className="absolute inset-0">
-        <img 
+        <Image 
           src="/PacProcess 2025/ 1.jpeg" 
           alt="Join Bella Pack" 
           className="w-full h-full object-cover opacity-20 grayscale select-none"
+          fill
+          priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/90 to-charcoal/40"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-charcoal via-charcoal/90 to-charcoal/40"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 text-center">
+      <div className="container mx-auto px-6 relative z-10 text-center pt-32 md:pt-40">
         <div className="reveal flex items-center justify-center space-x-3 mb-6">
           <span className="h-px w-8 bg-brand-red"></span>
           <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Join The Mission</span>

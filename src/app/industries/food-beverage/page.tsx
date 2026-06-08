@@ -16,7 +16,7 @@ export default function FoodBeveragePage() {
   return (
     <main className="bg-white min-h-screen">
       {/* 1. Cinematic Hero Section */}
-      <section className="hero-section relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
+      <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
             src="/solutions/Food & Beverage/ food 2 .jpeg"

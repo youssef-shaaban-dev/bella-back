@@ -5,10 +5,10 @@ import { Play } from "lucide-react";
 
 export default function MediaHero() {
   return (
-    <section className="relative bg-charcoal pt-48 pb-28 text-white text-center overflow-hidden">
+    <section className="relative h-inner-hero min-h-inner-hero bg-charcoal text-white text-center overflow-hidden flex items-center justify-center">
       {/* Background accents removed per user request */}
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 pt-32 md:pt-40">
         <div className="reveal flex items-center justify-center space-x-3 mb-6">
           <span className="h-px w-8 bg-brand-red"></span>
           <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Inside Bella Pack</span>

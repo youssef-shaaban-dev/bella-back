@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="hero-section relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
+    <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
       <div className="parallax-bg absolute inset-0 z-0">
         <Image
           src="/ about us/ flags.jpeg"
@@ -12,7 +12,7 @@ export default function AboutHero() {
           priority
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-charcoal/30 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-transparent to-charcoal/30 z-0"></div>
       
       <div className="container relative z-10 px-6 pt-32 md:pt-40">
         <div className="inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]">

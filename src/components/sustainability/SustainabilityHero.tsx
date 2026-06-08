@@ -6,7 +6,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function SustainabilityHero() {
   return (
-    <section className="hero-section relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
+    <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
           src="/Sustainability/sustainability pouches dark background.png"

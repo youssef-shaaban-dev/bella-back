@@ -118,12 +118,12 @@ export default function Hero() {
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }
       )
-      .fromTo(
-        subtitle,
-        { y: 15, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" },
-        "-=0.25"
-      );
+        .fromTo(
+          subtitle,
+          { y: 15, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" },
+          "-=0.25"
+        );
 
       if (benefits && benefits.children.length > 0) {
         tl.fromTo(
@@ -165,9 +165,8 @@ export default function Hero() {
           return (
             <div
               key={slide.id}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+                }`}
             >
               {/* Background Image */}
               <Image
@@ -176,9 +175,8 @@ export default function Hero() {
                 fill
                 priority
                 sizes="100vw"
-                className={`transition-all duration-1000 ease-in-out ${
-                  isActive ? "scale-100" : "scale-105"
-                } object-cover opacity-45 lg:opacity-65`}
+                className={`transition-all duration-1000 ease-in-out ${isActive ? "scale-100" : "scale-105"
+                  } object-cover opacity-45 lg:opacity-65`}
               />
             </div>
           );
@@ -197,11 +195,10 @@ export default function Hero() {
             return (
               <div
                 key={slide.id}
-                className={`slide-content-${index} col-start-1 row-start-1 flex flex-col transition-opacity duration-500 ease-in-out ${
-                  isActive
+                className={`slide-content-${index} col-start-1 row-start-1 flex flex-col transition-opacity duration-500 ease-in-out ${isActive
                     ? "opacity-100 pointer-events-auto z-10"
                     : "opacity-0 pointer-events-none z-0"
-                }`}
+                  }`}
               >
                 <h1 className="slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading">
                   {slide.title} <br />
