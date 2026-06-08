@@ -45,21 +45,19 @@ export default function CaseStudies() {
           <span className="h-px w-8 bg-brand-red"></span>
           <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Proven Execution</h3>
         </div>
-        
-        <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <div>
-            <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
-              Proven Results <span className="text-brand-red">Across</span> Industries
-            </h2>
-          </div>
-          <p className="text-gray-500 font-body text-sm max-w-md leading-relaxed font-semibold">
+
+        <div className="reveal mb-16 max-w-4xl space-y-4">
+          <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
+            Proven Results <span className="text-brand-red">Across</span> Industries
+          </h2>
+          <p className="text-gray-500 font-body text-base md:text-lg max-w-2xl leading-relaxed font-semibold">
             Explore how Bella Pack Tec has driven massive efficiencies and introduced structural innovation for leading regional and international manufacturing giants.
           </p>
         </div>
 
         <div className="space-y-16">
           {studies.map((study, idx) => (
-            <div 
+            <div
               key={study.id}
               className={`reveal bg-white border-t-4 ${study.accent} shadow-xl overflow-hidden rounded-sm grid lg:grid-cols-12 items-stretch`}
             >
@@ -72,7 +70,7 @@ export default function CaseStudies() {
                   <h3 className="text-3xl md:text-4xl font-bold font-heading uppercase text-charcoal mb-6 tracking-tight flex items-center">
                     {study.title}
                   </h3>
-                  
+
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
                     <div>
                       <h4 className="text-xs font-bold text-brand-red uppercase tracking-wider mb-2 font-heading">The Challenge</h4>
@@ -104,7 +102,7 @@ export default function CaseStudies() {
                 {/* High tech decorative accents inside */}
                 <div className="absolute top-0 right-0 opacity-10 w-64 h-64 select-none border border-white rounded-full translate-x-1/2 -translate-y-1/2"></div>
                 <div className="absolute bottom-0 left-0 opacity-10 w-64 h-64 select-none border border-white rounded-full -translate-x-1/2 translate-y-1/2"></div>
-                
+
                 <div className="relative z-10">
                   {study.id === 1 ? (
                     <Settings size={48} className="text-brand-red mx-auto mb-6 animate-[spin_15s_linear_infinite]" />
@@ -114,7 +112,7 @@ export default function CaseStudies() {
                   <blockquote className="font-heading text-2xl italic font-bold uppercase tracking-wide text-white/90 leading-snug mb-8">
                     &ldquo;{study.id === 1 ? "BP SERIES DELIVERED 40% OUTPUT BOOSTS INSTANTLY." : "BSS SERIES RE-SHAPED OUR ENTIRE RETAIL PRESENCE."}&rdquo;
                   </blockquote>
-                  
+
                   <div className="flex items-center justify-center space-x-2 group cursor-pointer">
                     <span className="text-xs font-heading font-bold uppercase tracking-widest group-hover:text-brand-red transition-colors">View machine technical spec</span>
                     <ArrowRight size={14} className="group-hover:translate-x-1 text-brand-red transition-transform" />

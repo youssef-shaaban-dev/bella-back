@@ -19,9 +19,7 @@ export default function CertificationsBanner() {
             <div className="bg-white text-charcoal px-8 py-4 font-heading font-bold text-xl uppercase tracking-widest border border-gray-200 shadow-sm rounded-sm cursor-default">
               ISO <span className="text-brand-red">9001</span>
             </div>
-            <div className="bg-white text-charcoal px-8 py-4 font-heading font-bold text-xl uppercase tracking-widest border border-gray-200 shadow-sm rounded-sm cursor-default">
-              CE <span className="text-brand-red">MARKING</span>
-            </div>
+           
           </div>
         </div>
       </div>

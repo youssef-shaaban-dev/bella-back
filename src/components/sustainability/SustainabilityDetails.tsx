@@ -48,15 +48,14 @@ export default function SustainabilityDetails() {
 
           {/* Right Column: Visual Frame */}
           <div className="lg:col-span-5 reveal">
-            <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group p-6">
+            <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl group">
               <Image
                 src="/Sustainability/sustainability pouches.png"
                 alt="Sustainably packed pouches mockup"
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: '100%', height: 'auto' }}
-                className="mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
+                width={800}
+                height={450}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                 priority
               />
             </div>

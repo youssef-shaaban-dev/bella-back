@@ -1,4 +1,4 @@
-import { CheckCircle2, Heart, Award, ShieldAlert, Sparkles } from "lucide-react";
+import { Sparkles, Check } from "lucide-react";
 
 const values = [
   {
@@ -7,11 +7,11 @@ const values = [
   },
   {
     title: "Precision",
-    desc: "We engineer accuracy into everything we build. From dosing tolerances to sealing integrity, every mechanical and control decision we make is driven by the precision our customers' production lines demand. There is no acceptable margin for inconsistency."
+    desc: "We engineer accuracy into everything we build. From dosing tolerances to sealing integrity, every mechanical and control decision we make is driven by the precision our customers' production lines demand."
   },
   {
     title: "Commitment",
-    desc: "We stand behind every machine we deliver, for its entire operational life. Our relationship with customers does not end at installation. We provide ongoing technical support, spare parts, and service because we measure our success by the long-term performance of our machines in the field."
+    desc: "We stand behind every machine we deliver, for its entire operational life. Our relationship with customers does not end at installation. We provide ongoing technical support, spare parts, and service as we measure our success by the long-term performance of our machines in the field."
   },
   {
     title: "Agility",
@@ -46,6 +46,28 @@ export default function PhilosophyVision() {
               <p className="text-gray-400 font-body text-sm leading-relaxed">
                 We are committed to building lasting partnerships with our customers — providing solutions that grow with their production demands and perform consistently under the most demanding industrial conditions.
               </p>
+            </div>
+
+            <div className="space-y-3 pt-2">
+              <p className="text-xs font-heading font-bold uppercase tracking-widest text-brand-red">
+                Our Engineering Focus
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-4 lg:gap-3">
+                {[
+                  { name: "Precision", desc: "Engineered accuracy in every decision" },
+                  { name: "Durability", desc: "Heavy-duty build for long life" },
+                  { name: "Consistent Performance", desc: "Reliability run after run" }
+                ].map((focus, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-brand-red/10 border border-brand-red/20 flex items-center justify-center">
+                      <Check size={12} className="text-brand-red" />
+                    </div>
+                    <div>
+                      <span className="text-sm text-gray-200 font-body font-semibold block leading-none">{focus.name}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="p-6 bg-white/5 border border-white/10 rounded-sm">
