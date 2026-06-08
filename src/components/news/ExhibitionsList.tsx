@@ -58,14 +58,14 @@ export default function ExhibitionsList() {
     <section className="py-24 bg-gray-50 border-t border-gray-200">
       <div className="container mx-auto px-6">
         
-        <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="reveal mb-16 max-w-3xl space-y-4">
           <div>
             <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading mb-3">Expo Attendance</h3>
             <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
               Exhibition <span className="text-brand-red">Logbook</span>
             </h2>
           </div>
-          <p className="text-gray-500 font-body text-sm max-w-md font-semibold leading-relaxed">
+          <p className="text-gray-500 font-body text-base md:text-lg max-w-2xl leading-relaxed font-semibold">
             Find us on the ground. Meet our senior automation consultants directly at our dedicated booths inside major regional halls.
           </p>
         </div>
