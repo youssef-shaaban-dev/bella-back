@@ -29,13 +29,9 @@ export default function AboutHero() {
           Advanced Packaging Machinery
         </p>
 
-        <p className="text-sm md:text-base font-body max-w-3xl mx-auto font-light leading-relaxed opacity-0 animate-[fadeInUp_0.8s_ease-out_0.5s_forwards] text-gray-300">
-          We are Bella Pack Tec — a precision packaging machinery manufacturer and long-term operational partner to the food, beverage, chemical, cosmetics, and pharmaceutical industries.
-        </p>
-
         <div className="h-px w-24 bg-brand-red mx-auto mt-8 mb-4 scale-x-0 animate-[scaleX_1s_ease-out_0.6s_forwards]"></div>
         <p className="text-xl md:text-2xl font-heading font-bold italic tracking-wider opacity-0 animate-[fadeInUp_0.8s_ease-out_0.7s_forwards]">
-          &quot;Your Production. Our Precision.&quot;
+          &quot;Where Precision Meets Production&quot;
         </p>
       </div>
     </section>
