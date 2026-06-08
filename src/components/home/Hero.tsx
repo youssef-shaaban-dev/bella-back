@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Play, Pause } from "lucide-react";
+import { ArrowRight, Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";
 import gsap from "gsap";
 
 const SLIDE_DURATION = 6000; // 6 seconds per slide
@@ -176,7 +176,9 @@ export default function Hero() {
                 fill
                 priority
                 sizes="100vw"
-                className="object-cover opacity-45 lg:opacity-65"
+                className={`transition-all duration-1000 ease-in-out ${
+                  isActive ? "scale-100" : "scale-105"
+                } object-cover opacity-45 lg:opacity-65`}
               />
             </div>
           );
@@ -224,21 +226,49 @@ export default function Hero() {
                 <div className="slide-cta flex flex-wrap gap-4 items-center">
                   <Link
                     href={slide.link}
-                    className="bg-brand-red text-white px-8 py-4 rounded-sm font-heading font-bold text-lg flex items-center space-x-2 group hover:bg-white hover:text-charcoal transition-all duration-300 shadow-xl shadow-brand-red/10"
+                    className="bg-brand-red text-white px-8 py-4 rounded-sm font-heading font-bold text-lg flex items-center space-x-2 group hover:bg-white hover:text-charcoal transition-all duration-300 shadow-xl shadow-brand-red/10 animate-pulse-slow"
                   >
                     <span>{slide.buttonText}</span>
                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                   </Link>
 
-                  {/* Play/Pause Slider Autoplay Button */}
-                  <button
-                    onClick={togglePlay}
-                    type="button"
-                    className="w-12 h-12 rounded-sm border border-white/20 bg-charcoal/40 backdrop-blur-sm text-white flex items-center justify-center hover:bg-white hover:text-charcoal transition-colors duration-300 ml-2 cursor-pointer"
-                    aria-label={isPlaying ? "Pause slider" : "Play slider"}
-                  >
-                    {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-                  </button>
+                  <div className="flex items-center bg-charcoal/60 backdrop-blur-md border border-white/10 rounded-sm p-1 gap-1">
+                    {/* Prev Arrow */}
+                    <button
+                      onClick={() => {
+                        setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
+                        setProgress(0);
+                      }}
+                      type="button"
+                      className="w-10 h-10 text-white flex items-center justify-center hover:bg-brand-red transition-colors duration-300 cursor-pointer rounded-sm"
+                      aria-label="Previous slide"
+                    >
+                      <ChevronLeft size={18} />
+                    </button>
+
+                    {/* Play/Pause Slider Autoplay Button */}
+                    <button
+                      onClick={togglePlay}
+                      type="button"
+                      className="w-10 h-10 text-white flex items-center justify-center hover:bg-brand-red transition-colors duration-300 cursor-pointer rounded-sm"
+                      aria-label={isPlaying ? "Pause slider" : "Play slider"}
+                    >
+                      {isPlaying ? <Pause size={16} /> : <Play size={16} />}
+                    </button>
+
+                    {/* Next Arrow */}
+                    <button
+                      onClick={() => {
+                        setActiveSlide((prev) => (prev + 1) % slides.length);
+                        setProgress(0);
+                      }}
+                      type="button"
+                      className="w-10 h-10 text-white flex items-center justify-center hover:bg-brand-red transition-colors duration-300 cursor-pointer rounded-sm"
+                      aria-label="Next slide"
+                    >
+                      <ChevronRight size={18} />
+                    </button>
+                  </div>
                 </div>
               </div>
             );
