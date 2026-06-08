@@ -293,12 +293,9 @@ export default function BrandsPackaged() {
                 <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-brand-red mb-1">
                   {prod.brand}
                 </span>
-                <h4 className="text-lg font-bold font-heading text-charcoal uppercase tracking-wide group-hover:text-brand-red transition-colors mb-3 leading-snug">
+                <h4 className="text-lg font-bold font-heading text-charcoal uppercase tracking-wide group-hover:text-brand-red transition-colors leading-snug">
                   {prod.name}
                 </h4>
-                <p className="text-gray-500 text-xs font-body leading-relaxed grow">
-                  {prod.desc}
-                </p>
               </div>
 
               {/* Specifications Tag */}
