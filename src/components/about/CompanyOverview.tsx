@@ -37,14 +37,20 @@ export default function CompanyOverview() {
             </div>
 
             <div className="space-y-6 text-gray-600 font-body text-base md:text-lg leading-relaxed">
-              <p>
-                <strong className="text-charcoal">Bella Pack</strong> is a specialized manufacturer of high-performance packaging machinery, <strong className="text-charcoal">established in 2000</strong> in Egypt. With over 25 years of focused engineering experience, we design and build horizontal form fill seal (HFFS), vertical packaging machines, and advanced filling solutions for the food, beverage, chemical, cosmetics, and pharmaceutical industries.
+              <p className="font-bold text-charcoal">
+                OVER 25 YEARS OF PACKAGING ENGINEERING EXCELLENCE
               </p>
               <p>
-                Our machines are built with high standards and are backed by full after-sales support, spare parts supply, and operator training. 
+                Founded in 2000, <strong className="text-charcoal">BellaPack</strong> is a specialized manufacturer of packaging machinery and filling systems serving the food, beverage, chemical, cosmetics, and pharmaceutical industries.
               </p>
               <p>
-                We manufacture entirely in-house at our dedicated facility in 10th of Ramadan City, Egypt, maintaining full control over engineering quality from component machining to final assembly and pre-shipment validation.
+                We design and manufacture pouch packaging machinery and advanced filling solutions engineered to deliver reliable performance, consistent package quality, and efficient production operation.
+              </p>
+              <p>
+                All machinery is manufactured in-house at our production facility in 10th of Ramadan City, Egypt, allowing complete control over engineering, assembly, testing, and quality assurance before shipment.
+              </p>
+              <p>
+                Beyond machine delivery, we provide commissioning, operator training, technical support, and spare parts services to ensure long-term operational reliability and customer success.
               </p>
             </div>
             
@@ -54,8 +60,7 @@ export default function CompanyOverview() {
                   <Factory size={24} className="text-brand-red" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-charcoal tracking-wider uppercase">In-house Production</h4>
-                  <p className="text-xs text-gray-500 uppercase">100% Control</p>
+                  <h4 className="font-heading font-bold text-charcoal tracking-wider uppercase">In-House Manufacturing</h4>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -64,7 +69,6 @@ export default function CompanyOverview() {
                 </div>
                 <div>
                   <h4 className="font-heading font-bold text-charcoal tracking-wider uppercase">After-sales Support</h4>
-                  <p className="text-xs text-gray-500 uppercase">Life-long Care</p>
                 </div>
               </div>
             </div>
