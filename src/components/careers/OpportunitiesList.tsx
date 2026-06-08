@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Briefcase, UserCog, TrendingUp, GraduationCap, ExternalLink, ArrowRight } from "lucide-react";
+import { Briefcase, UserCog, TrendingUp, GraduationCap, ArrowRight, Mail } from "lucide-react";
 
 const opportunities = [
   {
@@ -61,14 +61,27 @@ export default function OpportunitiesList() {
           ))}
         </div>
 
-        {/* Note Prompt */}
-        <div className="reveal bg-gray-50 border border-gray-200/60 p-8 rounded-sm text-center max-w-3xl mx-auto">
-          <p className="text-charcoal font-heading font-bold text-base md:text-lg uppercase tracking-wide mb-2">
-            Can’t find a specific role matching your profile?
-          </p>
-          <p className="text-gray-500 text-xs md:text-sm font-body font-semibold">
-            Submit a general application below, and our HR unit will coordinate with you for direct future opportunities.
-          </p>
+        {/* Note Prompt & Email CTA */}
+        <div className="reveal bg-gray-50 border border-gray-200/60 p-10 md:p-12 rounded-sm text-center max-w-3xl mx-auto space-y-6">
+          <div>
+            <p className="text-charcoal font-heading font-bold text-lg md:text-xl uppercase tracking-wide mb-2">
+              Can’t find a specific role matching your profile?
+            </p>
+            <p className="text-gray-500 text-sm font-body max-w-lg mx-auto leading-relaxed">
+              Submit a general application by emailing your CV to our Talent Acquisition team. We will review your profile for future openings.
+            </p>
+          </div>
+          
+          <div className="pt-2">
+            <a 
+              href="mailto:careers@bellapacktec.com?subject=Job Application - BellaPack"
+              className="inline-flex items-center space-x-3 bg-brand-red hover:bg-charcoal text-white font-heading font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-sm transition-all shadow-md hover:shadow-lg group"
+            >
+              <Mail size={16} />
+              <span>careers@bellapacktec.com</span>
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
 
       </div>
