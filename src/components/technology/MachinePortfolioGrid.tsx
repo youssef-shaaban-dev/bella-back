@@ -2,9 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { 
-  ShieldCheck, Info, FileDown, Send, Check, X, ChevronRight,
-  Settings, CheckCircle2
+import {
+  ShieldCheck, Info, MessageSquare, X, ChevronRight
 } from "lucide-react";
 
 const categories = [
@@ -120,30 +119,15 @@ const machineModels = [
 export default function MachinePortfolioGrid() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedModel, setSelectedModel] = useState<typeof machineModels[0] | null>(null);
-  const [inquireStatus, setInquireStatus] = useState<"idle" | "sending" | "success">("idle");
-  const [inquireForm, setInquireForm] = useState({ name: "", email: "", company: "", message: "" });
 
-  const filteredModels = activeFilter === "all" 
-    ? machineModels 
+  const filteredModels = activeFilter === "all"
+    ? machineModels
     : machineModels.filter(m => m.category === activeFilter);
 
-  const handleInquireSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setInquireStatus("sending");
-    setTimeout(() => {
-      setInquireStatus("success");
-      setTimeout(() => {
-        setInquireStatus("idle");
-        setSelectedModel(null);
-        setInquireForm({ name: "", email: "", company: "", message: "" });
-      }, 2000);
-    }, 1500);
-  };
-
   return (
-    <section className="py-24 bg-gray-50 border-t border-b border-gray-200">
+    <section className="py-24 bg-white border-t border-b border-gray-200">
       <div className="container mx-auto px-6">
-        
+
         <div className="reveal text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal">
             Machine <span className="text-brand-red">Portfolio</span>
@@ -159,11 +143,10 @@ export default function MachinePortfolioGrid() {
             <button
               key={cat.id}
               onClick={() => setActiveFilter(cat.id)}
-              className={`px-5 py-3 text-[10px] font-heading font-bold uppercase tracking-widest rounded-sm transition-all border ${
-                activeFilter === cat.id 
-                  ? "bg-charcoal text-white border-charcoal shadow-md" 
+              className={`px-5 py-3 text-[10px] font-heading font-bold uppercase tracking-widest rounded-sm transition-all border ${activeFilter === cat.id
+                  ? "bg-charcoal text-white border-charcoal shadow-md"
                   : "bg-white text-charcoal border-gray-200 hover:border-charcoal hover:bg-gray-50"
-              }`}
+                }`}
             >
               {cat.name}
             </button>
@@ -173,36 +156,36 @@ export default function MachinePortfolioGrid() {
         {/* Machine Grid - standard CSS transitions avoid dynamic React/GSAP bugs */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredModels.map((item) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className="bg-white border border-gray-200 hover:border-gray-300 rounded-sm overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all duration-300 group animate-[fadeIn_0.4s_ease-out]"
             >
-              <div className="relative aspect-[4/3] bg-gray-50 flex items-center justify-center overflow-hidden border-b border-gray-100 p-4">
-                <Image 
-                  src={item.img} 
-                  alt={item.name} 
-                  fill 
+              <div className="relative aspect-4/3 bg-white flex items-center justify-center overflow-hidden border-b border-gray-100 p-2">
+                <Image
+                  src={item.img}
+                  alt={item.name}
+                  fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-contain mix-blend-multiply group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-500 drop-shadow-sm" 
+                  className="object-contain mix-blend-multiply group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-500 drop-shadow-sm"
                 />
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md border border-white/10 text-white text-[9px] font-heading font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   {categories.find(c => c.id === item.category)?.name.replace(" Series", "").replace("Flagship ", "").replace("Custom ", "")}
                 </div>
               </div>
 
-              <div className="p-6 flex-grow flex flex-col justify-between">
+              <div className="p-5 grow flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold font-heading uppercase text-charcoal mb-3 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-heading uppercase text-charcoal mb-2 transition-colors duration-300">
                     {item.name}
                   </h3>
-                  <p className="text-gray-500 text-sm font-body line-clamp-3 mb-6 leading-relaxed">
+                  <p className="text-gray-500 text-xs font-body line-clamp-2 mb-4 leading-relaxed">
                     {item.desc}
                   </p>
-                  
+
                   {/* Specs list */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {item.specs.map((spec, sIdx) => (
-                      <span key={sIdx} className="bg-gray-100 text-charcoal/70 text-[9px] font-heading font-bold px-2.5 py-1 rounded-sm uppercase tracking-wide">
+                      <span key={sIdx} className="bg-gray-100 text-charcoal/70 text-[9px] font-heading font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">
                         {spec}
                       </span>
                     ))}
@@ -210,11 +193,11 @@ export default function MachinePortfolioGrid() {
                 </div>
 
                 <div className="border-t border-gray-100 pt-4 flex items-center justify-between">
-                  <button 
+                  <button
                     onClick={() => setSelectedModel(item)}
                     className="text-xs font-heading font-bold text-brand-red hover:text-charcoal uppercase tracking-widest flex items-center gap-1.5 transition-colors"
                   >
-                    <span>Inquire / Specs</span>
+                    <span>Technical Specs</span>
                     <ChevronRight size={14} />
                   </button>
                   <span className="text-[10px] font-heading font-bold text-gray-400 uppercase tracking-widest">
@@ -228,40 +211,41 @@ export default function MachinePortfolioGrid() {
 
       </div>
 
-      {/* Technical Inquire / Specification Overlay Modal */}
+      {/* Technical Specification Overlay Modal */}
       {selectedModel && (
-        <div 
+        <div
           onClick={() => setSelectedModel(null)}
           className="fixed inset-0 z-100 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-[fadeIn_0.2s_ease-out]"
         >
-          <div 
+          <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-white text-charcoal w-full max-w-4xl rounded-sm overflow-hidden border border-gray-200 shadow-2xl flex flex-col md:flex-row max-h-[90vh] md:max-h-none overflow-y-auto"
+            className="bg-white text-charcoal w-full max-w-2xl rounded-sm overflow-hidden border border-gray-200 shadow-2xl relative max-h-[90vh] overflow-y-auto p-6 md:p-10"
           >
-            {/* Left: Machine Photo & Technical details */}
-            <div className="md:w-1/2 bg-gray-50 p-6 md:p-10 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col justify-between">
-              <div>
-                <button 
-                  onClick={() => setSelectedModel(null)}
-                  className="md:hidden absolute top-4 right-4 bg-gray-200 p-2 rounded-full text-charcoal hover:bg-brand-red hover:text-white transition-colors"
-                >
-                  <X size={18} />
-                </button>
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedModel(null)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-brand-red p-2 hover:bg-gray-50 rounded-full transition-all"
+              aria-label="Close modal"
+            >
+              <X size={20} />
+            </button>
 
+            <div className="flex flex-col justify-between h-full">
+              <div>
                 <span className="inline-block bg-brand-red/10 text-brand-red text-[9px] font-heading font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
                   MODEL OVERVIEW
                 </span>
-                
-                <h3 className="text-3xl font-bold font-heading uppercase text-charcoal mb-4">
+
+                <h3 className="text-3xl font-bold font-heading uppercase text-charcoal mb-4 pr-8">
                   {selectedModel.name}
                 </h3>
 
-                <div className="relative aspect-video rounded-sm overflow-hidden border border-gray-200 mb-6 bg-charcoal">
-                  <Image 
-                    src={selectedModel.img} 
+                <div className="relative aspect-video rounded-sm overflow-hidden border border-gray-200 mb-6 bg-white flex items-center justify-center p-4">
+                  <Image
+                    src={selectedModel.img}
                     alt={selectedModel.name}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
 
@@ -269,7 +253,7 @@ export default function MachinePortfolioGrid() {
                   {selectedModel.desc}
                 </p>
 
-                <div className="bg-white border border-gray-200 p-4 rounded-sm">
+                <div className="bg-gray-50 border border-gray-100 p-5 rounded-sm">
                   <h4 className="text-xs font-bold font-heading text-brand-red uppercase tracking-widest mb-2 flex items-center gap-1.5">
                     <Info size={14} />
                     <span>Technical Architecture</span>
@@ -280,129 +264,25 @@ export default function MachinePortfolioGrid() {
                 </div>
               </div>
 
-              <div className="mt-8 border-t border-gray-200 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="mt-8 border-t border-gray-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <span className="text-[10px] font-heading font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
                   <ShieldCheck className="text-brand-red" size={16} />
                   <span>ISO 9001 & CE Certified</span>
                 </span>
-                
-                <button 
-                  onClick={() => alert("Downloading specification drawing... PDF parameters fetched.")}
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2 bg-charcoal hover:bg-brand-red text-white font-heading font-bold text-xs uppercase tracking-wider rounded-sm transition-colors gap-2"
+
+                <a
+                  href={`https://wa.me/201019222211?text=${encodeURIComponent(
+                    `Hello, I am interested in inquiring about the machine: ${selectedModel.name}. Could you please provide more details and specifications?`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 bg-brand-red hover:bg-charcoal text-white font-heading font-bold text-xs uppercase tracking-wider rounded-sm transition-colors gap-2 shadow-md hover:shadow-lg"
                 >
-                  <FileDown size={14} />
-                  <span>CAD Parameters (PDF)</span>
-                </button>
+                  <MessageSquare size={14} />
+                  <span>Request Specs via WhatsApp</span>
+                </a>
               </div>
             </div>
-
-            {/* Right: Technical Inquiry Form */}
-            <div className="md:w-1/2 p-6 md:p-10 flex flex-col justify-between relative bg-white">
-              <button 
-                onClick={() => setSelectedModel(null)}
-                className="hidden md:flex absolute top-6 right-6 text-gray-400 hover:text-brand-red p-2 hover:bg-gray-50 rounded-full transition-all"
-                aria-label="Close modal"
-              >
-                <X size={20} />
-              </button>
-
-              <div className="flex-grow">
-                <h4 className="text-xl font-bold font-heading uppercase text-charcoal mb-2">
-                  Request Specifications
-                </h4>
-                <p className="text-gray-400 font-body text-xs mb-8 leading-relaxed font-semibold">
-                  Provide your technical requirements. A Bella Pack commissioning engineer will respond with full drawings and configuration logs within 24 hours.
-                </p>
-
-                {inquireStatus === "success" ? (
-                  <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-8 text-center animate-[fadeIn_0.2s_ease-out] z-50">
-                    <div className="w-16 h-16 bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-4 shadow-lg shadow-green-500/10">
-                      <Check size={32} />
-                    </div>
-                    <h5 className="text-2xl font-bold font-heading uppercase text-charcoal mb-2">
-                      Inquiry Logged
-                    </h5>
-                    <p className="text-gray-500 text-sm font-body max-w-xs leading-relaxed font-semibold">
-                      Your technical request for {selectedModel.name} has been synced with our engineering units. Check your inbox shortly.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleInquireSubmit} className="space-y-4">
-                    <div>
-                      <label className="block text-[10px] font-heading font-bold text-charcoal uppercase tracking-wider mb-1">
-                        Full Name
-                      </label>
-                      <input 
-                        type="text" 
-                        required
-                        value={inquireForm.name}
-                        onChange={(e) => setInquireForm({...inquireForm, name: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:border-brand-red focus:outline-none transition-colors"
-                        placeholder="John Doe"
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div>
-                        <label className="block text-[10px] font-heading font-bold text-charcoal uppercase tracking-wider mb-1">
-                          Work Email
-                        </label>
-                        <input 
-                          type="email" 
-                          required
-                          value={inquireForm.email}
-                          onChange={(e) => setInquireForm({...inquireForm, email: e.target.value})}
-                          className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:border-brand-red focus:outline-none transition-colors"
-                          placeholder="john@company.com"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-[10px] font-heading font-bold text-charcoal uppercase tracking-wider mb-1">
-                          Company Name
-                        </label>
-                        <input 
-                          type="text" 
-                          required
-                          value={inquireForm.company}
-                          onChange={(e) => setInquireForm({...inquireForm, company: e.target.value})}
-                          className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:border-brand-red focus:outline-none transition-colors"
-                          placeholder="Acme Industrial Corp"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-[10px] font-heading font-bold text-charcoal uppercase tracking-wider mb-1">
-                        Dosing & Production Requirements (Optional)
-                      </label>
-                      <textarea 
-                        rows={4}
-                        value={inquireForm.message}
-                        onChange={(e) => setInquireForm({...inquireForm, message: e.target.value})}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-sm text-sm focus:border-brand-red focus:outline-none transition-colors resize-none"
-                        placeholder="Please include details such as expected density, viscosity, package dimensions, or zipper options..."
-                      />
-                    </div>
-
-                    <button 
-                      type="submit"
-                      disabled={inquireStatus === "sending"}
-                      className="w-full py-4 bg-brand-red hover:bg-charcoal text-white font-heading font-bold text-xs uppercase tracking-widest rounded-sm transition-all duration-300 flex items-center justify-center gap-2 mt-6 disabled:opacity-50"
-                    >
-                      {inquireStatus === "sending" ? (
-                        <span>Logging Parameters...</span>
-                      ) : (
-                        <>
-                          <Send size={14} />
-                          <span>SEND TECHNICAL REQUEST</span>
-                        </>
-                      )}
-                    </button>
-                  </form>
-                )}
-              </div>
-            </div>
-
           </div>
         </div>
       )}

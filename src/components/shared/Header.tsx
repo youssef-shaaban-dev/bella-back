@@ -74,7 +74,6 @@ export default function Header() {
                     { name: "Horizontal flat pouches", href: "/technology/horizontal-flat" },
                     { name: "Horizontal stand-up pouches", href: "/technology/horizontal-standup" },
                     { name: "Vertical machines", href: "/technology/vertical" },
-                    { name: "Technical Downloads", href: "/downloads" },
                   ]
                 },
                 {
