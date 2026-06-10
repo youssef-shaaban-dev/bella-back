@@ -8,11 +8,13 @@ const agdasima = Agdasima({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-agdasima",
+  display: "swap",
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
