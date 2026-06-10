@@ -65,11 +65,11 @@ export default function DetergentsChemicalsPage() {
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At Bella Pack Tec, we provide advanced packaging solutions designed to meet the demanding requirements of detergent and chemical product manufacturers. Our systems are engineered to deliver safe, efficient, and reliable packaging performance for liquid, powder, and granular chemical products across various industrial applications.
+                At BellaPack, we provide advanced packaging solutions designed to meet the demanding requirements of detergent and chemical product manufacturers. Our systems are engineered to deliver safe, efficient, and reliable packaging performance for liquid, powder, and granular chemical products across various industrial applications.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                We understand the importance of precision, durability, and product protection in the chemical packaging industry. That is why our packaging technologies are developed to ensure accurate filling, secure sealing, and consistent packaging quality while supporting high-speed production operations. Whether packaging cleaning products, detergents, industrial chemicals, or household solutions, Bella Pack delivers flexible pouch packaging systems tailored to modern manufacturing needs.
+                We understand the importance of precision, durability, and product protection in the chemical packaging industry. That is why our packaging technologies are developed to ensure accurate filling, secure sealing, and consistent packaging quality while supporting high-speed production operations. Whether packaging cleaning products, detergents, industrial chemicals, or household solutions, BellaPack delivers flexible pouch packaging systems tailored to modern manufacturing needs.
               </p>
 
               {/* Formulations checklist */}

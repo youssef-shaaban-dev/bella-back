@@ -10,7 +10,7 @@ export default function ContactHero() {
       <div className="absolute inset-0">
         <Image 
           src="/PacProcess 2025/ 1.jpeg" 
-          alt="Bella Pack Contact Support" 
+          alt="BellaPack Contact Support" 
           className="w-full h-full object-cover opacity-80 scale-105 animate-[pulse_12s_ease-in-out_infinite]" 
           priority
           fill

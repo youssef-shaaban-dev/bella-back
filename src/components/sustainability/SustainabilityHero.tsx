@@ -10,7 +10,7 @@ export default function SustainabilityHero() {
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
           src="/Sustainability/sustainability pouches dark background.png"
-          alt="Bella Pack Sustainable Packaging Pouches"
+          alt="BellaPack Sustainable Packaging Pouches"
           fill
           className="object-cover brightness-[0.25] saturate-[0.8]"
           priority

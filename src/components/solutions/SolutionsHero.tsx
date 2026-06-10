@@ -10,7 +10,7 @@ export default function SolutionsHero() {
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
           src="/Homepage/slide banner 4.png"
-          alt="Bella Pack Integrated Packaging Solutions"
+          alt="BellaPack Integrated Packaging Solutions"
           fill
           className="object-cover brightness-[0.25] saturate-[0.8]"
           priority
@@ -35,7 +35,7 @@ export default function SolutionsHero() {
         </p>
 
         <p className="reveal text-sm md:text-base font-body max-w-3xl mx-auto font-medium leading-relaxed text-gray-300">
-          At Bella Pack Tec, we deliver advanced packaging solutions tailored to meet the specific requirements of diverse industries, product types, and production capacities.
+          At BellaPack, we deliver advanced packaging solutions tailored to meet the specific requirements of diverse industries, product types, and production capacities.
         </p>
 
         <div className="reveal h-px w-24 bg-brand-red mx-auto mt-8 mb-4"></div>

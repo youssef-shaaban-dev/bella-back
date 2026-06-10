@@ -84,7 +84,7 @@ export default function Footer() {
           <div className="space-y-8">
             <Link href="/" className="flex items-center space-x-2">
               <div className="flex items-center justify-center rounded-sm relative">
-                <Image src="/logo.png" alt="Bella Pack" width={200} height={200} className="object-contain" />
+                <Image src="/logo.png" alt="BellaPack" width={200} height={200} className="object-contain" />
               </div>
             </Link>
             <p className="text-white/40 font-body leading-relaxed text-sm">
@@ -139,7 +139,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-4">
                 <Mail className="text-brand-red shrink-0" size={20} />
-                <span className="text-white/60 text-sm font-body">info@bellapacktec.com</span>
+                <span className="text-white/60 text-sm font-body">info@bellapack.com</span>
               </li>
               <li className="flex items-center space-x-4">
                 <Phone className="text-brand-red shrink-0" size={20} />
@@ -158,7 +158,7 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-white/20 text-xs font-body">
-            &copy; {new Date().getFullYear()} BELLA PACK MACHINERY CORP. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} BELLAPACK MACHINERY CORP. ALL RIGHTS RESERVED.
           </p>
           <div className="flex space-x-8 text-white/20 text-xs font-body">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">PRIVACY POLICY</Link>

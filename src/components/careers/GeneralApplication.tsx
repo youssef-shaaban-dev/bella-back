@@ -48,7 +48,7 @@ export default function GeneralApplication() {
           </div>
           <h3 className="text-3xl font-bold font-heading uppercase text-charcoal tracking-tight mb-4">Application Received</h3>
           <p className="text-gray-500 font-body text-base leading-relaxed mb-8">
-            Thank you for applying to join Bella Pack Tec, <strong>{formData.fullName}</strong>. Our Talent Acquisition team will review your profile and reach out shortly.
+            Thank you for applying to join BellaPack, <strong>{formData.fullName}</strong>. Our Talent Acquisition team will review your profile and reach out shortly.
           </p>
           <button 
             onClick={() => {
@@ -226,7 +226,7 @@ export default function GeneralApplication() {
           
           <div className="flex items-start space-x-2 mt-4 text-[10px] text-gray-400 font-medium leading-relaxed">
             <AlertCircle size={12} className="shrink-0 mt-0.5" />
-            <span>By submitting, you authorize Bella Pack Tec to retain your resume in our secure candidate bank for a period of up to 24 months for assessment of upcoming vacancies.</span>
+            <span>By submitting, you authorize BellaPack to retain your resume in our secure candidate bank for a period of up to 24 months for assessment of upcoming vacancies.</span>
           </div>
         </form>
 

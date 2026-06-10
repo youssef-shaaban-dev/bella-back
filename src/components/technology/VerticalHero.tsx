@@ -30,7 +30,7 @@ export default function VerticalHero() {
         </h1>
         
         <p className="text-white/80 font-body text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-          Bella Pack&apos;s high-speed VFFS platforms deliver extreme throughput, micro-metric filling accuracy, and compact footprints. The ultimate solution for high-density granular, powder, and liquid lines.
+          BellaPack&apos;s high-speed VFFS platforms deliver extreme throughput, micro-metric filling accuracy, and compact footprints. The ultimate solution for high-density granular, powder, and liquid lines.
         </p>
       </div>
     </section>

@@ -66,7 +66,7 @@ export default function FoodBeveragePage() {
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At Bella Pack Tec, we provide advanced packaging technologies tailored to the evolving needs of the Food & Beverage industry. Our solutions are designed to support manufacturers with high-performance packaging systems that combine efficiency, precision, hygiene, and reliability.
+                At BellaPack, we provide advanced packaging technologies tailored to the evolving needs of the Food & Beverage industry. Our solutions are designed to support manufacturers with high-performance packaging systems that combine efficiency, precision, hygiene, and reliability.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">

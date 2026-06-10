@@ -66,11 +66,11 @@ export default function SnacksGranulesPage() {
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At Bella Pack Tec, we deliver advanced packaging systems designed to handle snacks, candies, nuts, and granular products at high-speed industrial levels. Our solutions focus on high-speed continuous layouts, dynamic sealing, and efficient product flow to minimize raw material waste.
+                At BellaPack, we deliver advanced packaging systems designed to handle snacks, candies, nuts, and granular products at high-speed industrial levels. Our solutions focus on high-speed continuous layouts, dynamic sealing, and efficient product flow to minimize raw material waste.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                We understand that granular snack foods require extremely gentle product handling, quick format changeovers, and durable heat-seal integrity to withstand shipping pressures. Bella Pack combines high-precision multi-head weighers and linear scales with robust pouch packaging systems to deliver maximum production output with minimum downtime. Our machines perform consistently under the most demanding food industry conditions.
+                We understand that granular snack foods require extremely gentle product handling, quick format changeovers, and durable heat-seal integrity to withstand shipping pressures. BellaPack combines high-precision multi-head weighers and linear scales with robust pouch packaging systems to deliver maximum production output with minimum downtime. Our machines perform consistently under the most demanding food industry conditions.
               </p>
 
               {/* Formulations checklist */}

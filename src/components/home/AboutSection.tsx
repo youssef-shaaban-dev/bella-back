@@ -76,7 +76,7 @@ export default function AboutSection() {
           <div ref={contentRef} className="flex flex-col">
             <div className="flex items-center space-x-3 mb-4">
               <span className="h-px w-8 bg-brand-red"></span>
-              <h3 className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading">About Bella Pack</h3>
+              <h3 className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading">About BellaPack</h3>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-charcoal font-heading uppercase tracking-tight mb-6 leading-[1.1]">
@@ -84,7 +84,7 @@ export default function AboutSection() {
             </h2>
             
             <p className="text-gray-600 font-body text-lg mb-8 leading-relaxed">
-              Bella Pack stands at the vanguard of high-performance automated packaging machinery. Since 1999, we have empowered global manufacturers with intelligent, ultra-precise solutions meticulously engineered for reliability, speed, and long-term scalability.
+              BellaPack stands at the vanguard of high-performance automated packaging machinery. Since 1999, we have empowered global manufacturers with intelligent, ultra-precise solutions meticulously engineered for reliability, speed, and long-term scalability.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">

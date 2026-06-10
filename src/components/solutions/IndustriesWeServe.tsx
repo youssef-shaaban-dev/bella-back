@@ -9,7 +9,7 @@ const industries = [
     id: "food",
     icon: Beef,
     title: "Food & Beverage",
-    description: "At Bella Pack Tec, we provide advanced packaging technologies tailored to the evolving needs of the Food & Beverage industry. Our solutions are designed to support manufacturers with high-performance packaging systems that combine efficiency, precision, hygiene, and reliability. From dry products and powders to liquids and granules, our machines are engineered to handle a wide variety of food applications while maintaining product integrity and production consistency. We help businesses optimize their packaging operations with smart automation, flexible configurations, and durable machine construction suitable for continuous industrial performance.",
+    description: "At BellaPack, we provide advanced packaging technologies tailored to the evolving needs of the Food & Beverage industry. Our solutions are designed to support manufacturers with high-performance packaging systems that combine efficiency, precision, hygiene, and reliability. From dry products and powders to liquids and granules, our machines are engineered to handle a wide variety of food applications while maintaining product integrity and production consistency. We help businesses optimize their packaging operations with smart automation, flexible configurations, and durable machine construction suitable for continuous industrial performance.",
     features: ["Juices & Liquids", "Edible Oils", "Tomato Paste & Sauces", "Ghee & Dairy", "Grains"],
     badge: "High Hygiene",
     images: [
@@ -21,7 +21,7 @@ const industries = [
     id: "spices",
     icon: Coffee,
     title: "Spices & Coffee",
-    description: "At Bella Pack Tec, we provide advanced packaging solutions tailored for spices and coffee products, combining precision, efficiency, and premium packaging performance to meet modern Food & Beverage industry standards. Our packaging systems are engineered to preserve freshness, protect aroma, and maintain product quality throughout the entire packaging process. Whether handling fine spice powders, seasoning blends, coffee beans, or ground coffee, our machines deliver reliable filling accuracy and secure sealing technologies designed for consistent production results. We combine intelligent automation with high-performance pouch packaging technologies to deliver packaging that supports both product protection and brand presentation.",
+    description: "At BellaPack, we provide advanced packaging solutions tailored for spices and coffee products, combining precision, efficiency, and premium packaging performance to meet modern Food & Beverage industry standards. Our packaging systems are engineered to preserve freshness, protect aroma, and maintain product quality throughout the entire packaging process. Whether handling fine spice powders, seasoning blends, coffee beans, or ground coffee, our machines deliver reliable filling accuracy and secure sealing technologies designed for consistent production results. We combine intelligent automation with high-performance pouch packaging technologies to deliver packaging that supports both product protection and brand presentation.",
     features: ["Coffee Beans", "Ground Coffee", "Spice Powders", "Seasoning Blends"],
     badge: "Aroma Preserved",
     images: [
@@ -47,7 +47,7 @@ const industries = [
     id: "chemical",
     icon: ShieldAlert,
     title: "Detergents & Chemicals",
-    description: "At Bella Pack Tec, we provide advanced packaging solutions designed to meet the demanding requirements of detergent and chemical product manufacturers. Our systems are engineered to deliver safe, efficient, and reliable packaging performance for liquid, powder, and granular chemical products across various industrial applications. We understand the importance of precision, durability, and product protection in the chemical packaging industry. That is why our packaging technologies are developed to ensure accurate filling, secure sealing, and consistent packaging quality while supporting high-speed production operations. Whether packaging cleaning products, detergents, industrial chemicals, or household solutions, Bella Pack delivers flexible pouch packaging systems tailored to modern manufacturing needs.",
+    description: "At BellaPack, we provide advanced packaging solutions designed to meet the demanding requirements of detergent and chemical product manufacturers. Our systems are engineered to deliver safe, efficient, and reliable packaging performance for liquid, powder, and granular chemical products across various industrial applications. We understand the importance of precision, durability, and product protection in the chemical packaging industry. That is why our packaging technologies are developed to ensure accurate filling, secure sealing, and consistent packaging quality while supporting high-speed production operations. Whether packaging cleaning products, detergents, industrial chemicals, or household solutions, BellaPack delivers flexible pouch packaging systems tailored to modern manufacturing needs.",
     features: ["Liquid Detergents", "Bleach", "Corrosive Chemicals", "Powders & Granules"],
     badge: "Titanium Built",
     images: [
@@ -58,7 +58,7 @@ const industries = [
     id: "pharma",
     icon: Sparkles,
     title: "Cosmetics & Pharmaceutical",
-    description: "At Bella Pack Tec, we provide advanced packaging solutions designed to meet the high standards of the cosmetics and pharmaceutical industries. Our packaging systems are engineered to deliver precision, hygiene, product protection, and premium presentation for a wide range of liquid, powder, cream, gel, and personal care products. We understand that cosmetics and pharmaceutical products require highly accurate filling systems, secure sealing technologies, and clean production environments to maintain product safety, quality, and consistency. That is why our machines are manufactured using hygienic stainless-steel construction and intelligent automation systems that support efficient and reliable production performance.",
+    description: "At BellaPack, we provide advanced packaging solutions designed to meet the high standards of the cosmetics and pharmaceutical industries. Our packaging systems are engineered to deliver precision, hygiene, product protection, and premium presentation for a wide range of liquid, powder, cream, gel, and personal care products. We understand that cosmetics and pharmaceutical products require highly accurate filling systems, secure sealing technologies, and clean production environments to maintain product safety, quality, and consistency. That is why our machines are manufactured using hygienic stainless-steel construction and intelligent automation systems that support efficient and reliable production performance.",
     features: ["Creams & Lotions", "Shower Gels", "Liquid Pharma", "Personal Care"],
     badge: "Sanitary Grade",
     images: [

@@ -10,7 +10,7 @@ export default function NewsHero() {
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
           src="/News/InterPack-PacProcess 2025 .jpeg"
-          alt="Bella Pack Exhibition Stand"
+          alt="BellaPack Exhibition Stand"
           fill
           className="object-cover brightness-[0.23] saturate-[0.8]"
           priority
@@ -29,7 +29,7 @@ export default function NewsHero() {
         </h1>
 
         <p className="reveal text-sm md:text-base font-body max-w-3xl mx-auto font-medium leading-relaxed text-gray-300">
-          Keep track of Bella Pack Tec&apos;s upcoming trade fair appearances, global launches, and major technological milestones on the international stage.
+          Keep track of BellaPack&apos;s upcoming trade fair appearances, global launches, and major technological milestones on the international stage.
         </p>
       </div>
     </section>

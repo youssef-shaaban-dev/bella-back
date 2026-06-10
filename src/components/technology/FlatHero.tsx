@@ -30,7 +30,7 @@ export default function FlatHero() {
         </h1>
         
         <p className="text-white/80 font-body text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-          Bella Pack&apos;s HFFS flat pouch systems deliver unmatched versatility across 12 distinct pouch configurations — from classic pillow pouches to shaped spout formats — all on a single high-speed production line.
+          BellaPack&apos;s HFFS flat pouch systems deliver unmatched versatility across 12 distinct pouch configurations — from classic pillow pouches to shaped spout formats — all on a single high-speed production line.
         </p>
       </div>
     </section>

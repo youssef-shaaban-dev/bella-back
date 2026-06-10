@@ -50,8 +50,8 @@ export default function ContactDetails() {
           </div>
           <div>
             <h4 className="font-heading font-bold text-charcoal uppercase text-sm tracking-wider mb-2">Official Email</h4>
-            <a href="mailto:info@bellapacktec.com" className="text-charcoal hover:text-brand-red transition-colors font-body font-bold text-lg tracking-wide">
-              info@bellapacktec.com
+            <a href="mailto:info@bellapack.com" className="text-charcoal hover:text-brand-red transition-colors font-body font-bold text-lg tracking-wide">
+              info@bellapack.com
             </a>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function ContactDetails() {
           <h5 className="font-heading font-bold uppercase tracking-wider text-xs text-charcoal">Global Shipping & Export</h5>
         </div>
         <p className="text-xs text-gray-500 leading-relaxed font-body font-semibold">
-          Bella Pack proudly exports premium-grade packaging systems to over 15 countries. We provide worldwide technical deployment and logistics handling directly to your site.
+          BellaPack proudly exports premium-grade packaging systems to over 15 countries. We provide worldwide technical deployment and logistics handling directly to your site.
         </p>
       </div>
     </div>

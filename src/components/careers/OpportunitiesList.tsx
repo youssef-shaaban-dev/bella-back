@@ -74,11 +74,11 @@ export default function OpportunitiesList() {
           
           <div className="pt-2">
             <a 
-              href="mailto:careers@bellapacktec.com?subject=Job Application - BellaPack"
+              href="mailto:careers@bellapack.com?subject=Job Application - BellaPack"
               className="inline-flex items-center space-x-3 bg-brand-red hover:bg-charcoal text-white font-heading font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-sm transition-all shadow-md hover:shadow-lg group"
             >
               <Mail size={16} />
-              <span>careers@bellapacktec.com</span>
+              <span>careers@bellapack.com</span>
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>

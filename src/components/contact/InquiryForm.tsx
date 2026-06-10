@@ -20,7 +20,7 @@ export default function InquiryForm() {
         </div>
         <h3 className="text-3xl font-heading font-bold uppercase mb-4">Inquiry Transmitted</h3>
         <p className="text-white/60 max-w-md mx-auto mb-8 text-sm leading-relaxed font-body">
-          Thank you for choosing Bella Pack. Your technical requirements are now with our engineering evaluation unit. We will generate your custom proposal within 24-48 business hours.
+          Thank you for choosing BellaPack. Your technical requirements are now with our engineering evaluation unit. We will generate your custom proposal within 24-48 business hours.
         </p>
         <button 
           onClick={() => setFormSubmitted(false)}

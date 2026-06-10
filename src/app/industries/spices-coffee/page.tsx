@@ -67,11 +67,11 @@ export default function SpicesCoffeePage() {
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At Bella Pack Tec, we provide advanced packaging solutions tailored for spices and coffee products, combining precision, efficiency, and premium packaging performance to meet modern Food & Beverage industry standards. Our packaging systems are engineered to preserve freshness, protect aroma, and maintain product quality throughout the entire packaging process.
+                At BellaPack, we provide advanced packaging solutions tailored for spices and coffee products, combining precision, efficiency, and premium packaging performance to meet modern Food & Beverage industry standards. Our packaging systems are engineered to preserve freshness, protect aroma, and maintain product quality throughout the entire packaging process.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                Whether handling fine spice powders, seasoning blends, coffee beans, or ground coffee, our machines deliver reliable filling accuracy and secure sealing technologies designed for consistent production results. We understand that spices and coffee products require specialized packaging solutions to protect them from moisture, air exposure, and contamination while maintaining their flavor, aroma, and shelf appeal. That is why Bella Pack combines intelligent automation with high-performance pouch packaging technologies to deliver packaging that supports both product protection and brand presentation.
+                Whether handling fine spice powders, seasoning blends, coffee beans, or ground coffee, our machines deliver reliable filling accuracy and secure sealing technologies designed for consistent production results. We understand that spices and coffee products require specialized packaging solutions to protect them from moisture, air exposure, and contamination while maintaining their flavor, aroma, and shelf appeal. That is why BellaPack combines intelligent automation with high-performance pouch packaging technologies to deliver packaging that supports both product protection and brand presentation.
               </p>
 
               {/* Formulations checklist */}

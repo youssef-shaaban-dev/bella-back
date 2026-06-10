@@ -66,7 +66,7 @@ export default function CosmeticsPharmaPage() {
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At Bella Pack Tec, we provide advanced packaging solutions designed to meet the high standards of the cosmetics and pharmaceutical industries. Our packaging systems are engineered to deliver precision, hygiene, product protection, and premium presentation for a wide range of liquid, powder, cream, gel, and personal care products.
+                At BellaPack, we provide advanced packaging solutions designed to meet the high standards of the cosmetics and pharmaceutical industries. Our packaging systems are engineered to deliver precision, hygiene, product protection, and premium presentation for a wide range of liquid, powder, cream, gel, and personal care products.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">

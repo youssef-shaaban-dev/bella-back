@@ -22,7 +22,7 @@ export default function ManufacturingFacility() {
             </div>
 
             <p className="text-gray-600 font-body leading-relaxed text-base md:text-lg">
-              Every Bella Pack machine is designed, manufactured, and quality-tested at our dedicated production facility in the Industrial Zone of 10th of Ramadan City, Egypt. Full in-house manufacturing means uncompromising control over engineering quality at every stage.
+              Every BellaPack machine is designed, manufactured, and quality-tested at our dedicated production facility in the Industrial Zone of 10th of Ramadan City, Egypt. Full in-house manufacturing means uncompromising control over engineering quality at every stage.
             </p>
 
             <div className="space-y-6 pt-4">
@@ -53,7 +53,7 @@ export default function ManufacturingFacility() {
             <div className="relative aspect-square md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden rounded-sm group shadow-2xl">
               <Image
                 src="/ about us/facility.jpeg"
-                alt="Bella Pack Manufacturing Facility View"
+                alt="BellaPack Manufacturing Facility View"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />

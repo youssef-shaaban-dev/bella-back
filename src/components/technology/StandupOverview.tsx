@@ -17,13 +17,13 @@ export default function StandupOverview() {
             
             <div className="text-gray-600 font-body text-base leading-relaxed space-y-6 font-semibold">
               <p>
-                At <span className="text-brand-red font-bold">Bella Pack Tec</span>, we provide advanced Horizontal Stand-Up Pouch packaging solutions designed to combine premium product presentation with high-performance packaging efficiency. Our systems are engineered to deliver precise filling, secure sealing, and reliable automation for a wide range of industries including food & beverage, coffee, spices, detergents, cosmetics, pharmaceuticals, and chemical products.
+                At <span className="text-brand-red font-bold">BellaPack</span>, we provide advanced Horizontal Stand-Up Pouch packaging solutions designed to combine premium product presentation with high-performance packaging efficiency. Our systems are engineered to deliver precise filling, secure sealing, and reliable automation for a wide range of industries including food & beverage, coffee, spices, detergents, cosmetics, pharmaceuticals, and chemical products.
               </p>
               <p>
-                Stand-up pouches have become one of the most popular modern packaging formats due to their attractive shelf appearance, product protection, and flexible packaging capabilities. Bella Pack’s Horizontal Stand-Up Pouch machines are designed to support high-speed production while maintaining packaging accuracy, durability, and consistent sealing quality.
+                Stand-up pouches have become one of the most popular modern packaging formats due to their attractive shelf appearance, product protection, and flexible packaging capabilities. BellaPack’s Horizontal Stand-Up Pouch machines are designed to support high-speed production while maintaining packaging accuracy, durability, and consistent sealing quality.
               </p>
               <p>
-                Our advanced packaging systems are suitable for liquids, powders, granules, creams, and gel-based products, offering flexible pouch configurations and user-friendly automation technologies that improve operational efficiency and reduce product waste. With durable industrial construction and intelligent control systems, Bella Pack delivers packaging solutions that help brands enhance shelf appeal, preserve product quality, and optimize production performance.
+                Our advanced packaging systems are suitable for liquids, powders, granules, creams, and gel-based products, offering flexible pouch configurations and user-friendly automation technologies that improve operational efficiency and reduce product waste. With durable industrial construction and intelligent control systems, BellaPack delivers packaging solutions that help brands enhance shelf appeal, preserve product quality, and optimize production performance.
               </p>
             </div>
           </div>

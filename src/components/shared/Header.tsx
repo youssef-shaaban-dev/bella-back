@@ -40,7 +40,7 @@ export default function Header() {
           <div className={cn("relative transition-all duration-500", isScrolled ? "h-16 w-36 md:h-24 md:w-52" : "h-18 w-40 md:h-28 md:w-60")}>
              <Image 
                 src="/logo.png" 
-                alt="Bella Pack" 
+                alt="BellaPack" 
                 fill 
                 className="object-contain" 
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"

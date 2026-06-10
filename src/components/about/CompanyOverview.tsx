@@ -11,7 +11,7 @@ export default function CompanyOverview() {
             <div className="relative aspect-[4/5] overflow-hidden shadow-2xl rounded-sm group">
               <Image
                 src="/ about us/company overview.png"
-                alt="Bella Pack Assembly Facility"
+                alt="BellaPack Assembly Facility"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

@@ -31,7 +31,7 @@ export default function StandupHero() {
         </h1>
         
         <p className="text-white/80 font-body text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-          Bella Pack&apos;s HFFS systems represent the apex of packaging presentation and efficiency. Meticulously engineered for liquids, powders, granules, and pastes with high-tolerance sealing precision.
+          BellaPack&apos;s HFFS systems represent the apex of packaging presentation and efficiency. Meticulously engineered for liquids, powders, granules, and pastes with high-tolerance sealing precision.
         </p>
       </div>
     </section>

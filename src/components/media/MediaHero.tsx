@@ -11,7 +11,7 @@ export default function MediaHero() {
       <div className="container mx-auto px-6 relative z-10 pt-32 md:pt-40">
         <div className="reveal flex items-center justify-center space-x-3 mb-6">
           <span className="h-px w-8 bg-brand-red"></span>
-          <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Inside Bella Pack</span>
+          <span className="text-brand-red font-bold tracking-[0.3em] text-xs uppercase font-heading">Inside BellaPack</span>
           <span className="h-px w-8 bg-brand-red"></span>
         </div>
 
@@ -20,7 +20,7 @@ export default function MediaHero() {
         </h1>
 
         <p className="reveal text-lg md:text-xl text-white/70 font-body max-w-2xl mx-auto leading-relaxed">
-          Explore our interactive video library to witness Bella Pack&apos;s engineering precision, operating live in real-world high-output production environments.
+          Explore our interactive video library to witness BellaPack&apos;s engineering precision, operating live in real-world high-output production environments.
         </p>
       </div>
     </section>

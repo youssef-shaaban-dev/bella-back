@@ -132,7 +132,7 @@ export default function PouchShapesGallery() {
             12 Pouch <span className="text-brand-red">Configurations</span>
           </h2>
           <p className="text-gray-500 font-body text-base leading-relaxed font-semibold">
-            Every pouch format below can be produced on Bella Pack&apos;s Horizontal Form-Fill-Seal platform with minimal changeover time.
+            Every pouch format below can be produced on BellaPack&apos;s Horizontal Form-Fill-Seal platform with minimal changeover time.
           </p>
         </div>
 

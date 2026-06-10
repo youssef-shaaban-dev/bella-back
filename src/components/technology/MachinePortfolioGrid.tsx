@@ -133,7 +133,7 @@ export default function MachinePortfolioGrid() {
             Machine <span className="text-brand-red">Portfolio</span>
           </h2>
           <p className="text-gray-500 font-body text-sm mt-3 font-semibold leading-relaxed">
-            Bella Pack features 11 highly-specialized sachet and shaped stand-up pouch machines. Utilize the category filters below to locate the model best suited for your B2B line.
+            BellaPack features 11 highly-specialized sachet and shaped stand-up pouch machines. Utilize the category filters below to locate the model best suited for your B2B line.
           </p>
         </div>
 

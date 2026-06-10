@@ -51,7 +51,7 @@ export default function CaseStudies() {
             Proven Results <span className="text-brand-red">Across</span> Industries
           </h2>
           <p className="text-gray-500 font-body text-base md:text-lg max-w-2xl leading-relaxed font-semibold">
-            Explore how Bella Pack Tec has driven massive efficiencies and introduced structural innovation for leading regional and international manufacturing giants.
+            Explore how BellaPack has driven massive efficiencies and introduced structural innovation for leading regional and international manufacturing giants.
           </p>
         </div>
 

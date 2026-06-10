@@ -233,7 +233,7 @@ export default function BrandsPackaged() {
           <div className="inline-flex items-center space-x-3 mb-4 justify-center w-full">
             <span className="w-8 h-px bg-brand-red"></span>
             <span className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading flex items-center gap-1.5">
-              <Sparkles size={12} /> PROUDLY PACKAGED BY BELLA PACK
+              <Sparkles size={12} /> PROUDLY PACKAGED BY BELLAPACK
             </span>
             <span className="w-8 h-px bg-brand-red"></span>
           </div>

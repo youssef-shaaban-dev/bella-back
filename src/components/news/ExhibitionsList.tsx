@@ -11,7 +11,7 @@ const exhibitions = [
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "December 2026",
     booth: "Hall 2 - Official Pavilion",
-    description: "Bella Pack is pleased to announce its participation in PACPROCESS MEA 2026, held at the Egypt International Exhibition Center, one of the leading platforms for processing and packaging technologies in the Middle East and Africa. This participation marks a key opportunity to present Bella Pack’s latest advancements in horizontal form-fill-seal (HFFS) packaging technologies, and to demonstrate how our engineering expertise supports manufacturers in improving efficiency, accuracy, and production reliability.",
+    description: "BellaPack is pleased to announce its participation in PACPROCESS MEA 2026, held at the Egypt International Exhibition Center, one of the leading platforms for processing and packaging technologies in the Middle East and Africa. This participation marks a key opportunity to present BellaPack’s latest advancements in horizontal form-fill-seal (HFFS) packaging technologies, and to demonstrate how our engineering expertise supports manufacturers in improving efficiency, accuracy, and production reliability.",
     status: "upcoming",
     media: ["/News/interpack - pacprocess 2026 announcement.png"]
   },

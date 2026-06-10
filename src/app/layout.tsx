@@ -16,8 +16,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Bella Pack | Industrial Packaging Solutions",
-  description: "Ultra-modern, high-end industrial packaging solutions by Bella Pack.",
+  title: "BellaPack | Industrial Packaging Solutions",
+  description: "Ultra-modern, high-end industrial packaging solutions by BellaPack.",
 };
 
 export default function RootLayout({

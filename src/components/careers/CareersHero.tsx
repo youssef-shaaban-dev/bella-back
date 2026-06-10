@@ -10,7 +10,7 @@ export default function CareersHero() {
       <div className="absolute inset-0">
         <Image 
           src="/PacProcess 2025/ 1.jpeg" 
-          alt="Join Bella Pack" 
+          alt="Join BellaPack" 
           className="w-full h-full object-cover opacity-20 grayscale select-none"
           fill
           priority
@@ -26,11 +26,11 @@ export default function CareersHero() {
         </div>
 
         <h1 className="reveal text-5xl md:text-8xl font-bold font-heading uppercase tracking-tighter mb-8 max-w-5xl mx-auto leading-[0.95]">
-          Work at <span className="text-brand-red">Bella Pack</span>
+          Work at <span className="text-brand-red">BellaPack</span>
         </h1>
 
         <p className="reveal text-lg md:text-xl text-white/70 font-body max-w-3xl mx-auto leading-relaxed">
-          At Bella Pack, we believe that our people are the foundation of our success. We are continuously looking for talented, motivated, and passionate individuals who want to contribute to the development of high-performance packaging machinery.
+          At BellaPack, we believe that our people are the foundation of our success. We are continuously looking for talented, motivated, and passionate individuals who want to contribute to the development of high-performance packaging machinery.
         </p>
       </div>
     </section>

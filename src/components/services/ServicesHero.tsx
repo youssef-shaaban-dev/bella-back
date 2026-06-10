@@ -10,14 +10,14 @@ export default function ServicesHero() {
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
           src="/ about us/company overview.png"
-          alt="Bella Pack Technical Servicing Hall"
+          alt="BellaPack Technical Servicing Hall"
           fill
           sizes="100vw"
           className="object-cover brightness-[0.23] saturate-[0.8]"
           priority
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
       <div className="container relative z-10 px-6 pt-32 md:pt-40">
         <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">
@@ -30,7 +30,7 @@ export default function ServicesHero() {
         </h1>
 
         <p className="reveal text-sm md:text-base font-body max-w-3xl mx-auto font-medium leading-relaxed text-gray-300">
-          At Bella Pack Tec, we are committed to delivering End-to-End service excellence. We ensure our customers achieve maximum machine performance, operational reliability, and long-term value, while minimizing downtime through fast, responsive, and proactive support.
+          At BellaPack, we are committed to delivering End-to-End service excellence. We ensure our customers achieve maximum machine performance, operational reliability, and long-term value, while minimizing downtime through fast, responsive, and proactive support.
         </p>
       </div>
     </section>

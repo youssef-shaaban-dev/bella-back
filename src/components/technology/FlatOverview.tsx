@@ -17,13 +17,13 @@ export default function FlatOverview() {
             
             <div className="text-gray-600 font-body text-base leading-relaxed space-y-6 font-semibold">
               <p>
-                At <span className="text-brand-red font-bold">Bella Pack Tec</span>, our Horizontal Form-Fill-Seal (HFFS) flat pouch lines are designed to produce over 12 distinct pouch configurations on a single production platform. From classic stand-up pouches and pillow bags to advanced shaped formats with spouts, zippers, euro holes, and carry handles, our machines offer unmatched versatility.
+                At <span className="text-brand-red font-bold">BellaPack</span>, our Horizontal Form-Fill-Seal (HFFS) flat pouch lines are designed to produce over 12 distinct pouch configurations on a single production platform. From classic stand-up pouches and pillow bags to advanced shaped formats with spouts, zippers, euro holes, and carry handles, our machines offer unmatched versatility.
               </p>
               <p>
                 Each pouch format is engineered for specific product categories — liquid beverages, powders, granules, sauces, dairy products, and more. Our modular station design means switching between pouch types requires minimal changeover, reducing downtime and maximizing production throughput.
               </p>
               <p>
-                Whether you need a string pouch for multi-pack sachets, a shaped stand-up pouch with a side spout for liquid detergents, or a classic zipper pouch for coffee and spices, Bella Pack&apos;s flat pouch lines deliver consistent seal quality, precise filling, and premium shelf presentation across every format.
+                Whether you need a string pouch for multi-pack sachets, a shaped stand-up pouch with a side spout for liquid detergents, or a classic zipper pouch for coffee and spices, BellaPack&apos;s flat pouch lines deliver consistent seal quality, precise filling, and premium shelf presentation across every format.
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function FlatOverview() {
             <div className="relative aspect-[16/10] w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg group">
               <Image 
                 src="/pouch shapes/group picture of pouches .png" 
-                alt="Bella Pack Pouch Shapes Collection" 
+                alt="BellaPack Pouch Shapes Collection" 
                 fill 
                 className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 bg-gray-50"
               />

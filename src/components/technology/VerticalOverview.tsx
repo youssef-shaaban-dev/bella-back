@@ -15,7 +15,7 @@ export default function VerticalOverview() {
             <div className="relative w-full max-w-md aspect-[3/4] rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
               <Image 
                 src="/ vertical machines/Vertical machine.png" 
-                alt="Bella Pack Official Vertical Packaging Machine"
+                alt="BellaPack Official Vertical Packaging Machine"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-contain p-6 transition-transform duration-700 group-hover:scale-103"
@@ -45,13 +45,13 @@ export default function VerticalOverview() {
 
             <div className="text-gray-600 font-body text-base leading-relaxed space-y-6 font-semibold border-l-2 border-gray-100 pl-6">
               <p>
-                At <span className="text-brand-red font-bold">Bella Pack Tec</span>, we provide advanced Vertical Packaging Machines designed to deliver high-speed performance, precise filling accuracy, and reliable packaging efficiency for a wide range of industries and production applications. Our vertical packaging systems are engineered to handle powders, granules, liquids, and solid products with consistent packaging quality and secure sealing performance.
+                At <span className="text-brand-red font-bold">BellaPack</span>, we provide advanced Vertical Packaging Machines designed to deliver high-speed performance, precise filling accuracy, and reliable packaging efficiency for a wide range of industries and production applications. Our vertical packaging systems are engineered to handle powders, granules, liquids, and solid products with consistent packaging quality and secure sealing performance.
               </p>
               <p>
                 Designed for modern manufacturing environments, these machines combine intelligent automation, flexible packaging capabilities, and durable industrial construction to support continuous and efficient production operations. Vertical packaging machines are ideal for businesses seeking fast, space-efficient, and cost-effective packaging solutions while maintaining product protection and professional packaging presentation.
               </p>
               <p>
-                Bella Pack systems are developed to optimize production speed, reduce material waste, and improve operational efficiency across various product categories. With user-friendly control systems and advanced filling technologies, our machines provide stable performance and flexible packaging options suitable for different bag sizes and packaging formats.
+                BellaPack systems are developed to optimize production speed, reduce material waste, and improve operational efficiency across various product categories. With user-friendly control systems and advanced filling technologies, our machines provide stable performance and flexible packaging options suitable for different bag sizes and packaging formats.
               </p>
             </div>
 
