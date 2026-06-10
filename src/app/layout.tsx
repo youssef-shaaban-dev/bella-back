@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className={`${agdasima.variable} ${montserrat.variable} font-body min-h-full flex flex-col bg-white text-charcoal`}>
         <Header />
-        <div className="flex-grow">
+        <div className="grow">
           {children}
         </div>
         <Footer />

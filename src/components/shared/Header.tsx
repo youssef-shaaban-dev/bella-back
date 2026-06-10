@@ -3,10 +3,9 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Search, Globe, ArrowRight } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import gsap from "gsap";
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -96,7 +95,7 @@ export default function Header() {
               <Link
                 href={item.href || "#"}
                 className={cn(
-                  "font-heading text-[12px] font-bold flex items-center space-x-1 transition-colors uppercase tracking-[0.1em]",
+                  "font-heading text-[12px] font-bold flex items-center space-x-1 transition-colors uppercase tracking-widest",
                   isScrolled ? "text-charcoal hover:text-brand-red" : "text-white hover:text-brand-red"
                 )}
               >
@@ -116,7 +115,7 @@ export default function Header() {
                               {sub.isCategory ? (
                                 <span className="text-[11px] font-bold text-gray-400 block mb-1 uppercase tracking-wider">{sub.name}</span>
                               ) : (
-                                <Link href={sub.href || "#"} className="text-[13px] font-bold hover:text-brand-red transition-colors block py-1 border-l border-transparent hover:border-brand-red pl-0 hover:pl-3 transition-all">
+                                <Link href={sub.href || "#"} className="text-[13px] font-bold hover:text-brand-red transition-all block py-1 border-l border-transparent hover:border-brand-red pl-0 hover:pl-3">
                                   {sub.name}
                                 </Link>
                               )}
