@@ -61,29 +61,42 @@ export default function CosmeticsPharmaPage() {
                   <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Sanitary-Grade High-Precision Filling</h3>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal leading-tight">
-                  Precise & Hygienic Pouch <span className="text-brand-red">Sealing</span>
+                  Precise & Hygienic Pouch <span className="text-brand-red">Sealing Solutions</span>
                 </h2>
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At BellaPack, we provide advanced packaging solutions designed to meet the high standards of the cosmetics and pharmaceutical industries. Our packaging systems are engineered to deliver precision, hygiene, product protection, and premium presentation for a wide range of liquid, powder, cream, gel, and personal care products.
+                At BellaPack, we deliver advanced packaging systems engineered to meet the stringent requirements of cosmetic, personal care, and pharmaceutical product manufacturers. Our solutions combine filling precision, hygienic design, product protection, and premium package presentation to ensure consistent packaging quality across every production cycle.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                We understand that cosmetics and pharmaceutical products require highly accurate filling systems, secure sealing technologies, and clean production environments to maintain product safety, quality, and consistency. That is why our machines are manufactured using hygienic stainless-steel construction and intelligent automation systems that support efficient and reliable production performance. Our solutions are suitable for creams, lotions, serums, powders, gels, personal care, and pharmaceutical packaging.
+                From creams and lotions to gels, serums, powders, and liquid formulations, our packaging machines are designed to provide accurate dosing, secure sealing, and reliable product handling while maintaining the highest standards of cleanliness and operational efficiency.
+              </p>
+
+              <p className="text-gray-500 font-body text-sm leading-relaxed">
+                Built with sanitary-grade construction and intelligent automation technologies, BellaPack enables manufacturers to optimize productivity, protect product integrity, and achieve consistent packaging performance while complying with strict industry quality and hygiene standards.
               </p>
 
               {/* Formulations checklist */}
               <div className="pt-8 border-t border-gray-100">
-                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Supported Formulations</h4>
+                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Applications We Serve</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    "Cosmetic Creams & Serums",
-                    "Hydrating Lotions & Milks",
-                    "Hair & Body Shower Gels",
-                    "Personal Care Powders",
-                    "Liquid Pharmaceutical Vials",
-                    "Single-Dose Sanitizer Packs"
+                    "Skin Care Creams",
+                    "Face Creams & Moisturizers",
+                    "Body Lotions",
+                    "Serums & Cosmetic Treatments",
+                    "Sunscreen Products",
+                    "Shampoos & Conditioners",
+                    "Hair Care Products",
+                    "Shower Gels & Body Washes",
+                    "Liquid Soaps",
+                    "Hand Sanitizers",
+                    "Cosmetic Powders",
+                    "Facial Masks",
+                    "Pharmaceutical Powders",
+                    "Nutritional Supplements",
+                    "Healthcare & Personal Care Products"
                   ].map((item, idx) => (
                     <div key={idx} className="bg-gray-50 border border-gray-100 p-4 rounded-sm flex items-center space-x-3">
                       <div className="w-5 h-5 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red shrink-0">
@@ -98,15 +111,13 @@ export default function CosmeticsPharmaPage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-1">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Cosmetics & Pharma packaging gallery"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto block rounded-sm transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -152,22 +163,22 @@ export default function CosmeticsPharmaPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                series: "BSH Series",
-                title: "Die-Cut Shaped Pouch",
-                desc: "Integrated with dynamic die-cut shaped pouch tools. Perfect for face masks, dynamic liquid creams, and highly decorative cosmetic sachets.",
-                tech: ["Die-Cut Contour Jaws", "Cold-fill Hermetic Seals", "Stainless Steel 316L Frame"]
+                series: "B-2500",
+                title: "Liquid Filling Simplex",
+                desc: "Standard flat and stand-up pouch liquid packaging line. Engineered to deliver high performance, precise filling accuracy, and consistent operational efficiency for standard packaging formats.",
+                tech: ["Simplex Flow", "Speed: 50 ppm", "Volume: up to 1500ml"]
               },
               {
-                series: "B Series",
-                title: "Standard Flat Sachet Liquid",
-                desc: "Hygienic multi-lane flat sachet machines, designed specifically for shampoo samples, shower gels, and pharmaceutical creams.",
-                tech: ["Multi-Lane Dosing Valves", "Clean-in-Place (CIP) Connections", "High-Accuracy Rotary Valves"]
+                series: "BS-2500-SH",
+                title: "Shaped Spout Simplex",
+                desc: "Custom shaped stand-up pouch with top spout liquid filling machine. Features specialized high-torque cap feeding and reliable spout sealing on a simplex platform.",
+                tech: ["Simplex shaped spout", "Speed: 50 PPM", "Volume: up to 1500ml"]
               },
               {
-                series: "BSS Series",
-                title: "All-in-One Hybrid Liquid/Cream",
-                desc: "High-end packaging line that supports dynamic change from lotion cream tubes to flat sachets on a sanitary framework.",
-                tech: ["Servo Dosing Pump Units", "Gas-Flush Nitrogen Injectors", "Thermal Print Integration"]
+                series: "BP-3000-ZSHA",
+                title: "Shaped Zipper Simplex",
+                desc: "Custom shaped stand-up pouch with zipper powder packaging machine. Delivers highly differentiated shaped profiles with reclosable zipper seals.",
+                tech: ["Simplex shaped zipper", "Speed: 50 ppm", "Volume: up to 1500ml"]
               }
             ].map((mach, idx) => (
               <div key={idx} className="bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
@@ -205,7 +216,7 @@ export default function CosmeticsPharmaPage() {
               href="/contact"
               className="px-8 py-4 bg-brand-red text-white hover:bg-white hover:text-charcoal font-heading font-bold uppercase tracking-widest text-xs transition-all duration-300 rounded-sm shadow-lg w-full sm:w-auto"
             >
-              Get a Proposal
+              Get a Quote
             </Link>
             <Link
               href="/solutions"

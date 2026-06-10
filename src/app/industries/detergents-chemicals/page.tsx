@@ -57,32 +57,44 @@ export default function DetergentsChemicalsPage() {
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <span className="h-px w-8 bg-brand-red"></span>
-                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Titanium-Reinforced Chemical Proof Systems</h3>
+                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Titanium-Reinforced Packaging Solutions</h3>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal leading-tight">
-                  Accurate & Safe Chemical <span className="text-brand-red">Filling</span>
+                  Reliable Packaging Solutions for <span className="text-brand-red">Detergents & Chemical Products</span>
                 </h2>
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At BellaPack, we provide advanced packaging solutions designed to meet the demanding requirements of detergent and chemical product manufacturers. Our systems are engineered to deliver safe, efficient, and reliable packaging performance for liquid, powder, and granular chemical products across various industrial applications.
+                At BellaPack, we deliver advanced packaging systems engineered to meet the demanding requirements of detergent, household care, and chemical product manufacturers. Our solutions combine filling accuracy, operational reliability, product safety, and durable machine construction to support consistent packaging performance across a wide range of applications.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                We understand the importance of precision, durability, and product protection in the chemical packaging industry. That is why our packaging technologies are developed to ensure accurate filling, secure sealing, and consistent packaging quality while supporting high-speed production operations. Whether packaging cleaning products, detergents, industrial chemicals, or household solutions, BellaPack delivers flexible pouch packaging systems tailored to modern manufacturing needs.
+                From liquid detergents and cleaning solutions to powders, granules, and industrial chemical products, our packaging machines are designed to ensure accurate dosing, secure package integrity, and efficient production operations while minimizing product waste and downtime.
+              </p>
+
+              <p className="text-gray-500 font-body text-sm leading-relaxed">
+                Through intelligent automation, flexible machine configurations, and robust industrial design, BellaPack enables manufacturers to optimize productivity, maintain consistent packaging quality, and meet the highest standards of safety, reliability, and operational efficiency.
               </p>
 
               {/* Formulations checklist */}
               <div className="pt-8 border-t border-gray-100">
-                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Supported Formulations</h4>
+                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Applications We Serve</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    "Liquid Detergents & Softeners",
-                    "Chlorine Bleach & Oxidizers",
-                    "Corrosive Household Chemicals",
-                    "Detergent Powders & Granules",
-                    "Dishwasher Liquid Refills",
-                    "Chemical Gels & Paste Packs"
+                    "Liquid Detergents",
+                    "Laundry Detergents",
+                    "Dishwashing Liquids",
+                    "Fabric Softeners",
+                    "Bleach Products",
+                    "Surface Cleaners",
+                    "Disinfectants & Sanitizers",
+                    "Glass Cleaners",
+                    "Toilet Cleaners",
+                    "Detergent Powders",
+                    "Washing Powders",
+                    "Chemical Granules",
+                    "Water Treatment Chemicals",
+                    "Agricultural Chemicals"
                   ].map((item, idx) => (
                     <div key={idx} className="bg-gray-50 border border-gray-100 p-4 rounded-sm flex items-center space-x-3">
                       <div className="w-5 h-5 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red shrink-0">
@@ -97,15 +109,13 @@ export default function DetergentsChemicalsPage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-1">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Detergents & Chemicals packaging gallery"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto block rounded-sm transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -153,22 +163,22 @@ export default function DetergentsChemicalsPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                series: "BS Series",
-                title: "Anti-Corrosion Spout & Cap",
-                desc: "Manufactured strictly with Anti-Corrosive Titanium alloys or SS 316L, designed specifically for acid detergents, bleaches, and aggressive chemicals.",
-                tech: ["Titanium / SS316L Construction", "Hastelloy Chemical Pumps", "Anti-drip Dosing Valves"]
+                series: "B-2500-D",
+                title: "Liquid Filling Duplex",
+                desc: "Stand-up and flat pouch liquid filling machine in a duplex configuration. Doubles production capacity on the same floor footprint.",
+                tech: ["Duplex Flow", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               },
               {
-                series: "B Series",
-                title: "Auger Powder Chemical Packaging",
-                desc: "Equipped with dust-tight auger feeders to packaging detergent powders, washing soda, and agricultural chemicals safely.",
-                tech: ["Dust-Tight Closed Auger", "Air-Purged Sealing Jaws", "Static Eliminator Bars"]
+                series: "BS-2500-D",
+                title: "Liquid Top Spout Duplex",
+                desc: "Stand-up and flat pouch liquid filling machine in a duplex configuration with top spout capping insertion. Engineered for high-speed spouted packs.",
+                tech: ["Top Spout Duplex", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               },
               {
-                series: "BSS Series",
-                title: "Dynamic Flow Liquid Sachet",
-                desc: "Hybrid continuous flow sachet machine for liquid household cleaners, dishwashing soaps, and liquid soaps.",
-                tech: ["Multi-Lane Dosing Pumps", "Flexible Heat Seal Tooling", "Embossed Code Printers"]
+                series: "BS-2500-DSH",
+                title: "Shaped Spout Duplex",
+                desc: "Custom shaped stand-up pouch with top spout liquid filling machine in a duplex configuration. Engineered for maximum output of premium retail spouted packs.",
+                tech: ["Duplex shaped spout", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               }
             ].map((mach, idx) => (
               <div key={idx} className="bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
@@ -206,7 +216,7 @@ export default function DetergentsChemicalsPage() {
               href="/contact"
               className="px-8 py-4 bg-brand-red text-white hover:bg-white hover:text-charcoal font-heading font-bold uppercase tracking-widest text-xs transition-all duration-300 rounded-sm shadow-lg w-full sm:w-auto"
             >
-              Get a Proposal
+              Get a Quote
             </Link>
             <Link
               href="/solutions"

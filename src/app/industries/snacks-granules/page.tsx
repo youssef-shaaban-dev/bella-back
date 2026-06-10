@@ -58,32 +58,46 @@ export default function SnacksGranulesPage() {
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <span className="h-px w-8 bg-brand-red"></span>
-                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">High-Speed Continuous Dosing</h3>
+                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Precision Weighing & Continuous Packaging</h3>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal leading-tight">
-                  Continuous High-Speed <span className="text-brand-red">Packaging</span>
+                  High-Performance Packaging Solutions for <span className="text-brand-red">Snacks & Granular Products</span>
                 </h2>
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At BellaPack, we deliver advanced packaging systems designed to handle snacks, candies, nuts, and granular products at high-speed industrial levels. Our solutions focus on high-speed continuous layouts, dynamic sealing, and efficient product flow to minimize raw material waste.
+                At BellaPack, we deliver advanced packaging systems engineered to meet the demanding requirements of snack food, confectionery, and granular product manufacturers. Our solutions combine high-speed operation, precise weighing technology, reliable sealing performance, and long-term durability to help manufacturers achieve consistent packaging quality and maximum production efficiency.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                We understand that granular snack foods require extremely gentle product handling, quick format changeovers, and durable heat-seal integrity to withstand shipping pressures. BellaPack combines high-precision multi-head weighers and linear scales with robust pouch packaging systems to deliver maximum production output with minimum downtime. Our machines perform consistently under the most demanding food industry conditions.
+                From free-flowing granules and cereals to nuts, seeds, candies, and snack products, our packaging machines are designed to ensure accurate dosing, gentle product handling, and attractive package presentation while minimizing product giveaway and operational downtime.
+              </p>
+
+              <p className="text-gray-500 font-body text-sm leading-relaxed">
+                Through intelligent automation, integrated multi-head weighing systems, flexible machine configurations, and industrial construction, BellaPack enables manufacturers to increase productivity, reduce waste, maintain product integrity, and achieve the highest standards of packaging consistency and operational reliability.
               </p>
 
               {/* Formulations checklist */}
               <div className="pt-8 border-t border-gray-100">
-                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Supported Formulations</h4>
+                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Applications We Serve</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    "Crisps & Potato Chips",
-                    "Roasted & Salted Nuts",
-                    "Sweet Candies & Jellies",
-                    "Extruded Snack Puffs",
-                    "Breakfast Cereals & Oats",
-                    "Granular Sugar & Salts"
+                    "Potato Chips & Extruded Snacks",
+                    "Nuts & Mixed Nuts",
+                    "Seeds",
+                    "Popcorn",
+                    "Pretzels & Crackers",
+                    "Candies & Hard Candies",
+                    "Gummies & Jelly Products",
+                    "Chocolate Pieces & Coated Products",
+                    "Breakfast Cereals",
+                    "Granola & Cereal Mixes",
+                    "Rice",
+                    "Beans & Pulses",
+                    "Lentils",
+                    "Corn Kernels",
+                    "Pet Food",
+                    "Granular Food Ingredients"
                   ].map((item, idx) => (
                     <div key={idx} className="bg-gray-50 border border-gray-100 p-4 rounded-sm flex items-center space-x-3">
                       <div className="w-5 h-5 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red shrink-0">
@@ -98,15 +112,13 @@ export default function SnacksGranulesPage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-1">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Snacks & Granules packaging gallery"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto block rounded-sm transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -152,22 +164,22 @@ export default function SnacksGranulesPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                series: "BW Series",
-                title: "Multi-Head Combination Weigher",
-                desc: "Integrated with 10 or 14-head high-precision combination weighers. Extremely fast, precise, and ideal for dynamic food snack lines.",
-                tech: ["14-Head Dimpled Buckets", "Gentle Sliding Chutes", "High-Speed Batch Gates"]
+                series: "BM-2500-D",
+                title: "Snacks Filling Duplex",
+                desc: "Stand-up pouch snacks filling packaging machine in a duplex configuration. Synchronizes dual-lane discharge with dual multi-head combination weighers.",
+                tech: ["Duplex Flow", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               },
               {
-                series: "BSS Series",
-                title: "All-in-One Hybrid Solutions",
-                desc: "State-of-the-art hybrid pouch line that allows switching from small snack packs to large granular bags on a unified system frame.",
-                tech: ["Quick Tooling Exchange", "Gas-Flush Nitrogen Injectors", "Static Eliminator Bars"]
+                series: "BM-3000-DZ",
+                title: "Snacks Zipper Duplex",
+                desc: "Stand-up pouch with zipper snacks filling machine in a duplex configuration. High-throughput solution for premium retail zipper snack packs.",
+                tech: ["Duplex zipper feed", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               },
               {
-                series: "B Series",
-                title: "Standard Horizontal Flat Pouch",
-                desc: "Optimized for flat-pouch sachets, granular seasonings, and promotional snack packs at maximum speed vector ratings.",
-                tech: ["Simplex/Duplex Feeder Jaws", "Cold-sealing Jaw Tools", "Accurate Count Collators"]
+                series: "BP-3000-DZC",
+                title: "Granules Zipper Duplex",
+                desc: "Stand-up pouch with zipper legumes and granules filling machine in a duplex configuration. Ensures hermetic zipper and bag seals.",
+                tech: ["Duplex zipper feed", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               }
             ].map((mach, idx) => (
               <div key={idx} className="bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
@@ -205,7 +217,7 @@ export default function SnacksGranulesPage() {
               href="/contact"
               className="px-8 py-4 bg-brand-red text-white hover:bg-white hover:text-charcoal font-heading font-bold uppercase tracking-widest text-xs transition-all duration-300 rounded-sm shadow-lg w-full sm:w-auto"
             >
-              Get a Proposal
+              Get a Quote
             </Link>
             <Link
               href="/solutions"

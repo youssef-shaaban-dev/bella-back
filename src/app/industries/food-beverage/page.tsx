@@ -58,32 +58,46 @@ export default function FoodBeveragePage() {
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <span className="h-px w-8 bg-brand-red"></span>
-                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Smart Hygienic Packaging Systems</h3>
+                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Product Quality, Food Safety, Versatility</h3>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal leading-tight">
-                  High-Performance F&B <span className="text-brand-red">Packaging</span>
+                  High-Performance Food & Beverage <span className="text-brand-red">Packaging Solutions</span>
                 </h2>
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At BellaPack, we provide advanced packaging technologies tailored to the evolving needs of the Food & Beverage industry. Our solutions are designed to support manufacturers with high-performance packaging systems that combine efficiency, precision, hygiene, and reliability.
+                At BellaPack, we deliver advanced packaging systems engineered to meet the demanding requirements of the Food & Beverage industry. Our solutions combine precision engineering, hygienic design, operational efficiency, and long-term reliability to help manufacturers achieve consistent packaging performance at scale.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                From dry products and powders to liquids and granules, our machines are engineered to handle a wide variety of food applications while maintaining product integrity and production consistency. We help businesses optimize their packaging operations with smart automation, flexible configurations, and durable machine construction suitable for continuous industrial performance.
+                From powders and granules to snacks, frozen products, and free-flowing liquids, our packaging machines are designed to accommodate a wide range of food applications while preserving product quality, ensuring packaging accuracy, and maximizing production uptime.
+              </p>
+
+              <p className="text-gray-500 font-body text-sm leading-relaxed">
+                Through intelligent automation, flexible machine configurations, and robust industrial construction, BellaPack enables manufacturers to improve productivity, reduce operational costs, and maintain the highest standards of packaging consistency and food safety.
               </p>
 
               {/* Formulations checklist */}
               <div className="pt-8 border-t border-gray-100">
-                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Supported Formulations</h4>
+                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Applications We Serve</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
                     "Tomato Paste & Sauces",
+                    "Ketchup & Condiments",
                     "Edible Oils & Fats",
-                    "Juices & Liquid Drinks",
+                    "Juices & Liquid Beverages",
                     "Ghee & Dairy Products",
-                    "Coffee & Powder Premixes",
-                    "Grains & Granular Foods"
+                    "Yogurt & Dairy Desserts",
+                    "Potato Chips & Snacks",
+                    "Biscuits & Cookies",
+                    "Candies & Confectionery",
+                    "Chocolate Products",
+                    "Frozen Vegetables & Fruits",
+                    "Frozen Seafood",
+                    "Shredded & Grated Cheese",
+                    "Pasta & Noodles",
+                    "Ready-to-Eat Meals",
+                    "Pet Food"
                   ].map((item, idx) => (
                     <div key={idx} className="bg-gray-50 border border-gray-100 p-4 rounded-sm flex items-center space-x-3">
                       <div className="w-5 h-5 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red shrink-0">
@@ -98,15 +112,13 @@ export default function FoodBeveragePage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-1">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Food & Beverage packaging gallery"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto block rounded-sm transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -152,22 +164,22 @@ export default function FoodBeveragePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                series: "B Series",
-                title: "HFFS Flat Sachet Flat-bed",
-                desc: "Standard flat-bag packaging line, optimized for single-serving sachets, powders, sauces, and liquids with extreme hygiene ratings.",
-                tech: ["Standard Flat Bag", "Liquid Dosing Pumps", "Hygienic Steel 316"]
+                series: "B-2500",
+                title: "Liquid Filling Simplex",
+                desc: "Standard flat and stand-up pouch liquid packaging line. Engineered to deliver high performance, precise filling accuracy, and consistent operational efficiency for standard packaging formats.",
+                tech: ["Simplex Flow", "Speed: 50 ppm", "Volume: up to 1500ml"]
               },
               {
-                series: "BS Series",
-                title: "Vibration Capping & Spout",
-                desc: "Equipped with advanced vibration capping and spouted dosing tools. Perfect for liquid juices, condiments, and baby food pouches.",
-                tech: ["Spout Insert Tools", "Vibration Cap Feeders", "Rotary Dosing Units"]
+                series: "B-2500-D",
+                title: "Liquid Filling Duplex",
+                desc: "Stand-up and flat pouch liquid filling machine in a duplex configuration. Doubles production capacity on the same floor footprint.",
+                tech: ["Duplex Flow", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               },
               {
-                series: "BSS Series",
-                title: "All-in-One Hybrid Solutions",
-                desc: "Custom high-speed lines engineered to handle granular, dry and liquid foods interchangeably on a modular frame.",
-                tech: ["Dynamic Dosing Mixers", "Gas Flush Systems", "Laser Code Printers"]
+                series: "BS-2500-D",
+                title: "Liquid Top Spout Duplex",
+                desc: "Stand-up and flat pouch liquid filling machine in a duplex configuration with top spout capping insertion. Engineered for high-speed spouted packs.",
+                tech: ["Top Spout Duplex", "Speed: 100 ppm", "Volume: up to 500ml/1500ml"]
               }
             ].map((mach, idx) => (
               <div key={idx} className="bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
@@ -205,7 +217,7 @@ export default function FoodBeveragePage() {
               href="/contact"
               className="px-8 py-4 bg-brand-red text-white hover:bg-white hover:text-charcoal font-heading font-bold uppercase tracking-widest text-xs transition-all duration-300 rounded-sm shadow-lg w-full sm:w-auto"
             >
-              Get a Proposal
+              Get a Quote
             </Link>
             <Link
               href="/solutions"

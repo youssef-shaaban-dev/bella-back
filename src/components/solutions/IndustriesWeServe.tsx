@@ -26,7 +26,6 @@ const industries = [
     badge: "Aroma Preserved",
     images: [
       "/solutions/spices & coffee/coffee bellapack pouch.png",
-      "/solutions/spices & coffee/1.png",
       "/solutions/spices & coffee/Coffee .jpeg",
       "/solutions/spices & coffee/spices.jpeg"
     ]
@@ -117,13 +116,13 @@ function IndustryDetails({
 
       {/* Right Side: Multi-Image Gallery Showcase */}
       <div className="md:col-span-5 flex flex-col justify-between h-full space-y-4">
-        <div className="relative aspect-square w-full bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group">
+        <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-1">
           <Image
             src={industry.images[activeImgIdx]}
             alt={`${industry.title} packaging mockup`}
-            fill
-            sizes="(max-width: 768px) 100vw, 250px"
-            className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+            width={800}
+            height={600}
+            className="w-full h-auto block rounded-sm transition-transform duration-500 group-hover:scale-105"
           />
         </div>
 

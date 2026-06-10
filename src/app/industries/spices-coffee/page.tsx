@@ -59,32 +59,44 @@ export default function SpicesCoffeePage() {
               <div>
                 <div className="flex items-center space-x-3 mb-4">
                   <span className="h-px w-8 bg-brand-red"></span>
-                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Aroma Preserving Dosing & Sealing</h3>
+                  <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Dosing Precision, Freshness, Aroma Preservation</h3>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal leading-tight">
-                  High-Precision Aroma <span className="text-brand-red">Shielding</span>
+                  Precision Packaging Solutions for <span className="text-brand-red">Spices, Coffee & Powdered Products</span>
                 </h2>
               </div>
 
               <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-                At BellaPack, we provide advanced packaging solutions tailored for spices and coffee products, combining precision, efficiency, and premium packaging performance to meet modern Food & Beverage industry standards. Our packaging systems are engineered to preserve freshness, protect aroma, and maintain product quality throughout the entire packaging process.
+                BellaPack provides specialized packaging solutions designed to meet the unique handling and packaging requirements of spices, coffee, seasonings, and powdered food products. Our advanced packaging systems are engineered to ensure accurate dosing, contamination-free processing, product freshness, and consistent package presentation throughout every production cycle.
               </p>
 
               <p className="text-gray-500 font-body text-sm leading-relaxed">
-                Whether handling fine spice powders, seasoning blends, coffee beans, or ground coffee, our machines deliver reliable filling accuracy and secure sealing technologies designed for consistent production results. We understand that spices and coffee products require specialized packaging solutions to protect them from moisture, air exposure, and contamination while maintaining their flavor, aroma, and shelf appeal. That is why BellaPack combines intelligent automation with high-performance pouch packaging technologies to deliver packaging that supports both product protection and brand presentation.
+                Whether handling fine powders, granular blends, whole coffee beans, or aromatic spice mixtures, BellaPack machines deliver exceptional filling precision, reliable sealing performance, and efficient production speeds. Our machines are designed to preserve product quality, maintain flavor integrity, and support manufacturers in achieving maximum operational efficiency while reducing product waste and downtime.
+              </p>
+
+              <p className="text-gray-500 font-body text-sm leading-relaxed">
+                Through intelligent automation, flexible packaging formats, and robust industrial construction, BellaPack enables spice and coffee producers to optimize production processes while meeting the highest standards of product quality, hygiene, and packaging consistency.
               </p>
 
               {/* Formulations checklist */}
               <div className="pt-8 border-t border-gray-100">
-                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Supported Formulations</h4>
+                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Applications We Serve</h4>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    "Whole Coffee Beans",
-                    "Fine Ground Coffee",
-                    "Fragrant Spice Powders",
-                    "Dry Seasoning Blends",
-                    "Specialty Drip Bags",
-                    "Foil-Barrier Coffee Pouches"
+                    "Ground Coffee",
+                    "Coffee Beans",
+                    "Instant Coffee",
+                    "Coffee Premixes",
+                    "Turkish Coffee",
+                    "Specialty Coffee Blends",
+                    "Black Pepper",
+                    "Paprika & Chili Powder",
+                    "Mixed Seasonings",
+                    "Herbs & Dried Leaves",
+                    "Baking Powders & Food Additives",
+                    "Sugar",
+                    "Salt",
+                    "Powdered Beverage Mixes"
                   ].map((item, idx) => (
                     <div key={idx} className="bg-gray-50 border border-gray-100 p-4 rounded-sm flex items-center space-x-3">
                       <div className="w-5 h-5 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red shrink-0">
@@ -99,15 +111,13 @@ export default function SpicesCoffeePage() {
 
             {/* Right: Gallery Showcase */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-6">
+              <div className="relative bg-white border border-gray-200/80 rounded-sm overflow-hidden shadow-sm group p-1">
                 <Image
                   src={images[activeImgIdx]}
                   alt="Spices & Coffee packaging gallery"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: '100%', height: 'auto' }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto block rounded-sm transition-transform duration-500 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -153,22 +163,22 @@ export default function SpicesCoffeePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                series: "B Series",
-                title: "Auger Powder Filling",
-                desc: "Equipped with state-of-the-art servo auger fillers, perfect for high-accuracy dosing of fine spice powders without product leaking or dust emission.",
-                tech: ["Servo Auger Feeders", "Dust Extraction Systems", "Hermetic Sealing Jaws"]
+                series: "BP-2500-A",
+                title: "Powder Filling Simplex",
+                desc: "Stand-up pouch powder packaging line. Features a single-screw auger dosing system designed for high accuracy and minimal dust emission.",
+                tech: ["Simplex Flow", "Speed: 50 ppm", "Volume: up to 1500ml"]
               },
               {
-                series: "BW Series",
-                title: "Linear & Multi-head Weighing",
-                desc: "Designed specifically for roasted coffee beans and granular spices. Combines high-precision scales with gentle sliding drops.",
-                tech: ["Multi-Head Combination Scales", "Vibratory Feeder Trays", "Aroma Preservation Valves"]
+                series: "BP-3000-ZA",
+                title: "Powder Zipper Simplex",
+                desc: "Stand-up pouch with zipper powder packaging machine. Enables inline press-to-close zipper feeding and sealing for dry goods.",
+                tech: ["Simplex Flow", "Speed: 50 ppm", "Volume: up to 1500ml"]
               },
               {
-                series: "BSH Series",
-                title: "Shaped Zipper Pouch Modules",
-                desc: "High-fidelity zipper insertion and die-cut options. Delivers highly premium stand-up zipper coffee pouches to catch customers' eyes.",
-                tech: ["Zipper Heat Sealing", "Euro-slot Die Cut Jaws", "Foil-Barrier Handling"]
+                series: "BP-3000-ZSHA",
+                title: "Shaped Zipper Simplex",
+                desc: "Custom shaped stand-up pouch with zipper powder packaging machine. Delivers highly differentiated shaped profiles with reclosable zipper seals.",
+                tech: ["Simplex Flow", "Speed: 50 ppm", "Volume: up to 1500ml"]
               }
             ].map((mach, idx) => (
               <div key={idx} className="bg-white border border-gray-200/80 p-8 rounded-sm shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
@@ -206,7 +216,7 @@ export default function SpicesCoffeePage() {
               href="/contact"
               className="px-8 py-4 bg-brand-red text-white hover:bg-white hover:text-charcoal font-heading font-bold uppercase tracking-widest text-xs transition-all duration-300 rounded-sm shadow-lg w-full sm:w-auto"
             >
-              Get a Proposal
+              Get a Quote
             </Link>
             <Link
               href="/solutions"
