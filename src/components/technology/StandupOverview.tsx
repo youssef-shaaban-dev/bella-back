@@ -49,7 +49,7 @@ export default function StandupOverview() {
                   </span>
                   <div>
                     <span className="block text-sm text-charcoal leading-tight mb-1">{item.title}</span>
-                    <span className="block text-[10px] font-body font-normal text-gray-500 lowercase first-letter:uppercase">{item.desc}</span>
+                    <span className="block text-[10px] font-body font-normal text-gray-500">{item.desc}</span>
                   </div>
                 </li>
               ))}
