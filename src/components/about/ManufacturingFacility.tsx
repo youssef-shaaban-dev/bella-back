@@ -52,7 +52,7 @@ export default function ManufacturingFacility() {
           <div className="order-1 lg:order-2 relative reveal">
             <div className="relative aspect-square md:aspect-4/3 lg:aspect-4/3 overflow-hidden rounded-sm group shadow-2xl">
               <Image
-                src="/about-us/facility.jpeg"
+                src="/about-us/facility.webp"
                 alt="BellaPack Manufacturing Facility View"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

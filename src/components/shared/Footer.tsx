@@ -84,7 +84,7 @@ export default function Footer() {
           <div className="space-y-8">
             <Link href="/" className="flex items-center space-x-2">
               <div className="flex items-center justify-center rounded-sm relative">
-                <Image src="/logo.png" alt="BellaPack" width={200} height={200} className="object-contain" />
+                <Image src="/logo.webp" alt="BellaPack" width={200} height={200} className="object-contain" />
               </div>
             </Link>
             <p className="text-white/40 font-body leading-relaxed text-sm">

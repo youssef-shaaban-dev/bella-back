@@ -9,8 +9,8 @@ export default function CosmeticsPharmaPage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
 
   const images = [
-    "/Homepage/closeup flowmeter.png",
-    "/Homepage/Machine-close-up-2.jpeg"
+    "/Homepage/closeup flowmeter.webp",
+    "/Homepage/Machine-close-up-2.webp"
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function CosmeticsPharmaPage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/Homepage/Machine-close-up-2.jpeg"
+            src="/Homepage/Machine-close-up-2.webp"
             alt="Cosmetics & Pharmaceutical Packaging"
             fill
             className="object-cover brightness-[0.25] saturate-[0.8]"
@@ -52,7 +52,7 @@ export default function CosmeticsPharmaPage() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-16 items-start">
-            
+
             {/* Left: Detailed Text Copy */}
             <div className="lg:col-span-7 space-y-8">
               <div>
@@ -128,11 +128,10 @@ export default function CosmeticsPharmaPage() {
                   <button
                     key={img}
                     onClick={() => setActiveImgIdx(i)}
-                    className={`relative w-16 h-16 border rounded-sm overflow-hidden bg-white shrink-0 transition-all ${
-                      activeImgIdx === i 
-                        ? "border-brand-red ring-2 ring-brand-red/10 scale-105" 
+                    className={`relative w-16 h-16 border rounded-sm overflow-hidden bg-white shrink-0 transition-all ${activeImgIdx === i
+                        ? "border-brand-red ring-2 ring-brand-red/10 scale-105"
                         : "border-gray-200 hover:border-gray-400"
-                    }`}
+                      }`}
                   >
                     <Image
                       src={img}

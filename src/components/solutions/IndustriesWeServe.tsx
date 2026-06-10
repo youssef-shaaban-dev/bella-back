@@ -13,8 +13,8 @@ const industries = [
     features: ["Juices & Liquids", "Edible Oils", "Tomato Paste & Sauces", "Ghee & Dairy", "Grains"],
     badge: "High Hygiene",
     images: [
-      "/solutions/Food & Beverage/Food.jpeg",
-      "/solutions/Food & Beverage/food-2.jpeg"
+      "/solutions/food-beverage/Food.webp",
+      "/solutions/food-beverage/food-2.webp"
     ]
   },
   {
@@ -25,9 +25,9 @@ const industries = [
     features: ["Coffee Beans", "Ground Coffee", "Spice Powders", "Seasoning Blends"],
     badge: "Aroma Preserved",
     images: [
-      "/solutions/spices & coffee/coffee bellapack pouch.png",
-      "/solutions/spices & coffee/Coffee.jpeg",
-      "/solutions/spices & coffee/spices.jpeg"
+      "/solutions/spices-coffee/coffee-bellapack-pouch.webp",
+      "/solutions/spices-coffee/Coffee.webp",
+      "/solutions/spices-coffee/spices.webp"
     ]
   },
   {
@@ -38,8 +38,8 @@ const industries = [
     features: ["Nuts", "Candies", "Snacks"],
     badge: "High Speed",
     images: [
-      "/Homepage/Pouches.jpeg",
-      "/Homepage/BP-2500.jpeg"
+      "/Homepage/Pouches.webp",
+      "/Homepage/BP-2500.webp"
     ]
   },
   {
@@ -50,7 +50,7 @@ const industries = [
     features: ["Liquid Detergents", "Bleach", "Corrosive Chemicals", "Powders & Granules"],
     badge: "Titanium Built",
     images: [
-      "/solutions/ Detergents & Chemicals Products/Detergents-pouches.jpeg"
+      "/solutions/detergents-chemicals-products/Detergents-pouches.webp"
     ]
   },
   {
@@ -61,8 +61,8 @@ const industries = [
     features: ["Creams & Lotions", "Shower Gels", "Liquid Pharma", "Personal Care"],
     badge: "Sanitary Grade",
     images: [
-      "/Homepage/closeup flowmeter.png",
-      "/Homepage/Machine-close-up-2.jpeg"
+      "/Homepage/closeup flowmeter.webp",
+      "/Homepage/Machine-close-up-2.webp"
     ]
   }
 ];

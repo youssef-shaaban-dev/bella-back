@@ -39,7 +39,7 @@ export default function Header() {
         <Link href="/" className="flex items-center shrink-0">
           <div className={cn("relative transition-all duration-500", isScrolled ? "h-16 w-36 md:h-24 md:w-52" : "h-18 w-40 md:h-28 md:w-60")}>
              <Image 
-                src="/logo.png" 
+                src="/logo.webp" 
                 alt="BellaPack" 
                 fill 
                 className="object-contain" 

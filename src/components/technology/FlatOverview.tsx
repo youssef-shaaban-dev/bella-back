@@ -60,7 +60,7 @@ export default function FlatOverview() {
             {/* Group Image */}
             <div className="relative aspect-16/10 w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg group">
               <Image 
-                src="/pouch shapes/group picture of pouches .png" 
+                src="/pouch-shapes/group-picture-of-pouches-.webp" 
                 alt="BellaPack Pouch Shapes Collection" 
                 fill 
                 className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 bg-gray-50"
@@ -73,3 +73,4 @@ export default function FlatOverview() {
     </section>
   );
 }
+

@@ -14,7 +14,7 @@ export default function VerticalOverview() {
           <div className="reveal lg:col-span-5 flex justify-center w-full">
             <div className="relative w-full max-w-md aspect-[3/4] rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
               <Image 
-                src="/ vertical machines/Vertical machine.png" 
+                src="/vertical-machines/vertical-machine.webp" 
                 alt="BellaPack Official Vertical Packaging Machine"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"

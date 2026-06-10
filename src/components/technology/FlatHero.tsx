@@ -8,7 +8,7 @@ export default function FlatHero() {
       <div className="absolute inset-0">
         <Image 
           fill
-          src="/pouch shapes/group pouch shapes banner.png" 
+          src="/pouch-shapes/group-pouch-shapes-banner.webp" 
           alt="Horizontal Flat Pouch Packaging Formats" 
           className="w-full h-full object-cover opacity-60"
           priority
@@ -36,3 +36,4 @@ export default function FlatHero() {
     </section>
   );
 }
+

@@ -8,7 +8,7 @@ export default function VerticalHero() {
       <div className="absolute inset-0">
         <Image 
           fill
-          src="/ vertical machines/Vertical machine.png" 
+          src="/vertical-machines/vertical-machine.webp" 
           alt="Vertical Packaging Machinery Header" 
           className="w-full h-full object-cover opacity-60"
           priority

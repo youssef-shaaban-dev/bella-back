@@ -14,7 +14,7 @@ const mediaItems = [
     type: 'video', 
     src: "https://drive.google.com/file/d/1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf/preview",
     driveId: "1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf",
-    thumbnail: "/News/pacprocess-2025.jpeg",
+    thumbnail: "/News/pacprocess-2025.webp",
     title: "Colorx Liquid Detergent Pouch Line",
     desc: "High-precision HFFS liquid dosing and horizontal stand-up pouch sealing line."
   },
@@ -23,15 +23,15 @@ const mediaItems = [
     type: 'video', 
     src: "https://drive.google.com/file/d/1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1/preview",
     driveId: "1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1",
-    thumbnail: "/News/pacprocess-2026.png",
+    thumbnail: "/News/pacprocess-2026.webp",
     title: "Interpack - Pacprocess MEA 2024 Showcase",
     desc: "Turnkey packaging machinery running live demonstrations on the international expo floor."
   },
   { 
     id: 3, 
     type: 'image', 
-    src: "/Homepage/BP-2500.jpeg", 
-    thumbnail: "/Homepage/BP-2500.jpeg",
+    src: "/Homepage/BP-2500.webp", 
+    thumbnail: "/Homepage/BP-2500.webp",
     title: "BP-2500 Rotary Sachet Machine",
     desc: "Ultra-precise rotary multi-lane sachet packaging model for custom powder dosing."
   },

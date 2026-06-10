@@ -9,7 +9,7 @@ export default function StandupHero() {
       <div className="absolute inset-0">
         <Image 
           fill
-          src="/horizontal stand up pouch/WhatsApp Image 2026-05-20 at 12.55.57 PM.jpeg" 
+          src="/horizontal-standup-pouch/standup-pouch-main.webp" 
           alt="Horizontal Stand-up Pouch Machine Header" 
           className="w-full h-full object-cover opacity-35 transform scale-105 hover:scale-100 transition-transform duration-1000"
           priority

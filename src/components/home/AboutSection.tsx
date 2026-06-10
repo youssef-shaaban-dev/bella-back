@@ -54,7 +54,7 @@ export default function AboutSection() {
           <div ref={imageRef} className="relative group max-w-xl mx-auto lg:mx-0 w-full">
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm">
               <Image 
-                src="/Homepage/closeup flowmeter.png" 
+                src="/Homepage/closeup flowmeter.webp" 
                 alt="Precision Industrial Manufacturing" 
                 fill 
                 sizes="(max-width: 1024px) 100vw, 50vw"

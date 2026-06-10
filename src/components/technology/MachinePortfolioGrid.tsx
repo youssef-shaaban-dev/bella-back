@@ -18,261 +18,261 @@ const machineModels = [
     id: "b-2500",
     name: "B-2500",
     category: "liquid",
-    img: "/horizontal stand up pouch/B2500.jpeg",
+    img: "/horizontal-standup-pouch/B2500.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches and flat pouches, liquid filling. Designed to deliver high performance, precise filling accuracy, and consistent operational efficiency for standard packaging formats.",
     techDetails: "Hygienic liquid dosing pumps, Siemens PLC touch control panel, CE certified systems. Built for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png", "/pouch shapes/pillow pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/pillow-pouch.webp"]
   },
   {
     id: "b-2500-d",
     name: "B-2500-D",
     category: "liquid",
-    img: "/horizontal stand up pouch/B2500-D.jpeg",
+    img: "/horizontal-standup-pouch/B2500-D.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches and flat pouches, liquid filling in a duplex configuration. Doubles production capacity on the same floor footprint.",
     techDetails: "Synchronized dual-lane dosing valves, independent lane temperature monitors, dual discharge chutes. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png", "/pouch shapes/pillow pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/pillow-pouch.webp"]
   },
   {
     id: "b-2500-sh",
     name: "B-2500-SH",
     category: "liquid",
-    img: "/horizontal stand up pouch/B-2500- SH.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SH.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For custom shaped stand-up pouch, liquid filling. Designed specifically for highly contoured shaped pouches, utilizing precision heat-sealing jaws and cold-cut contour knives.",
     techDetails: "Micro-metric knife adjustments, custom shaped contour die-cutting, active punch alignment guide. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch.webp"]
   },
   {
     id: "b-2500-dsh",
     name: "B-2500-DSH",
     category: "liquid",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For custom shaped stand-up pouch, liquid filling in a duplex configuration. Engineered for high-speed shaped contour die-cutting and active punch units.",
     techDetails: "Heated contour sealing dies, heavy-duty punch alignment, synchronized dual shaped knives calibration. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch.webp"]
   },
   {
     id: "bs-2500",
     name: "BS-2500",
     category: "liquid",
-    img: "/horizontal stand up pouch/BS-2500.jpeg",
+    img: "/horizontal-standup-pouch/BS-2500.webp",
     specs: ["Type: Simplex", "Speed: 50 PPM", "Volume: up to 1500ml"],
     desc: "For custom shaped stand-up pouch with top spout, liquid filling. Features specialized high-torque cap feeding and reliable spout sealing.",
     techDetails: "Active cap presence sensor, servo-driven capping head, CIP/SIP integration, 316L sanitary stainless steel contact parts. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch top spout.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-top-spout.webp"]
   },
   {
     id: "bs-2500-d",
     name: "BS-2500-D",
     category: "liquid",
-    img: "/horizontal stand up pouch/BS-2500.jpeg",
+    img: "/horizontal-standup-pouch/BS-2500.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches and flat pouches, liquid filling in a duplex configuration. Provides double-lane spouted capping feed and double-lane liquid dosing.",
     techDetails: "Dual lane spouted capping feed, high-torque capping assembly, dual lane volumetric liquid dosing. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch top spout.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-top-spout.webp"]
   },
   {
     id: "bs-2500-sh",
     name: "BS-2500-SH",
     category: "liquid",
-    img: "/horizontal stand up pouch/BS-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/BS-2500-SHPU.webp",
     specs: ["Type: Simplex", "Speed: 50 PPM", "Volume: up to 1500ml"],
     desc: "For custom shaped stand-up pouch with top spout, liquid filling. Integrates bespoke shaped die-cutting and capping technology on a simplex platform.",
     techDetails: "Active cap insertion guide, heated contour sealing dies, heavy-duty shaped punch calibration. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with top spout.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-top-spout.webp"]
   },
   {
     id: "bs-2500-dsh",
     name: "BS-2500-DSH",
     category: "liquid",
-    img: "/horizontal stand up pouch/BS-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/BS-2500-SHPU.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For custom shaped stand-up pouch with top spout, liquid filling in a duplex configuration. Engineered for maximum output of premium retail spouted packs.",
     techDetails: "Synchronized shaped contour knives, dual spouted capping heads, clean-in-place sanitary setup. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with top spout.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-top-spout.webp"]
   },
   {
     id: "bp-2500-a",
     name: "BP-2500-A",
     category: "powder",
-    img: "/horizontal stand up pouch/BP-2500-A.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-A.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouch, powder filling. Features a single-screw auger dosing system designed for high accuracy and minimal dust emission.",
     techDetails: "Servo-driven auger shaft, hopper level monitoring, nitrogen gas flushing for aroma preservation. Suitable for Spices & Coffee, Food & Beverage, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp"]
   },
   {
     id: "bp-2500-da",
     name: "BP-2500-DA",
     category: "powder",
-    img: "/horizontal stand up pouch/BP-2500-DA.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-DA.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouch, powder filling in a duplex configuration. Implements dual-lane auger dosing for high-speed continuous packaging.",
     techDetails: "Integrated twin-lane dry powder auger dosing, active dust extraction nozzles, twin-lane sealing. Suitable for Spices & Coffee, Food & Beverage, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp"]
   },
   {
     id: "bp-3000-za",
     name: "BP-3000-ZA",
     category: "powder",
-    img: "/horizontal stand up pouch/BP-2500-A.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-A.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouch with zipper, powder filling. Enables inline press-to-close zipper feeding and sealing for dry goods.",
     techDetails: "Zipper heat-sealing unit, optical zip registration, Siemens PLC touch control panel. Suitable for Spices & Coffee, Food & Beverage, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-3000-dza",
     name: "BP-3000-DZA",
     category: "powder",
-    img: "/horizontal stand up pouch/BP-2500-DA.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-DA.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouch with zipper, powder filling in a duplex configuration. Combines dual zipper feed with duplex auger dosing.",
     techDetails: "Simultaneous dual-lane zipper feeding, dual powder auger dosers, double discharge chutes. Suitable for Spices & Coffee, Food & Beverage, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-3000-zsha",
     name: "BP-3000-ZSHA",
     category: "powder",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For custom shaped stand-up pouch with zipper, powder filling. Delivers highly differentiated shaped profiles with reclosable zipper seals.",
     techDetails: "Heated shaped sealing jaws, inline zipper application, optical shape registration. Suitable for Spices & Coffee, Food & Beverage, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-3000-dzsha",
     name: "BP-3000-DZSHA",
     category: "powder",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For custom shaped stand-up pouch with zipper, fine powder filling in a duplex configuration. Designed for maximum production speed and accuracy.",
     techDetails: "Dual-lane shaped die-cutting, synchronized zipper sealer, heavy-duty hydraulic punch. Suitable for Spices & Coffee, Food & Beverage, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-2500-c",
     name: "BP-2500-C",
     category: "granules",
-    img: "/horizontal stand up pouch/BP-2500-A.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-A.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches, legumes and granules filling. Features robust volumetric cup dosing or linear scales for high accuracy.",
     techDetails: "Volumetric dosing cups, heavy-duty build, dust collection ports, Siemens PLC touch controls. Suitable for Snacks & Granular Products, Spices & Coffee.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp"]
   },
   {
     id: "bp-2500-dc",
     name: "BP-2500-DC",
     category: "granules",
-    img: "/horizontal stand up pouch/BP-2500-DA.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-DA.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches, legumes and granules filling in a duplex configuration. Employs double cup fillers to maximize output.",
     techDetails: "Double lane cup dosing systems, synchronized discharge gates, high speed sealing jaws. Suitable for Snacks & Granular Products, Spices & Coffee.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp"]
   },
   {
     id: "bp-3000-zc",
     name: "BP-3000-ZC",
     category: "granules",
-    img: "/horizontal stand up pouch/BP-2500-A.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-A.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches with zipper, legumes and granules filling. Merges fast dry filling with inline reclosable zipper feeding.",
     techDetails: "Inline zipper feed, volumetric cup dosing integration, heavy-duty sealing dies. Suitable for Snacks & Granular Products, Spices & Coffee.",
-    pouchFormats: ["/pouch shapes/stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-3000-dzc",
     name: "BP-3000-DZC",
     category: "granules",
-    img: "/horizontal stand up pouch/BP-2500-DA.jpeg",
+    img: "/horizontal-standup-pouch/BP-2500-DA.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches with zipper, legumes and granules filling in a duplex configuration. Ensures hermetic zipper and bag seals.",
     techDetails: "Dual-lane zipper attachment, double volumetric dosing system, double discharge gates. Suitable for Snacks & Granular Products, Spices & Coffee.",
-    pouchFormats: ["/pouch shapes/stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-3000-zshc",
     name: "BP-3000-ZSHC",
     category: "granules",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For custom shaped stand-up pouches with zipper, legumes and granules filling. Designed for premium contoured snack and grain formats.",
     techDetails: "Hydraulic punch alignment, heated shaped sealing jaws, inline zipper application. Suitable for Snacks & Granular Products, Spices & Coffee.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bp-3000-dzshc",
     name: "BP-3000-DZSHC",
     category: "granules",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For custom shaped stand-up pouches with zipper, legumes and granules filling in a duplex configuration. Delivers high speed shaped outline execution.",
     techDetails: "Synchronized dual shaped knives, dual zipper sealing, double cup dosing. Suitable for Snacks & Granular Products, Spices & Coffee.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bm-2500",
     name: "BM-2500",
     category: "granules",
-    img: "/horizontal stand up pouch/B2500.jpeg",
+    img: "/horizontal-standup-pouch/B2500.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches, snacks filling. Designed specifically for gentle snack handling, integrating with multi-head combinational weighers.",
     techDetails: "Multi-head combination weigher integration interface, nitrogen flushing, zero-drip chutes. Suitable for Snacks & Granular Products.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp"]
   },
   {
     id: "bm-2500-d",
     name: "BM-2500-D",
     category: "granules",
-    img: "/horizontal stand up pouch/B2500-D.jpeg",
+    img: "/horizontal-standup-pouch/B2500-D.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches, snacks filling in a duplex configuration. Synchronizes dual lane discharge with dual weigher scaling.",
     techDetails: "Dual multi-head weigher sync, independent discharge gates, twin lane sealing. Suitable for Snacks & Granular Products.",
-    pouchFormats: ["/pouch shapes/stand up pouch.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp"]
   },
   {
     id: "bm-3000-z",
     name: "BM-3000-Z",
     category: "granules",
-    img: "/horizontal stand up pouch/B-2500-PU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-PU.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches with zipper, snacks filling. Combines weigher speed with inline reclosable zipper feeding.",
     techDetails: "Inline zipper heat seal jaws, nitrogen flushing for shelf freshness, product safety gates. Suitable for Snacks & Granular Products.",
-    pouchFormats: ["/pouch shapes/stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bm-3000-dz",
     name: "BM-3000-DZ",
     category: "granules",
-    img: "/horizontal stand up pouch/B2500-D.jpeg",
+    img: "/horizontal-standup-pouch/B2500-D.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches with zipper, snacks filling in a duplex configuration. The ultimate throughput solution for premium zipper snacks.",
     techDetails: "Synchronized dual-lane zipper feeders, dual weigher integrations, double discharge channels. Suitable for Snacks & Granular Products.",
-    pouchFormats: ["/pouch shapes/stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bm-3000-zsh",
     name: "BM-3000-ZSH",
     category: "granules",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For custom shaped stand-up pouches with zipper, snacks filling. Creates high shelf-appeal contour shaped pouches with zippers.",
     techDetails: "Heated contour sealing dies, hydraulic contour shaped knives, inline zipper application. Suitable for Snacks & Granular Products.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-zipper.webp"]
   },
   {
     id: "bm-3000-dzsh",
     name: "BM-3000-DZSH",
     category: "granules",
-    img: "/horizontal stand up pouch/B-2500-SHPU.jpeg",
+    img: "/horizontal-standup-pouch/B-2500-SHPU.webp",
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For shaped stand-up pouch with zipper, snacks filling in a duplex configuration. Top-tier speed and precision packaging presentation.",
     techDetails: "Twin-axis shaped die cutting, dual-lane zipper feeding, advanced Siemens PLC controls. Suitable for Snacks & Granular Products.",
-    pouchFormats: ["/pouch shapes/shaped stand up pouch with zipper.png"]
+    pouchFormats: ["/pouch-shapes/shaped-stand-up-pouch-with-zipper.webp"]
   }
 ];
 
@@ -360,7 +360,7 @@ export default function MachinePortfolioGrid() {
                           <div 
                             key={pIdx} 
                             className="relative w-10 h-10 bg-gray-50 border border-gray-200 p-1 rounded-sm flex items-center justify-center group/pouch shadow-xs" 
-                            title={pImg.split("/").pop()?.replace(".png", "")}
+                            title={pImg.split("/").pop()?.replace(".webp", "")}
                           >
                             <Image 
                               src={pImg} 
@@ -454,7 +454,7 @@ export default function MachinePortfolioGrid() {
                     </h4>
                     <div className="flex flex-wrap gap-4">
                       {selectedModel.pouchFormats.map((pImg, pIdx) => {
-                        const name = pImg.split("/").pop()?.replace(".png", "").replace(/-/g, " ");
+                        const name = pImg.split("/").pop()?.replace(".webp", "").replace(/-/g, " ");
                         return (
                           <div key={pIdx} className="flex flex-col items-center gap-2">
                             <div className="relative w-16 h-16 bg-gray-50 border border-gray-200 p-2 rounded-sm flex items-center justify-center shadow-xs">
@@ -494,3 +494,4 @@ export default function MachinePortfolioGrid() {
     </section>
   );
 }
+

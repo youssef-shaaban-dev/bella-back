@@ -12,31 +12,31 @@ gsap.registerPlugin(ScrollTrigger);
 const solutions = [
   {
     title: "Food & Beverage",
-    img: "/Homepage/3.png",
+    img: "/Homepage/3.webp",
     desc: "High-hygiene filling and packing lines engineered for tomato paste, juices, ghee, edible oils, and grains.",
     link: "/industries/food-beverage"
   },
   {
     title: "Spices & Coffee",
-    img: "/Homepage/4.png",
+    img: "/Homepage/4.webp",
     desc: "High-precision powder filling solutions ensuring accurate dosing, aroma preservation, and zero waste.",
     link: "/industries/spices-coffee"
   },
   {
     title: "Snacks & Granules",
-    img: "/Homepage/5.png",
+    img: "/Homepage/5.webp",
     desc: "High-speed packaging systems designed for continuous, reliable bagging of snacks, nuts, and candies.",
     link: "/industries/snacks-granules"
   },
   {
     title: "Detergents & Chemicals",
-    img: "/Homepage/6.png",
+    img: "/Homepage/6.webp",
     desc: "Heavy-duty titanium-reinforced packaging lines built specifically to handle liquid detergents and corrosive bleach.",
     link: "/industries/detergents-chemicals"
   },
   {
     title: "Cosmetics & Pharma",
-    img: "/Homepage/7.png",
+    img: "/Homepage/7.webp",
     desc: "Ultra-sanitary dosing systems tailored for high-hygiene creams, gels, and pharmaceutical liquids.",
     link: "/industries/cosmetics-pharma"
   }

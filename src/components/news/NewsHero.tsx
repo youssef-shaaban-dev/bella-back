@@ -8,7 +8,7 @@ export default function NewsHero() {
       {/* Parallax Background using their actual PacProcess 2025 stand photo */}
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
-          src="/News/pacprocess-2025.jpeg"
+          src="/News/pacprocess-2025.webp"
           alt="BellaPack Exhibition Stand"
           fill
           className="object-cover brightness-[0.23] saturate-[0.8]"

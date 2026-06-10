@@ -50,7 +50,7 @@ export default function SustainabilityDetails() {
           <div className="lg:col-span-5 reveal">
             <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl group">
               <Image
-                src="/Sustainability/sustainability pouches.png"
+                src="/Sustainability/sustainability pouches.webp"
                 alt="Sustainably packed pouches mockup"
                 width={800}
                 height={450}

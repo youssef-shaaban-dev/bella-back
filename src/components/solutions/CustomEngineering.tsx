@@ -14,7 +14,7 @@ export default function CustomEngineering() {
           <div className="reveal lg:col-span-5 relative group">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-2xl bg-charcoal/5">
               <Image 
-                src="/solutions/spices & coffee/coffee bellapack pouch.png" 
+                src="/solutions/spices-coffee/coffee-bellapack-pouch.webp" 
                 alt="Bespoke Industrial Automation" 
                 fill 
                 sizes="(max-width: 1024px) 100vw, 40vw"

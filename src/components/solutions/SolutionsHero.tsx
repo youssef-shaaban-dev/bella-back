@@ -9,7 +9,7 @@ export default function SolutionsHero() {
       {/* Parallax Background using slide banner 4 */}
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
-          src="/Homepage/slide-banner-4.png"
+          src="/Homepage/slide-banner-4.webp"
           alt="BellaPack Integrated Packaging Solutions"
           fill
           className="object-cover brightness-[0.25] saturate-[0.8]"

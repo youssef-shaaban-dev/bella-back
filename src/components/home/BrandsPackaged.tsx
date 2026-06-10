@@ -16,7 +16,7 @@ const products = [
     name: "Persil Liquid Gel",
     brand: "Henkel / Persil",
     category: "DETERGENTS",
-    img: "/Homepage/Products/persil.png",
+    img: "/Homepage/Products/persil.webp",
     glow: "shadow-green-500/20 hover:border-green-500/30",
     desc: "Precision gel-filling at high velocities with drop-tight seal execution.",
     customScale: 1.2
@@ -25,7 +25,7 @@ const products = [
     name: "Pril Dishwashing Liquid",
     brand: "Henkel / Pril",
     category: "DETERGENTS",
-    img: "/Homepage/Products/pril no spout.png",
+    img: "/Homepage/Products/pril no spout.webp",
     glow: "shadow-blue-500/20 hover:border-blue-500/30",
     desc: "Continuous high-speed flow packing with dynamic viscosity adjustment.",
     customScale: 1.2
@@ -34,7 +34,7 @@ const products = [
     name: "Clorox Bleach Pouch",
     brand: "Clorox",
     category: "DETERGENTS",
-    img: "/Homepage/Products/clorox.png",
+    img: "/Homepage/Products/clorox.webp",
     glow: "shadow-blue-600/20 hover:border-blue-600/30",
     desc: "Chemical-resistant filling lines built with anti-corrosion stainless steel.",
     customScale: 0.85
@@ -43,7 +43,7 @@ const products = [
     name: "Dosh Liquid Gel",
     brand: "Dosh",
     category: "DETERGENTS",
-    img: "/Homepage/Products/Dosh.png",
+    img: "/Homepage/Products/Dosh.webp",
     glow: "shadow-teal-500/20 hover:border-teal-500/30",
     desc: "Multi-head nozzle dosing ensuring absolute zero product giveaway.",
     customScale: 1.5
@@ -52,7 +52,7 @@ const products = [
     name: "Bahi White Liquid",
     brand: "Bahi",
     category: "DETERGENTS",
-    img: "/Homepage/Products/Bahi-White.png",
+    img: "/Homepage/Products/Bahi-White.webp",
     glow: "shadow-blue-400/20 hover:border-blue-400/30",
     desc: "Robust stand-up sachet form-fill-seal optimized for home care products.",
     customScale: 1.2
@@ -63,7 +63,7 @@ const products = [
     name: "Gardino Paste",
     brand: "Gardino",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/gardino-2.png",
+    img: "/Homepage/Products/gardino-2.webp",
     glow: "shadow-red-500/20 hover:border-red-500/30",
     desc: "Aseptic hot-fill sachet packaging maintaining taste and natural aroma.",
     customScale: 1
@@ -72,7 +72,7 @@ const products = [
     name: "El Hanem Margarine",
     brand: "El Hanem",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/el hanem 2.png",
+    img: "/Homepage/Products/el hanem 2.webp",
     glow: "shadow-yellow-500/20 hover:border-yellow-500/30",
     desc: "High-accuracy high-viscosity paste dosing for shortening and margarines.",
     customScale: 1.3
@@ -81,7 +81,7 @@ const products = [
     name: "Rwaby Margarine",
     brand: "Rwaby",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/rwaby.png",
+    img: "/Homepage/Products/rwaby.webp",
     glow: "shadow-green-600/20 hover:border-green-600/30",
     desc: "Robust oxygen barrier sealing for long shelf-life dairy and butter spreads.",
     customScale: 1.3
@@ -90,7 +90,7 @@ const products = [
     name: "Janah Shortening",
     brand: "Janah",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/janah.png",
+    img: "/Homepage/Products/janah.webp",
     glow: "shadow-orange-500/20 hover:border-orange-500/30",
     desc: "Servo-driven multi-lane filling lines with hot jacketed hopper systems.",
     customScale: 1.3
@@ -99,7 +99,7 @@ const products = [
     name: "Crystal Ghee",
     brand: "Crystal",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/Crystal.png",
+    img: "/Homepage/Products/Crystal.webp",
     glow: "shadow-yellow-600/20 hover:border-yellow-600/30",
     desc: "Advanced volumetric pump filling engineered for liquid butter products.",
     customScale: 1.6
@@ -108,7 +108,7 @@ const products = [
     name: "Malezy Butter",
     brand: "Malezy",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/malezy.png",
+    img: "/Homepage/Products/malezy.webp",
     glow: "shadow-amber-500/20 hover:border-amber-500/30",
     desc: "Perfect pillow-pack format with high speed and zero seal integrity leaks.",
     customScale: 0.7
@@ -119,7 +119,7 @@ const products = [
     name: "Ahmed El Sheikh Coffee",
     brand: "Ahmed El Sheikh",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/ahmed el sheikh coffee.jpeg",
+    img: "/Homepage/Products/ahmed el sheikh coffee.webp",
     glow: "shadow-amber-900/20 hover:border-amber-900/30",
     desc: "Nitrogen gas flushing to protect aroma and roast quality in coffee pouches.",
     customScale: 0.65
@@ -128,7 +128,7 @@ const products = [
     name: "Brix Instant Drink",
     brand: "Brix",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/brix.png",
+    img: "/Homepage/Products/brix.webp",
     glow: "shadow-purple-500/20 hover:border-purple-500/30",
     desc: "Multi-lane powder auger filling with fast dust extraction and high output.",
     customScale: 1.3
@@ -137,7 +137,7 @@ const products = [
     name: "Miro Milk Powder",
     brand: "Miro Milk",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/miro-milk.jpeg",
+    img: "/Homepage/Products/miro-milk.webp",
     glow: "shadow-cyan-400/20 hover:border-cyan-400/30",
     desc: "Hygienic powder packaging with strict hermetic seal validation.",
     customScale: 0.65
@@ -146,7 +146,7 @@ const products = [
     name: "Qamaren Nectar Pouch",
     brand: "Qamaren",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/Qamaren.png",
+    img: "/Homepage/Products/Qamaren.webp",
     glow: "shadow-orange-600/20 hover:border-orange-600/30",
     desc: "Spouted liquid pouch filling with high-accuracy flowmeter controls.",
     customScale: 1.6

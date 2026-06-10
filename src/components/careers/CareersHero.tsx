@@ -9,7 +9,7 @@ export default function CareersHero() {
       {/* Visual accents for industrial careers feeling */}
       <div className="absolute inset-0">
         <Image 
-          src="/News/pacprocess-2025.jpeg" 
+          src="/News/pacprocess-2025.webp" 
           alt="Join BellaPack" 
           className="w-full h-full object-cover opacity-20 grayscale select-none"
           fill

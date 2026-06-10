@@ -8,12 +8,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const pouches = [
-  { id: 1, name: "Stand-up Pouch", img: "/pouch1.png" },
-  { id: 2, name: "Flat Bottom", img: "/pouch2.png" },
-  { id: 3, name: "Spout Pouch", img: "/pouch3.png" },
-  { id: 4, name: "Pillow Bag", img: "/pouch4.png" },
-  { id: 5, name: "Vacuum Bag", img: "/pouch1.png" }, // Reusing for demo
-  { id: 6, name: "Zipper Pouch", img: "/pouch2.png" }, // Reusing for demo
+  { id: 1, name: "Stand-up Pouch", img: "/pouch1.webp" },
+  { id: 2, name: "Flat Bottom", img: "/pouch2.webp" },
+  { id: 3, name: "Spout Pouch", img: "/pouch3.webp" },
+  { id: 4, name: "Pillow Bag", img: "/pouch4.webp" },
+  { id: 5, name: "Vacuum Bag", img: "/pouch1.webp" }, // Reusing for demo
+  { id: 6, name: "Zipper Pouch", img: "/pouch2.webp" }, // Reusing for demo
 ];
 
 export default function PouchSelection() {

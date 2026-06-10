@@ -13,7 +13,7 @@ export default function StandupPouchFormats() {
           <div className="relative group max-w-xl mx-auto lg:mx-0 w-full">
             <div className="relative w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg bg-gray-50 p-6">
               <Image 
-                src="/solutions/spices & coffee/coffee bellapack pouch.png" 
+                src="/solutions/spices-coffee/coffee-bellapack-pouch.webp" 
                 alt="Custom Stand-up Pouch Format" 
                 width={0}
                 height={0}

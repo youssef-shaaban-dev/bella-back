@@ -16,7 +16,7 @@ const slides = [
     description: "At BellaPack, we deliver high-performance packaging machines and filling solutions engineered to handle a wide range of product viscosities and textures, ensuring consistent output, accuracy, and production efficiency.",
     buttonText: "EXPLORE SOLUTIONS",
     link: "/solutions",
-    image: "/Homepage/slide-banner-1.png",
+    image: "/Homepage/slide-banner-1.webp",
     tabLabel: "BP Series Rotary",
     benefits: [
       "Improve production speed",
@@ -31,7 +31,7 @@ const slides = [
     description: "Designed for high-speed automated production with exceptional dosing accuracy. Experience seamless performance tailored to your products.",
     buttonText: "OUR SOLUTIONS",
     link: "/solutions",
-    image: "/Homepage/slide-banner-2.png",
+    image: "/Homepage/slide-banner-2.webp",
     tabLabel: "Horizontal Flow Pack",
     benefits: [
       "Advanced PLC touch control",
@@ -46,7 +46,7 @@ const slides = [
     description: "Engineered using high-grade stainless steel and robust mechanical components to withstand continuous heavy-duty industrial operation.",
     buttonText: "ABOUT BELLAPACK",
     link: "/about",
-    image: "/Homepage/slide-banner-3.png",
+    image: "/Homepage/slide-banner-3.webp",
     tabLabel: "Precision Dosing",
     benefits: [
       "Heavy-duty stainless steel build",
@@ -61,7 +61,7 @@ const slides = [
     description: "From food & beverage and cosmetics to pharmaceuticals & chemicals, we customize our pouching and bottling lines to fit your exact production space and requirements.",
     buttonText: "CONTACT US",
     link: "/contact",
-    image: "/Homepage/slide-banner-4.png",
+    image: "/Homepage/slide-banner-4.webp",
     tabLabel: "Sustainable Tech",
     benefits: [
       "Custom engineering & layouts",
