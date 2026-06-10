@@ -9,14 +9,14 @@ export default function NewsHero() {
       {/* Parallax Background using their actual PacProcess 2025 stand photo */}
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
-          src="/News/InterPack-PacProcess 2025 .jpeg"
+          src="/News/pacprocess-2025.jpeg"
           alt="BellaPack Exhibition Stand"
           fill
           className="object-cover brightness-[0.23] saturate-[0.8]"
           priority
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
       <div className="container relative z-10 px-6 pt-32 md:pt-40">
         <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">

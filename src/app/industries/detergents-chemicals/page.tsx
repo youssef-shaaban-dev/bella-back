@@ -9,7 +9,7 @@ export default function DetergentsChemicalsPage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
 
   const images = [
-    "/solutions/ Detergents & Chemicals Products/ Detergents pouches.jpeg"
+    "/solutions/ Detergents & Chemicals Products/Detergents-pouches.jpeg"
   ];
 
   return (
@@ -18,7 +18,7 @@ export default function DetergentsChemicalsPage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/solutions/ Detergents & Chemicals Products/ Detergents pouches.jpeg"
+            src="/solutions/ Detergents & Chemicals Products/Detergents-pouches.jpeg"
             alt="Detergents & Chemical Products Packaging"
             fill
             className="object-cover brightness-[0.25] saturate-[0.8]"

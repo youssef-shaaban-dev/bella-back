@@ -10,7 +10,7 @@ export default function SpicesCoffeePage() {
 
   const images = [
     "/solutions/spices & coffee/coffee bellapack pouch.png",
-    "/solutions/spices & coffee/Coffee .jpeg",
+    "/solutions/spices & coffee/Coffee.jpeg",
     "/solutions/spices & coffee/spices.jpeg"
   ];
 

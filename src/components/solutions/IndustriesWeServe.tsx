@@ -13,8 +13,8 @@ const industries = [
     features: ["Juices & Liquids", "Edible Oils", "Tomato Paste & Sauces", "Ghee & Dairy", "Grains"],
     badge: "High Hygiene",
     images: [
-      "/solutions/Food & Beverage/ Food .jpeg",
-      "/solutions/Food & Beverage/ food 2 .jpeg"
+      "/solutions/Food & Beverage/Food.jpeg",
+      "/solutions/Food & Beverage/food-2.jpeg"
     ]
   },
   {
@@ -38,8 +38,8 @@ const industries = [
     features: ["Nuts", "Candies", "Snacks"],
     badge: "High Speed",
     images: [
-      "/Homepage/ Pouches .jpeg",
-      "/Homepage/ BP-2500.jpeg"
+      "/Homepage/Pouches.jpeg",
+      "/Homepage/BP-2500.jpeg"
     ]
   },
   {
@@ -50,7 +50,7 @@ const industries = [
     features: ["Liquid Detergents", "Bleach", "Corrosive Chemicals", "Powders & Granules"],
     badge: "Titanium Built",
     images: [
-      "/solutions/ Detergents & Chemicals Products/ Detergents pouches.jpeg"
+      "/solutions/ Detergents & Chemicals Products/Detergents-pouches.jpeg"
     ]
   },
   {
@@ -62,7 +62,7 @@ const industries = [
     badge: "Sanitary Grade",
     images: [
       "/Homepage/closeup flowmeter.png",
-      "/Homepage/ Machine close up 2.jpeg"
+      "/Homepage/Machine-close-up-2.jpeg"
     ]
   }
 ];

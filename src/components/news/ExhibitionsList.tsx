@@ -13,7 +13,7 @@ const exhibitions = [
     booth: "Hall 2 - Official Pavilion",
     description: "BellaPack is pleased to announce its participation in PACPROCESS MEA 2026, held at the Egypt International Exhibition Center, one of the leading platforms for processing and packaging technologies in the Middle East and Africa. This participation marks a key opportunity to present BellaPack’s latest advancements in horizontal form-fill-seal (HFFS) packaging technologies, and to demonstrate how our engineering expertise supports manufacturers in improving efficiency, accuracy, and production reliability.",
     status: "upcoming",
-    media: ["/News/interpack - pacprocess 2026 announcement.png"]
+    media: ["/News/pacprocess-2026.png"]
   },
   {
     id: "pacprocess2025",
@@ -23,7 +23,7 @@ const exhibitions = [
     booth: "Hall 2, Booth C12",
     description: "A highly successful run where we live-demonstrated continuous liquid and powder filling operations to hundreds of regional stakeholders and buyers.",
     status: "past",
-    media: ["/News/InterPack-PacProcess 2025 .jpeg"]
+    media: ["/News/pacprocess-2025.jpeg"]
   },
   {
     id: "propak2024",
@@ -43,7 +43,7 @@ const exhibitions = [
     booth: "Hall 2, Booth F10",
     description: "Launching the updated BP Series platform to critical acclaim, facilitating multiple immediate regional production unit placements.",
     status: "past",
-    media: ["/News/ InterPack- PacProcess 2024.jpeg"]
+    media: ["/News/pacprocess-2024.jpeg"]
   }
 ];
 

@@ -10,7 +10,7 @@ export default function CosmeticsPharmaPage() {
 
   const images = [
     "/Homepage/closeup flowmeter.png",
-    "/Homepage/ Machine close up 2.jpeg"
+    "/Homepage/Machine-close-up-2.jpeg"
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function CosmeticsPharmaPage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/Homepage/ Machine close up 2.jpeg"
+            src="/Homepage/Machine-close-up-2.jpeg"
             alt="Cosmetics & Pharmaceutical Packaging"
             fill
             className="object-cover brightness-[0.25] saturate-[0.8]"

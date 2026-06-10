@@ -50,14 +50,14 @@ export default function ManufacturingFacility() {
           </div>
 
           <div className="order-1 lg:order-2 relative reveal">
-            <div className="relative aspect-square md:aspect-[4/3] lg:aspect-[4/3] overflow-hidden rounded-sm group shadow-2xl">
+            <div className="relative aspect-square md:aspect-4/3 lg:aspect-4/3 overflow-hidden rounded-sm group shadow-2xl">
               <Image
-                src="/ about us/facility.jpeg"
+                src="/about-us/facility.jpeg"
                 alt="BellaPack Manufacturing Facility View"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-charcoal/40 to-transparent"></div>
             </div>
             {/* Geometric Overlay decorative */}
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-brand-red -z-10 rounded-sm"></div>

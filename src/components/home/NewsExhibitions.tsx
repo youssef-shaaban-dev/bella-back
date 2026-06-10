@@ -37,7 +37,7 @@ export default function NewsExhibitions() {
               {/* Event Visual (Actual Poster) */}
               <div className="w-full md:w-1/3 relative overflow-hidden h-64 md:h-full bg-charcoal/20">
                 <Image
-                  src="/News/interpack - pacprocess 2026 announcement.png"
+                  src="/News/pacprocess-2026.png"
                   alt="Pacprocess MEA 2026 Announcement"
                   fill
                   sizes="(max-width: 768px) 100vw, 30vw"

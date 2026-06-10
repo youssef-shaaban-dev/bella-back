@@ -9,8 +9,8 @@ export default function SnacksGranulesPage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
 
   const images = [
-    "/Homepage/ Pouches .jpeg",
-    "/Homepage/ BP-2500.jpeg"
+    "/Homepage/Pouches.jpeg",
+    "/Homepage/BP-2500.jpeg"
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function SnacksGranulesPage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/Homepage/ Pouches .jpeg"
+            src="/Homepage/Pouches.jpeg"
             alt="Snacks & Granules Packaging"
             fill
             className="object-cover brightness-[0.25] saturate-[0.8]"

@@ -52,7 +52,7 @@ const products = [
     name: "Bahi White Liquid",
     brand: "Bahi",
     category: "DETERGENTS",
-    img: "/Homepage/Products/Bahi White .png",
+    img: "/Homepage/Products/Bahi-White.png",
     glow: "shadow-blue-400/20 hover:border-blue-400/30",
     desc: "Robust stand-up sachet form-fill-seal optimized for home care products.",
     customScale: 1.2
@@ -63,7 +63,7 @@ const products = [
     name: "Gardino Paste",
     brand: "Gardino",
     category: "FOOD & DAIRY",
-    img: "/Homepage/Products/ gardino.png",
+    img: "/Homepage/Products/gardino-2.png",
     glow: "shadow-red-500/20 hover:border-red-500/30",
     desc: "Aseptic hot-fill sachet packaging maintaining taste and natural aroma.",
     customScale: 1
@@ -128,7 +128,7 @@ const products = [
     name: "Brix Instant Drink",
     brand: "Brix",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/brix .png",
+    img: "/Homepage/Products/brix.png",
     glow: "shadow-purple-500/20 hover:border-purple-500/30",
     desc: "Multi-lane powder auger filling with fast dust extraction and high output.",
     customScale: 1.3
@@ -137,7 +137,7 @@ const products = [
     name: "Miro Milk Powder",
     brand: "Miro Milk",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/miro milk.jpeg",
+    img: "/Homepage/Products/miro-milk.jpeg",
     glow: "shadow-cyan-400/20 hover:border-cyan-400/30",
     desc: "Hygienic powder packaging with strict hermetic seal validation.",
     customScale: 0.65
@@ -146,7 +146,7 @@ const products = [
     name: "Qamaren Nectar Pouch",
     brand: "Qamaren",
     category: "BEVERAGES & SPICES",
-    img: "/Homepage/Products/Qamaren .png",
+    img: "/Homepage/Products/Qamaren.png",
     glow: "shadow-orange-600/20 hover:border-orange-600/30",
     desc: "Spouted liquid pouch filling with high-accuracy flowmeter controls.",
     customScale: 1.6

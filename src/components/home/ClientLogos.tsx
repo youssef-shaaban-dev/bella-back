@@ -8,23 +8,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const clientLogos = [
-  { name: "Clorox", img: "/clients_ logos/clorox.webp" },
-  { name: "Arma", img: "/clients_ logos/Arma.webp" },
-  { name: "Savola Group", img: "/clients_ logos/savola logo.webp" },
-  { name: "OXI Brite", img: "/clients_ logos/OXI.webp" },
-  { name: "Domty", img: "/clients_ logos/Domty .webp" },
-  { name: "Persil", img: "/clients_ logos/Persil .webp" },
-  { name: "Sidco Saudi Arabia", img: "/clients_ logos/ sidco saudi arabia.webp" },
-  { name: "Afia", img: "/clients_ logos/Afia logo.webp" },
-  { name: "ACT", img: "/clients_ logos/ACT.webp" },
-  { name: "Beyti", img: "/clients_ logos/beyti .webp" },
-  { name: "Dixie Mills", img: "/clients_ logos/dixie mills logo.webp" },
-  { name: "El Rabea", img: "/clients_ logos/el rabea logo.webp" },
-  { name: "Gardino", img: "/clients_ logos/gardino logo.webp" },
-  { name: "Harvest", img: "/clients_ logos/harvest logo.webp" },
-  { name: "Miro Milk", img: "/clients_ logos/miro milk logo.webp" },
-  { name: "Pril", img: "/clients_ logos/pril logo.webp" },
-  { name: "Rawaby", img: "/clients_ logos/rawaby logo.webp" }
+  { name: "Clorox", img: "/clients_logos/clorox.webp" },
+  { name: "Arma", img: "/clients_logos/Arma.webp" },
+  { name: "Savola Group", img: "/clients_logos/savola logo.webp" },
+  { name: "OXI Brite", img: "/clients_logos/OXI.webp" },
+  { name: "Domty", img: "/clients_logos/Domty.webp" },
+  { name: "Persil", img: "/clients_logos/Persil.webp" },
+  { name: "Sidco Saudi Arabia", img: "/clients_logos/sidco-saudi-arabia.webp" },
+  { name: "Afia", img: "/clients_logos/Afia logo.webp" },
+  { name: "ACT", img: "/clients_logos/ACT.webp" },
+  { name: "Beyti", img: "/clients_logos/beyti.webp" },
+  { name: "Dixie Mills", img: "/clients_logos/dixie mills logo.webp" },
+  { name: "El Rabea", img: "/clients_logos/el rabea logo.webp" },
+  { name: "Gardino", img: "/clients_logos/gardino logo.webp" },
+  { name: "Harvest", img: "/clients_logos/harvest logo.webp" },
+  { name: "Miro Milk", img: "/clients_logos/miro milk logo.webp" },
+  { name: "Pril", img: "/clients_logos/pril logo.webp" },
+  { name: "Rawaby", img: "/clients_logos/rawaby logo.webp" }
 ];
 
 export default function ClientLogos() {

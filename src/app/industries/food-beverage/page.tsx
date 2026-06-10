@@ -9,8 +9,8 @@ export default function FoodBeveragePage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
 
   const images = [
-    "/solutions/Food & Beverage/ Food .jpeg",
-    "/solutions/Food & Beverage/ food 2 .jpeg"
+    "/solutions/Food & Beverage/Food.jpeg",
+    "/solutions/Food & Beverage/food-2.jpeg"
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function FoodBeveragePage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/solutions/Food & Beverage/ food 2 .jpeg"
+            src="/solutions/Food & Beverage/food-2.jpeg"
             alt="Food & Beverage Industry Packaging"
             fill
             className="object-cover brightness-[0.25] saturate-[0.8]"

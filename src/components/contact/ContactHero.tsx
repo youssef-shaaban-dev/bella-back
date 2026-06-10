@@ -9,7 +9,7 @@ export default function ContactHero() {
       {/* High quality industrial background overlay */}
       <div className="absolute inset-0">
         <Image 
-          src="/PacProcess 2025/ 1.jpeg" 
+          src="/News/pacprocess-2025.jpeg" 
           alt="BellaPack Contact Support" 
           className="w-full h-full object-cover opacity-80 scale-105 animate-[pulse_12s_ease-in-out_infinite]" 
           priority

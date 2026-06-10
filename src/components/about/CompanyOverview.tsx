@@ -10,7 +10,7 @@ export default function CompanyOverview() {
           <div className="lg:col-span-5 relative reveal">
             <div className="relative aspect-[4/5] overflow-hidden shadow-2xl rounded-sm group">
               <Image
-                src="/ about us/company overview.png"
+                src="/about-us/company-overview.png"
                 alt="BellaPack Assembly Facility"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
