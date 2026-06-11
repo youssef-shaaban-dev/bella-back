@@ -17,7 +17,7 @@ const slides = [
     buttonText: "OUR SOLUTIONS",
     link: "/solutions",
     image: "/Homepage/slide-banner-2.webp",
-    tabLabel: "Horizontal Flow Pack",
+    tabLabel: "ENGINEERING EXCELLENCE",
     benefits: [
       "Advanced PLC touch control",
       "High dosing accuracy (+/- 0.5%)",
@@ -32,7 +32,7 @@ const slides = [
     buttonText: "ABOUT BELLAPACK",
     link: "/about",
     image: "/Homepage/slide-banner-3.webp",
-    tabLabel: "Sustainable Packaging",
+    tabLabel: "TAILORED SOLUTIONS",
     benefits: [
       "Reduced Material Consumption",
       "Energy-Efficient Operation",
@@ -47,7 +47,7 @@ const slides = [
     buttonText: "EXPLORE SOLUTIONS",
     link: "/solutions",
     image: "/Homepage/slide-banner-1.webp",
-    tabLabel: "BP Series Rotary",
+    tabLabel: "FLEXIBLE POUCH FORMATS",
     benefits: [
       "Improve production speed",
       "Reduce material waste",
@@ -62,7 +62,7 @@ const slides = [
     buttonText: "CONTACT US",
     link: "/contact",
     image: "/Homepage/slide-banner-4.webp",
-    tabLabel: "Sustainable Tech",
+    tabLabel: "SUSTAINABLE PACKAGING",
     benefits: [
       "Custom Engineering & Line Integration",
       "Multi-Industry Applications",
