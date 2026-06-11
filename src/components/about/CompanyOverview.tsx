@@ -55,7 +55,7 @@ export default function CompanyOverview() {
             </div>
             
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 bg-gray-50 rounded-full">
                   <Factory size={24} className="text-brand-red" />
                 </div>
@@ -63,7 +63,7 @@ export default function CompanyOverview() {
                   <h4 className="font-heading font-bold text-charcoal tracking-wider uppercase">In-House Manufacturing</h4>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 bg-gray-50 rounded-full">
                   <Globe size={24} className="text-brand-red" />
                 </div>

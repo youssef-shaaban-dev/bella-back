@@ -23,13 +23,11 @@ export default function PhilosophyVision() {
   return (
     <section className="relative py-24 bg-charcoal text-white overflow-hidden">
       {/* Absolute Decorative Graphic */}
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
-        <div className="w-full h-full bg-[radial-gradient(circle_at_center,var(--primary-red)_0,transparent_70%)]"></div>
-      </div>
-      
+
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 items-stretch">
-          
+
           {/* Left Column: Our Mission */}
           <div className="lg:col-span-5 space-y-8 flex flex-col justify-center reveal">
             <div className="space-y-4">
@@ -41,7 +39,7 @@ export default function PhilosophyVision() {
                 BUILT AROUND YOUR <span className="text-brand-red">PRODUCTION SUCCESS</span>
               </h3>
               <p className="text-gray-300 font-body text-base md:text-lg leading-relaxed pt-2">
-                Our mission is to deliver high-performance packaging machinery that combines engineering precision, operational reliability, and long-term value. 
+                Our mission is to deliver high-performance packaging machinery that combines engineering precision, operational reliability, and long-term value.
               </p>
               <p className="text-gray-400 font-body text-sm leading-relaxed">
                 We are committed to building lasting partnerships with our customers — providing solutions that grow with their production demands and perform consistently under the most demanding industrial conditions.
@@ -50,7 +48,7 @@ export default function PhilosophyVision() {
 
             <div className="space-y-3 pt-2">
               <p className="text-xs font-heading font-bold uppercase tracking-widest text-brand-red">
-                Our Engineering Focus
+                our engineering approach focuses on
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-4 lg:gap-3">
                 {[
@@ -59,7 +57,7 @@ export default function PhilosophyVision() {
                   { name: "Consistent Performance", desc: "Reliability run after run" }
                 ].map((focus, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-brand-red/10 border border-brand-red/20 flex items-center justify-center">
+                    <div className="shrink-0 w-5 h-5 rounded-full bg-brand-red/10 border border-brand-red/20 flex items-center justify-center">
                       <Check size={12} className="text-brand-red" />
                     </div>
                     <div>
