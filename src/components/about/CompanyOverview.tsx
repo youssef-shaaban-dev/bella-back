@@ -8,7 +8,7 @@ export default function CompanyOverview() {
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-5 relative reveal">
-            <div className="relative aspect-[4/5] overflow-hidden shadow-2xl rounded-sm group">
+            <div className="relative aspect-4/5 overflow-hidden shadow-2xl rounded-sm group">
               <Image
                 src="/about-us/company-overview.webp"
                 alt="BellaPack Assembly Facility"
