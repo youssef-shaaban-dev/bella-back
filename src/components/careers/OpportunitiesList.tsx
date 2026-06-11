@@ -1,28 +1,27 @@
 "use client";
 
-import React from "react";
 import { Briefcase, UserCog, TrendingUp, GraduationCap, ArrowRight, Mail } from "lucide-react";
 
 const opportunities = [
   {
     icon: UserCog,
     title: "Engineering & Technical Roles",
-    desc: "Direct mechanical design, electrical drafting, and software PLC automation setups."
+    desc: "Mechanical design, electrical systems, PLC programming, and automation engineering."
   },
   {
     icon: Briefcase,
     title: "Precision Technicians",
-    desc: "Hands-on machine fabrication, assembly, wiring, and on-site installation calibration."
+    desc: "Machine assembly, wiring, commissioning, and on-site installation."
   },
   {
     icon: TrendingUp,
-    title: "Sales & Business Dev",
-    desc: "Managing local accounts, coordinating global shipments, and handling key industrial partnerships."
+    title: "Sales & Business Development",
+    desc: "Customer relations, quotations, project coordination, and business growth."
   },
   {
     icon: GraduationCap,
     title: "Internship Programs",
-    desc: "For high-potential engineering undergraduates looking for direct factory experience."
+    desc: "Hands-on industrial experience for aspiring engineers and technical professionals."
   }
 ];
 
@@ -42,9 +41,10 @@ export default function OpportunitiesList() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {opportunities.map((opp, idx) => (
-            <div 
-              key={idx} 
-              className="reveal flex items-start space-x-6 bg-gray-50 border border-gray-100 p-8 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-300 group"
+            <a 
+              key={idx}
+              href={`mailto:careers@bellapack.com?subject=Job Application - ${opp.title}`}
+              className="reveal cursor-pointer flex items-start space-x-6 bg-gray-50 border border-gray-100 p-8 rounded-sm hover:bg-white hover:shadow-xl transition-all duration-300 group"
             >
               <div className="w-14 h-14 rounded-sm bg-white border border-gray-100 shadow-sm flex items-center justify-center shrink-0 text-brand-red group-hover:bg-charcoal group-hover:text-white transition-colors duration-300">
                 <opp.icon size={24} />
@@ -57,7 +57,7 @@ export default function OpportunitiesList() {
                   {opp.desc}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

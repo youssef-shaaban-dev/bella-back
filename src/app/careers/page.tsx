@@ -17,11 +17,11 @@ export default function CareersPage() {
       reveals.forEach((el) => {
         gsap.fromTo(
           el,
-          { y: 18, opacity: 0 },
+          { y: 4, opacity: 0 },
           {
             y: 0,
             opacity: 1,
-            duration: 0.4,
+            duration: 0.1,
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
