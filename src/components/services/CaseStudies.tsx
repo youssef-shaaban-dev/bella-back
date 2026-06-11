@@ -81,10 +81,7 @@ export default function CaseStudies() {
                     &ldquo;BP SERIES DELIVERED 40% OUTPUT BOOSTS INSTANTLY.&rdquo;
                   </blockquote>
 
-                  <div className="flex items-center justify-center space-x-2 group cursor-pointer">
-                    <span className="text-xs font-heading font-bold uppercase tracking-widest group-hover:text-brand-red transition-colors">View machine technical spec</span>
-                    <ArrowRight size={14} className="group-hover:translate-x-1 text-brand-red transition-transform" />
-                  </div>
+              
                 </div>
               </div>
             </div>
