@@ -8,6 +8,7 @@ import CompanyOverview from "@/components/about/CompanyOverview";
 import PhilosophyVision from "@/components/about/PhilosophyVision";
 import WhyChoose from "@/components/about/WhyChoose";
 import ManufacturingFacility from "@/components/about/ManufacturingFacility";
+import EngineeringHSE from "@/components/about/EngineeringHSE";
 import CertificationsBanner from "@/components/about/CertificationsBanner";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -78,6 +79,7 @@ export default function AboutPage() {
       <PhilosophyVision />
       <WhyChoose />
       <ManufacturingFacility />
+      <EngineeringHSE />
       <CertificationsBanner />
 
       {/* Keyframes for the custom smooth animations in Tailwind without extra plugin config if necessary */}

@@ -8,10 +8,10 @@ const engineeringItems = [
 ];
 
 const hseItems = [
-  { title: "Safety First", icon: ShieldCheck, text: "Advanced features & ergonomic operator designs." },
-  { title: "Operational Safety", icon: CheckCircle2, text: "Compliance with strict industrial safety standards." },
-  { title: "Environmental Responsibility", icon: Leaf, text: "Energy-efficient systems reducing material waste." },
-  { title: "Employee Wellbeing", icon: Users, text: "Safe ecosystem supported by exhaustive protocols." }
+  { title: "Safety First", icon: ShieldCheck, text: "Machines are designed with advanced safety features and ergonomic designs to ensure maximum operator protection." },
+  { title: "Operational Safety", icon: CheckCircle2, text: "Compliance with industrial safety standards." },
+  { title: "Environmental Responsibility", icon: Leaf, text: "Energy-efficient systems and reduced material waste." },
+  { title: "Employee Wellbeing", icon: Users, text: "Safe working environment supported by training and protocols." }
 ];
 
 export default function EngineeringHSE() {
@@ -59,11 +59,11 @@ export default function EngineeringHSE() {
               <div className="p-4 bg-white/5 rounded-sm border border-white/10 text-green-500">
                 <ShieldCheck size={32} />
               </div>
-              <h2 className="text-3xl font-heading font-bold uppercase tracking-tight">HSE Philosophy</h2>
+              <h2 className="text-3xl font-heading font-bold uppercase tracking-tight">Health, Safety &amp; Environment</h2>
             </div>
 
-            <p className="text-gray-300">
-              Continuous evaluation and optimization ensures global standards of safety and corporate environmental responsibility.
+            <p className="text-gray-300 leading-relaxed">
+              We are committed to maintaining the highest standards of safety and sustainability.
             </p>
 
             <ul className="space-y-4">
@@ -77,6 +77,11 @@ export default function EngineeringHSE() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-6 p-4 bg-white/5 border-l-2 border-green-500">
+              <span className="block text-sm font-heading font-bold uppercase text-white mb-1">Continuous Improvement</span>
+              <span className="text-xs text-gray-400 leading-relaxed">HSE is a core element of our culture, supported by continuous evaluation and optimization of our processes to ensure compliance, safety, and environmental responsibility.</span>
+            </div>
           </div>
         </div>
       </div>
