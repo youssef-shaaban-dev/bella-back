@@ -89,7 +89,8 @@ export default function ServicesGrid() {
             return (
               <div 
                 key={index} 
-                className="reveal bg-white border border-gray-100 rounded-sm p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between"
+                className="reveal bg-white border border-gray-100 rounded-sm p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group grid row-span-2"
+                style={{ gridTemplateRows: 'subgrid' }}
               >
                 <div>
                   <div className={`w-14 h-14 rounded-sm ${svc.bg} ${svc.accent} flex items-center justify-center mb-6 group-hover:bg-charcoal group-hover:text-white transition-colors duration-300`}>
@@ -100,7 +101,7 @@ export default function ServicesGrid() {
                     {svc.title}
                   </h3>
                   
-                  <p className="text-gray-500 text-sm font-body leading-relaxed mb-6">
+                  <p className="text-gray-500 text-sm font-body leading-relaxed">
                     {svc.description}
                   </p>
                 </div>
