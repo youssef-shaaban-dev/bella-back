@@ -5,7 +5,7 @@ export default function ManufacturingFacility() {
   return (
     <section className="py-24 md:py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           
           <div className="order-2 lg:order-1 space-y-8 reveal">
             <div className="space-y-4">
@@ -29,7 +29,7 @@ export default function ManufacturingFacility() {
               {[
                 { title: "Precision CNC Machining", value: "Every metal component manufactured to micron-level tolerances." },
                 { title: "Controlled Assembly", value: "Streamlined build flow ensuring structural integrity and system alignment." },
-                { title: "Multi-Stage Quality Control", value: "Rigorous validation at every checkpoint before dispatch." }
+                { title: "Multi-Stage Quality Control", value: "Detailed quality checks conducted throughout manufacturing and final assembly." }
               ].map((item, idx) => (
                 <div key={idx} className="flex space-x-4 border-b border-gray-100 pb-4">
                   <div className="text-brand-red font-heading font-bold text-2xl">0{idx + 1}</div>
