@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Coffee, CheckCircle2, ChevronRight, Settings2, ShieldCheck, Zap, ArrowLeft } from "lucide-react";
+import { CheckCircle2, ChevronRight, ArrowLeft } from "lucide-react";
 
 export default function SpicesCoffeePage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
@@ -20,10 +20,10 @@ export default function SpicesCoffeePage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/solutions/spices-coffee/spices.webp"
+            src="/solutions/spices-coffee/spices-coffee-background.webp"
             alt="Spices & Coffee Packaging"
             fill
-            className="object-cover brightness-[0.25] saturate-[0.8]"
+            className="object-cover brightness-[0.30] saturate-[0.8]"
             priority
           />
         </div>

@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Sparkles, CheckCircle2, ChevronRight, Settings2, ShieldCheck, Zap, ArrowLeft } from "lucide-react";
+import { CheckCircle2, ChevronRight, ArrowLeft } from "lucide-react";
 
 export default function CosmeticsPharmaPage() {
   const [activeImgIdx, setActiveImgIdx] = useState(0);
@@ -19,14 +19,14 @@ export default function CosmeticsPharmaPage() {
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0 scale-110">
           <Image
-            src="/Homepage/Machine-close-up-2.webp"
+            src="/solutions/cosmetics&pharma/cosmetics-pharma-background.webp"
             alt="Cosmetics & Pharmaceutical Packaging"
             fill
-            className="object-cover brightness-[0.25] saturate-[0.8]"
+            className="object-cover brightness-[0.30] saturate-[0.8]"
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
         <div className="container relative z-10 px-6">
           <div className="inline-flex items-center space-x-2 mb-4 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-1.5 rounded-full">
