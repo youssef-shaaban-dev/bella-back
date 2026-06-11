@@ -9,11 +9,11 @@ export default function ServicesHero() {
       {/* Parallax Background using Company Servicing Assembly Floor */}
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
-          src="/about-us/company-overview.webp"
+          src="/services/services-background.webp"
           alt="BellaPack Technical Servicing Hall"
           fill
           sizes="100vw"
-          className="object-cover brightness-[0.23] saturate-[0.8]"
+          className="object-cover brightness-[0.30] saturate-[0.8]"
           priority
         />
       </div>
