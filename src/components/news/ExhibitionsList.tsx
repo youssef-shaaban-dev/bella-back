@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import { Calendar, MapPin, UserCheck, ChevronDown, ChevronUp, ImageIcon } from "lucide-react";
+import { MapPin, UserCheck, ChevronDown, ChevronUp, ImageIcon } from "lucide-react";
 
 const exhibitions = [
   {
@@ -68,7 +68,7 @@ export default function ExhibitionsList() {
         </div>
 
         <div className="space-y-8 max-w-5xl mx-auto">
-          {exhibitions.map((expo, idx) => {
+          {exhibitions.map((expo) => {
             const isExpanded = expandedId === expo.id;
             const isUpcoming = expo.status === "upcoming";
 
@@ -83,7 +83,7 @@ export default function ExhibitionsList() {
                   onClick={() => toggleExpand(expo.id)}
                   className="p-6 md:p-8 cursor-pointer flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group"
                 >
-                  <div className="flex-grow">
+                  <div className="grow">
                     <div className="flex items-center space-x-3 mb-3">
                       <span className={`text-[9px] font-bold font-heading uppercase tracking-widest px-3 py-1 rounded-full ${isUpcoming ? "bg-brand-red text-white" : "bg-gray-100 text-gray-500"
                         }`}>
@@ -143,7 +143,7 @@ export default function ExhibitionsList() {
                       {/* Exhibition Images Side */}
                       {expo.media.length > 0 && (
                         <div className="w-full space-y-4 border-t border-gray-100 pt-6 mt-2">
-                          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block flex items-center gap-2">
+                          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
                             <ImageIcon size={12} /> Captured Moments
                           </span>
                           <div className={expo.media.length === 1 ? "w-full" : "grid grid-cols-2 md:grid-cols-3 gap-4"}>

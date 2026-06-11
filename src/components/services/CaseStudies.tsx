@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight, Settings, Sparkles } from "lucide-react";
+import { ArrowRight, Settings } from "lucide-react";
 
 const studies = [
   {
@@ -56,30 +56,17 @@ export default function CaseStudies() {
                     {study.title}
                   </h3>
 
-                  <div className="grid md:grid-cols-2 gap-8 mb-8">
-                    <div>
-                      <h4 className="text-xs font-bold text-brand-red uppercase tracking-wider mb-2 font-heading">The Challenge</h4>
-                      <p className="text-gray-500 font-body text-sm leading-relaxed">{study.challenge}</p>
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-charcoal uppercase tracking-wider mb-2 font-heading">Engineering Solution</h4>
-                      <p className="text-gray-500 font-body text-sm leading-relaxed">{study.solution}</p>
-                    </div>
+                  <div className="mb-8">
+                    <p className="text-gray-600 font-body text-base leading-relaxed mb-6">
+                      BellaPack machines are designed for durability, reliability, and continuous operation. Our machines have been supporting leading manufacturers for years, with production lines operating successfully for years.
+                    </p>
+                    <h4 className="font-heading font-bold uppercase text-brand-red tracking-wide text-lg">
+                      “B-2500 SERIES OPERATING SUCCESSFULLY AT SAVOLA GROUP FOR OVER 10 YEARS”
+                    </h4>
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-100">
-                  <span className="text-[10px] font-bold text-gray-400 tracking-widest uppercase block mb-4">Target Metrics Captured</span>
-                  <div className="grid grid-cols-3 gap-4 text-center sm:text-left">
-                    {study.results.map((res, rIdx) => (
-                      <div key={rIdx}>
-                        <div className="text-2xl sm:text-3xl font-bold font-heading text-charcoal tracking-tight mb-1">{res.value}</div>
-                        <div className="text-[10px] font-bold text-brand-red uppercase tracking-wider leading-none mb-1">{res.suffix}</div>
-                        <div className="text-[10px] text-gray-400 font-body truncate">{res.label}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+
               </div>
 
               {/* Highlight Card Side */}
