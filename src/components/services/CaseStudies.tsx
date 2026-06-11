@@ -1,7 +1,5 @@
 "use client";
-
-import React from "react";
-import { ArrowRight, ArrowUpRight, Settings, Sparkles } from "lucide-react";
+import { ArrowRight, Settings, Sparkles } from "lucide-react";
 
 const studies = [
   {
@@ -16,19 +14,6 @@ const studies = [
       { label: "Material Waste", value: "-25%", suffix: "Reduction" }
     ],
     accent: "border-brand-red"
-  },
-  {
-    id: 2,
-    tag: "Chemical Industry",
-    title: "Chemical Brand Innovation",
-    challenge: "A regional liquid detergent manufacturer sought advanced pouch solutions to effectively differentiate their presence from rigid plastic bottles.",
-    solution: "Engineered and installed a dedicated BSS Series horizontal packaging line configured for custom shaped liquid stand-up pouches with corner cap inserters.",
-    results: [
-      { label: "Visual Differentiation", value: "100%", suffix: "Unique Pouch" },
-      { label: "Cap Insertion Rate", value: "55", suffix: "PPM" },
-      { label: "Market Reach", value: "+18%", suffix: "Growth YoY" }
-    ],
-    accent: "border-brand-blue"
   }
 ];
 
@@ -43,15 +28,15 @@ export default function CaseStudies() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="reveal flex items-center space-x-3 mb-4">
           <span className="h-px w-8 bg-brand-red"></span>
-          <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Proven Execution</h3>
+          <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">PROVEN RELIABILITY</h3>
         </div>
 
         <div className="reveal mb-16 max-w-4xl space-y-4">
           <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
-            Proven Results <span className="text-brand-red">Across</span> Industries
+            TRUSTED FOR <span className="text-brand-red">LONG-TERM</span> PERFORMANCE
           </h2>
           <p className="text-gray-500 font-body text-base md:text-lg max-w-2xl leading-relaxed font-semibold">
-            Explore how BellaPack has driven massive efficiencies and introduced structural innovation for leading regional and international manufacturing giants.
+            Explore how BellaPack has driven massive efficiencies leading regional and international manufacturing giants.
           </p>
         </div>
 
