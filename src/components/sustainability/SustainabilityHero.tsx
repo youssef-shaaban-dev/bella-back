@@ -9,14 +9,14 @@ export default function SustainabilityHero() {
     <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden bg-charcoal">
       <div className="parallax-bg absolute inset-0 z-0 ">
         <Image
-          src="/Sustainability/sustainability pouches dark background.webp"
+          src="/Sustainability/sustainability-background.webp"
           alt="BellaPack Sustainable Packaging Pouches"
           fill
-          className="object-cover brightness-[0.25] saturate-[0.8]"
+          className="object-cover brightness-[0.30] saturate-[0.8]"
           priority
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-charcoal/40 via-transparent to-charcoal/90 z-0"></div>
 
       <div className="container relative z-10 px-6 pt-32 md:pt-40">
         <div className="reveal inline-flex items-center space-x-3 mb-6 border border-white/20 bg-white/5 backdrop-blur-md px-4 py-2 rounded-full overflow-hidden">
