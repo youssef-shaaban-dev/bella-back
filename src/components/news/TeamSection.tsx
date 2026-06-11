@@ -25,23 +25,23 @@ export default function TeamSection() {
           {[
             {
               icon: Award,
-              title: "Certified Engineers",
-              desc: "Direct mechanical & electrical graduates from premier technical institutes."
+              title: "Engineering & Innovation",
+              desc: "Transforming customer requirements into practical and reliable packaging solutions."
             },
             {
               icon: Zap,
-              title: "R&D Pioneers",
-              desc: "Continuously developing custom patented sealing systems and logic configurations."
+              title: "Manufacturing Excellence",
+              desc: "Precision fabrication, assembly, and quality control for every machine produced."
             },
             {
               icon: Users,
-              title: "Client Success Unit",
-              desc: "Providing seamless round-the-clock diagnostics and technical guidance."
+              title: "Service & Support",
+              desc: "Ensuring maximum uptime through training, maintenance, and technical assistance."
             },
             {
               icon: Globe,
-              title: "Logistics Experts",
-              desc: "Ensuring complex machine layouts navigate international borders safely."
+              title: "Supply Chain & Logistics",
+              desc: "Coordinating sourcing, production planning, and global machine deliveries."
             }
           ].map((item, idx) => (
             <div
