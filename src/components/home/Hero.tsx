@@ -41,17 +41,17 @@ const slides = [
   },
   {
     id: 3,
-    title: "PRECISION PACKAGING",
-    highlightTitle: "FOR RELIABLE PERFORMANCE",
-    description: "At BellaPack, we deliver advanced pouch packaging systems engineered for accuracy, efficiency, and reliable production performance.",
+    title: "FLEXIBLE POUCH FORMATS",
+    highlightTitle: "FOR EVERY APPLICATION",
+    description: "From stand-up pouches and spouted packs to shaped and flat pouches, BellaPack delivers versatile packaging solutions designed to meet diverse product and market requirements.",
     buttonText: "EXPLORE SOLUTIONS",
     link: "/solutions",
     image: "/Homepage/slide-banner-1.webp",
     tabLabel: "BP Series Rotary",
     benefits: [
-      "Improve production speed",
-      "Reduce material waste",
-      "Ensure consistent sealing and filling accuracy"
+      "Wide Range of Pouch Formats",
+      "Custom Packaging Designs",
+      "Scalable Production Solutions"
     ]
   },
   {
