@@ -26,32 +26,32 @@ const slides = [
   },
   {
     id: 2,
-    title: "MAXIMUM EFFICIENCY",
-    highlightTitle: "WITH ZERO DOWNTIME",
-    description: "Engineered using high-grade stainless steel and robust mechanical components to withstand continuous heavy-duty industrial operation.",
+    title: "SUSTAINABLE PACKAGING",
+    highlightTitle: "FOR A BETTER FUTURE",
+    description: "Supporting responsible manufacturing through efficient machine design, reduced material waste, and packaging solutions compatible with recyclable materials.",
     buttonText: "ABOUT BELLAPACK",
     link: "/about",
     image: "/Homepage/slide-banner-3.webp",
-    tabLabel: "Precision Dosing",
+    tabLabel: "Sustainable Packaging",
     benefits: [
-      "Heavy-duty stainless steel build",
-      "24/7 continuous operation",
-      "Low maintenance requirements"
+      "Reduced Material Consumption",
+      "Energy-Efficient Operation",
+      "Sustainable Packaging Solutions"
     ]
   },
   {
     id: 3,
-    title: "FLEXIBLE POUCH FORMATS",
-    highlightTitle: "FOR EVERY APPLICATION",
-    description: "From stand-up pouches and spouted packs to shaped and flat pouches, BellaPack delivers versatile packaging solutions designed to meet diverse product and market requirements.",
+    title: "PRECISION PACKAGING",
+    highlightTitle: "FOR RELIABLE PERFORMANCE",
+    description: "At BellaPack, we deliver advanced pouch packaging systems engineered for accuracy, efficiency, and reliable production performance.",
     buttonText: "EXPLORE SOLUTIONS",
     link: "/solutions",
     image: "/Homepage/slide-banner-1.webp",
     tabLabel: "BP Series Rotary",
     benefits: [
-      "Wide Range of Pouch Formats",
-      "Custom Packaging Designs",
-      "Scalable Production Solutions"
+      "Improve production speed",
+      "Reduce material waste",
+      "Ensure consistent sealing and filling accuracy"
     ]
   },
   {
