@@ -67,12 +67,12 @@ export default function OurSolutions() {
     <section ref={containerRef} className="bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
-          <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase">What We Offer</h3>
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter mb-6">
-            OUR <span className="text-brand-red">SOLUTIONS.</span>
+            Industries <span className="text-brand-red">We Serve</span>
           </h2>
           <p className="text-charcoal/50 max-w-xl font-body text-lg leading-relaxed">
-            Explore our integrated approach that combines sector-specific expertise, state-of-the-art engineering, and end-to-end implementation.
+            BellaPack delivers specialized packaging solutions across multiple industries, combining precision engineering, intelligent automation, and proven manufacturing expertise.
           </p>
         </div>
 

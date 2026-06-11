@@ -16,17 +16,17 @@ const features = [
   },
   {
     title: "Energy Efficiency",
-    desc: "Servo-driven architectures and smart standby modes reduce electrical consumption by up to 30%.",
+    desc: "Intelligent machine design that supports lower energy consumption.",
     icon: Wind,
   },
   {
     title: "Waste Reduction",
-    desc: "High-precision dosing and advanced vision systems eliminate product giveaway and film waste.",
+    desc: "Precision filling and sealing technologies that minimize product giveaway and film waste.",
     icon: Recycle,
   }
 ];
 
-export default function OperationalExcellence() {
+export default function Sustainability() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

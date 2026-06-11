@@ -6,10 +6,10 @@ import StatsSection from "@/components/home/StatsSection";
 import ClientLogos from "@/components/home/ClientLogos";
 import ProductGrid from "@/components/home/ProductGrid";
 import OurSolutions from "@/components/home/OurSolutions";
-import OperationalExcellence from "@/components/home/OperationalExcellence";
 import BrandsPackaged from "@/components/home/BrandsPackaged";
 import FinalCTA from "@/components/home/FinalCTA";
 import Services from "@/components/home/Services";
+import Sustainability from "@/components/home/Sustainability";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
       <Services />
 
       {/* Environmental & Operational Excellence Section */}
-      <OperationalExcellence />
+      <Sustainability />
 
       {/* Core Machine Product Gallery Section */}
       <ProductGrid />
