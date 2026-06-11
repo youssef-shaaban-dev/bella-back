@@ -13,104 +13,71 @@ gsap.registerPlugin(ScrollTrigger);
 const products = [
   // Detergents
   {
-    name: "Persil Liquid Gel",
     brand: "Henkel / Persil",
-    category: "DETERGENTS",
     img: "/Homepage/Products/persil.webp",
     glow: "shadow-green-500/20 hover:border-green-500/30",
-    desc: "Precision gel-filling at high velocities with drop-tight seal execution.",
     customScale: 1.2
   },
   {
-    name: "Pril Dishwashing Liquid",
     brand: "Henkel / Pril",
-    category: "DETERGENTS",
     img: "/Homepage/Products/pril no spout.webp",
     glow: "shadow-blue-500/20 hover:border-blue-500/30",
-    desc: "Continuous high-speed flow packing with dynamic viscosity adjustment.",
     customScale: 1.2
   },
   {
-    name: "Clorox Bleach Pouch",
     brand: "Clorox",
-    category: "DETERGENTS",
     img: "/Homepage/Products/clorox.webp",
     glow: "shadow-blue-600/20 hover:border-blue-600/30",
-    desc: "Chemical-resistant filling lines built with anti-corrosion stainless steel.",
     customScale: 0.85
   },
   {
-    name: "Dosh Liquid Gel",
     brand: "Dosh",
-    category: "DETERGENTS",
     img: "/Homepage/Products/Dosh.webp",
     glow: "shadow-teal-500/20 hover:border-teal-500/30",
-    desc: "Multi-head nozzle dosing ensuring absolute zero product giveaway.",
     customScale: 1.5
   },
   {
-    name: "Bahi White Liquid",
     brand: "Bahi",
-    category: "DETERGENTS",
     img: "/Homepage/Products/Bahi-White.webp",
     glow: "shadow-blue-400/20 hover:border-blue-400/30",
-    desc: "Robust stand-up sachet form-fill-seal optimized for home care products.",
     customScale: 1.2
   },
 
   // Food & Dairy
   {
-    name: "Gardino Paste",
     brand: "Gardino",
-    category: "FOOD & DAIRY",
     img: "/Homepage/Products/gardino-2.webp",
     glow: "shadow-red-500/20 hover:border-red-500/30",
-    desc: "Aseptic hot-fill sachet packaging maintaining taste and natural aroma.",
     customScale: 1
   },
   {
-    name: "El Hanem Margarine",
     brand: "El Hanem",
-    category: "FOOD & DAIRY",
     img: "/Homepage/Products/el hanem 2.webp",
     glow: "shadow-yellow-500/20 hover:border-yellow-500/30",
-    desc: "High-accuracy high-viscosity paste dosing for shortening and margarines.",
     customScale: 1.3
   },
   {
-    name: "Rwaby Margarine",
     brand: "Rwaby",
-    category: "FOOD & DAIRY",
     img: "/Homepage/Products/rwaby.webp",
     glow: "shadow-green-600/20 hover:border-green-600/30",
-    desc: "Robust oxygen barrier sealing for long shelf-life dairy and butter spreads.",
     customScale: 1.3
   },
   {
-    name: "Janah Shortening",
     brand: "Janah",
-    category: "FOOD & DAIRY",
     img: "/Homepage/Products/janah.webp",
     glow: "shadow-orange-500/20 hover:border-orange-500/30",
-    desc: "Servo-driven multi-lane filling lines with hot jacketed hopper systems.",
     customScale: 1.3
   },
   {
-    name: "Crystal Ghee",
     brand: "Crystal",
-    category: "FOOD & DAIRY",
     img: "/Homepage/Products/Crystal.webp",
     glow: "shadow-yellow-600/20 hover:border-yellow-600/30",
-    desc: "Advanced volumetric pump filling engineered for liquid butter products.",
     customScale: 1.6
   },
   {
-    name: "Malezy Butter",
     brand: "Malezy",
-    category: "FOOD & DAIRY",
     img: "/Homepage/Products/malezy.webp",
     glow: "shadow-amber-500/20 hover:border-amber-500/30",
-    desc: "Perfect pillow-pack format with high speed and zero seal integrity leaks.",
     customScale: 0.7
   },
 
@@ -227,7 +194,7 @@ export default function BrandsPackaged() {
         >
           {products.map((prod) => (
             <div
-              key={prod.name}
+              key={prod.brand}
               className="product-card-item bg-white border border-gray-100 p-6 rounded-sm shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300 flex flex-col group"
             >
               {/* Image Container unified height and transparent background */}
@@ -238,7 +205,7 @@ export default function BrandsPackaged() {
                 >
                   <Image
                     src={prod.img}
-                    alt={prod.name}
+                    alt={prod.brand}
                     fill
                     sizes="(max-width: 768px) 100vw, 25vw"
                     className="object-contain p-2 mix-blend-multiply group-hover:scale-110 transition-all duration-500"
@@ -247,20 +214,12 @@ export default function BrandsPackaged() {
               </div>
 
               {/* Product Info */}
-              <div className="grow flex flex-col">
-                <span className="text-[10px] font-heading font-bold uppercase tracking-widest text-brand-red mb-1">
+              <div className="flex flex-col justify-end pt-4">
+                <h4 className="text-[11px] md:text-xs font-bold font-heading text-brand-red uppercase tracking-widest leading-snug">
                   {prod.brand}
-                </span>
-                <h4 className="text-lg font-bold font-heading text-charcoal uppercase tracking-wide group-hover:text-brand-red transition-colors leading-snug">
-                  {prod.name}
                 </h4>
               </div>
 
-              {/* Specifications Tag */}
-              <div className="mt-6 pt-4 border-t border-gray-50 flex items-center justify-between text-[10px] font-body text-gray-400">
-                <span className="font-bold uppercase tracking-wider text-charcoal/30">{prod.category}</span>
-                <span className="text-brand-blue font-semibold">Servo-Controlled</span>
-              </div>
             </div>
           ))}
         </div>
