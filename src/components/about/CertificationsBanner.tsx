@@ -10,7 +10,7 @@ export default function CertificationsBanner() {
               <Award size={32} className="text-brand-red" />
             </div>
             <div>
-              <h3 className="text-2xl font-heading font-bold uppercase tracking-widest leading-none">Global Standards Compliance</h3>
+              <h3 className="text-2xl font-heading font-bold uppercase tracking-widest leading-none">International Standards Compliance</h3>
               <p className="text-gray-500 mt-1 text-sm uppercase tracking-wide">Ensuring consistent quality for local and international markets.</p>
             </div>
           </div>
