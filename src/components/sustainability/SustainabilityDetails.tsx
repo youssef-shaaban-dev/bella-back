@@ -8,9 +8,9 @@ export default function SustainabilityDetails() {
     <section className="py-24 bg-white relative">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-16 items-center">
-          
+
           {/* Left Column: Text Copy */}
-          <div className="lg:col-span-7 space-y-8 text-left reveal">
+          <div className="lg:col-span-6 space-y-8 text-left reveal">
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <span className="h-px w-8 bg-brand-red"></span>
@@ -23,20 +23,22 @@ export default function SustainabilityDetails() {
             </div>
 
             <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-              In the world of packaging machinery, sustainability is achieved through precision engineering: machines that minimize film scrap, eliminate sealing errors, and optimize dosing accuracy. A truly sustainable packaging solution protects the product effectively while leaving the lightest possible footprint on the planet.
+              Sustainability in packaging starts with intelligent engineering. At BellaPack, we design machinery that reduces material waste, improves sealing consistency, and maximizes dosing accuracy—helping manufacturers achieve higher efficiency while minimizing environmental impact.
             </p>
 
             <p className="text-gray-500 font-body text-sm leading-relaxed">
-              It also means building equipment that lasts longer, requires fewer repairs, and can be adapted for multiple product types—reducing the need for multiple production lines. At its core, sustainable packaging is about doing more with less, without compromising quality or safety. Every small improvement in how we pack today contributes to a cleaner, healthier tomorrow for the entire industry.
+              Our equipment is engineered to be compatible with a wide range of sustainable packaging materials, including recyclable and mono-material pouch structures. This flexibility enables manufacturers to transition toward more environmentally responsible packaging solutions without compromising production performance, product protection, or operational reliability.
             </p>
-
+            <p className="text-gray-500 font-body text-sm leading-relaxed">
+              By combining precision automation with adaptable machine designs, we help our customers meet both their production goals and sustainability commitments while preparing for the future of packaging.
+            </p>
             {/* Monomaterial features */}
             <div className="pt-6 border-t border-gray-100 grid sm:grid-cols-2 gap-4">
               {[
-                "Mono-material Recyclable PE/PP",
-                "Compostable & Biodegradable Paper",
-                "Minimal Seal Temperature Fluctuations",
-                "Modular Changeover Toolsets"
+                "Reduced Material Waste",
+                "Energy-Efficient Operation",
+                "Optimized Production Efficiency",
+                "Long-Term Equipment Reliability"
               ].map((feat, idx) => (
                 <div key={idx} className="flex items-center space-x-3 text-xs font-heading font-bold uppercase tracking-wider text-charcoal/80">
                   <CheckCircle2 size={16} className="text-brand-red shrink-0" />
@@ -47,10 +49,10 @@ export default function SustainabilityDetails() {
           </div>
 
           {/* Right Column: Visual Frame */}
-          <div className="lg:col-span-5 reveal">
+          <div className="lg:col-span-6 reveal">
             <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl group">
               <Image
-                src="/Sustainability/sustainability pouches.webp"
+                src="/Sustainability/sustainability-in-packaging.webp"
                 alt="Sustainably packed pouches mockup"
                 width={800}
                 height={450}
