@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Heart, ShieldCheck, Leaf, ArrowRight } from "lucide-react";
+import { Leaf, Recycle, Zap, ArrowRight } from "lucide-react";
 
 export default function HSEPillars() {
   return (
@@ -10,30 +10,30 @@ export default function HSEPillars() {
         <div className="reveal text-center max-w-2xl mx-auto mb-16">
           <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading mb-3">Operational Responsibility</h3>
           <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tighter text-charcoal">
-            HSE <span className="text-brand-red">Excellence</span> Standards
+            Engineered For <span className="text-brand-red">Sustainable Production</span>
           </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              icon: Heart,
-              title: "Health & Ergonomics",
-              desc: "We design machinery layouts focusing on zero-reach hazards, comfortable maintenance heights, noise suppression below 70dB, and food-safe product contact zones.",
-              color: "text-brand-red",
-              bg: "bg-brand-red/5"
-            },
-            {
-              icon: ShieldCheck,
-              title: "Safety Systems",
-              desc: "Integrated with advanced light curtains, magnetic safety interlocks, quick-vent pneumatics, and dynamic dual-channel emergency stop loops for ultimate safety.",
-              color: "text-brand-red",
-              bg: "bg-brand-red/5"
-            },
-            {
               icon: Leaf,
-              title: "Environmental Protection",
-              desc: "Full support for compostable materials, 30% electrical power saving in standby, closed-loop systems, and optimized tooling preventing duplication.",
+              title: "Material Compatibility",
+              desc: "Our machinery is designed to run recyclable, mono-material, and next-generation sustainable pouch structures.",
+              color: "text-brand-red",
+              bg: "bg-brand-red/5"
+            },
+            {
+              icon: Recycle,
+              title: "Waste Reduction",
+              desc: "Precision filling and sealing systems help minimize product giveaway, film waste, and rejected pouches.",
+              color: "text-brand-red",
+              bg: "bg-brand-red/5"
+            },
+            {
+              icon: Zap,
+              title: "Energy Efficiency",
+              desc: "Servo-driven technologies and optimized machine architectures reduce energy consumption while maintaining high productivity.",
               color: "text-brand-red",
               bg: "bg-brand-red/5"
             }
@@ -46,10 +46,10 @@ export default function HSEPillars() {
                 <h4 className="font-heading font-bold uppercase text-charcoal text-lg tracking-tight mb-4 group-hover:text-brand-red transition-colors">{pillar.title}</h4>
                 <p className="text-gray-500 font-body text-xs leading-relaxed font-semibold">{pillar.desc}</p>
               </div>
-              <div className="border-t border-gray-100 pt-6 mt-6 flex items-center text-[10px] font-heading font-bold uppercase tracking-widest text-brand-red space-x-2">
+              {/* <div className="border-t border-gray-100 pt-6 mt-6 flex items-center text-[10px] font-heading font-bold uppercase tracking-widest text-brand-red space-x-2">
                 <span>Validated Standard</span>
                 <ArrowRight size={10} className="group-hover:translate-x-1 transition-transform" />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
