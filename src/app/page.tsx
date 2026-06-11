@@ -4,12 +4,12 @@ import Hero from "@/components/home/Hero";
 import AboutSection from "@/components/home/AboutSection";
 import StatsSection from "@/components/home/StatsSection";
 import ClientLogos from "@/components/home/ClientLogos";
-import ProductGrid from "@/components/home/ProductGrid";
 import OurSolutions from "@/components/home/OurSolutions";
 import BrandsPackaged from "@/components/home/BrandsPackaged";
 import FinalCTA from "@/components/home/FinalCTA";
 import Services from "@/components/home/Services";
 import Sustainability from "@/components/home/Sustainability";
+import Media from "@/components/home/Media";
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
       <Sustainability />
 
       {/* Core Machine Product Gallery Section */}
-      <ProductGrid />
+      <Media />
 
       {/* Interactive Packaged Brands Showcase Section */}
       <BrandsPackaged />

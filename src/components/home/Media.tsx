@@ -12,8 +12,8 @@ const mediaItems = [
   { 
     id: 1, 
     type: 'video', 
-    src: "https://drive.google.com/file/d/1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf/preview",
-    driveId: "1XYQHb8maGJ5PPmQKMo45iTm1fwp-aEUf",
+    src: "https://drive.google.com/file/d/1kdNc_ek_dvu5tLX6se-_QIgcIY25iKdh/preview",
+    driveId: "1kdNc_ek_dvu5tLX6se-_QIgcIY25iKdh",
     thumbnail: "/News/pacprocess-2025.webp",
     title: "Colorx Liquid Detergent Pouch Line",
     desc: "High-precision HFFS liquid dosing and horizontal stand-up pouch sealing line."
@@ -29,15 +29,16 @@ const mediaItems = [
   },
   { 
     id: 3, 
-    type: 'image', 
-    src: "/Homepage/BP-2500.webp", 
+    type: 'video', 
+    src: "https://drive.google.com/file/d/1DXs8D780Az29mtIoNnMrAEgjdft_RjA3/preview", 
+    driveId: "1DXs8D780Az29mtIoNnMrAEgjdft_RjA3",
     thumbnail: "/Homepage/BP-2500.webp",
     title: "BP-2500 Rotary Sachet Machine",
     desc: "Ultra-precise rotary multi-lane sachet packaging model for custom powder dosing."
   },
 ];
 
-export default function ProductGrid() {
+export default function Media() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [selectedMedia, setSelectedMedia] = useState<typeof mediaItems[0] | null>(null);
 
@@ -93,7 +94,7 @@ export default function ProductGrid() {
             Witness Precision in <span className="text-brand-red">Action.</span>
           </h2>
           <p className="text-gray-500 font-body text-sm max-w-xl mx-auto mt-4 leading-relaxed font-semibold">
-            Explore our industrial run highlights. Click on any video or photo tile to view detailed high-resolution footage of our premium packaging systems.
+            Discover our packaging solutions in action through detailed videos from real production environments.
           </p>
         </div>
 
