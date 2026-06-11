@@ -25,13 +25,13 @@ const exhibitions = [
     media: ["/News/pacprocess-2025.webp"]
   },
   {
-    id: "propak2024",
-    title: "ProPak Mena 2024",
+    id: "propak2021",
+    title: "ProPak 2024",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "May 26-28, 2024",
     booth: "Hall 3",
     status: "past",
-    media: ["/News/propak-mena-2024.webp"]
+    media: ["/News/ProPak-2021.webp"]
   },
   {
     id: "pacprocess2024",
@@ -40,7 +40,7 @@ const exhibitions = [
     dates: "December 12-14, 2024",
     booth: "Hall 4",
     status: "past",
-    media: ["/News/pacprocess-2024.webp"]
+    media: ["/News/GulFood.webp"]
   }
 ];
 
