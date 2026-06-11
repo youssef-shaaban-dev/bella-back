@@ -49,20 +49,20 @@ export default function AboutSection() {
     <section ref={sectionRef} className="py-16 md:py-24 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          
+
           {/* Left side - Beautiful Image Composition */}
           <div ref={imageRef} className="relative group max-w-xl mx-auto lg:mx-0 w-full">
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm">
-              <Image 
-                src="/Homepage/closeup flowmeter.webp" 
-                alt="Precision Industrial Manufacturing" 
-                fill 
+              <Image
+                src="/Homepage/closeup flowmeter.webp"
+                alt="Precision Industrial Manufacturing"
+                fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-charcoal/10 mix-blend-multiply"></div>
             </div>
-            
+
             {/* Floating Stats Card */}
             <div className="absolute -bottom-10 -right-6 bg-charcoal text-white p-8 shadow-2xl border-b-4 border-brand-red max-w-xs hidden lg:block z-20">
               <span className="text-5xl font-bold font-heading text-brand-red block mb-2">25+</span>
@@ -78,13 +78,13 @@ export default function AboutSection() {
               <span className="h-px w-8 bg-brand-red"></span>
               <h3 className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading">About BellaPack</h3>
             </div>
-            
+
             <h2 className="text-4xl md:text-5xl font-bold text-charcoal font-heading uppercase tracking-tight mb-6 leading-[1.1]">
               Leading the Future of <span className="text-brand-red">Industrial</span> Packaging
             </h2>
-            
+
             <p className="text-gray-600 font-body text-lg mb-8 leading-relaxed">
-              BellaPack stands at the vanguard of high-performance automated packaging machinery. Since 1999, we have empowered global manufacturers with intelligent, ultra-precise solutions meticulously engineered for reliability, speed, and long-term scalability.
+              Since 2000, BellaPack has been designing and manufacturing advanced horizontal pouch packaging systems for customers across food, beverage, chemical, personal care, and pharmaceutical industries. Through precision engineering, intelligent automation, and customer-focused innovation, we help manufacturers achieve greater efficiency, reliability, and long-term production success.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
@@ -103,8 +103,8 @@ export default function AboutSection() {
             </div>
 
             <div className="pt-4">
-              <Link 
-                href="/about" 
+              <Link
+                href="/about"
                 className="inline-flex items-center px-8 py-4 bg-charcoal text-white font-heading font-bold uppercase tracking-widest text-sm hover:bg-brand-red transition-colors duration-300 group rounded-sm"
               >
                 Discover Our Story
