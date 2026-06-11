@@ -11,21 +11,6 @@ const SLIDE_DURATION = 6000; // 6 seconds per slide
 const slides = [
   {
     id: 1,
-    title: "PRECISION PACKAGING",
-    highlightTitle: "FOR RELIABLE PERFORMANCE",
-    description: "At BellaPack, we deliver high-performance packaging machines and filling solutions engineered to handle a wide range of product viscosities and textures, ensuring consistent output, accuracy, and production efficiency.",
-    buttonText: "EXPLORE SOLUTIONS",
-    link: "/solutions",
-    image: "/Homepage/slide-banner-1.webp",
-    tabLabel: "BP Series Rotary",
-    benefits: [
-      "Improve production speed",
-      "Reduce material waste",
-      "Ensure consistent sealing and filling accuracy"
-    ]
-  },
-  {
-    id: 2,
     title: "INNOVATIVE FILLING",
     highlightTitle: "AND SEALING SYSTEMS",
     description: "Designed for high-speed automated production with exceptional dosing accuracy. Experience seamless performance tailored to your products.",
@@ -40,7 +25,7 @@ const slides = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     title: "MAXIMUM EFFICIENCY",
     highlightTitle: "WITH ZERO DOWNTIME",
     description: "Engineered using high-grade stainless steel and robust mechanical components to withstand continuous heavy-duty industrial operation.",
@@ -55,18 +40,33 @@ const slides = [
     ]
   },
   {
+    id: 3,
+    title: "PRECISION PACKAGING",
+    highlightTitle: "FOR RELIABLE PERFORMANCE",
+    description: "At BellaPack, we deliver advanced pouch packaging systems engineered for accuracy, efficiency, and reliable production performance.",
+    buttonText: "EXPLORE SOLUTIONS",
+    link: "/solutions",
+    image: "/Homepage/slide-banner-1.webp",
+    tabLabel: "BP Series Rotary",
+    benefits: [
+      "Improve production speed",
+      "Reduce material waste",
+      "Ensure consistent sealing and filling accuracy"
+    ]
+  },
+  {
     id: 4,
     title: "TAILORED SOLUTIONS",
     highlightTitle: "FOR EVERY INDUSTRY",
-    description: "From food & beverage and cosmetics to pharmaceuticals & chemicals, we customize our pouching and bottling lines to fit your exact production space and requirements.",
+    description: "From food & beverage and cosmetics to pharmaceuticals and chemicals, BellaPack delivers customized pouch packaging solutions engineered around your products, production goals, and operational requirements.",
     buttonText: "CONTACT US",
     link: "/contact",
     image: "/Homepage/slide-banner-4.webp",
     tabLabel: "Sustainable Tech",
     benefits: [
-      "Custom engineering & layouts",
-      "Multi-industry application",
-      "Comprehensive after-sales support"
+      "Custom Engineering & Line Integration",
+      "Multi-Industry Applications",
+      "Dedicated After-Sales Support"
     ]
   }
 ];
@@ -196,8 +196,8 @@ export default function Hero() {
               <div
                 key={slide.id}
                 className={`slide-content-${index} col-start-1 row-start-1 flex flex-col transition-opacity duration-500 ease-in-out ${isActive
-                    ? "opacity-100 pointer-events-auto z-10"
-                    : "opacity-0 pointer-events-none z-0"
+                  ? "opacity-100 pointer-events-auto z-10"
+                  : "opacity-0 pointer-events-none z-0"
                   }`}
               >
                 <h1 className="slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading">
