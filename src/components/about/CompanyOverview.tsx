@@ -5,10 +5,10 @@ export default function CompanyOverview() {
   return (
     <section className="py-24 md:py-32 relative">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-12 items-center">
+        <div className="grid lg:grid-cols-12 gap-12 lg:items-stretch items-center">
           
-          <div className="lg:col-span-5 relative reveal">
-            <div className="relative aspect-4/5 overflow-hidden shadow-2xl rounded-sm group">
+          <div className="lg:col-span-5 relative reveal h-full">
+            <div className="relative w-full h-full min-h-[400px] overflow-hidden shadow-2xl rounded-sm group">
               <Image
                 src="/about-us/company-overview.webp"
                 alt="BellaPack Assembly Facility"
