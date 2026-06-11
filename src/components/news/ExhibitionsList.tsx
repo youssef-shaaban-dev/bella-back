@@ -10,8 +10,8 @@ const exhibitions = [
     title: "Pacprocess MEA 2026",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "December 2026",
-    booth: "Hall 2 - Official Pavilion",
-    description: "BellaPack is pleased to announce its participation in PACPROCESS MEA 2026, held at the Egypt International Exhibition Center, one of the leading platforms for processing and packaging technologies in the Middle East and Africa. This participation marks a key opportunity to present BellaPack’s latest advancements in horizontal form-fill-seal (HFFS) packaging technologies, and to demonstrate how our engineering expertise supports manufacturers in improving efficiency, accuracy, and production reliability.",
+    booth: "Hall 1, Booth E1",
+    description: "BellaPack is pleased to announce its participation in PACPROCESS MEA 2026, held at the Egypt International Exhibition Center, one of the leading platforms for processing and packaging technologies in the Middle East and Africa. This participation marks a key opportunity to present BellaPack’s latest advancements in pouch packaging machinery and packaging automation technologies, and to demonstrate how our engineering expertise supports manufacturers in improving efficiency, accuracy, and production reliability.",
     status: "upcoming",
     media: ["/News/pacprocess-2026.webp"]
   },
@@ -21,7 +21,6 @@ const exhibitions = [
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "December 7-9, 2025",
     booth: "Hall 2, Booth C12",
-    description: "A highly successful run where we live-demonstrated continuous liquid and powder filling operations to hundreds of regional stakeholders and buyers.",
     status: "past",
     media: ["/News/pacprocess-2025.webp"]
   },
@@ -31,7 +30,6 @@ const exhibitions = [
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "May 26-28, 2024",
     booth: "Hall 3, Booth D45",
-    description: "Showcasing variable-weight and high-frequency custom tooling arrays designed directly by our local engineering units.",
     status: "past",
     media: ["/News/propak-mena-2024.webp"]
   },
@@ -41,7 +39,6 @@ const exhibitions = [
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "December 12-14, 2024",
     booth: "Hall 2, Booth F10",
-    description: "Launching the updated BP Series platform to critical acclaim, facilitating multiple immediate regional production unit placements.",
     status: "past",
     media: ["/News/pacprocess-2024.webp"]
   }
@@ -57,16 +54,16 @@ export default function ExhibitionsList() {
   return (
     <section className="py-24 bg-gray-50 border-t border-gray-200">
       <div className="container mx-auto px-6">
-        
+
         <div className="reveal mb-16 max-w-3xl space-y-4">
           <div>
             <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading mb-3">Expo Attendance</h3>
             <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
-              Exhibition <span className="text-brand-red">Logbook</span>
+              INDUSTRY EVENTS  <span className="text-brand-red"><br /> & EXHIBITIONS</span>
             </h2>
           </div>
           <p className="text-gray-500 font-body text-base md:text-lg max-w-2xl leading-relaxed font-semibold">
-            Find us on the ground. Meet our senior automation consultants directly at our dedicated booths inside major regional halls.
+            Join us at leading trade fairs and exhibitions to explore the latest advancements in packaging technology and automation.
           </p>
         </div>
 
@@ -74,24 +71,22 @@ export default function ExhibitionsList() {
           {exhibitions.map((expo, idx) => {
             const isExpanded = expandedId === expo.id;
             const isUpcoming = expo.status === "upcoming";
-            
+
             return (
-              <div 
-                key={expo.id} 
-                className={`reveal bg-white border ${
-                  isUpcoming ? "border-brand-red shadow-lg shadow-brand-red/5" : "border-gray-200 shadow-sm"
-                } rounded-sm overflow-hidden transition-all duration-300`}
+              <div
+                key={expo.id}
+                className={`reveal bg-white border ${isUpcoming ? "border-brand-red shadow-lg shadow-brand-red/5" : "border-gray-200 shadow-sm"
+                  } rounded-sm overflow-hidden transition-all duration-300`}
               >
                 {/* Top Header Row */}
-                <div 
+                <div
                   onClick={() => toggleExpand(expo.id)}
                   className="p-6 md:p-8 cursor-pointer flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group"
                 >
                   <div className="flex-grow">
                     <div className="flex items-center space-x-3 mb-3">
-                      <span className={`text-[9px] font-bold font-heading uppercase tracking-widest px-3 py-1 rounded-full ${
-                        isUpcoming ? "bg-brand-red text-white" : "bg-gray-100 text-gray-500"
-                      }`}>
+                      <span className={`text-[9px] font-bold font-heading uppercase tracking-widest px-3 py-1 rounded-full ${isUpcoming ? "bg-brand-red text-white" : "bg-gray-100 text-gray-500"
+                        }`}>
                         {isUpcoming ? "Upcoming Main Event" : "Past Attendance"}
                       </span>
                       <span className="text-xs font-bold font-heading text-brand-red uppercase tracking-wider">{expo.dates.split(",")[0]}</span>
@@ -111,7 +106,7 @@ export default function ExhibitionsList() {
                       <UserCheck size={16} className="text-gray-400" />
                       <div className="text-xs font-heading font-bold uppercase tracking-wide text-charcoal/80">{expo.booth.split(",")[0]}</div>
                     </div>
-                    
+
                     <button className={`w-8 h-8 rounded-full flex items-center justify-center bg-gray-50 group-hover:bg-brand-red group-hover:text-white transition-colors shrink-0 ml-auto`}>
                       {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                     </button>
