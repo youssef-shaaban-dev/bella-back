@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,7 +8,7 @@ import { Sparkles } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const categories = ["ALL", "DETERGENTS", "FOOD & DAIRY", "BEVERAGES & SPICES"];
+
 
 const products = [
   // Detergents
@@ -154,13 +154,8 @@ const products = [
 ];
 
 export default function BrandsPackaged() {
-  const [activeCategory, setActiveCategory] = useState("ALL");
   const sectionRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
-
-  const filteredProducts = activeCategory === "ALL" 
-    ? products 
-    : products.filter(p => p.category === activeCategory);
 
   useEffect(() => {
     // Reveal section headers and the grid container on scroll (using static parents to avoid unmount bugs)
@@ -176,16 +171,7 @@ export default function BrandsPackaged() {
         ease: "power3.out"
       });
 
-      gsap.from(".brands-tabs-container", {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 90%",
-        },
-        y: 10,
-        opacity: 0,
-        duration: 0.35,
-        ease: "power3.out"
-      });
+
 
       gsap.from(gridRef.current, {
         scrollTrigger: {
@@ -205,20 +191,7 @@ export default function BrandsPackaged() {
     return () => ctx.revert();
   }, []);
 
-  // Animate grid elements on category change
-  useEffect(() => {
-    const cards = gridRef.current?.querySelectorAll(".product-card-item");
-    if (!cards || cards.length === 0) return;
 
-    const ctx = gsap.context(() => {
-      gsap.fromTo(cards, 
-        { opacity: 0, scale: 0.97, y: 8 },
-        { opacity: 1, scale: 1, y: 0, duration: 0.3, stagger: 0.03, ease: "power2.out" }
-      );
-    });
-
-    return () => ctx.revert();
-  }, [activeCategory]);
 
   return (
     <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50 overflow-hidden relative border-t border-gray-100">
@@ -227,13 +200,13 @@ export default function BrandsPackaged() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-linear-to-bl from-brand-red/5 to-transparent rounded-full filter blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        
+
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 brands-header-content">
           <div className="inline-flex items-center space-x-3 mb-4 justify-center w-full">
             <span className="w-8 h-px bg-brand-red"></span>
             <span className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading flex items-center gap-1.5">
-              <Sparkles size={12} /> PROUDLY PACKAGED BY BELLAPACK
+              <Sparkles size={12} /> TRUSTED BY LEADING BRANDS
             </span>
             <span className="w-8 h-px bg-brand-red"></span>
           </div>
@@ -241,40 +214,25 @@ export default function BrandsPackaged() {
             BRANDS TRUST <span className="text-brand-red">OUR MACHINES.</span>
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto font-body text-base md:text-lg leading-relaxed">
-            From globally recognized giants to premier local brands, discover the diverse household names whose detergents, foods, and beverages are filled and packaged with maximum precision using our machinery.
+            Leading brands trust BellaPack packaging systems to deliver precision filling, reliable sealing, and efficient production across a wide range of applications.
           </p>
         </div>
 
-        {/* Categories Tab Selector */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-16 brands-tabs-container">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`px-3 py-2 md:px-6 md:py-3 font-heading font-bold text-[11px] md:text-sm tracking-widest uppercase transition-all duration-300 rounded-sm cursor-pointer border ${
-                activeCategory === cat 
-                  ? "bg-charcoal text-white border-charcoal shadow-lg shadow-charcoal/20" 
-                  : "bg-white text-gray-500 border-gray-100 hover:text-charcoal hover:bg-gray-100 hover:border-gray-200"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+
 
         {/* Products Grid */}
-        <div 
+        <div
           ref={gridRef}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 min-h-[400px]"
         >
-          {filteredProducts.map((prod) => (
+          {products.map((prod) => (
             <div
               key={prod.name}
               className="product-card-item bg-white border border-gray-100 p-6 rounded-sm shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-gray-300 flex flex-col group"
             >
               {/* Image Container unified height and transparent background */}
               <div className="relative h-56 w-full bg-transparent overflow-hidden mb-6 flex items-center justify-center transition-colors">
-                <div 
+                <div
                   className="relative w-full h-full flex items-center justify-center"
                   style={{ transform: `scale(${(prod).customScale || 1})` }}
                 >
