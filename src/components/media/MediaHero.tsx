@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import { Play } from "lucide-react";
 
 export default function MediaHero() {
   return (
@@ -20,7 +18,7 @@ export default function MediaHero() {
         </h1>
 
         <p className="reveal text-lg md:text-xl text-white/70 font-body max-w-2xl mx-auto leading-relaxed">
-          Explore our interactive video library to witness BellaPack&apos;s engineering precision, operating live in real-world high-output production environments.
+          Explore our video library and discover BellaPack packaging machinery operating in real production environments. See machine performance, packaging applications, and engineering excellence in action.
         </p>
       </div>
     </section>
