@@ -89,13 +89,9 @@ export default function CaseStudies() {
                 <div className="absolute bottom-0 left-0 opacity-10 w-64 h-64 select-none border border-white rounded-full -translate-x-1/2 translate-y-1/2"></div>
 
                 <div className="relative z-10">
-                  {study.id === 1 ? (
-                    <Settings size={48} className="text-brand-red mx-auto mb-6 animate-[spin_15s_linear_infinite]" />
-                  ) : (
-                    <Sparkles size={48} className="text-brand-blue mx-auto mb-6" />
-                  )}
+                  <Settings size={48} className="text-brand-red mx-auto mb-6 animate-[spin_15s_linear_infinite]" />
                   <blockquote className="font-heading text-2xl italic font-bold uppercase tracking-wide text-white/90 leading-snug mb-8">
-                    &ldquo;{study.id === 1 ? "BP SERIES DELIVERED 40% OUTPUT BOOSTS INSTANTLY." : "BSS SERIES RE-SHAPED OUR ENTIRE RETAIL PRESENCE."}&rdquo;
+                    &ldquo;BP SERIES DELIVERED 40% OUTPUT BOOSTS INSTANTLY.&rdquo;
                   </blockquote>
 
                   <div className="flex items-center justify-center space-x-2 group cursor-pointer">
