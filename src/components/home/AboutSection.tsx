@@ -89,8 +89,8 @@ export default function AboutSection() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
               {[
-                { icon: Settings, title: "Advanced Tech", desc: "Intelligent automation." },
-                { icon: ShieldCheck, title: "Swiss Precision", desc: "Highest built quality." },
+                { icon: Settings, title: "ENGINEERING EXCELLENCE", desc: "Precision-built machinery designed for reliable performance." },
+                { icon: ShieldCheck, title: "CUSTOMER-FOCUSED INNOVATION", desc: "Tailored solutions developed around your products and production requirements." },
               ].map((feat, idx) => (
                 <div key={idx} className="flex items-start space-x-4 border-l border-gray-100 pl-4">
                   <feat.icon className="text-brand-red mt-1 shrink-0" size={24} />
@@ -107,7 +107,7 @@ export default function AboutSection() {
                 href="/about"
                 className="inline-flex items-center px-8 py-4 bg-charcoal text-white font-heading font-bold uppercase tracking-widest text-sm hover:bg-brand-red transition-colors duration-300 group rounded-sm"
               >
-                Discover Our Story
+                 About Bellapack
                 <ArrowRight size={18} className="ml-3 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
