@@ -56,11 +56,10 @@ const industries = [
     icon: Sparkles,
     title: "Cosmetics & Pharmaceutical",
     description: "At BellaPack, we provide advanced packaging solutions designed to meet the high standards of the cosmetics and pharmaceutical industries. Our packaging systems are engineered to deliver precision, hygiene, product protection, and premium presentation for a wide range of liquid, powder, cream, gel, and personal care products. We understand that cosmetics and pharmaceutical products require highly accurate filling systems, secure sealing technologies, and clean production environments to maintain product safety, quality, and consistency. That is why our machines are manufactured using hygienic stainless-steel construction and intelligent automation systems that support efficient and reliable production performance.",
-    features: ["Creams & Lotions", "Shower Gels", "Liquid Pharma", "Personal Care"],
+    features: ["Creams & Lotions", "Shower Gels", "Liquid Pharmaceuticals", "Personal Care Products", "Cosmetic Creams", "Beauty & Skincare"],
     badge: "HYGIENIC DESIGN",
     images: [
-      "/Homepage/closeup flowmeter.webp",
-      "/Homepage/Machine-close-up-2.webp"
+      "/Homepage/closeup flowmeter.webp"
     ]
   }
 ];
