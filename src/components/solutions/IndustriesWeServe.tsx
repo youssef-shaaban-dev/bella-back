@@ -44,8 +44,8 @@ const industries = [
     id: "chemical",
     icon: ShieldAlert,
     title: "Detergents & Chemicals",
-    description: "At BellaPack, we provide advanced packaging solutions designed to meet the demanding requirements of detergent and chemical product manufacturers. Our systems are engineered to deliver safe, efficient, and reliable packaging performance for liquid, powder, and granular chemical products across various industrial applications. We understand the importance of precision, durability, and product protection in the chemical packaging industry. That is why our packaging technologies are developed to ensure accurate filling, secure sealing, and consistent packaging quality while supporting high-speed production operations. Whether packaging cleaning products, detergents, industrial chemicals, or household solutions, BellaPack delivers flexible pouch packaging systems tailored to modern manufacturing needs.",
-    features: ["Liquid Detergents", "Bleach", "Corrosive Chemicals", "Powders & Granules"],
+    description: "At BellaPack, we provide advanced pouch packaging machinery engineered to meet the demanding requirements of the Detergents & Chemicals industry. Designed for reliability, durability, and consistent performance, our machines support accurate filling, secure sealing, and efficient production across a wide range of chemical products. To ensure long-term resistance in harsh chemical environments, our machines incorporate titanium-reinforced components in critical product-contact areas. Combined with intelligent automation and flexible configurations, BellaPack helps manufacturers achieve dependable and cost-effective packaging operations.",
+    features: ["Liquid Detergents", "Bleach & Disinfectants", "Powders & Granules", "Household Cleaners", "Industrial Chemicals"],
     badge: "Chemical resistant",
     images: [
       "/solutions/detergents-chemicals-products/Detergents-pouches.webp"
