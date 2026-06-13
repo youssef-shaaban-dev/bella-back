@@ -21,13 +21,11 @@ const industries = [
     id: "spices",
     icon: Coffee,
     title: "Spices & Coffee",
-    description: "At BellaPack, we provide advanced packaging solutions tailored for spices and coffee products, combining precision, efficiency, and premium packaging performance to meet modern Food & Beverage industry standards. Our packaging systems are engineered to preserve freshness, protect aroma, and maintain product quality throughout the entire packaging process. Whether handling fine spice powders, seasoning blends, coffee beans, or ground coffee, our machines deliver reliable filling accuracy and secure sealing technologies designed for consistent production results. We combine intelligent automation with high-performance pouch packaging technologies to deliver packaging that supports both product protection and brand presentation.",
-    features: ["Coffee Beans", "Ground Coffee", "Spice Powders", "Seasoning Blends"],
+    description: "At BellaPack, we provide advanced pouch packaging machinery tailored to the specific requirements of the Spices & Coffee industry. Designed to preserve freshness, protect aroma, and maintain product quality, our machines deliver reliable filling accuracy and consistent sealing performance. With intelligent automation, flexible configurations, and durable industrial construction, BellaPack supports manufacturers in achieving efficient and dependable production while enhancing product presentation and shelf appeal.",
+    features: ["Coffee Beans", "Ground Coffee", "Spice Powders", "Herbs & Seasonings", "Coffee Mixes & Creamers"],
     badge: "Aroma Preserved",
     images: [
-      "/solutions/spices-coffee/coffee-bellapack-pouch.webp",
-      "/solutions/spices-coffee/Coffee.webp",
-      "/solutions/spices-coffee/spices.webp"
+      "/solutions/spices-coffee/Coffee.webp"
     ]
   },
   {
