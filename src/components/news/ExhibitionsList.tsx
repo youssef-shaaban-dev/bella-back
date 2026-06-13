@@ -20,7 +20,7 @@ const exhibitions = [
     title: "Pacprocess MEA 2025",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "December 7-9, 2025",
-    booth: "Hall 2",
+    booth: "Hall 1",
     status: "past",
     media: ["/News/pacprocess-2025.webp"]
   },
@@ -29,7 +29,7 @@ const exhibitions = [
     title: "ProPak 2024",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "May 26-28, 2024",
-    booth: "Hall 3",
+    booth: "Hall 1",
     status: "past",
     media: ["/News/ProPak-2021.webp"]
   },
@@ -38,7 +38,7 @@ const exhibitions = [
     title: "Pacprocess MEA 2024",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
     dates: "December 12-14, 2024",
-    booth: "Hall 4",
+    booth: "Hall 1",
     status: "past",
     media: ["/News/GulFood.webp"]
   }
