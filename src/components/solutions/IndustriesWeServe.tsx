@@ -68,16 +68,16 @@ const industries = [
 ];
 
 // Helper Sub-Component to display industry details
-function IndustryDetails({ 
-  industry, 
-  activeIdx, 
-  activeImgIdx, 
-  setActiveImgIdx 
-}: { 
-  industry: typeof industries[0]; 
-  activeIdx: number; 
-  activeImgIdx: number; 
-  setActiveImgIdx: (idx: number) => void; 
+function IndustryDetails({
+  industry,
+  activeIdx,
+  activeImgIdx,
+  setActiveImgIdx
+}: {
+  industry: typeof industries[0];
+  activeIdx: number;
+  activeImgIdx: number;
+  setActiveImgIdx: (idx: number) => void;
 }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch relative z-10 w-full text-left">
@@ -133,11 +133,10 @@ function IndustryDetails({
               <button
                 key={img}
                 onClick={() => setActiveImgIdx(i)}
-                className={`relative w-12 h-12 border rounded-sm overflow-hidden bg-white shrink-0 transition-all ${
-                  activeImgIdx === i 
-                    ? "border-brand-red ring-2 ring-brand-red/10 scale-105" 
+                className={`relative w-12 h-12 border rounded-sm overflow-hidden bg-white shrink-0 transition-all ${activeImgIdx === i
+                    ? "border-brand-red ring-2 ring-brand-red/10 scale-105"
                     : "border-gray-200 hover:border-gray-400"
-                }`}
+                  }`}
               >
                 <Image
                   src={img}
@@ -168,16 +167,16 @@ export default function IndustriesWeServe() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        
-        <div className="reveal flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-16 border-b border-gray-100 pb-8">
+
+        <div className="reveal flex flex-col items-start gap-4 mb-16 border-b border-gray-100 pb-8">
           <div>
             <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading mb-3">Vertical Markets</h3>
             <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
               Industries We <span className="text-brand-red">Serve</span>
             </h2>
           </div>
-          <p className="text-gray-500 font-body text-sm max-w-md font-semibold font-sans">
-            Each line is custom-tailored to meet the distinct handling conditions, sanitary requirements, and target speed vectors of your sector.
+          <p className="text-gray-500 text-sm max-w-md font-semibold font-sans">
+            Each machine is engineered to meet the specific product characteristics, hygiene standards, packaging requirements, and production demands of the industries we serve.
           </p>
         </div>
 
@@ -190,16 +189,14 @@ export default function IndustriesWeServe() {
                 <div key={item.id} className="border border-gray-100 rounded-sm overflow-hidden bg-gray-50 transition-all duration-300">
                   <button
                     onClick={() => handleIndustryChange(idx)}
-                    className={`w-full text-left p-6 transition-all duration-300 flex items-center justify-between group ${
-                      isActive 
-                        ? "bg-charcoal text-white shadow-lg" 
+                    className={`w-full text-left p-6 transition-all duration-300 flex items-center justify-between group ${isActive
+                        ? "bg-charcoal text-white shadow-lg"
                         : "bg-gray-50 text-charcoal hover:bg-white hover:border-gray-300"
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center space-x-4">
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors ${
-                        isActive ? "bg-brand-red text-white" : "bg-white text-charcoal group-hover:bg-brand-red/10 group-hover:text-brand-red"
-                      }`}>
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors ${isActive ? "bg-brand-red text-white" : "bg-white text-charcoal group-hover:bg-brand-red/10 group-hover:text-brand-red"
+                        }`}>
                         <item.icon size={20} />
                       </div>
                       <div>
@@ -207,11 +204,10 @@ export default function IndustriesWeServe() {
                         <h4 className="text-lg md:text-xl font-heading font-bold uppercase tracking-tight">{item.title}</h4>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center space-x-3">
-                      <span className={`hidden sm:inline-block text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider font-heading ${
-                        isActive ? "bg-white/10 text-brand-red" : "bg-gray-200 text-gray-500"
-                      }`}>
+                      <span className={`hidden sm:inline-block text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider font-heading ${isActive ? "bg-white/10 text-brand-red" : "bg-gray-200 text-gray-500"
+                        }`}>
                         {item.badge}
                       </span>
                       {/* Mobile Arrow Indicator */}
@@ -222,9 +218,8 @@ export default function IndustriesWeServe() {
                   </button>
 
                   {/* Accordion Content for Mobile only */}
-                  <div className={`lg:hidden transition-all duration-[400ms] ease-in-out overflow-hidden ${
-                    isActive ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
-                  }`}>
+                  <div className={`lg:hidden transition-all duration-[400ms] ease-in-out overflow-hidden ${isActive ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+                    }`}>
                     <div className="p-6 bg-white border-t border-gray-200">
                       {isActive && (
                         <IndustryDetails
