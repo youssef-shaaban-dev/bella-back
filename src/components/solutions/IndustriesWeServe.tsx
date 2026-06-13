@@ -10,7 +10,7 @@ const industries = [
     icon: Beef,
     title: "Food & Beverage",
     description: "At BellaPack, we provide advanced packaging technologies tailored to the evolving needs of the Food & Beverage industry. Our machines are designed to support manufacturers with high-performance packaging solutions that combine efficiency, accuracy, hygiene, and reliability. Engineered to accommodate a wide range of food applications, our machines ensure consistent packaging quality, product integrity, and dependable production performance. With intelligent automation, flexible configurations, and durable industrial construction, BellaPack helps businesses optimize their packaging operations and achieve long-term operational excellence.",
-    features: ["Juices & Liquids", "Edible Oils", "Tomato Paste & Sauces", "Ghee & Dairy", "Grains"],
+    features: ["Juices & Liquid Beverages", "Edible Oils", "Tomato Paste & Sauces", "Ghee & Dairy Products", "Rice, Beans & Legumes"],
     badge: "High Hygiene",
     images: [
       "/solutions/food-beverage/Food.webp",
@@ -102,7 +102,7 @@ function IndustryDetails({
         </div>
 
         <div className="pt-6 border-t border-gray-200/60 mt-auto">
-          <h5 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.25em] mb-4">Formulations Supported</h5>
+          <h5 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.25em] mb-4">APPLICATIONS SERVED</h5>
           <div className="flex flex-wrap gap-2">
             {industry.features.map((feat, fIdx) => (
               <div key={fIdx} className="bg-white text-charcoal border border-gray-200 px-3 py-2 text-[10px] font-heading font-bold uppercase tracking-wider rounded-sm shadow-sm flex items-center space-x-2">
