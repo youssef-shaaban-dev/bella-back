@@ -383,9 +383,6 @@ export default function MachinePortfolioGrid() {
                     <span>Technical Specs</span>
                     <ChevronRight size={14} />
                   </button>
-                  <span className="text-[10px] font-heading font-bold text-gray-400 uppercase tracking-widest">
-                    CE Approved
-                  </span>
                 </div>
               </div>
             </div>
