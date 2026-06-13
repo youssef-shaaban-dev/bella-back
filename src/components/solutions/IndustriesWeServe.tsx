@@ -32,11 +32,11 @@ const industries = [
     id: "snacks",
     icon: Cookie,
     title: "Snacks & Granules",
-    description: "Efficient packaging systems for nuts, candies, and snacks. Optimized for high-speed production and reliable performance. We combine engineering expertise, industrial reliability, and practical application knowledge to deliver machines that perform consistently under demanding production conditions.",
-    features: ["Nuts", "Candies", "Snacks"],
+    description: "BellaPack provides advanced pouch packaging machinery for snacks and granular products, combining high-speed operation with reliable performance. Our machines are engineered to ensure accurate filling, consistent sealing quality, and efficient production while maintaining product integrity. With intelligent automation and flexible configurations, BellaPack supports manufacturers in achieving dependable and cost-effective packaging operations.",
+    features: ["Nuts & Seeds", "Candies & Gummies", "Potato Chips & Snacks", "Pasta", "Rice"],
     badge: "Product integrity",
     images: [
-      "/Homepage/Pouches.webp",
+      "/solutions/snacks-granules/snacks-granules-card.webp",
       "/Homepage/BP-2500.webp"
     ]
   },
