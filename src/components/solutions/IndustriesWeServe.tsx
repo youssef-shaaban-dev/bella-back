@@ -168,14 +168,14 @@ export default function IndustriesWeServe() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
 
-        <div className="reveal flex flex-col items-start gap-4 mb-16 border-b border-gray-100 pb-8">
+        <div className="reveal flex flex-col items-center text-center gap-4 mb-16 border-b border-gray-100 pb-8">
           <div>
             <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading mb-3">INDUSTRY APPLICATIONS</h3>
             <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal leading-none">
               Industries We <span className="text-brand-red">Serve</span>
             </h2>
           </div>
-          <p className="text-gray-500 text-sm max-w-md font-semibold font-sans">
+          <p className="text-gray-500 text-sm max-w-2xl font-semibold font-sans">
             Each machine is engineered to meet the specific product characteristics, hygiene standards, packaging requirements, and production demands of the industries we serve.
           </p>
         </div>
