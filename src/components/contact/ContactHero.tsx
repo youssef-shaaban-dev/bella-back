@@ -41,7 +41,7 @@ export default function ContactHero() {
               <a href="tel:+01019222211" className="text-2xl md:text-3xl font-heading font-bold hover:text-charcoal transition-colors block mb-3">
                 +01019222211
               </a>
-              <p className="text-xs opacity-75 font-body font-semibold tracking-wide">Available Sun-Thu, 9am - 5pm</p>
+              <p className="text-xs opacity-75 font-body font-semibold tracking-wide">Available Saturday - Thursday 9am - 5pm</p>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ function cn(...inputs: ClassValue[]) {
 }
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement>(null);
