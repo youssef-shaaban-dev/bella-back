@@ -269,7 +269,6 @@ export default function Header() {
               ) : (
                 <Link 
                   href={item.href} 
-                  target={item.external ? "_blank" : undefined}
                   className="text-white font-heading text-lg font-bold hover:text-brand-red transition-colors py-3 flex w-full"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
