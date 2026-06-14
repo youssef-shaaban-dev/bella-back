@@ -189,6 +189,7 @@ export default function PouchShapesGallery() {
                   src={pouch.image}
                   alt={pouch.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                   className="object-contain p-6 transition-transform duration-700 group-hover:scale-110"
                 />
 
