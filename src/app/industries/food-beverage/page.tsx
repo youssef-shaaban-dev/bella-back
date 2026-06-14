@@ -17,12 +17,12 @@ export default function FoodBeveragePage() {
     <main className="bg-white min-h-screen">
       {/* 1. Cinematic Hero Section */}
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 scale-110">
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/solutions/food-beverage/food-2.webp"
+            src="/solutions/food-beverage/food-and-beverage-background.webp"
             alt="Food & Beverage Industry Packaging"
             fill
-            className="object-cover brightness-[0.25] saturate-[0.8]"
+            className="object-cover brightness-[0.30] saturate-[0.8]"
             priority
           />
         </div>
