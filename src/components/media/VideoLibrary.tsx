@@ -24,9 +24,69 @@ const videos = [
   },
   {
     title: "BP-2500 Rotary Sachet Machine",
-    category: "turnkey",
+    category: "application",
     desc: "Ultra-precise rotary multi-lane sachet packaging model for custom powder dosing.",
     src: "https://drive.google.com/file/d/1DXs8D780Az29mtIoNnMrAEgjdft_RjA3/preview"
+  },
+  {
+    title: "BellaPack Production Line Demo",
+    category: "application",
+    desc: "Demonstration of BellaPack machinery in a high-speed production environment.",
+    src: "https://drive.google.com/file/d/1sFQMmCWHBK2Y2UsWyhamPt-hECkcJvpO/preview"
+  },
+  {
+    title: "Machine Operation Showcase",
+    category: "application",
+    desc: "Witness the reliable filling and sealing performance of our packaging solutions.",
+    src: "https://drive.google.com/file/d/1ZSHXC_4qxqRdTy3I7Ikc4XoXvPOxzy6h/preview"
+  },
+  {
+    title: "Client Application Highlight",
+    category: "application",
+    desc: "Real-world application of our horizontal form-fill-seal technology.",
+    src: "https://drive.google.com/file/d/1IzIUzMOeyZ6PJtg5h6T4_wqS_KGJSwcA/preview"
+  },
+  {
+    title: "Packaging Machinery in Action",
+    category: "application",
+    desc: "Robust construction and intelligent automation delivering consistent quality.",
+    src: "https://drive.google.com/file/d/16XMbvDGq6kVz9RFO8u0nLLHPPTVi1H_r/preview"
+  },
+  {
+    title: "BellaPack Exhibition Showcase",
+    category: "exhibition",
+    desc: "Highlights from our recent trade fair demonstrations and machinery displays.",
+    src: "https://drive.google.com/file/d/1lFGJEkXz0BrkiR_xHWLwk6vYS-t2hLXY/preview"
+  },
+  {
+    title: "High-Speed Pouch Packaging",
+    category: "application",
+    desc: "Advanced dosing integration ensuring precise product handling and secure sealing.",
+    src: "https://drive.google.com/file/d/1GTcubeSM3L-mFFlxXb-dm8QOQsQvWi4M/preview"
+  },
+  {
+    title: "Automated Packaging System",
+    category: "application",
+    desc: "Seamless operation of our integrated packaging and sealing modules.",
+    src: "https://drive.google.com/file/d/1X2CJzKc3P1RGe72J79YyNgrC_82j9ieK/preview"
+  },
+  {
+    title: "Industrial Machinery Operations",
+    category: "application",
+    desc: "Durable and reliable performance in demanding packaging scenarios.",
+    src: "https://drive.google.com/file/d/12ijpSSG_QrJXJCf3zXYhyHAwoLTs_WzB/preview"
+  },
+  {
+    title: "Precision Dosing & Sealing",
+    category: "application",
+    desc: "Showcasing the accuracy and speed of BellaPack filling systems.",
+    src: "https://drive.google.com/file/d/1jWEOPrHjZDSI9Yjo-eirAiAnI16tKV4E/preview"
+  },
+  {
+    title: "Production Efficiency Demo",
+    category: "application",
+    desc: "Maximized uptime and minimal maintenance requirements in action.",
+    src: "https://drive.google.com/file/d/1O9RQMyE_CWmkMKLdgu-XaV0UBjJ4KRe1/preview"
   }
 ];
 
@@ -95,9 +155,9 @@ export default function VideoLibrary() {
               <div className="relative aspect-video bg-black overflow-hidden">
                 <iframe
                   src={video.src}
-                  allow="autoplay; encrypted-media"
+                  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full"
+                  className="absolute inset-0 w-full h-full"
                   style={{ border: 'none' }}
                 />
               </div>
