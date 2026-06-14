@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FlatHero from "@/components/technology/FlatHero";
 import FlatOverview from "@/components/technology/FlatOverview";
+import FlatMachine from "@/components/technology/FlatMachine";
 import PouchShapesGallery from "@/components/technology/PouchShapesGallery";
 import FlatCTA from "@/components/technology/FlatCTA";
 
@@ -43,6 +44,7 @@ export default function HorizontalFlatPage() {
     <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
       <FlatHero />
       <FlatOverview />
+      <FlatMachine />
       <PouchShapesGallery />
       <FlatCTA />
     </main>

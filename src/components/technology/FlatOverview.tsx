@@ -22,11 +22,12 @@ export default function FlatOverview({
     "Whether you need a string pouch for multi-pack sachets, a shaped stand-up pouch with a side spout for liquid detergents, or a classic zipper pouch for coffee and spices, BellaPack's flat pouch lines deliver consistent seal quality, precise filling, and premium shelf presentation across every format."
   ],
   capabilities = [
-    { title: "12+ Pouch Formats", desc: "Stand-up, flat, pillow, shaped, string — all on one frame." },
-    { title: "Quick Format Changeover", desc: "Modular tooling for rapid switching between pouch types." },
-    { title: "Spout & Zipper Integration", desc: "Inline top spout, side spout, and press-to-close zipper feeding." },
-    { title: "Euro Hole & Carry Handle", desc: "Retail-ready hang features and ergonomic carry configurations." },
-    { title: "Shaped Die-Cut Pouches", desc: "Custom contour shapes for enhanced shelf differentiation." },
+    { title: "Flat Pouch Production", desc: "" },
+    { title: "Accurate Filling Systems", desc: "" },
+    { title: "Secure Heat Sealing", desc: "" },
+    { title: "Flexible Dosing Integration", desc: "" },
+    { title: "Reliable Automation", desc: "" },
+    { title: "Consistent Packaging Quality", desc: "" },
   ],
   showImage = true
 }: FlatOverviewProps = {}) {
@@ -75,8 +76,8 @@ export default function FlatOverview({
             {showImage && (
               <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg group">
                 <Image 
-                  src="/pouch-shapes/group-picture-of-pouches-.webp" 
-                  alt="BellaPack Pouch Shapes Collection" 
+                  src="/pouch-shapes/pillow-pouch.webp" 
+                  alt="Flat Pouch" 
                   fill 
                   className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 bg-gray-50"
                 />
