@@ -16,7 +16,7 @@ export default function CosmeticsPharmaPage() {
     <main className="bg-white min-h-screen">
       {/* 1. Cinematic Hero Section */}
       <section className="hero-section relative h-inner-hero min-h-inner-hero flex items-center justify-center text-center text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 scale-110">
+        <div className="absolute inset-0 z-0">
           <Image
             src="/solutions/cosmetics&pharma/cosmetics-pharma-background.webp"
             alt="Cosmetics & Pharmaceutical Packaging"
