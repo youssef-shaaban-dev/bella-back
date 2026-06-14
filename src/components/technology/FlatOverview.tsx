@@ -17,9 +17,7 @@ export default function FlatOverview({
     <>Complete <span className="text-brand-red">Flat Pouch</span> Packaging Solutions</>
   ),
   paragraphs = [
-    <span key="1">At <span className="text-brand-red font-bold">BellaPack</span>, our Horizontal Form-Fill-Seal (HFFS) flat pouch lines are designed to produce over 12 distinct pouch configurations on a single production platform. From classic stand-up pouches and pillow bags to advanced shaped formats with spouts, zippers, euro holes, and carry handles, our machines offer unmatched versatility.</span>,
-    "Each pouch format is engineered for specific product categories — liquid beverages, powders, granules, sauces, dairy products, and more. Our modular station design means switching between pouch types requires minimal changeover, reducing downtime and maximizing production throughput.",
-    "Whether you need a string pouch for multi-pack sachets, a shaped stand-up pouch with a side spout for liquid detergents, or a classic zipper pouch for coffee and spices, BellaPack's flat pouch lines deliver consistent seal quality, precise filling, and premium shelf presentation across every format."
+    <span key="1"><span className="text-brand-red font-bold">BellaPack</span> Horizontal Flat Pouch machinery delivers reliable and efficient packaging performance for a wide range of products and industries. Combining accurate filling, secure sealing, and flexible dosing integration</span>
   ],
   capabilities = [
     { title: "Flat Pouch Production", desc: "" },
@@ -34,24 +32,24 @@ export default function FlatOverview({
   return (
     <section className="py-20 relative bg-white">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
+        {/* Top: Centered Content */}
+        <div className="reveal text-center mb-16 space-y-6 max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold font-heading uppercase tracking-tight text-charcoal">
+            {title}
+          </h2>
           
-          {/* Left Box: Tech Value Prop */}
-          <div className="reveal lg:col-span-7 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading uppercase tracking-tight text-charcoal">
-              {title}
-            </h2>
-            
-            <div className="text-gray-600 font-body text-base leading-relaxed space-y-6 font-semibold">
-              {paragraphs.map((p, idx) => (
-                <p key={idx}>{p}</p>
-              ))}
-            </div>
+          <div className="text-gray-600 font-body text-base leading-relaxed space-y-6 font-semibold">
+            {paragraphs.map((p, idx) => (
+              <p key={idx}>{p}</p>
+            ))}
           </div>
+        </div>
 
-          {/* Right Box: Key Features */}
-          <div className="reveal lg:col-span-5 space-y-6">
-            <div className="bg-gray-50 border border-gray-100 p-8 rounded-sm shadow-md">
+        {/* Bottom: Side by Side (Key Capabilities & Image) */}
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          {/* Left Box: Key Features */}
+          <div className="reveal h-full">
+            <div className="bg-gray-50 border border-gray-100 p-8 rounded-sm shadow-md h-full">
               <h3 className="text-xl font-bold font-heading uppercase text-charcoal border-b border-gray-200 pb-4 mb-6 flex items-center gap-2">
                 <Layers className="text-brand-red" size={22} />
                 <span>Key Capabilities</span>
@@ -71,10 +69,12 @@ export default function FlatOverview({
                 ))}
               </ul>
             </div>
+          </div>
 
-            {/* Group Image */}
-            {showImage && (
-              <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg group">
+          {/* Right Box: Group Image */}
+          {showImage && (
+            <div className="reveal h-full">
+              <div className="relative h-full min-h-[350px] lg:min-h-full w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg group">
                 <Image 
                   src="/solutions/flatPouch.webp" 
                   alt="Flat Pouch" 
@@ -82,9 +82,8 @@ export default function FlatOverview({
                   className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 bg-gray-50"
                 />
               </div>
-            )}
-          </div>
-
+            </div>
+          )}
         </div>
       </div>
     </section>

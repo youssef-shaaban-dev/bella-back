@@ -16,11 +16,11 @@ export default function FlatMachine() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto bg-white rounded-sm border border-gray-200 shadow-xl overflow-hidden reveal">
+        <div className="max-w-6xl mx-auto bg-white rounded-sm border border-gray-200 shadow-xl overflow-hidden reveal">
           <div className="grid md:grid-cols-2 gap-0">
             {/* Image Side */}
             <div className="bg-white p-8 flex items-center justify-center border-b md:border-b-0 md:border-r border-gray-100 relative group">
-              <div className="relative w-full aspect-square max-w-[300px]">
+              <div className="relative w-full aspect-square max-w-[450px]">
                 <Image
                   src="/horizontal-standup-pouch/B2500_white.webp"
                   alt="B-2500 Machine"
@@ -31,7 +31,7 @@ export default function FlatMachine() {
             </div>
 
             {/* Content Side */}
-            <div className="p-8 md:p-10 flex flex-col justify-center">
+            <div className="p-8 md:p-12 lg:p-16 flex flex-col justify-center">
               <span className="inline-block w-fit bg-brand-red/10 text-brand-red text-[10px] font-heading font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
                 LIQUID FILLING
               </span>

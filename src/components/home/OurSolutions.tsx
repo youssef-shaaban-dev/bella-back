@@ -14,31 +14,36 @@ const solutions = [
     title: "Food & Beverage",
     img: "/Homepage/3.webp",
     desc: "High-hygiene filling and packing lines engineered for tomato paste, juices, ghee, edible oils, and grains.",
-    link: "/industries/food-beverage"
+    link: "/industries/food-beverage",
+    customFit: "object-cover"
   },
   {
     title: "Spices & Coffee",
     img: "/Homepage/4.webp",
     desc: "High-precision powder filling solutions ensuring accurate dosing, aroma preservation, and zero waste.",
-    link: "/industries/spices-coffee"
+    link: "/industries/spices-coffee",
+    customFit: "object-cover"
   },
   {
     title: "Snacks & Granules",
     img: "/Homepage/5.webp",
     desc: "High-speed packaging systems designed for continuous, reliable bagging of snacks, nuts, and candies.",
-    link: "/industries/snacks-granules"
+    link: "/industries/snacks-granules",
+    customFit: "object-contain bg-[#f4f4f4]"
   },
   {
     title: "Detergents & Chemicals",
     img: "/Homepage/6.webp",
     desc: "Heavy-duty titanium-reinforced packaging lines built specifically to handle liquid detergents and corrosive bleach.",
-    link: "/industries/detergents-chemicals"
+    link: "/industries/detergents-chemicals",
+    customFit: "object-cover"
   },
   {
     title: "Cosmetics & Pharma",
     img: "/Homepage/7.webp",
     desc: "Ultra-sanitary dosing systems tailored for high-hygiene creams, gels, and pharmaceutical liquids.",
-    link: "/industries/cosmetics-pharma"
+    link: "/industries/cosmetics-pharma",
+    customFit: "object-contain bg-[#f4f4f4]"
   }
 ];
 
@@ -76,7 +81,7 @@ export default function OurSolutions() {
                 alt={solution.title}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                className={`absolute inset-0 w-full h-full transition-transform duration-1000 group-hover:scale-110 ${solution.customFit || 'object-cover'}`}
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-charcoal via-charcoal/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
