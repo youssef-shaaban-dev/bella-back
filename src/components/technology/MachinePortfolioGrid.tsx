@@ -21,7 +21,7 @@ const machineModels = [
     img: "/horizontal-standup-pouch/B2500_white.webp",
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches and flat pouches, liquid filling. Designed to deliver high performance, precise filling accuracy, and consistent operational efficiency for standard packaging formats.",
-    techDetails: "Hygienic liquid dosing pumps, Siemens PLC touch control panel, CE certified systems. Built for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
+    techDetails: "-Industry: Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals",
     pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/pillow-pouch.webp"]
   },
   {
@@ -497,7 +497,7 @@ export default function MachinePortfolioGrid() {
               <div className="mt-8 border-t border-gray-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <span className="text-[10px] font-heading font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
                   <ShieldCheck className="text-brand-red" size={16} />
-                  <span>ISO 9001 & CE Certified</span>
+                  <span>ISO 9001</span>
                 </span>
 
                 <a

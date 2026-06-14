@@ -78,10 +78,10 @@ export default function FlatMachine() {
                   <MessageSquare size={14} />
                   <span>Request Specs</span>
                 </a>
-                
+
                 <span className="text-[10px] font-heading font-bold text-gray-400 uppercase tracking-widest flex items-center gap-1.5">
                   <ShieldCheck className="text-brand-red" size={14} />
-                  <span>ISO 9001 & CE Certified</span>
+                  <span>ISO 9001 </span>
                 </span>
               </div>
             </div>
