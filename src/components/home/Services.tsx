@@ -34,27 +34,7 @@ export default function Services() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo(".service-card", 
-        {
-          y: 18,
-          opacity: 0,
-        },
-        {
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 93%",
-          },
-          y: 0,
-          opacity: 1,
-          duration: 0.4,
-          stagger: 0.08,
-          ease: "power3.out",
-          force3D: true
-        }
-      );
-    }, sectionRef);
-    return () => ctx.revert();
+    // GSAP animations removed per user request so cards always appear instantly
   }, []);
 
   return (
@@ -74,7 +54,7 @@ export default function Services() {
             return (
               <div 
                 key={idx} 
-                className="service-card group relative bg-white border border-gray-100 p-10 transition-all duration-500 hover:border-brand-red/30 hover:shadow-xl rounded-sm flex flex-col h-full opacity-0"
+                className="service-card group relative bg-white border border-gray-100 p-10 transition-all duration-500 hover:border-brand-red/30 hover:shadow-xl rounded-sm flex flex-col h-full"
               >
                 <div className="mb-6 inline-flex items-center justify-center w-14 h-14 bg-gray-100 group-hover:bg-brand-red text-charcoal group-hover:text-white transition-colors duration-500 rounded-sm">
                   <Icon size={28} strokeWidth={1.5} />

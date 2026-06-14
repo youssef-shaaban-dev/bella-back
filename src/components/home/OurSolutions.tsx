@@ -46,21 +46,7 @@ export default function OurSolutions() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".industry-card", {
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 90%",
-        },
-        y: 20,
-        opacity: 0,
-        stagger: 0.06,
-        duration: 0.45,
-        ease: "power4.out",
-      });
-    }, containerRef);
-
-    return () => ctx.revert();
+    // GSAP animations removed per user request so cards always appear instantly
   }, []);
 
   return (
