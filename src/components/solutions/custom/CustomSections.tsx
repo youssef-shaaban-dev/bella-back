@@ -6,6 +6,7 @@ import { Settings, Target, Layers } from "lucide-react";
 
 export function CustomHero() {
   return (
+    <>
     <section className="bg-charcoal text-white pt-32 md:pt-48 pb-24 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10 max-w-5xl flex flex-col items-center">
         <div className="flex items-center justify-center space-x-3 mb-6 reveal">
@@ -20,7 +21,12 @@ export function CustomHero() {
           CUSTOM ENGINEERING & <br className="hidden md:block" /><span className="text-brand-red">PROJECT SOLUTIONS</span>
         </h1>
         
-        <div className="text-white/80 font-body text-base md:text-lg max-w-3xl text-center leading-relaxed space-y-6 font-semibold reveal mt-24 md:mt-32">
+      </div>
+    </section>
+
+    <section className="py-20 md:py-28 bg-white border-b border-gray-100">
+      <div className="container mx-auto px-6 max-w-4xl text-center">
+        <div className="text-gray-600 font-body text-lg md:text-xl leading-relaxed space-y-8 font-semibold reveal">
           <p>
             Every packaging application has unique requirements. BellaPack provides engineering flexibility to adapt machine configurations, pouch formats, and packaging materials to specific production objectives.
           </p>
@@ -30,6 +36,7 @@ export function CustomHero() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

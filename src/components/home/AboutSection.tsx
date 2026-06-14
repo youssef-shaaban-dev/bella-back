@@ -83,7 +83,7 @@ export default function AboutSection() {
               Leading the Future of <span className="text-brand-red">Industrial</span> Packaging
             </h2>
 
-            <p className="text-gray-600 font-body text-lg mb-8 leading-relaxed">
+            <p className="text-gray-600 font-body text-lg mb-8 leading-relaxed text-left">
               Since 2000, BellaPack has been designing and manufacturing advanced horizontal pouch packaging systems for customers across food, beverage, chemical, personal care, and pharmaceutical industries. Through precision engineering, intelligent automation, and customer-focused innovation, we help manufacturers achieve greater efficiency, reliability, and long-term production success.
             </p>
 
@@ -92,11 +92,11 @@ export default function AboutSection() {
                 { icon: Settings, title: "ENGINEERING EXCELLENCE", desc: "Precision-built machinery designed for reliable performance." },
                 { icon: ShieldCheck, title: "CUSTOMER-FOCUSED INNOVATION", desc: "Tailored solutions developed around your products and production requirements." },
               ].map((feat, idx) => (
-                <div key={idx} className="flex items-start space-x-4 border-l border-gray-100 pl-4">
-                  <feat.icon className="text-brand-red mt-1 shrink-0" size={24} />
+                <div key={idx} className="flex items-start gap-4">
+                  <feat.icon className="text-brand-red mt-0.5 shrink-0" size={22} />
                   <div>
-                    <h4 className="font-heading font-bold text-charcoal uppercase text-sm tracking-wide mb-1">{feat.title}</h4>
-                    <p className="text-gray-500 text-sm">{feat.desc}</p>
+                    <h4 className="font-heading font-bold text-charcoal uppercase text-sm tracking-wide mb-1 text-left">{feat.title}</h4>
+                    <p className="text-gray-500 text-sm text-left leading-relaxed">{feat.desc}</p>
                   </div>
                 </div>
               ))}

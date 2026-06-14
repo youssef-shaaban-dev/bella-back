@@ -64,7 +64,7 @@ export default function OurSolutions() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal font-heading leading-tight uppercase tracking-tighter mb-6">
             Industries <span className="text-brand-red">We Serve</span>
           </h2>
-          <p className="text-charcoal/50 max-w-xl font-body text-lg leading-relaxed">
+          <p className="text-gray-600 max-w-xl font-body text-lg leading-relaxed font-semibold text-left">
             BellaPack delivers specialized packaging solutions across multiple industries, combining precision engineering, intelligent automation, and proven manufacturing expertise.
           </p>
         </div>
