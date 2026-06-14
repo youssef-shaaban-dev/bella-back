@@ -60,9 +60,6 @@ export default function CaseStudies() {
                     <p className="text-gray-600 font-body text-base leading-relaxed mb-6">
                       BellaPack machines are designed for durability, reliability, and continuous operation. Our machines have been supporting leading manufacturers for years, with production lines operating successfully for years.
                     </p>
-                    <h4 className="font-heading font-bold uppercase text-brand-red tracking-wide text-lg">
-                      “B-2500 SERIES OPERATING SUCCESSFULLY AT SAVOLA GROUP FOR OVER 10 YEARS”
-                    </h4>
                   </div>
                 </div>
 
@@ -78,7 +75,7 @@ export default function CaseStudies() {
                 <div className="relative z-10">
                   <Settings size={48} className="text-brand-red mx-auto mb-6 animate-[spin_15s_linear_infinite]" />
                   <blockquote className="font-heading text-2xl italic font-bold uppercase tracking-wide text-white/90 leading-snug mb-8">
-                    &ldquo;BP SERIES DELIVERED 40% OUTPUT BOOSTS INSTANTLY.&rdquo;
+                    &ldquo;B-2500 SERIES OPERATING SUCCESSFULLY AT SAVOLA GROUP FOR OVER 10 YEARS&rdquo;
                   </blockquote>
 
               
