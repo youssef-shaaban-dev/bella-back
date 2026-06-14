@@ -7,7 +7,7 @@ export default function SustainabilityDetails() {
   return (
     <section className="py-24 bg-white relative">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-16 items-center">
+        <div className="grid lg:grid-cols-12 gap-16 items-start">
 
           {/* Left Column: Text Copy */}
           <div className="lg:col-span-6 space-y-8 text-left reveal">
@@ -50,15 +50,15 @@ export default function SustainabilityDetails() {
           </div>
 
           {/* Right Column: Visual Frame */}
-          <div className="lg:col-span-6 reveal">
-            <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl group">
+          <div className="lg:col-span-6 reveal lg:mt-10">
+            <div className="relative rounded-sm overflow-hidden border border-gray-100 shadow-2xl group h-full">
               <Image
                 src="/Sustainability/sustainability-in-packaging.webp"
                 alt="Sustainably packed pouches mockup"
                 width={800}
                 height={450}
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full aspect-16/9 transition-transform duration-700 group-hover:scale-105"
                 priority
               />
             </div>
