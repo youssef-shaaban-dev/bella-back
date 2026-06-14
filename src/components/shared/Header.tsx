@@ -12,8 +12,8 @@ function cn(...inputs: ClassValue[]) {
 }
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -182,22 +182,100 @@ export default function Header() {
         <nav className="flex flex-col overflow-y-auto flex-1 py-6 px-6">
           {[
             { name: "About us", href: "/about" },
-            { name: "Solutions", href: "/solutions" },
+            { 
+              name: "Solutions", 
+              href: "/solutions",
+              hasDropdown: true,
+              columns: [
+                {
+                  title: "Industries Served",
+                  items: [
+                    { name: "Food & Beverage", href: "/industries/food-beverage" },
+                    { name: "Spices & Coffee", href: "/industries/spices-coffee" },
+                    { name: "Snacks & Granules", href: "/industries/snacks-granules" },
+                    { name: "Detergents & Chemical Products", href: "/industries/detergents-chemicals" },
+                    { name: "Cosmetics & Pharmaceuticals", href: "/industries/cosmetics-pharma" },
+                  ]
+                },
+                {
+                  title: "Technology",
+                  items: [
+                    { name: "Horizontal flat pouches", href: "/technology/horizontal-flat" },
+                    { name: "Horizontal stand-up pouches", href: "/technology/horizontal-standup" },
+                    { name: "Vertical machines", href: "/technology/vertical" },
+                  ]
+                },
+                {
+                  title: "Project Solutions",
+                  items: [
+                    { name: "Integrated Project Solutions", isCategory: true },
+                    { name: "Custom Engineering", href: "/solutions/custom" },
+                    { name: "Technical and Performance tools", href: "/solutions/tools" },
+                  ]
+                }
+              ]
+            },
             { name: "Services", href: "/services" },
             { name: "Sustainability", href: "/sustainability" },
             { name: "Careers", href: "https://www.coesia.com/en/careers#block-coesiatalentlinkcareersiframeblock", external: true },
             { name: "News", href: "/news" },
             { name: "Media", href: "/media" },
           ].map((item) => (
-            <Link 
-              key={item.name} 
-              href={item.href} 
-              target={item.external ? "_blank" : undefined}
-              className="text-white font-heading text-lg font-bold hover:text-brand-red transition-colors py-3 border-b border-white/5"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {item.name}
-            </Link>
+            <div key={item.name} className="border-b border-white/5">
+              {item.hasDropdown ? (
+                <div className="flex flex-col py-3">
+                  <div 
+                    className="flex items-center justify-between cursor-pointer text-white hover:text-brand-red transition-colors"
+                    onClick={() => setMobileDropdownOpen(mobileDropdownOpen === item.name ? null : item.name)}
+                  >
+                    <span className="font-heading text-lg font-bold">{item.name}</span>
+                    <ChevronDown size={20} className={cn("transition-transform", mobileDropdownOpen === item.name && "rotate-180")} />
+                  </div>
+                  <div className={cn("overflow-hidden transition-all duration-300", mobileDropdownOpen === item.name ? "max-h-[1000px] mt-4 opacity-100" : "max-h-0 opacity-0")}>
+                    <div className="flex flex-col pl-4 space-y-6 mb-2">
+                      {item.columns?.map((col, idx) => (
+                        <div key={idx} className="space-y-3">
+                          <h4 className="text-brand-red font-bold text-xs uppercase tracking-wider border-b border-white/10 pb-2">{col.title}</h4>
+                          <ul className="space-y-3">
+                            {col.items.map((sub, sIdx) => (
+                              <li key={sIdx}>
+                                {sub.isCategory ? (
+                                  <span className="text-gray-400 text-xs font-bold uppercase tracking-wider block mb-1">{sub.name}</span>
+                                ) : (
+                                  <Link 
+                                    href={sub.href || "#"} 
+                                    className="text-white/80 hover:text-white text-sm font-body block"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {sub.name}
+                                  </Link>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                      <Link 
+                        href={item.href}
+                        className="text-brand-red text-sm font-bold uppercase tracking-wider mt-2 block"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        View All Solutions &rarr;
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <Link 
+                  href={item.href} 
+                  target={item.external ? "_blank" : undefined}
+                  className="text-white font-heading text-lg font-bold hover:text-brand-red transition-colors py-3 flex w-full"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              )}
+            </div>
           ))}
           <Link
             href="/contact"

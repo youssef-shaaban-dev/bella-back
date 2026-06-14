@@ -139,18 +139,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-4">
                 <Mail className="text-brand-red shrink-0" size={20} />
-                <span className="text-white/60 text-sm font-body">info@bellapack.com</span>
+                <span className="text-white/60 text-sm font-body">Info@bellapacktec.com</span>
               </li>
               <li className="flex items-center space-x-4">
                 <Phone className="text-brand-red shrink-0" size={20} />
-                <span className="text-white/60 text-sm font-body">+20 15 380692</span>
-              </li>
-              <li className="flex items-center space-x-4">
-                <Printer className="text-brand-red shrink-0" size={20} />
-                <div className="flex items-center space-x-2">
-                  <span className="text-[9px] border border-white/20 px-1 rounded-sm uppercase tracking-widest text-white/40">Fax</span>
-                  <span className="text-white/60 text-sm font-body">+20 15 380693</span>
-                </div>
+                <span className="text-white/60 text-sm font-body">01019222211</span>
               </li>
             </ul>
           </div>

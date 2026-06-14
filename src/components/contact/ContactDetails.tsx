@@ -37,8 +37,8 @@ export default function ContactDetails() {
           </div>
           <div>
             <h4 className="font-heading font-bold text-charcoal uppercase text-sm tracking-wider mb-2">Sales & Inquiries</h4>
-            <a href="tel:+01019222211" className="text-charcoal hover:text-brand-red transition-colors font-body font-bold text-lg">
-              +01019222211
+            <a href="tel:01019222211" className="text-charcoal hover:text-brand-red transition-colors font-body font-bold text-lg">
+              01019222211
             </a>
           </div>
         </div>
@@ -50,8 +50,8 @@ export default function ContactDetails() {
           </div>
           <div>
             <h4 className="font-heading font-bold text-charcoal uppercase text-sm tracking-wider mb-2">Official Email</h4>
-            <a href="mailto:info@bellapack.com" className="text-charcoal hover:text-brand-red transition-colors font-body font-bold text-lg tracking-wide">
-              info@bellapack.com
+            <a href="mailto:Info@bellapacktec.com" className="text-charcoal hover:text-brand-red transition-colors font-body font-bold text-lg tracking-wide">
+              Info@bellapacktec.com
             </a>
           </div>
         </div>
