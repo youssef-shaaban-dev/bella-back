@@ -22,16 +22,17 @@ export default function SustainabilityDetails() {
               </h2>
             </div>
 
-            <p className="text-gray-600 font-body text-base md:text-lg leading-relaxed">
-              Sustainability in packaging starts with intelligent engineering. At BellaPack, we design machinery that reduces material waste, improves sealing consistency, and maximizes dosing accuracy—helping manufacturers achieve higher efficiency while minimizing environmental impact.
-            </p>
-
-            <p className="text-gray-500 font-body text-sm leading-relaxed">
-              Our equipment is engineered to be compatible with a wide range of sustainable packaging materials, including recyclable and mono-material pouch structures. This flexibility enables manufacturers to transition toward more environmentally responsible packaging solutions without compromising production performance, product protection, or operational reliability.
-            </p>
-            <p className="text-gray-500 font-body text-sm leading-relaxed">
-              By combining precision automation with adaptable machine designs, we help our customers meet both their production goals and sustainability commitments while preparing for the future of packaging.
-            </p>
+            <div className="space-y-4 text-gray-600 font-body text-base leading-relaxed">
+              <p>
+                Sustainability in packaging starts with intelligent engineering. At BellaPack, we design machinery that reduces material waste, improves sealing consistency, and maximizes dosing accuracy—helping manufacturers achieve higher efficiency while minimizing environmental impact.
+              </p>
+              <p>
+                Our equipment is engineered to be compatible with a wide range of sustainable packaging materials, including recyclable and mono-material pouch structures. This flexibility enables manufacturers to transition toward more environmentally responsible packaging solutions without compromising production performance, product protection, or operational reliability.
+              </p>
+              <p>
+                By combining precision automation with adaptable machine designs, we help our customers meet both their production goals and sustainability commitments while preparing for the future of packaging.
+              </p>
+            </div>
             {/* Monomaterial features */}
             <div className="pt-6 border-t border-gray-100 grid sm:grid-cols-2 gap-4">
               {[
