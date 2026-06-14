@@ -19,28 +19,51 @@ const exhibitions = [
     id: "pacprocess2025",
     title: "Pacprocess MEA 2025",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
-    dates: "December 7-9, 2025",
+    dates: "December 2025",
     booth: "Hall 1",
     status: "past",
+    description: "Continuing our commitment to showcasing advanced packaging solutions in the Middle East and Africa.",
     media: ["/News/pacprocess-2025.webp"]
-  },
-  {
-    id: "propak2021",
-    title: "ProPak 2024",
-    location: "Egypt International Exhibition Center (EIEC), New Cairo",
-    dates: "May 26-28, 2024",
-    booth: "Hall 1",
-    status: "past",
-    media: ["/News/ProPak-2021.webp"]
   },
   {
     id: "pacprocess2024",
     title: "Pacprocess MEA 2024",
     location: "Egypt International Exhibition Center (EIEC), New Cairo",
-    dates: "December 12-14, 2024",
+    dates: "December 2024",
     booth: "Hall 1",
     status: "past",
-    media: ["/News/GulFood.webp"]
+    description: "Highlighting our high-speed form-fill-seal machines and building stronger connections with key industry leaders.",
+    media: ["/News/pacprocess-2024.webp"]
+  },
+  {
+    id: "propak2023",
+    title: "ProPak 2023",
+    location: "Egypt International Exhibition Center (EIEC), New Cairo",
+    dates: "May 2023",
+    booth: "Hall 1",
+    status: "past",
+    description: "A remarkable exhibition featuring our robust flat pouch systems and custom engineering capabilities.",
+    media: ["/News/ProPak-2023.webp"]
+  },
+  {
+    id: "propak2021",
+    title: "ProPak 2021",
+    location: "Egypt International Exhibition Center (EIEC), New Cairo",
+    dates: "May 2021",
+    booth: "Hall 1",
+    status: "past",
+    description: "Establishing our footprint in the regional packaging sector through cutting-edge automation displays.",
+    media: ["/News/ProPak-2021.webp"]
+  },
+  {
+    id: "gulfood",
+    title: "Gulfood",
+    location: "Dubai World Trade Centre",
+    dates: "November",
+    booth: "Main Hall",
+    status: "past",
+    description: "Expanding BellaPack's presence globally with a powerful showcase of our food and beverage packaging machinery.",
+    media: ["/News/GulFood.webp", "/News/GulFood-2.webp"]
   }
 ];
 
@@ -116,17 +139,19 @@ export default function ExhibitionsList() {
                 {/* Expandable Content Area */}
                 {isExpanded && (
                   <div className="px-6 pb-8 md:px-8 md:pb-12 animate-[fadeIn_0.3s_ease-out] border-t border-gray-100 pt-8">
-                    <div className="flex flex-col gap-8">
+                    <div className={expo.id === "pacprocess2026" ? "flex flex-col gap-8" : "grid lg:grid-cols-2 gap-10 items-center"}>
                       {/* Description and Location */}
-                      <div className="w-full">
-                        <div className="bg-gray-50 p-6 border border-gray-100 rounded-sm mb-6">
-                          <h4 className="text-xs font-bold font-heading text-brand-red uppercase tracking-widest mb-3 flex items-center">
-                            <span>📄 Description & Scope</span>
-                          </h4>
-                          <p className="text-gray-600 font-body text-base leading-relaxed font-semibold">
-                            {expo.description}
-                          </p>
-                        </div>
+                      <div className="w-full flex flex-col justify-center">
+                        {expo.description && (
+                          <div className="bg-gray-50 p-6 border border-gray-100 rounded-sm mb-6">
+                            <h4 className="text-xs font-bold font-heading text-brand-red uppercase tracking-widest mb-3 flex items-center">
+                              <span>📄 Description & Scope</span>
+                            </h4>
+                            <p className="text-gray-600 font-body text-base leading-relaxed font-semibold">
+                              {expo.description}
+                            </p>
+                          </div>
+                        )}
 
                         <div className="grid sm:grid-cols-2 gap-4">
                           <div className="flex flex-col border-l-2 border-gray-200 pl-4 py-2">
@@ -142,15 +167,17 @@ export default function ExhibitionsList() {
 
                       {/* Exhibition Images Side */}
                       {expo.media.length > 0 && (
-                        <div className="w-full space-y-4 border-t border-gray-100 pt-6 mt-2">
-                          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
-                            <ImageIcon size={12} /> Captured Moments
-                          </span>
-                          <div className={expo.media.length === 1 ? "w-full" : "grid grid-cols-2 md:grid-cols-3 gap-4"}>
+                        <div className={`w-full ${expo.id === "pacprocess2026" ? "space-y-4 border-t border-gray-100 pt-6 mt-2" : "h-full flex flex-col justify-center"}`}>
+                          {expo.id === "pacprocess2026" && (
+                            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                              <ImageIcon size={12} /> Captured Moments
+                            </span>
+                          )}
+                          <div className={expo.media.length === 1 ? "w-full flex justify-center" : "grid grid-cols-2 gap-4"}>
                             {expo.media.map((imgUrl, mIdx) => (
                               <div
                                 key={mIdx}
-                                className="relative rounded-sm overflow-hidden shadow-sm group/img border border-gray-100 bg-gray-50 flex items-center justify-center"
+                                className={`relative rounded-sm overflow-hidden shadow-sm group/img border border-gray-100 bg-gray-50 flex items-center justify-center ${expo.id !== "pacprocess2026" && expo.media.length === 1 ? "w-full max-w-md mx-auto aspect-[4/3]" : ""}`}
                               >
                                 <Image
                                   src={imgUrl}
@@ -158,8 +185,12 @@ export default function ExhibitionsList() {
                                   width={0}
                                   height={0}
                                   sizes="100vw"
-                                  style={{ width: '100%', height: 'auto' }}
-                                  className="group-hover/img:scale-105 transition-transform duration-500 mix-blend-multiply"
+                                  style={{ 
+                                    width: '100%', 
+                                    height: expo.id !== "pacprocess2026" && expo.media.length === 1 ? '100%' : 'auto',
+                                    maxHeight: expo.id === "pacprocess2026" ? 'auto' : '500px'
+                                  }}
+                                  className={`group-hover/img:scale-105 transition-transform duration-500 mix-blend-multiply ${expo.id !== "pacprocess2026" && expo.media.length === 1 ? "object-cover" : "object-contain"}`}
                                 />
                               </div>
                             ))}
