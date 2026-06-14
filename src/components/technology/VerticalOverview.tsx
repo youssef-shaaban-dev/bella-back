@@ -11,7 +11,8 @@ export default function VerticalOverview() {
         <div className="grid lg:grid-cols-12 gap-16 items-center">
           
           {/* Left Side: The Single Official Machine Photo */}
-            <div className="relative w-full max-w-lg aspect-[3/4] rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
+          <div className="reveal lg:col-span-5 flex justify-center w-full">
+            <div className="relative w-full max-w-lg aspect-3/4 rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
               <Image 
                 src="/vertical-machines/vertical-machine.webp" 
                 alt="BellaPack Official Vertical Packaging Machine"
