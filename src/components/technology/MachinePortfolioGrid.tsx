@@ -342,13 +342,41 @@ export default function MachinePortfolioGrid() {
                     {item.desc}
                   </p>
 
-                  {/* Specs list */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {item.specs.map((spec, sIdx) => (
-                      <span key={sIdx} className="bg-gray-100 text-charcoal/70 text-[9px] font-heading font-bold px-2 py-0.5 rounded-sm uppercase tracking-wide">
-                        {spec}
-                      </span>
-                    ))}
+                  {/* Specs Block */}
+                  <div className="bg-gray-50 rounded-sm p-4 mb-6 flex flex-col gap-3 border border-gray-100">
+                    {/* First row: Type and Speed (or first two specs) */}
+                    <div className="grid grid-cols-2 gap-4 border-b border-gray-200/60 pb-3">
+                      {item.specs.slice(0, 2).map((spec, sIdx) => {
+                        const [label, ...valParts] = spec.split(":");
+                        const value = valParts.join(":");
+                        return (
+                          <div key={sIdx} className="flex flex-col gap-1">
+                            <span className="text-[11px] font-heading font-bold uppercase text-brand-red tracking-widest">
+                              {label.trim()}
+                            </span>
+                            <span className="text-[13px] md:text-sm font-body font-bold text-charcoal leading-snug truncate" title={value ? value.trim() : label.trim()}>
+                              {value ? value.trim() : label.trim()}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    
+                    {/* Remaining specs (like Volume) */}
+                    {item.specs.slice(2).map((spec, sIdx) => {
+                      const [label, ...valParts] = spec.split(":");
+                      const value = valParts.join(":");
+                      return (
+                        <div key={sIdx} className="flex flex-col gap-1 border-b border-gray-200/60 pb-3 last:border-0 last:pb-0">
+                          <span className="text-[11px] font-heading font-bold uppercase text-brand-red tracking-widest">
+                            {label.trim()}
+                          </span>
+                          <span className="text-[13px] md:text-sm font-body font-bold text-charcoal leading-snug">
+                            {value ? value.trim() : label.trim()}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
 
                   {/* Compatible Pouch Formats inline review */}
