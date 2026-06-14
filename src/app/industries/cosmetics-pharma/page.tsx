@@ -10,7 +10,6 @@ export default function CosmeticsPharmaPage() {
 
   const images = [
     "/Homepage/closeup flowmeter.webp",
-    "/Homepage/Machine-close-up-2.webp"
   ];
 
   return (
