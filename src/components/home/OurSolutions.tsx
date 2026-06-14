@@ -29,7 +29,8 @@ const solutions = [
     img: "/Homepage/5.webp",
     desc: "High-speed packaging systems designed for continuous, reliable bagging of snacks, nuts, and candies.",
     link: "/industries/snacks-granules",
-    customFit: "object-contain bg-[#f4f4f4]"
+    customFit: "object-cover",
+    needsBlurBg: true
   },
   {
     title: "Detergents & Chemicals",
@@ -43,7 +44,8 @@ const solutions = [
     img: "/Homepage/7.webp",
     desc: "Ultra-sanitary dosing systems tailored for high-hygiene creams, gels, and pharmaceutical liquids.",
     link: "/industries/cosmetics-pharma",
-    customFit: "object-contain bg-[#f4f4f4]"
+    customFit: "object-cover",
+    needsBlurBg: true
   }
 ];
 
@@ -75,13 +77,26 @@ export default function OurSolutions() {
               href={solution.link}
               className="industry-card group relative w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(20%-20px)] h-[350px] sm:h-[420px] lg:h-[500px] overflow-hidden rounded-sm cursor-pointer shrink-0 block"
             >
-              {/* Background Image */}
+              {/* Blurred Background Layer (For horizontal images in vertical cards) */}
+              {solution.needsBlurBg && (
+                <div className="absolute inset-0 w-full h-full bg-charcoal/20">
+                  <Image
+                    src={solution.img}
+                    alt={`${solution.title} background`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="absolute inset-0 w-full h-full object-cover blur-xl scale-125 opacity-50"
+                  />
+                </div>
+              )}
+
+              {/* Main Image */}
               <Image
                 src={solution.img}
                 alt={solution.title}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className={`absolute inset-0 w-full h-full transition-transform duration-1000 group-hover:scale-110 ${solution.customFit || 'object-cover'}`}
+                className={`absolute inset-0 w-full h-full transition-transform duration-1000 group-hover:scale-110 ${solution.needsBlurBg ? 'object-contain scale-95 group-hover:scale-105 drop-shadow-2xl' : solution.customFit || 'object-cover'}`}
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-linear-to-t from-charcoal via-charcoal/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />

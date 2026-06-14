@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SolutionsHero from "@/components/solutions/SolutionsHero";
 import IndustriesWeServe from "@/components/solutions/IndustriesWeServe";
-import FlatOverview from "@/components/technology/FlatOverview";
+import SolutionsOverview from "@/components/solutions/SolutionsOverview";
 import PouchShapesGallery from "@/components/technology/PouchShapesGallery";
 import PackagingTechnologies from "@/components/solutions/PackagingTechnologies";
 import CustomEngineering from "@/components/solutions/CustomEngineering";
@@ -46,7 +46,7 @@ export default function SolutionsPage() {
     <main ref={mainRef} className="min-h-screen bg-white text-charcoal relative">
       <SolutionsHero />
       <IndustriesWeServe />
-      <FlatOverview 
+      <SolutionsOverview 
         title={
           <>ADVANCED <span className="text-brand-red">POUCH PACKAGING</span> SOLUTIONS</>
         }
@@ -62,7 +62,6 @@ export default function SolutionsPage() {
           { title: "EURO HOLE & HANDLE APPLICATIONS", desc: "Engineered to support pouch formats with integrated hanging and carrying options." },
           { title: "Shaped Die-Cut Pouches", desc: "Custom contour shapes for enhanced shelf differentiation." },
         ]}
-        showImage={false}
       />
       <PouchShapesGallery />
       <PackagingTechnologies />
