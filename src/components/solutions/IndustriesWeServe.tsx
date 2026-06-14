@@ -82,10 +82,15 @@ function IndustryDetails({
       <div className="flex flex-col justify-between space-y-8">
         <div>
           <div className="flex items-center justify-between mb-6">
-            <span className="inline-flex items-center space-x-2 bg-brand-red/10 text-brand-red px-4 py-1.5 text-xs font-bold font-heading uppercase tracking-widest rounded-full">
-              <CheckCircle2 size={14} />
-              <span>INDUSTRY APPLICATION</span>
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="inline-flex items-center space-x-2 bg-brand-red/10 text-brand-red px-4 py-1.5 text-xs font-bold font-heading uppercase tracking-widest rounded-full">
+                <CheckCircle2 size={14} />
+                <span>INDUSTRY APPLICATION</span>
+              </span>
+              <span className="inline-flex items-center bg-gray-100 text-charcoal px-4 py-1.5 text-xs font-bold font-heading uppercase tracking-widest rounded-full border border-gray-200 shadow-sm">
+                {industry.badge}
+              </span>
+            </div>
             <h5 className="text-sm text-gray-400 font-heading uppercase font-bold tracking-widest hidden lg:block">0{activeIdx + 1} / 05</h5>
           </div>
 
