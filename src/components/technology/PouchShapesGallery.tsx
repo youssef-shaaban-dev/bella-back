@@ -192,18 +192,7 @@ export default function PouchShapesGallery() {
                   className="object-contain p-6 transition-transform duration-700 group-hover:scale-110"
                 />
 
-                {/* Hover Overlay */}
-                <div
-                  className={`
-                    absolute inset-0 bg-charcoal/90 flex items-center justify-center p-6
-                    transition-all duration-400
-                    ${hoveredId === pouch.id ? "opacity-100" : "opacity-0 pointer-events-none"}
-                  `}
-                >
-                  <p className="text-white/90 font-body text-sm text-center leading-relaxed">
-                    {pouch.description}
-                  </p>
-                </div>
+
               </div>
 
               {/* Label */}
