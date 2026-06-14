@@ -50,7 +50,7 @@ export default function CustomEngineering() {
               {[
                 { icon: Settings2, title: "Custom Machine Design", desc: "Optimized layouts." },
                 { icon: Ruler, title: "Unique Formats", desc: "Bespoke sealing dies." },
-                { icon: Hammer, title: "Material Compatibility", desc: "Foil/Laminate tuning." },
+                { icon: Hammer, title: "Material Adaptation", desc: "material compatibility." },
               ].map((item, idx) => (
                 <div key={idx} className="border border-gray-100 p-6 bg-gray-50 rounded-sm flex flex-col">
                   <item.icon className="text-brand-red mb-4" size={24} />
