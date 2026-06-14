@@ -22,7 +22,7 @@ const machineModels = [
     specs: ["Type: Simplex", "Speed: 50 ppm", "Volume: up to 1500ml"],
     desc: "For stand-up pouches and flat pouches, liquid filling. Designed to deliver high performance, precise filling accuracy, and consistent operational efficiency for standard packaging formats.",
     techDetails: "-Industry: Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals",
-    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/pillow-pouch.webp"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/flatPouch.webp"]
   },
   {
     id: "b-2500-d",
@@ -32,7 +32,7 @@ const machineModels = [
     specs: ["Type: Duplex", "Speed: 100 ppm", "Volume: up to 500ml (Duplex) / 1500ml (Simplex)"],
     desc: "For stand-up pouches and flat pouches, liquid filling in a duplex configuration. Doubles production capacity on the same floor footprint.",
     techDetails: "Synchronized dual-lane dosing valves, independent lane temperature monitors, dual discharge chutes. Suitable for Food & Beverage, Detergents & Chemical Products, Cosmetics & Pharmaceuticals.",
-    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/pillow-pouch.webp"]
+    pouchFormats: ["/pouch-shapes/stand-up-pouch.webp", "/pouch-shapes/flatPouch.webp"]
   },
   {
     id: "b-2500-sh",
