@@ -10,6 +10,7 @@ import PouchShapesGallery from "@/components/technology/PouchShapesGallery";
 import PackagingTechnologies from "@/components/solutions/PackagingTechnologies";
 import CustomEngineering from "@/components/solutions/CustomEngineering";
 import PerformanceTools from "@/components/solutions/PerformanceTools";
+import SolutionsCTA from "@/components/solutions/SolutionsCTA";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,6 +74,7 @@ export default function SolutionsPage() {
       <PackagingTechnologies />
       <CustomEngineering />
       <PerformanceTools />
+      <SolutionsCTA />
     </main>
   );
 }
