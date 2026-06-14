@@ -320,7 +320,7 @@ export default function MachinePortfolioGrid() {
               key={item.id}
               className="bg-white border border-gray-200 hover:border-gray-300 rounded-sm overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all duration-300 group animate-[fadeIn_0.4s_ease-out]"
             >
-              <div className="relative h-[180px] lg:h-[220px] bg-white flex items-center justify-center overflow-hidden border-b border-gray-100 p-2">
+              <div className="relative h-[200px] lg:h-[220px] w-full bg-white flex items-center justify-center overflow-hidden border-b border-gray-100 p-2 shrink-0">
                 <Image
                   src={item.img}
                   alt={item.name}
@@ -333,17 +333,17 @@ export default function MachinePortfolioGrid() {
                 </div>
               </div>
 
-              <div className="p-5 grow flex flex-col justify-between">
+              <div className="p-4 grow flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-bold font-heading uppercase text-charcoal mb-2 transition-colors duration-300">
+                  <h3 className="text-lg font-bold font-heading uppercase text-charcoal mb-1 transition-colors duration-300">
                     {item.name}
                   </h3>
-                  <p className="text-gray-500 text-xs font-body line-clamp-2 mb-3 leading-relaxed font-semibold">
+                  <p className="text-gray-500 text-[11px] font-body line-clamp-2 mb-3 leading-relaxed font-semibold">
                     {item.desc}
                   </p>
 
                   {/* Specs Block */}
-                  <div className="bg-gray-50 rounded-sm p-4 mb-6 flex flex-col gap-3 border border-gray-100">
+                  <div className="bg-gray-50 rounded-sm p-3 mb-2 flex flex-col gap-2 border border-gray-100">
                     {/* First row: Type and Speed (or first two specs) */}
                     <div className="grid grid-cols-2 gap-4 border-b border-gray-200/60 pb-3">
                       {item.specs.slice(0, 2).map((spec, sIdx) => {
@@ -362,35 +362,35 @@ export default function MachinePortfolioGrid() {
                       })}
                     </div>
                     
-                    {/* Remaining specs (like Volume) */}
-                    {item.specs.slice(2).map((spec, sIdx) => {
-                      const [label, ...valParts] = spec.split(":");
-                      const value = valParts.join(":");
-                      return (
-                        <div key={sIdx} className="flex flex-col gap-1 border-b border-gray-200/60 pb-3 last:border-0 last:pb-0">
-                          <span className="text-[11px] font-heading font-bold uppercase text-brand-red tracking-widest">
-                            {label.trim()}
-                          </span>
-                          <span className="text-[13px] md:text-sm font-body font-bold text-charcoal leading-snug">
-                            {value ? value.trim() : label.trim()}
-                          </span>
-                        </div>
-                      );
-                    })}
+                    {/* Remaining specs (like Volume) and Technical Specs Button */}
+                    <div className="flex items-end justify-between border-t border-gray-200/60 pt-3">
+                      <div className="flex-1">
+                        {item.specs.slice(2).map((spec, sIdx) => {
+                          const [label, ...valParts] = spec.split(":");
+                          const value = valParts.join(":");
+                          return (
+                            <div key={sIdx} className="flex flex-col gap-1">
+                              <span className="text-[11px] font-heading font-bold uppercase text-brand-red tracking-widest">
+                                {label.trim()}
+                              </span>
+                              <span className="text-[13px] md:text-sm font-body font-bold text-charcoal leading-snug">
+                                {value ? value.trim() : label.trim()}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      <button
+                        onClick={() => setSelectedModel(item)}
+                        className="text-[10px] sm:text-[11px] font-heading font-bold text-brand-red hover:text-charcoal uppercase tracking-widest flex items-center gap-1 transition-colors shrink-0 mb-0.5"
+                      >
+                        <span>Technical Specs</span>
+                        <ChevronRight size={14} />
+                      </button>
+                    </div>
                   </div>
 
-                  {/* Specs Block */}
-
-                </div>
-
-                <div className="border-t border-gray-100 pt-4 mt-auto flex items-center justify-between">
-                  <button
-                    onClick={() => setSelectedModel(item)}
-                    className="text-xs font-heading font-bold text-brand-red hover:text-charcoal uppercase tracking-widest flex items-center gap-1.5 transition-colors"
-                  >
-                    <span>Technical Specs</span>
-                    <ChevronRight size={14} />
-                  </button>
                 </div>
               </div>
             </div>
@@ -461,11 +461,11 @@ export default function MachinePortfolioGrid() {
                       {selectedModel.pouchFormats.map((pImg, pIdx) => {
                         const name = pImg.split("/").pop()?.replace(".webp", "").replace(/-/g, " ");
                         return (
-                          <div key={pIdx} className="flex flex-col items-center gap-2">
-                            <div className="relative w-16 h-16 bg-gray-50 border border-gray-200 p-2 rounded-sm flex items-center justify-center shadow-xs">
-                              <Image src={pImg} alt="Pouch Format" fill className="object-contain p-2" />
+                          <div key={pIdx} className="flex flex-col items-center gap-3 group cursor-pointer">
+                            <div className="relative w-24 h-24 bg-gray-50 border border-gray-200 p-2 rounded-sm flex items-center justify-center shadow-xs transition-transform duration-300 group-hover:scale-105 group-hover:border-brand-red/50 group-hover:shadow-md">
+                              <Image src={pImg} alt="Pouch Format" fill className="object-contain p-2 group-hover:scale-110 transition-transform duration-500" />
                             </div>
-                            <span className="text-[9px] font-heading font-bold text-gray-500 uppercase tracking-wide text-center max-w-[90px] leading-tight block">{name}</span>
+                            <span className="text-[10px] font-heading font-bold text-gray-500 uppercase tracking-wide text-center max-w-[100px] leading-tight block transition-colors group-hover:text-brand-red">{name}</span>
                           </div>
                         );
                       })}
