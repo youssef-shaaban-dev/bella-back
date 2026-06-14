@@ -26,17 +26,17 @@ const slides = [
   },
   {
     id: 2,
-    title: "SUSTAINABLE PACKAGING",
-    highlightTitle: "FOR A BETTER FUTURE",
-    description: "Supporting responsible manufacturing through efficient machine design, reduced material waste, and packaging solutions compatible with recyclable materials.",
-    buttonText: "ABOUT BELLAPACK",
-    link: "/about",
-    image: "/Homepage/slide-banner-3.webp",
+    title: "TAILORED SOLUTIONS",
+    highlightTitle: "FOR EVERY INDUSTRY",
+    description: "From food & beverage and cosmetics to pharmaceuticals and chemicals, BellaPack delivers customized pouch packaging solutions engineered around your products, production goals, and operational requirements.",
+    buttonText: "CONTACT US",
+    link: "/contact",
+    image: "/Homepage/slide-banner-4.webp",
     tabLabel: "TAILORED SOLUTIONS",
     benefits: [
-      "Reduced Material Consumption",
-      "Energy-Efficient Operation",
-      "Sustainable Packaging Solutions"
+      "Custom Engineering & Line Integration",
+      "Multi-Industry Applications",
+      "Dedicated After-Sales Support"
     ]
   },
   {
@@ -56,17 +56,17 @@ const slides = [
   },
   {
     id: 4,
-    title: "TAILORED SOLUTIONS",
-    highlightTitle: "FOR EVERY INDUSTRY",
-    description: "From food & beverage and cosmetics to pharmaceuticals and chemicals, BellaPack delivers customized pouch packaging solutions engineered around your products, production goals, and operational requirements.",
-    buttonText: "CONTACT US",
-    link: "/contact",
-    image: "/Homepage/slide-banner-4.webp",
+    title: "SUSTAINABLE PACKAGING",
+    highlightTitle: "FOR A BETTER FUTURE",
+    description: "Supporting responsible manufacturing through efficient machine design, reduced material waste, and packaging solutions compatible with recyclable materials.",
+    buttonText: "ABOUT BELLAPACK",
+    link: "/about",
+    image: "/Homepage/slide-banner-3.webp",
     tabLabel: "SUSTAINABLE PACKAGING",
     benefits: [
-      "Custom Engineering & Line Integration",
-      "Multi-Industry Applications",
-      "Dedicated After-Sales Support"
+      "Reduced Material Consumption",
+      "Energy-Efficient Operation",
+      "Sustainable Packaging Solutions"
     ]
   }
 ];
