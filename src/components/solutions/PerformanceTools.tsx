@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
-import { FileText, Box, Layers, Lock, ArrowRight } from "lucide-react";
+import { FileText, Box, Lock, ArrowRight } from "lucide-react";
 
 export default function PerformanceTools() {
   return (
-    <section className="reveal py-20 bg-gradient-to-b from-white to-gray-50 border-t border-gray-200">
+    <section className="reveal py-20 bg-linear-to-b from-white to-gray-50 border-t border-gray-200">
       <div className="container mx-auto px-6">
         
         <div className="bg-charcoal text-white rounded-sm shadow-2xl overflow-hidden grid md:grid-cols-12 items-stretch">
