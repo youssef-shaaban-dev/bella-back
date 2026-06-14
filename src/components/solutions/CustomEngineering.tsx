@@ -8,20 +8,20 @@ export default function CustomEngineering() {
   return (
     <section className="py-24 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6">
-        
+
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Image side */}
           <div className="reveal lg:col-span-5 relative group">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm shadow-2xl bg-charcoal/5">
-              <Image 
-                src="/solutions/spices-coffee/coffee-bellapack-pouch.webp" 
-                alt="Bespoke Industrial Automation" 
-                fill 
+            <div className="relative aspect-4/5 w-full overflow-hidden rounded-sm shadow-2xl bg-charcoal/5">
+              <Image
+                src="/solutions/spices-coffee/coffee-bellapack-pouch.webp"
+                alt="Bespoke Industrial Automation"
+                fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover transition-all duration-700 scale-105 group-hover:scale-100"
               />
             </div>
-            
+
             {/* Accent badge */}
             <div className="absolute -bottom-8 -right-8 bg-brand-red text-white p-8 max-w-[240px] border-b-4 border-charcoal shadow-2xl hidden md:block z-20">
               <span className="text-3xl font-bold font-heading uppercase leading-none block mb-2">100%</span>
@@ -35,7 +35,7 @@ export default function CustomEngineering() {
           <div className="reveal lg:col-span-7">
             <div className="flex items-center space-x-3 mb-4">
               <span className="h-px w-8 bg-brand-red"></span>
-              <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">Tailor-Made Engineering</h3>
+              <h3 className="text-brand-red font-bold tracking-[0.2em] text-xs uppercase font-heading">ENGINEERING FLEXIBILITY</h3>
             </div>
 
             <h2 className="text-4xl md:text-6xl font-bold font-heading uppercase tracking-tighter text-charcoal mb-8 leading-tight">
@@ -50,7 +50,7 @@ export default function CustomEngineering() {
               {[
                 { icon: Settings2, title: "Custom Machine Design", desc: "Optimized layouts." },
                 { icon: Ruler, title: "Unique Formats", desc: "Bespoke sealing dies." },
-                { icon: Hammer, title: "Material Adaptation", desc: "Foil/Laminate tuning." },
+                { icon: Hammer, title: "Material Compatibility", desc: "Foil/Laminate tuning." },
               ].map((item, idx) => (
                 <div key={idx} className="border border-gray-100 p-6 bg-gray-50 rounded-sm flex flex-col">
                   <item.icon className="text-brand-red mb-4" size={24} />
@@ -62,7 +62,7 @@ export default function CustomEngineering() {
 
             <div className="p-6 border-l-4 border-brand-red bg-gray-50 rounded-r-sm">
               <p className="text-sm text-gray-600 font-body font-semibold leading-relaxed italic">
-                &ldquo;Our R&D divisions maintain deep synchronization with incoming client requests to design modular components that directly upgrade system lifetime reliability.&rdquo;
+                &ldquo;Every packaging challenge is unique. Our engineering team develops machine configurations tailored to specific products, pouch formats, and production requirements.&rdquo;
               </p>
             </div>
           </div>
