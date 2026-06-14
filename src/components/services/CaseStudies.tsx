@@ -4,8 +4,8 @@ import { ArrowRight, Settings } from "lucide-react";
 const studies = [
   {
     id: 1,
-    tag: "Spice Sector",
-    title: "Spice Export Automation",
+    tag: "CUSTOMER SUCESS",
+    title: "PROVEN INDUSTRIAL PERFORMANCE",
     challenge: "A leading Egyptian spice exporter required immediate volumetric filling upgrades to process highly volatile powder products at scale.",
     solution: "Implemented BP Series high-speed powder packing machines incorporating precision servo dosing and custom anti-dust vertical feeding setups.",
     results: [
