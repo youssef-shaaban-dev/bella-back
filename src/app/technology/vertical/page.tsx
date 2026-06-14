@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import VerticalHero from "@/components/technology/VerticalHero";
 import VerticalOverview from "@/components/technology/VerticalOverview";
+import VerticalTechDetails from "@/components/technology/VerticalTechDetails";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +42,7 @@ export default function VerticalTechnologyPage() {
     <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
       <VerticalHero />
       <VerticalOverview />
+      <VerticalTechDetails />
     </main>
   );
 }
