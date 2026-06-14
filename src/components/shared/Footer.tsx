@@ -88,7 +88,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/40 font-body leading-relaxed text-sm">
-              Global leaders in industrial packaging machinery. Providing ultra-modern solutions for the food, pharmaceutical, and chemical industries since 1999.
+              Reliable pouch packaging machinery for flexible formats, efficient production, and consistent packaging quality since 2000.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
