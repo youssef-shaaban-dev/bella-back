@@ -320,7 +320,7 @@ export default function MachinePortfolioGrid() {
               key={item.id}
               className="bg-white border border-gray-200 hover:border-gray-300 rounded-sm overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all duration-300 group animate-[fadeIn_0.4s_ease-out]"
             >
-              <div className="relative aspect-4/3 bg-white flex items-center justify-center overflow-hidden border-b border-gray-100 p-2">
+              <div className="relative h-[180px] lg:h-[220px] bg-white flex items-center justify-center overflow-hidden border-b border-gray-100 p-2">
                 <Image
                   src={item.img}
                   alt={item.name}
@@ -338,7 +338,7 @@ export default function MachinePortfolioGrid() {
                   <h3 className="text-lg font-bold font-heading uppercase text-charcoal mb-2 transition-colors duration-300">
                     {item.name}
                   </h3>
-                  <p className="text-gray-500 text-xs font-body line-clamp-3 mb-4 leading-relaxed font-semibold">
+                  <p className="text-gray-500 text-xs font-body line-clamp-2 mb-3 leading-relaxed font-semibold">
                     {item.desc}
                   </p>
 
@@ -379,31 +379,11 @@ export default function MachinePortfolioGrid() {
                     })}
                   </div>
 
-                  {/* Compatible Pouch Formats inline review */}
-                  {item.pouchFormats && item.pouchFormats.length > 0 && (
-                    <div className="mt-4 pt-3 border-t border-gray-100">
-                      <span className="text-[9px] font-heading font-bold text-gray-400 uppercase tracking-widest block mb-2">Pouch Formats</span>
-                      <div className="flex gap-2">
-                        {item.pouchFormats.map((pImg, pIdx) => (
-                          <div 
-                            key={pIdx} 
-                            className="relative w-10 h-10 bg-gray-50 border border-gray-200 p-1 rounded-sm flex items-center justify-center group/pouch shadow-xs" 
-                            title={pImg.split("/").pop()?.replace(".webp", "")}
-                          >
-                            <Image 
-                              src={pImg} 
-                              alt="Pouch Format" 
-                              fill 
-                              className="object-contain p-1 transition-transform group-hover/pouch:scale-110" 
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  {/* Specs Block */}
+
                 </div>
 
-                <div className="border-t border-gray-100 pt-4 mt-6 flex items-center justify-between">
+                <div className="border-t border-gray-100 pt-4 mt-auto flex items-center justify-between">
                   <button
                     onClick={() => setSelectedModel(item)}
                     className="text-xs font-heading font-bold text-brand-red hover:text-charcoal uppercase tracking-widest flex items-center gap-1.5 transition-colors"
@@ -509,7 +489,7 @@ export default function MachinePortfolioGrid() {
                   className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 bg-brand-red hover:bg-charcoal text-white font-heading font-bold text-xs uppercase tracking-wider rounded-sm transition-colors gap-2 shadow-md hover:shadow-lg"
                 >
                   <MessageSquare size={14} />
-                  <span>Request Specs via WhatsApp</span>
+                  <span>Request Specs</span>
                 </a>
               </div>
             </div>
