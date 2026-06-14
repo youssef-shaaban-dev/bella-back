@@ -2,7 +2,7 @@
 
 import Hero from "@/components/home/Hero";
 import AboutSection from "@/components/home/AboutSection";
-import StatsSection from "@/components/home/StatsSection";
+// import StatsSection from "@/components/home/StatsSection";
 import ClientLogos from "@/components/home/ClientLogos";
 import OurSolutions from "@/components/home/OurSolutions";
 import BrandsPackaged from "@/components/home/BrandsPackaged";
@@ -21,7 +21,7 @@ export default function Home() {
       <AboutSection />
 
       {/* Real-time GSAP Stats Counter Section */}
-      <StatsSection />
+      {/* <StatsSection /> */}
 
       {/* Infinite Horizontal Client Logos Marquee */}
       <ClientLogos />

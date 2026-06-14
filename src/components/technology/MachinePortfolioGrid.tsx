@@ -444,7 +444,7 @@ export default function MachinePortfolioGrid() {
                 <div className="bg-gray-50 border border-gray-100 p-5 rounded-sm mb-6">
                   <h4 className="text-xs font-bold font-heading text-brand-red uppercase tracking-widest mb-2 flex items-center gap-1.5">
                     <Info size={14} />
-                    <span>Technical Architecture</span>
+                    <span>industries</span>
                   </h4>
                   <p className="text-gray-500 font-body text-xs leading-relaxed font-semibold">
                     {selectedModel.techDetails}

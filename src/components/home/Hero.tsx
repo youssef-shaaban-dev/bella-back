@@ -31,7 +31,7 @@ const slides = [
     description: "From food & beverage and cosmetics to pharmaceuticals and chemicals, BellaPack delivers customized pouch packaging solutions engineered around your products, production goals, and operational requirements.",
     buttonText: "CONTACT US",
     link: "/contact",
-    image: "/Homepage/slide-banner-4.webp",
+    image: "/Homepage/slide-banner-3.webp",
     tabLabel: "TAILORED SOLUTIONS",
     benefits: [
       "Custom Engineering & Line Integration",
@@ -61,7 +61,7 @@ const slides = [
     description: "Supporting responsible manufacturing through efficient machine design, reduced material waste, and packaging solutions compatible with recyclable materials.",
     buttonText: "ABOUT BELLAPACK",
     link: "/about",
-    image: "/Homepage/slide-banner-3.webp",
+    image: "/Homepage/slide-banner-4.webp",
     tabLabel: "SUSTAINABLE PACKAGING",
     benefits: [
       "Reduced Material Consumption",

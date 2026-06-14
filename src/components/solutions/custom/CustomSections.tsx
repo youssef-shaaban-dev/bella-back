@@ -6,18 +6,21 @@ import { Settings, Target, Layers } from "lucide-react";
 
 export function CustomHero() {
   return (
-    <section className="bg-charcoal text-white pt-32 pb-20 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative z-10 max-w-5xl">
-        <div className="flex items-center space-x-3 mb-6 reveal">
+    <section className="bg-charcoal text-white pt-32 md:pt-48 pb-24 relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10 max-w-5xl flex flex-col items-center">
+        <div className="flex items-center justify-center space-x-3 mb-6 reveal">
           <span className="h-px w-8 bg-brand-red"></span>
-          <span className="text-brand-red font-bold tracking-[0.25em] text-xs uppercase font-heading">
+          <span className="text-brand-red font-bold tracking-[0.25em] text-xs uppercase font-heading text-center">
             Custom Solutions
           </span>
+          <span className="h-px w-8 bg-brand-red"></span>
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold font-heading uppercase tracking-tighter mb-8 leading-tight reveal">
-          CUSTOM ENGINEERING & <span className="text-brand-red">PROJECT SOLUTIONS</span>
+        
+        <h1 className="text-5xl md:text-7xl font-bold font-heading uppercase tracking-tighter mb-8 text-center leading-tight reveal">
+          CUSTOM ENGINEERING & <br className="hidden md:block" /><span className="text-brand-red">PROJECT SOLUTIONS</span>
         </h1>
-        <div className="text-white/80 font-body text-lg max-w-3xl leading-relaxed space-y-6 font-semibold reveal">
+        
+        <div className="text-white/80 font-body text-base md:text-lg max-w-3xl text-center leading-relaxed space-y-6 font-semibold reveal mt-24 md:mt-32">
           <p>
             Every packaging application has unique requirements. BellaPack provides engineering flexibility to adapt machine configurations, pouch formats, and packaging materials to specific production objectives.
           </p>
