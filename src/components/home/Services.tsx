@@ -68,10 +68,7 @@ export default function Services() {
                   {service.desc}
                 </p>
 
-                <div className="flex items-center text-xs font-bold tracking-widest text-charcoal/40 group-hover:text-charcoal uppercase transition-colors mt-auto pt-4 border-t border-gray-50">
-                  <span>Learn More</span>
-                  <ChevronRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
-                </div>
+              
               </div>
             );
           })}
