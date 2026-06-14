@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
 
 export default function CareersHero() {
   return (
@@ -10,8 +9,8 @@ export default function CareersHero() {
       <div className="absolute inset-0">
         <Image 
           src="/News/pacprocess-2025.webp" 
-          alt="Join BellaPack" 
-          className="w-full h-full object-cover opacity-20 grayscale select-none"
+          alt="Join BellaPack"
+          className="w-full h-full object-cover object-[center_30%] opacity-90 grayscale select-none"
           fill
           priority
         />

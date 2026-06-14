@@ -12,29 +12,29 @@ const mediaItems = [
   { 
     id: 1, 
     type: 'video', 
-    src: "https://drive.google.com/file/d/1kdNc_ek_dvu5tLX6se-_QIgcIY25iKdh/preview",
-    driveId: "1kdNc_ek_dvu5tLX6se-_QIgcIY25iKdh",
-    thumbnail: "/News/pacprocess-2025.webp",
-    title: "Colorx Liquid Detergent Pouch Line",
-    desc: "High-precision HFFS liquid dosing and horizontal stand-up pouch sealing line."
+    src: "https://drive.google.com/file/d/1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1/preview",
+    driveId: "1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1",
+    thumbnail: "/News/pacprocess-2024.webp",
+    title: "Pacprocess 2024",
+    desc: "Highlights from our machinery demonstrations at Pacprocess 2024."
   },
   { 
     id: 2, 
     type: 'video', 
-    src: "https://drive.google.com/file/d/1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1/preview",
-    driveId: "1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1",
-    thumbnail: "/News/pacprocess-2026.webp",
-    title: "Interpack - Pacprocess MEA 2024 Showcase",
-    desc: "Turnkey packaging machinery running live demonstrations on the international expo floor."
+    src: "https://drive.google.com/file/d/1DXs8D780Az29mtIoNnMrAEgjdft_RjA3/preview",
+    driveId: "1DXs8D780Az29mtIoNnMrAEgjdft_RjA3",
+    thumbnail: "/Homepage/BP-2500.webp",
+    title: "Propak 2024",
+    desc: "Showcasing our robust automated packaging solutions at Propak 2024."
   },
   { 
     id: 3, 
     type: 'video', 
-    src: "https://drive.google.com/file/d/1DXs8D780Az29mtIoNnMrAEgjdft_RjA3/preview", 
-    driveId: "1DXs8D780Az29mtIoNnMrAEgjdft_RjA3",
-    thumbnail: "/Homepage/BP-2500.webp",
-    title: "BP-2500 Rotary Sachet Machine",
-    desc: "Ultra-precise rotary multi-lane sachet packaging model for custom powder dosing."
+    src: "https://drive.google.com/file/d/16XMbvDGq6kVz9RFO8u0nLLHPPTVi1H_r/preview", 
+    driveId: "16XMbvDGq6kVz9RFO8u0nLLHPPTVi1H_r",
+    thumbnail: "/News/pacprocess-2026.webp",
+    title: "Persil Production Line",
+    desc: "High-speed filling and sealing performance for the Persil liquid detergent production line."
   },
 ];
 
