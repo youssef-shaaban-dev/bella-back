@@ -33,7 +33,7 @@ const exhibitions = [
     booth: "Hall 1",
     status: "past",
     description: "Highlighting our high-speed form-fill-seal machines and building stronger connections with key industry leaders.",
-    media: ["/News/pacprocess-2024.webp"]
+    media: ["/News/news-background.webp"]
   },
   {
     id: "propak2023",
