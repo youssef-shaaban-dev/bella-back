@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { ShieldCheck, Cpu, Settings } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 export default function VerticalOverview() {
   return (
@@ -11,8 +11,7 @@ export default function VerticalOverview() {
         <div className="grid lg:grid-cols-12 gap-16 items-center">
           
           {/* Left Side: The Single Official Machine Photo */}
-          <div className="reveal lg:col-span-5 flex justify-center w-full">
-            <div className="relative w-full max-w-md aspect-[3/4] rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
+            <div className="relative w-full max-w-lg aspect-[3/4] rounded-sm overflow-hidden border border-gray-100 shadow-2xl bg-gray-50 group">
               <Image 
                 src="/vertical-machines/vertical-machine.webp" 
                 alt="BellaPack Official Vertical Packaging Machine"
@@ -22,9 +21,9 @@ export default function VerticalOverview() {
                 priority
               />
               <div className="absolute bottom-4 left-4 right-4 bg-charcoal/90 backdrop-blur-md text-white p-4 border-l-4 border-brand-red rounded-sm shadow-xl">
-                <span className="text-xs font-heading font-bold uppercase text-brand-red block mb-1">Official Model</span>
+                <span className="text-xs font-heading font-bold uppercase text-brand-red block mb-1">VFFS SERIES</span>
                 <span className="text-[11px] font-body text-white/70 block leading-relaxed font-semibold">
-                  Advanced VFFS technology with integrated volumetric dosing systems.
+                  Reliable VFFS machinery for diverse industries.
                 </span>
               </div>
             </div>
@@ -35,7 +34,7 @@ export default function VerticalOverview() {
             <div className="flex items-center space-x-3">
               <span className="h-px w-8 bg-brand-red"></span>
               <h2 className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading">
-                Technology Specifications
+                VFFS TECHNOLOGY
               </h2>
             </div>
 
@@ -45,33 +44,35 @@ export default function VerticalOverview() {
 
             <div className="text-gray-600 font-body text-base leading-relaxed space-y-6 font-semibold border-l-2 border-gray-100 pl-6">
               <p>
-                At <span className="text-brand-red font-bold">BellaPack</span>, we provide advanced Vertical Packaging Machines designed to deliver high-speed performance, precise filling accuracy, and reliable packaging efficiency for a wide range of industries and production applications. Our vertical packaging systems are engineered to handle powders, granules, liquids, and solid products with consistent packaging quality and secure sealing performance.
+                At BellaPack, we provide advanced Vertical Form-Fill-Seal (VFFS) machinery for powders, granules, and different products. Our machines combine accurate dosing, secure sealing, and reliable automation to deliver efficient and consistent packaging performance. With flexible bag formats, user-friendly controls, and durable industrial construction, BellaPack VFFS machines help manufacturers achieve reliable production operations across a wide range of packaging applications.
               </p>
-              <p>
-                Designed for modern manufacturing environments, these machines combine intelligent automation, flexible packaging capabilities, and durable industrial construction to support continuous and efficient production operations. Vertical packaging machines are ideal for businesses seeking fast, space-efficient, and cost-effective packaging solutions while maintaining product protection and professional packaging presentation.
-              </p>
-              <p>
-                BellaPack systems are developed to optimize production speed, reduce material waste, and improve operational efficiency across various product categories. With user-friendly control systems and advanced filling technologies, our machines provide stable performance and flexible packaging options suitable for different bag sizes and packaging formats.
-              </p>
-            </div>
 
-            {/* Quality Certifications badge row */}
-            <div className="pt-6 border-t border-gray-100 flex flex-wrap items-center gap-6 text-gray-500">
-              <div className="flex items-center space-x-2">
-                <ShieldCheck className="text-brand-red" size={20} />
-                <span className="text-xs font-heading font-bold uppercase tracking-wider text-charcoal/80">ISO 9001 Compliant</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Cpu className="text-brand-red" size={20} />
-                <span className="text-xs font-heading font-bold uppercase tracking-wider text-charcoal/80">Servo-Driven Controls</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Settings className="text-brand-red animate-spin-slow" size={20} />
-                <span className="text-xs font-heading font-bold uppercase tracking-wider text-charcoal/80">CE Certified Systems</span>
+              <div className="mt-8 pt-8 border-t border-gray-100">
+                <h4 className="text-xl font-bold font-heading uppercase text-charcoal mb-6 flex items-center gap-2">
+                  <span>VFFS Overview</span>
+                </h4>
+                <ul className="space-y-4">
+                  {[
+                    "Provision for Two Rolls on unwind",
+                    "Sealers are both end supported",
+                    "End roll detection synchronized with PLC & Filling",
+                    "Provision for batch cutting & counting",
+                    "Temperature Control and Heater Failure Indication is through PLC hence, eliminating the need for temperature controller",
+                    "Paper break detection sensor",
+                    "Joint detection sensor (optional)",
+                    "Hopper level controller"
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <span className="p-1 bg-brand-red/10 text-brand-red rounded-sm mt-0.5 flex-shrink-0">
+                        <CheckCircle2 size={16} />
+                      </span>
+                      <span className="text-sm text-charcoal/80 leading-relaxed block">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

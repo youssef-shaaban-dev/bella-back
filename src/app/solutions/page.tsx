@@ -64,13 +64,7 @@ export default function SolutionsPage() {
         ]}
         showImage={false}
       />
-      <PouchShapesGallery 
-        title={
-          <>Pouch <span className="text-brand-red">Configurations</span></>
-        }
-        description="BellaPack machinery supports a wide range of pouch formats, enabling manufacturers to package diverse products with flexibility, reliability, and consistent production quality."
-        showStats={false}
-      />
+      <PouchShapesGallery />
       <PackagingTechnologies />
       <CustomEngineering />
       <PerformanceTools />

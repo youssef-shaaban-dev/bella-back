@@ -109,19 +109,7 @@ const categories = [
 
 import React from "react";
 
-export interface PouchShapesGalleryProps {
-  title?: React.ReactNode;
-  description?: React.ReactNode;
-  showStats?: boolean;
-}
-
-export default function PouchShapesGallery({
-  title = (
-    <>12 Pouch <span className="text-brand-red">Configurations</span></>
-  ),
-  description = "Every pouch format below can be produced on BellaPack's Horizontal Form-Fill-Seal platform with minimal changeover time.",
-  showStats = true
-}: PouchShapesGalleryProps = {}) {
+export default function PouchShapesGallery() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
@@ -145,10 +133,10 @@ export default function PouchShapesGallery({
             <span className="h-px w-8 bg-brand-red"></span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold font-heading uppercase tracking-tight text-charcoal mb-4">
-            {title}
+            <>Pouch <span className="text-brand-red">Configurations</span></>
           </h2>
           <p className="text-gray-500 font-body text-base leading-relaxed font-semibold">
-            {description}
+            BellaPack machinery supports a wide range of pouch formats, enabling manufacturers to package diverse products with flexibility, reliability, and consistent production quality.
           </p>
         </div>
 
@@ -231,28 +219,7 @@ export default function PouchShapesGallery({
           ))}
         </div>
 
-        {/* Bottom Stats */}
-        {showStats && (
-          <div className="reveal mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {[
-              { value: "12+", label: "Pouch Formats" },
-              { value: "4", label: "Spout Options" },
-              { value: "4", label: "Shaped Variants" },
-              { value: "< 15min", label: "Changeover Time" },
-            ].map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <span className="block text-3xl md:text-4xl font-heading font-bold text-brand-red mb-1">
-                  {stat.value}
-                </span>
-                <span className="block text-xs font-heading font-bold text-charcoal/60 uppercase tracking-widest">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   );
 }
-
