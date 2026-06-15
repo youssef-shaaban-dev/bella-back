@@ -1,3 +1,9 @@
+<IfModule mod_dir.c>
+  # Prevent Apache/LiteSpeed from automatically appending a slash to directories.
+  # This stops URLs like /solutions from redirecting to /solutions/ and causing 403s.
+  DirectorySlash Off
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -6,19 +12,22 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Remove trailing slashes (except for directories)
-  RewriteCond %{REQUEST_FILENAME} !-d
+  # Remove trailing slashes from URLs (e.g. /solutions/ -> /solutions)
+  # This ensures Next.js pages work correctly even if someone types a slash.
+  RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-  # Try to serve the exact file or directory if it exists
+  # 1. FIX FOR 403 FORBIDDEN:
+  # If a matching .html file exists, serve it internally!
+  # We MUST do this BEFORE checking if it's a directory, because Next.js
+  # has pages like "solutions.html" AND you have a folder named "solutions".
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
+  # 2. Try to serve the exact file or directory if it exists
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
-
-  # If a matching .html file exists, serve it internally without changing the URL
-  # (This is crucial for Next.js static exports like /about -> /about.html)
-  RewriteCond %{REQUEST_FILENAME}.html -f
-  RewriteRule ^(.*)$ $1.html [L]
 </IfModule>
 
 # Handle 404 Pages using the Next.js generated 404.html
