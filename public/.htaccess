@@ -29,17 +29,17 @@ ErrorDocument 404 /404.html
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
   
-  # CSS, JavaScript
+  # CSS, JavaScript (Next.js automatically hashes these filenames, so 1 year is perfectly safe)
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   
-  # Images and Media
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
+  # Images and Media (Reduced to 1 week so if you overwrite an image, users will see the update relatively soon)
+  ExpiresByType image/webp "access plus 1 week"
+  ExpiresByType image/jpeg "access plus 1 week"
+  ExpiresByType image/png "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 week"
   
   # Fonts
-  ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 month"
+  ExpiresByType font/woff "access plus 1 month"
 </IfModule>
