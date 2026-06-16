@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";
-import gsap from "gsap";
 
 const SLIDE_DURATION = 6000; // 6 seconds per slide
 
@@ -88,55 +87,7 @@ export default function Hero() {
     return () => clearTimeout(timer);
   }, [activeSlide, isPlaying, progressKey]);
 
-  // Premium GSAP Staggered entry animation on active slide change
-  useEffect(() => {
-    const activeSlideEl = document.querySelector(`.slide-content-${activeSlide}`);
-    if (!activeSlideEl) return;
-
-    const title = activeSlideEl.querySelector(".slide-title");
-    const subtitle = activeSlideEl.querySelector(".slide-subtitle");
-    const benefits = activeSlideEl.querySelector(".slide-benefits");
-    const cta = activeSlideEl.querySelector(".slide-cta");
-
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-
-      // Reset styling state for a clean animation start
-      gsap.set([title, subtitle, cta, benefits?.children], { clearProps: "all" });
-
-      tl.fromTo(
-        title,
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" }
-      )
-        .fromTo(
-          subtitle,
-          { y: 15, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.35, ease: "power3.out" },
-          "-=0.25"
-        );
-
-      if (benefits && benefits.children.length > 0) {
-        tl.fromTo(
-          benefits.children,
-          { x: -12, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.25, stagger: 0.05, ease: "power2.out" },
-          "-=0.2"
-        );
-      }
-
-      if (cta) {
-        tl.fromTo(
-          cta,
-          { scale: 0.97, opacity: 0 },
-          { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(1.5)" },
-          "-=0.15"
-        );
-      }
-    }, activeSlideEl as HTMLElement);
-
-    return () => ctx.revert();
-  }, [activeSlide]);
+  // GSAP animation replaced with pure CSS animations in globals.css
 
   const handleTabClick = (index: number) => {
     setActiveSlide(index);
@@ -192,18 +143,22 @@ export default function Hero() {
                   : "opacity-0 pointer-events-none z-0"
                   }`}
               >
-                <h1 className="slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading">
+                <h1 className={`slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading ${isActive ? 'animate-hero-title' : 'opacity-0'}`}>
                   {slide.title} <br />
                   <span className="text-brand-red">{slide.highlightTitle}</span>
                 </h1>
 
-                <p className="slide-subtitle text-base md:text-lg text-white/85 font-body max-w-2xl mb-8 leading-relaxed">
+                <p className={`slide-subtitle text-base md:text-lg text-white/85 font-body max-w-2xl mb-8 leading-relaxed ${isActive ? 'animate-hero-subtitle' : 'opacity-0'}`}>
                   {slide.description}
                 </p>
 
                 <div className="slide-benefits mb-10 space-y-3">
                   {slide.benefits.map((benefit, i) => (
-                    <div key={i} className="flex items-center space-x-3 text-white/90">
+                    <div 
+                      key={i} 
+                      className={`flex items-center space-x-3 text-white/90 ${isActive ? 'animate-hero-benefit' : 'opacity-0'}`}
+                      style={{ animationDelay: isActive ? `${0.3 + (i * 0.05)}s` : '0s' }}
+                    >
                       <div className="w-5 h-5 rounded-full bg-brand-red flex items-center justify-center shrink-0 shadow-lg shadow-brand-red/20">
                         <ArrowRight size={12} className="text-white" />
                       </div>
@@ -212,10 +167,10 @@ export default function Hero() {
                   ))}
                 </div>
 
-                <div className="slide-cta flex flex-wrap gap-4 items-center">
+                <div className={`slide-cta flex flex-wrap gap-4 items-center ${isActive ? 'animate-hero-cta' : 'opacity-0'}`}>
                   <Link
                     href={slide.link}
-                    className="bg-brand-red text-white px-8 py-4 rounded-sm font-heading font-bold text-lg flex items-center space-x-2 group hover:bg-white hover:text-charcoal transition-all duration-300 shadow-xl shadow-brand-red/10 animate-pulse-slow"
+                    className="bg-brand-red text-white px-8 py-4 rounded-sm font-heading font-bold text-lg flex items-center space-x-2 group hover:bg-white hover:text-charcoal transition-all duration-300 shadow-xl shadow-brand-red/10"
                   >
                     <span>{slide.buttonText}</span>
                     <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -268,7 +223,7 @@ export default function Hero() {
       {/* Slider Indicator Tabs at the bottom */}
       <div className="absolute bottom-8 left-0 right-0 z-40 w-full pointer-events-auto">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-white/10 pt-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-6">
             {slides.map((slide, index) => {
               const isActive = index === activeSlide;
               return (
@@ -276,10 +231,10 @@ export default function Hero() {
                   key={slide.id}
                   type="button"
                   onClick={() => handleTabClick(index)}
-                  className="group text-left focus:outline-none relative pt-3 md:pt-1 cursor-pointer pointer-events-auto z-40 block w-full"
+                  className="group text-left focus:outline-none relative pt-4 cursor-pointer pointer-events-auto z-40 block w-full border-t border-white/10"
                 >
                   {/* Dynamic Progress Line — CSS animation, no JS re-renders */}
-                  <div className="absolute top-[-17px] left-0 right-0 h-[2px] bg-white/10 group-hover:bg-white/25 transition-colors">
+                  <div className="absolute top-[-2px] left-0 right-0 h-[2px] bg-white/10 group-hover:bg-white/25 transition-colors">
                     <div
                       key={isActive ? `progress-${progressKey}` : undefined}
                       className={`h-full bg-brand-red ${
@@ -296,7 +251,7 @@ export default function Hero() {
                   <span className="text-[10px] md:text-xs font-heading font-bold uppercase tracking-widest text-white/50 group-hover:text-white transition-colors block mb-1">
                     0{index + 1}
                   </span>
-                  <span className="font-heading font-bold uppercase text-xs md:text-sm tracking-wide text-white group-hover:text-brand-red transition-colors block">
+                  <span className="font-heading font-bold uppercase text-xs md:text-sm tracking-wide text-white group-hover:text-brand-red transition-colors block line-clamp-2 md:line-clamp-1 pr-2">
                     {slide.tabLabel}
                   </span>
                 </button>

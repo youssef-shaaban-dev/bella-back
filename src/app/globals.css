@@ -66,6 +66,15 @@ html[data-scroll-behavior="smooth"] {
   box-shadow: 0 10px 30px -5px rgba(44, 62, 80, 0.1);
 }
 
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 /* ========================================
    ScrollReveal — lightweight fade-in-on-scroll
    ======================================== */
@@ -112,3 +121,36 @@ html[data-scroll-behavior="smooth"] {
   100% { width: 100%; }
 }
 
+/* ========================================
+   Hero Slide Animations (CSS replacing GSAP)
+   ======================================== */
+@keyframes slideUpFade {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideRightFade {
+  0% { transform: translateX(-12px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes scaleFade {
+  0% { transform: scale(0.97); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-hero-title {
+  animation: slideUpFade 0.45s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+.animate-hero-subtitle {
+  animation: slideUpFade 0.35s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+.animate-hero-benefit {
+  animation: slideRightFade 0.25s ease-out forwards;
+  opacity: 0;
+}
+.animate-hero-cta {
+  animation: scaleFade 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation-delay: 0.45s;
+  opacity: 0;
+}
