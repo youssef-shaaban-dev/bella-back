@@ -18,8 +18,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "BellaPack | Industrial Packaging Solutions",
-  description: "Ultra-modern, high-end industrial packaging solutions by BellaPack.",
+  title: "Horizontal Pouch Packing Machines | Bella Pack Tec",
+  description: "Discover Bella Pack Tec horizontal pouch packing machines for food, cosmetics, liquids, powders, and custom packaging with reliable after-sales support.",
 };
 
 export default function RootLayout({

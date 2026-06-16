@@ -1,48 +1,11 @@
-"use client";
+import type { Metadata } from "next";
+import PageContent from "./PageContent";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ServicesHero from "@/components/services/ServicesHero";
-import ServicesGrid from "@/components/services/ServicesGrid";
-import CaseStudies from "@/components/services/CaseStudies";
+export const metadata: Metadata = {
+  title: "Packaging Machine Services | Bella Pack",
+  description: "Bella Pack packaging machine services include technical support, custom engineering, spare parts supply, operator training, and production optimization.",
+};
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function ServicesPage() {
-  const rootRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Global simple scroll reveals for sections and headings
-      const reveals = gsap.utils.toArray<HTMLElement>(".reveal");
-      reveals.forEach((el) => {
-        gsap.fromTo(
-          el,
-          { y: 18, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.4,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 93%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      });
-    }, rootRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
-      <ServicesHero />
-      <ServicesGrid />
-      <CaseStudies />
-    </main>
-  );
+export default function Page() {
+  return <PageContent />;
 }

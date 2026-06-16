@@ -150,10 +150,15 @@ export default function Footer() {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-white/20 text-xs font-body">
-            &copy; {new Date().getFullYear()} BELLAPACK MACHINERY CORP. ALL RIGHTS RESERVED.
-          </p>
-          <div className="flex space-x-8 text-white/20 text-xs font-body">
+          <div className="text-white/20 text-xs font-body space-y-2 text-center md:text-left">
+            <p>
+              &copy; 2026 Bella Back - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited.
+            </p>
+            <p>
+              Proudly Crafted in Egypt with Love ❤️ Website developed by MRCO-Egypt
+            </p>
+          </div>
+          <div className="flex space-x-8 text-white/20 text-xs font-body shrink-0">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">PRIVACY POLICY</Link>
           </div>
         </div>

@@ -1,16 +1,11 @@
-import PerformanceTools from "@/components/solutions/PerformanceTools";
+import type { Metadata } from "next";
+import PageContent from "./PageContent";
 
-export default function SolutionsToolsPage() {
-  return (
-    <main className="min-h-screen bg-white">
-      {/* Dark Hero Header for navbar visibility */}
-      <section className="bg-charcoal pt-32 pb-16 text-center text-white relative overflow-hidden">
-        
-      </section>
-      
-      <div className="bg-gray-50 border-t border-gray-200">
-        <PerformanceTools />
-      </div>
-    </main>
-  );
+export const metadata: Metadata = {
+  title: "Packaging Performance Tools | Bella Pack",
+  description: "Bella Pack technical and performance tools help optimize packaging speed, dosing accuracy, sealing quality, and production reliability.",
+};
+
+export default function Page() {
+  return <PageContent />;
 }
