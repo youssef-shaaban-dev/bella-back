@@ -131,8 +131,8 @@ export default function Hero() {
       </div>
 
       {/* Content Container with Grid Stacking */}
-      <div className="container mx-auto px-6 relative z-30 w-full">
-        <div className="max-w-3xl pt-32 pb-44 md:pb-40 grid grid-cols-1 grid-rows-1">
+      <div className="container mx-auto px-6 relative z-30 w-full flex-1 flex flex-col justify-center">
+        <div className="max-w-3xl pt-36 pb-40 md:pt-52 md:pb-24 grid grid-cols-1 grid-rows-1">
           {slides.map((slide, index) => {
             const isActive = index === activeSlide;
             return (
