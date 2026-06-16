@@ -3,6 +3,7 @@ import { Agdasima, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import SmoothScroll from "@/components/shared/SmoothScroll";
 
 const agdasima = Agdasima({
   weight: ["400", "700"],
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className={`${agdasima.variable} ${montserrat.variable} font-body min-h-full flex flex-col bg-white text-charcoal`}>
+        <SmoothScroll />
         <Header />
         <div className="grow">
           {children}

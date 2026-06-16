@@ -66,8 +66,41 @@ html[data-scroll-behavior="smooth"] {
   box-shadow: 0 10px 30px -5px rgba(44, 62, 80, 0.1);
 }
 
-/* Optimization for GSAP/ScrollTrigger */
-.parallax-img, .product-card, .reveal-up {
-  will-change: transform, opacity;
+/* ========================================
+   ScrollReveal — lightweight fade-in-on-scroll
+   ======================================== */
+.sr-hidden {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.sr-hidden.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger parent: children start hidden and animate in individually */
+.sr-stagger-parent > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+.sr-stagger-parent > .sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   Marquee scroll animation (ClientLogos)
+   ======================================== */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee-scroll {
+  animation: marquee-scroll 45s linear infinite;
+}
+.animate-marquee-scroll:hover {
+  animation-play-state: paused;
 }
 

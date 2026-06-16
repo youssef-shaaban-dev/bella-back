@@ -1,14 +1,13 @@
-"use client";
-
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+
 
 export default function FinalCTA() {
   return (
     <section className="py-16 md:py-24 bg-charcoal relative overflow-hidden">
       <div className="absolute inset-0 bg-linear-to-br from-brand-blue/20 to-transparent pointer-events-none" />
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#fff_1px,transparent_1px)] [background-size:32px_32px]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,#fff_1px,transparent_1px)] bg-size-[32px_32px]" />
       </div>
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 font-heading uppercase tracking-tighter">

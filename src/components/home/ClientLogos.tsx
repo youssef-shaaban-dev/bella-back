@@ -1,11 +1,5 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import ScrollReveal from "@/components/shared/ScrollReveal";
 
 const clientLogos = [
   { name: "Clorox", img: "/clients_logos/clorox.webp" },
@@ -28,63 +22,22 @@ const clientLogos = [
 ];
 
 export default function ClientLogos() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Fade in the whole section on scroll
-      gsap.from(sectionRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 93%",
-        },
-        opacity: 0,
-        y: 15,
-        duration: 0.4,
-        ease: "power2.out",
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section 
-      ref={sectionRef} 
-      className="py-16 md:py-24 bg-white overflow-hidden border-b border-gray-100 relative"
-    >
-      {/* Bulletproof self-contained CSS styles for marquee scroll animation */}
-      <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes marquee-scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-marquee-scroll {
-          animation: marquee-scroll 45s linear infinite;
-        }
-        .animate-marquee-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}} />
-
-      <div className="container mx-auto px-6 mb-10 text-center">
+    <section className="py-16 md:py-24 bg-white overflow-hidden border-b border-gray-100 relative">
+      <ScrollReveal className="container mx-auto px-6 mb-10 text-center">
         <h2 className="text-3xl md:text-4xl font-bold font-heading text-charcoal tracking-widest uppercase">
           OUR CLIENTS
         </h2>
         <div className="w-12 h-1 bg-brand-red mx-auto mt-4 rounded-full" />
-      </div>
+      </ScrollReveal>
 
       {/* Infinite Slider Marquee Container */}
       <div className="relative w-full overflow-hidden py-6 md:py-8 select-none">
         
-        {/* Left Mask Overlay (Smooth Fade-In Effect) */}
+        {/* Left Mask Overlay */}
         <div className="absolute left-0 top-0 bottom-0 w-16 md:w-48 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10" />
         
-        {/* Right Mask Overlay (Smooth Fade-Out Effect) */}
+        {/* Right Mask Overlay */}
         <div className="absolute right-0 top-0 bottom-0 w-16 md:w-48 bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none z-10" />
 
         {/* Scrolling Inner Container */}
@@ -103,7 +56,6 @@ export default function ClientLogos() {
                     fill
                     sizes="(max-width: 768px) 160px, 192px"
                     className="object-contain mix-blend-multiply transition-all duration-500 transform group-hover:scale-110"
-                    priority={index < 5}
                   />
                 </div>
               </div>

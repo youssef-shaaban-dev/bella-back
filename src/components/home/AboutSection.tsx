@@ -1,57 +1,16 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight, ShieldCheck, Settings } from "lucide-react";
-
-gsap.registerPlugin(ScrollTrigger);
+import ScrollReveal from "@/components/shared/ScrollReveal";
 
 export default function AboutSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const imageRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Reveal contents on scroll
-      gsap.from(contentRef.current?.children || [], {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 85%",
-        },
-        y: 18,
-        opacity: 0,
-        duration: 0.4,
-        stagger: 0.06,
-        ease: "power3.out",
-      });
-
-      // Parallax image reveal
-      gsap.from(imageRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 85%",
-        },
-        scale: 1.05,
-        opacity: 0,
-        duration: 0.6,
-        ease: "power2.out",
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-white overflow-hidden relative">
+    <section className="py-16 md:py-24 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
           {/* Left side - Beautiful Image Composition */}
-          <div ref={imageRef} className="relative group max-w-xl mx-auto lg:mx-0 w-full">
+          <ScrollReveal className="relative group max-w-xl mx-auto lg:mx-0 w-full">
             <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm">
               <Image
                 src="/Homepage/closeup flowmeter.webp"
@@ -70,10 +29,10 @@ export default function AboutSection() {
                 Years of engineering excellence in packaging
               </span>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right side - Content */}
-          <div ref={contentRef} className="flex flex-col">
+          <ScrollReveal className="flex flex-col">
             <div className="flex items-center space-x-3 mb-4">
               <span className="h-px w-8 bg-brand-red"></span>
               <h3 className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading">About BellaPack</h3>
@@ -111,10 +70,11 @@ export default function AboutSection() {
                 <ArrowRight size={18} className="ml-3 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
-          </div>
+          </ScrollReveal>
 
         </div>
       </div>
     </section>
   );
 }
+

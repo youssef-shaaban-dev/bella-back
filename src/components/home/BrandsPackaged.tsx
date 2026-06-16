@@ -1,12 +1,7 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Image from "next/image";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sparkles } from "lucide-react";
+import ScrollReveal from "@/components/shared/ScrollReveal";
 
-gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -121,55 +116,16 @@ const products = [
 ];
 
 export default function BrandsPackaged() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const gridRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Reveal section headers and the grid container on scroll (using static parents to avoid unmount bugs)
-    const ctx = gsap.context(() => {
-      gsap.from(".brands-header-content", {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 93%",
-        },
-        y: 15,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power3.out"
-      });
-
-
-
-      gsap.from(gridRef.current, {
-        scrollTrigger: {
-          trigger: gridRef.current,
-          start: "top 90%",
-        },
-        y: 18,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power3.out",
-        onComplete: () => {
-          ScrollTrigger.refresh();
-        }
-      });
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
-
-
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50 overflow-hidden relative border-t border-gray-100">
+    <section className="py-16 md:py-24 bg-gray-50 overflow-hidden relative border-t border-gray-100">
       {/* Absolute Decorative Grid backgrounds for premium technical feeling */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-size-[40px_40px] pointer-events-none" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-linear-to-bl from-brand-red/5 to-transparent rounded-full filter blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
 
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto mb-16 brands-header-content">
+        <ScrollReveal className="text-center max-w-4xl mx-auto mb-16">
           <div className="inline-flex items-center space-x-3 mb-4 justify-center w-full">
             <span className="w-8 h-px bg-brand-red"></span>
             <span className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading flex items-center gap-1.5">
@@ -183,15 +139,15 @@ export default function BrandsPackaged() {
           <p className="text-gray-500 max-w-2xl mx-auto font-body text-base md:text-lg leading-relaxed">
             Leading brands trust BellaPack packaging systems to deliver precision filling, reliable sealing, and efficient production across a wide range of applications.
           </p>
-        </div>
+        </ScrollReveal>
 
 
 
         {/* Products Grid */}
-        <div
-          ref={gridRef}
+        <ScrollReveal
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 min-h-[400px]"
         >
+
           {products.map((prod) => (
             <div
               key={prod.brand}
@@ -222,7 +178,7 @@ export default function BrandsPackaged() {
 
             </div>
           ))}
-        </div>
+        </ScrollReveal>
 
       </div>
     </section>

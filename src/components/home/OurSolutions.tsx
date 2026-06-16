@@ -1,13 +1,7 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const solutions = [
   {
@@ -48,14 +42,8 @@ const solutions = [
 ];
 
 export default function OurSolutions() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // GSAP animations removed per user request so cards always appear instantly
-  }, []);
-
   return (
-    <section ref={containerRef} className="bg-white overflow-hidden">
+    <section className="bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
 

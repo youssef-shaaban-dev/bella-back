@@ -1,17 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Play, Maximize2, Film, Image as ImageIcon, X } from "lucide-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import ScrollReveal from "@/components/shared/ScrollReveal";
 
 const mediaItems = [
   { 
     id: 1, 
-    type: 'video', 
+    type: 'video' as const, 
     src: "https://drive.google.com/file/d/1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1/preview",
     driveId: "1aS5Jej-j0TTQAxmmruMoICs2Vmb1zre1",
     thumbnail: "/News/pacprocess-2024.webp",
@@ -20,7 +17,7 @@ const mediaItems = [
   },
   { 
     id: 2, 
-    type: 'video', 
+    type: 'video' as const, 
     src: "https://drive.google.com/file/d/1DXs8D780Az29mtIoNnMrAEgjdft_RjA3/preview",
     driveId: "1DXs8D780Az29mtIoNnMrAEgjdft_RjA3",
     thumbnail: "/Homepage/BP-2500.webp",
@@ -29,7 +26,7 @@ const mediaItems = [
   },
   { 
     id: 3, 
-    type: 'video', 
+    type: 'video' as const, 
     src: "https://drive.google.com/file/d/16XMbvDGq6kVz9RFO8u0nLLHPPTVi1H_r/preview", 
     driveId: "16XMbvDGq6kVz9RFO8u0nLLHPPTVi1H_r",
     thumbnail: "/News/pacprocess-2026.webp",
@@ -39,33 +36,7 @@ const mediaItems = [
 ];
 
 export default function Media() {
-  const sectionRef = useRef<HTMLDivElement>(null);
   const [selectedMedia, setSelectedMedia] = useState<typeof mediaItems[0] | null>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo(".media-tile", 
-        {
-          opacity: 0,
-          y: 15,
-        },
-        {
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 93%",
-          },
-          opacity: 1,
-          y: 0,
-          duration: 0.4,
-          stagger: 0.06,
-          ease: "power2.out",
-          force3D: true
-        }
-      );
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
 
   // Escape key listener to close modal
   useEffect(() => {
@@ -79,10 +50,10 @@ export default function Media() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-white overflow-hidden relative">
+    <section className="py-16 md:py-24 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6">
         
-        <div className="text-center mb-20">
+        <ScrollReveal className="text-center mb-20">
           <div className="inline-flex items-center space-x-3 mb-4 justify-center w-full">
             <span className="w-8 h-[1px] bg-brand-red"></span>
             <h3 className="text-brand-red font-bold tracking-widest text-xs uppercase font-heading">
@@ -96,33 +67,24 @@ export default function Media() {
           <p className="text-gray-500 font-body text-sm max-w-xl mx-auto mt-4 leading-relaxed font-semibold">
             Discover our packaging solutions in action through detailed videos from real production environments.
           </p>
-        </div>
+        </ScrollReveal>
 
-        {/* Neat Grid for 3 media elements */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Grid — thumbnails only, NO iframes on initial load */}
+        <ScrollReveal className="grid grid-cols-1 md:grid-cols-3 gap-8" stagger={60}>
           {mediaItems.map((item) => (
             <div 
               key={item.id} 
               onClick={() => setSelectedMedia(item)}
-              className="media-tile group relative overflow-hidden rounded-sm bg-charcoal cursor-pointer aspect-[4/3] border border-gray-100 hover:border-brand-red transition-all duration-500 shadow-md hover:shadow-xl"
+              className="group relative overflow-hidden rounded-sm bg-charcoal cursor-pointer aspect-[4/3] border border-gray-100 hover:border-brand-red transition-all duration-500 shadow-md hover:shadow-xl"
             >
-              {item.type === 'video' && item.driveId ? (
-                <iframe
-                  src={item.src}
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full pointer-events-none"
-                  style={{ border: 'none' }}
-                />
-              ) : (
-                <Image
-                  src={item.thumbnail}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-all duration-750 group-hover:scale-105 group-hover:opacity-90"
-                />
-              )}
+              {/* Always show thumbnail — iframe only loads in modal */}
+              <Image
+                src={item.thumbnail}
+                alt={item.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover transition-all duration-750 group-hover:scale-105 group-hover:opacity-90"
+              />
               
               {/* Dark Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-500" />
@@ -138,7 +100,7 @@ export default function Media() {
               )}
 
               {/* Play / Maximize Center Icon */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-[2px]">
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <div className="w-16 h-16 bg-brand-red/95 rounded-full flex items-center justify-center text-white shadow-2xl scale-75 group-hover:scale-100 transition-transform duration-300 shadow-brand-red/30">
                   {item.type === 'video' ? <Play size={24} fill="currentColor" className="ml-1" /> : <Maximize2 size={24} />}
                 </div>
@@ -159,10 +121,10 @@ export default function Media() {
               </div>
             </div>
           ))}
-        </div>
+        </ScrollReveal>
       </div>
 
-      {/* High-Fidelity Lightbox Modal for Video & Image Playback */}
+      {/* Lightbox Modal — iframe loads ONLY when opened */}
       {selectedMedia && (
         <div 
           onClick={() => setSelectedMedia(null)}

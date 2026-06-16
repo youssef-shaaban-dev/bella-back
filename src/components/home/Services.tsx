@@ -1,11 +1,4 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import { Wrench, Settings2, Boxes, GraduationCap, ChevronRight } from "lucide-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { Wrench, Settings2, Boxes, GraduationCap } from "lucide-react";
 
 const services = [
   {
@@ -31,14 +24,8 @@ const services = [
 ];
 
 export default function Services() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // GSAP animations removed per user request so cards always appear instantly
-  }, []);
-
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-gray-50 text-charcoal overflow-hidden">
+    <section className="py-16 md:py-24 bg-gray-50 text-charcoal overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h3 className="text-brand-red font-bold tracking-widest text-xs mb-4 uppercase font-heading">Value Added</h3>
@@ -77,3 +64,4 @@ export default function Services() {
     </section>
   );
 }
+
