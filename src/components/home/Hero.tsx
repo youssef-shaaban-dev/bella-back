@@ -73,29 +73,20 @@ const slides = [
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [progress, setProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [progressKey, setProgressKey] = useState(0);
 
-  // Manage Autoplay progress
+  // Autoplay using setTimeout (no re-renders for progress — CSS handles it)
   useEffect(() => {
     if (!isPlaying) return;
 
-    const startTime = Date.now();
-    const interval = setInterval(() => {
-      const elapsed = Date.now() - startTime;
-      const currentProgress = Math.min((elapsed / SLIDE_DURATION) * 100, 100);
-      setProgress(currentProgress);
+    const timer = setTimeout(() => {
+      setActiveSlide((prev) => (prev + 1) % slides.length);
+      setProgressKey((k) => k + 1);
+    }, SLIDE_DURATION);
 
-      if (elapsed >= SLIDE_DURATION) {
-        setActiveSlide((prev) => (prev + 1) % slides.length);
-      }
-    }, 30);
-
-    return () => {
-      clearInterval(interval);
-      setProgress(0); // Safely reset progress in cleanup to avoid cascading renders
-    };
-  }, [activeSlide, isPlaying]);
+    return () => clearTimeout(timer);
+  }, [activeSlide, isPlaying, progressKey]);
 
   // Premium GSAP Staggered entry animation on active slide change
   useEffect(() => {
@@ -149,7 +140,7 @@ export default function Hero() {
 
   const handleTabClick = (index: number) => {
     setActiveSlide(index);
-    setProgress(0);
+    setProgressKey((k) => k + 1);
   };
 
   const togglePlay = () => {
@@ -173,7 +164,8 @@ export default function Hero() {
                 src={slide.image}
                 alt={slide.tabLabel}
                 fill
-                priority
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
                 sizes="100vw"
                 className={`transition-all duration-1000 ease-in-out ${isActive ? "scale-100" : "scale-105"
                   } object-cover opacity-45 lg:opacity-65`}
@@ -234,7 +226,7 @@ export default function Hero() {
                     <button
                       onClick={() => {
                         setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
-                        setProgress(0);
+                        setProgressKey((k) => k + 1);
                       }}
                       type="button"
                       className="w-10 h-10 text-white flex items-center justify-center hover:bg-brand-red transition-colors duration-300 cursor-pointer rounded-sm"
@@ -257,7 +249,7 @@ export default function Hero() {
                     <button
                       onClick={() => {
                         setActiveSlide((prev) => (prev + 1) % slides.length);
-                        setProgress(0);
+                        setProgressKey((k) => k + 1);
                       }}
                       type="button"
                       className="w-10 h-10 text-white flex items-center justify-center hover:bg-brand-red transition-colors duration-300 cursor-pointer rounded-sm"
@@ -286,12 +278,17 @@ export default function Hero() {
                   onClick={() => handleTabClick(index)}
                   className="group text-left focus:outline-none relative pt-3 md:pt-1 cursor-pointer pointer-events-auto z-40 block w-full"
                 >
-                  {/* Dynamic Progress Line */}
+                  {/* Dynamic Progress Line — CSS animation, no JS re-renders */}
                   <div className="absolute top-[-17px] left-0 right-0 h-[2px] bg-white/10 group-hover:bg-white/25 transition-colors">
                     <div
-                      className="h-full bg-brand-red transition-all duration-100 ease-linear"
+                      key={isActive ? `progress-${progressKey}` : undefined}
+                      className={`h-full bg-brand-red ${
+                        isActive && isPlaying
+                          ? "animate-[progressBar_6s_linear_forwards]"
+                          : ""
+                      }`}
                       style={{
-                        width: isActive ? `${progress}%` : "0%",
+                        width: isActive ? (isPlaying ? undefined : "0%") : "0%",
                       }}
                     />
                   </div>
