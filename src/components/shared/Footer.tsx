@@ -117,10 +117,16 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-bold text-lg mb-8 tracking-widest text-brand-red">SOLUTIONS</h4>
             <ul className="space-y-4">
-              {["Food & Beverage", "Spices & Coffee", "Snacks & Granules", "Detergents & Chemicals", "Cosmetics & Pharma", "Pet Food"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-white/60 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">
-                    {item}
+              {[
+                { name: "Food & Beverage", href: "/industries/food-beverage" },
+                { name: "Spices & Coffee", href: "/industries/spices-coffee" },
+                { name: "Snacks & Granules", href: "/industries/snacks-granules" },
+                { name: "Detergents & Chemical Products", href: "/industries/detergents-chemicals" },
+                { name: "Cosmetics & Pharmaceuticals", href: "/industries/cosmetics-pharma" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-white/60 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">
+                    {item.name}
                   </Link>
                 </li>
               ))}
