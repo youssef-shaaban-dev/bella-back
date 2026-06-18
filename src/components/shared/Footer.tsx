@@ -87,7 +87,7 @@ export default function Footer() {
                 <Image src="/logo.webp" alt="BellaPack" width={200} height={200} className="object-contain" style={{ width: "auto", height: "auto" }} />
               </div>
             </Link>
-            <p className="text-white/40 font-body leading-relaxed text-sm">
+            <p className="text-white/40 font-body leading-relaxed text-sm text-left">
               Reliable pouch packaging machinery for flexible formats, efficient production, and consistent packaging quality since 2000.
             </p>
             <div className="flex space-x-4">
@@ -157,11 +157,11 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-white/20 text-xs font-body space-y-2 text-center md:text-left">
-            <p>
+            <p className="text-left md:text-left">
               &copy; 2026 Bella Back - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited.
             </p>
-            <p>
-              Proudly Crafted in Egypt with Love ❤️ Website developed by MRCO-Egypt
+            <p className="text-left md:text-left">
+              Proudly Crafted in Egypt with Love ❤️ Website developed by <a href="https://mrco-egypt.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-2">MRCO-Egypt</a>
             </p>
           </div>
           <div className="flex space-x-8 text-white/20 text-xs font-body shrink-0">

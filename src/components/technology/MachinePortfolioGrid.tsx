@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   ShieldCheck, Info, MessageSquare, X, ChevronRight
@@ -280,6 +280,17 @@ export default function MachinePortfolioGrid() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedModel, setSelectedModel] = useState<typeof machineModels[0] | null>(null);
 
+  useEffect(() => {
+    if (selectedModel) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [selectedModel]);
+
   const filteredModels = activeFilter === "all"
     ? machineModels
     : machineModels.filter(m => m.category === activeFilter);
@@ -404,10 +415,12 @@ export default function MachinePortfolioGrid() {
         <div
           onClick={() => setSelectedModel(null)}
           className="fixed inset-0 z-100 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-[fadeIn_0.2s_ease-out]"
+          data-lenis-prevent="true"
         >
           <div
             onClick={(e) => e.stopPropagation()}
             className="bg-white text-charcoal w-full max-w-2xl rounded-sm overflow-hidden border border-gray-200 shadow-2xl relative max-h-[90vh] overflow-y-auto p-6 md:p-10"
+            data-lenis-prevent="true"
           >
             {/* Close Button */}
             <button
