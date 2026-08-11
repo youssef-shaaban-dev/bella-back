@@ -1,45 +1,19 @@
-"use client";
+import type { Metadata } from "next";
+import PageContent from "./PageContent";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CareersHero from "@/components/careers/CareersHero";
-import OpportunitiesList from "@/components/careers/OpportunitiesList";
+export const metadata: Metadata = {
+  title: "Careers & Job Opportunities | Bella Pack Tec",
+  description: "Join the Bella Pack Tec team. Explore engineering, technical, and sales career opportunities in industrial packaging machinery.",
+  alternates: {
+    canonical: "/careers",
+  },
+  openGraph: {
+    title: "Careers & Job Opportunities | Bella Pack Tec",
+    description: "Join the Bella Pack Tec team. Explore engineering, technical, and sales career opportunities in industrial packaging machinery.",
+    url: "https://www.bellapacktec.com/careers",
+  },
+};
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function CareersPage() {
-  const rootRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const reveals = gsap.utils.toArray<HTMLElement>(".reveal");
-      reveals.forEach((el) => {
-        gsap.fromTo(
-          el,
-          { y: 4, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.1,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 93%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      });
-    }, rootRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
-      <CareersHero />
-      <OpportunitiesList />
-    </main>
-  );
+export default function Page() {
+  return <PageContent />;
 }

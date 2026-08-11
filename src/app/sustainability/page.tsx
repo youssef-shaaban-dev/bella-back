@@ -1,50 +1,19 @@
-"use client";
+import type { Metadata } from "next";
+import PageContent from "./PageContent";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SustainabilityHero from "@/components/sustainability/SustainabilityHero";
-import SustainabilityDetails from "@/components/sustainability/SustainabilityDetails";
-import HSEPillars from "@/components/sustainability/HSEPillars";
-import SustainabilityCTA from "@/components/sustainability/SustainabilityCTA";
+export const metadata: Metadata = {
+  title: "Sustainability & Operational Excellence | Bella Pack Tec",
+  description: "Learn about Bella Pack Tec commitment to eco-friendly packaging machines, energy-efficient operations, and sustainable manufacturing practices.",
+  alternates: {
+    canonical: "/sustainability",
+  },
+  openGraph: {
+    title: "Sustainability & Operational Excellence | Bella Pack Tec",
+    description: "Learn about Bella Pack Tec commitment to eco-friendly packaging machines, energy-efficient operations, and sustainable manufacturing practices.",
+    url: "https://www.bellapacktec.com/sustainability",
+  },
+};
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function SustainabilityPage() {
-  const rootRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Global GSAP ScrollTrigger reveals
-      const reveals = gsap.utils.toArray<HTMLElement>(".reveal");
-      reveals.forEach((el) => {
-        gsap.fromTo(
-          el,
-          { y: 18, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.4,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 93%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      });
-    }, rootRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <main ref={rootRef} className="min-h-screen bg-white text-charcoal relative">
-      <SustainabilityHero />
-      <SustainabilityDetails />
-      <HSEPillars />
-      <SustainabilityCTA />
-    </main>
-  );
+export default function Page() {
+  return <PageContent />;
 }
