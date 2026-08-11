@@ -143,10 +143,17 @@ export default function Hero() {
                   : "opacity-0 pointer-events-none z-0"
                   }`}
               >
-                <h1 className={`slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading ${isActive ? 'animate-hero-title' : 'opacity-0'}`}>
-                  {slide.title} <br />
-                  <span className="text-brand-red">{slide.highlightTitle}</span>
-                </h1>
+                {index === 0 ? (
+                  <h1 className={`slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading ${isActive ? 'animate-hero-title' : 'opacity-0'}`}>
+                    {slide.title} <br />
+                    <span className="text-brand-red">{slide.highlightTitle}</span>
+                  </h1>
+                ) : (
+                  <h2 className={`slide-title text-5xl md:text-7xl font-bold leading-[0.95] mb-6 tracking-tight font-heading ${isActive ? 'animate-hero-title' : 'opacity-0'}`}>
+                    {slide.title} <br />
+                    <span className="text-brand-red">{slide.highlightTitle}</span>
+                  </h2>
+                )}
 
                 <p className={`slide-subtitle text-base md:text-lg text-white/85 font-body max-w-2xl mb-8 leading-relaxed ${isActive ? 'animate-hero-subtitle' : 'opacity-0'}`}>
                   {slide.description}
