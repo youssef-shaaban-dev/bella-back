@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "google907e3e1cc9cfd1ab",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
