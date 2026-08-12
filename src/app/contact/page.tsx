@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import PageContent from "./PageContent";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Horizontal Pouch Machine Supplier | Bella Pack Tec",
+  title: "Contact Us - Horizontal Pouch Machine Supplier",
   description: "Get in touch with Bella Pack Tec for inquiries about horizontal pouch packing machines, quotes, custom packaging solutions, and technical support.",
   alternates: {
-    canonical: "/contact",
+    canonical: "https://www.bellapacktec.com/contact",
   },
   openGraph: {
-    title: "Contact Us | Bella Pack Tec",
+    title: "Contact Us - Horizontal Pouch Machine Supplier | Bella Pack Tec",
     description: "Get in touch with Bella Pack Tec for inquiries about horizontal pouch packing machines, quotes, custom packaging solutions, and technical support.",
     url: "https://www.bellapacktec.com/contact",
   },

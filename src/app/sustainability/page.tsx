@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import PageContent from "./PageContent";
 
 export const metadata: Metadata = {
-  title: "Sustainability & Operational Excellence | Bella Pack Tec",
+  title: "Sustainability & Operational Excellence",
   description: "Learn about Bella Pack Tec commitment to eco-friendly packaging machines, energy-efficient operations, and sustainable manufacturing practices.",
   alternates: {
-    canonical: "/sustainability",
+    canonical: "https://www.bellapacktec.com/sustainability",
   },
   openGraph: {
     title: "Sustainability & Operational Excellence | Bella Pack Tec",

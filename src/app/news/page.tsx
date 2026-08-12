@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import PageContent from "./PageContent";
 
 export const metadata: Metadata = {
-  title: "Latest News & Exhibition Events | Bella Pack Tec",
+  title: "Latest News & Exhibition Events",
   description: "Stay updated with Bella Pack Tec latest industry news, packaging exhibition events, company milestones, and technological innovations.",
   alternates: {
-    canonical: "/news",
+    canonical: "https://www.bellapacktec.com/news",
   },
   openGraph: {
     title: "Latest News & Exhibition Events | Bella Pack Tec",

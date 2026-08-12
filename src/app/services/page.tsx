@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import PageContent from "./PageContent";
 
 export const metadata: Metadata = {
-  title: "Packaging Machine Services | Bella Pack",
-  description: "Bella Pack packaging machine services include technical support, custom engineering, spare parts supply, operator training, and production optimization.",
+  title: "After-Sales Support & Technical Services",
+  description: "Comprehensive after-sales support including machine installation, operator training, preventive maintenance, and rapid spare parts delivery.",
+  alternates: {
+    canonical: "https://www.bellapacktec.com/services",
+  },
+  openGraph: {
+    title: "After-Sales Support & Technical Services | Bella Pack Tec",
+    description: "Comprehensive after-sales support including machine installation, operator training, preventive maintenance, and rapid spare parts delivery.",
+    url: "https://www.bellapacktec.com/services",
+  },
 };
 
 export default function Page() {

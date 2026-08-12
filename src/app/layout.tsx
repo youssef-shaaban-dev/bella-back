@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     siteName: "Bella Pack Tec",
     images: [
       {
-        url: "/logo.webp",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Bella Pack Tec Logo",
+        alt: "Bella Pack Tec Industrial Packaging Machines",
       },
     ],
     locale: "en_US",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Horizontal Pouch Packing Machines | Bella Pack Tec",
     description: "Discover Bella Pack Tec horizontal pouch packing machines for food, cosmetics, liquids, powders, and custom packaging.",
-    images: ["/logo.webp"],
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
