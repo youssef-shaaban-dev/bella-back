@@ -76,7 +76,7 @@ export default function FlatOverview({
             <div className="reveal h-full">
               <div className="relative h-full min-h-[350px] lg:min-h-full w-full overflow-hidden rounded-sm border border-gray-100 shadow-lg group">
                 <Image 
-                  src="/solutions/flatPouch.webp" 
+                  src="/pouch-shapes/flatPouch.webp" 
                   alt="Flat Pouch" 
                   fill 
                   className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 bg-gray-50"
