@@ -1,5 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Printer } from "lucide-react";
+import { Mail, Phone, MapPin, Info } from "lucide-react";
 import Image from "next/image";
 
 const Facebook = ({ size = 24, ...props }) => (
@@ -60,6 +63,8 @@ const Linkedin = ({ size = 24, ...props }) => (
 
 
 export default function Footer() {
+  const [showPartnership, setShowPartnership] = useState(false);
+
   return (
     <footer className="bg-charcoal text-white pt-16 pb-8 md:pt-24 md:pb-12 overflow-hidden ">
       <div className="container mx-auto px-6">
@@ -143,17 +148,85 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-white/70 text-xs font-body space-y-2 text-center md:text-left">
-            <p className="text-left md:text-left">
-              &copy; 2026 Bella Back - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited.
-            </p>
-            <p className="text-left md:text-left">
-              Proudly Crafted in Egypt with Love ❤️ <Link href="https://mrco-egypt.com" target="_blank" className="text-white hover:text-blue-500 transition-colors underline underline-offset-2"> Website developed by MRCO-Egypt</Link>
-            </p>
+        <div className="pt-12 border-t border-white/5 flex flex-col items-center justify-center text-center space-y-3 font-body">
+          <p className="text-white/70 text-xs leading-relaxed max-w-4xl text-center">
+            &copy; 2026 Bella Back - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited.
+          </p>
+          <p className="text-white/80 text-xs sm:text-sm text-center">
+            Proudly Crafted in Egypt with Love ❤️{" "}
+            <Link
+              href="https://mrco-egypt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-brand-red transition-colors underline underline-offset-2 font-medium"
+            >
+              Website developed by MRCO-Egypt
+            </Link>
+          </p>
+
+          {/* MRCO-Egypt Partnership Tooltip */}
+          <div className="flex justify-center mt-2 pb-2 px-2">
+            <div
+              className="inline-flex flex-wrap items-center justify-center gap-1.5 group relative cursor-help text-center select-none"
+              onClick={() => setShowPartnership(!showPartnership)}
+            >
+              <p
+                dir="ltr"
+                className="text-[10px] sm:text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-relaxed max-w-[280px] sm:max-w-none border-b border-dashed border-gray-500/50 pb-0.5"
+              >
+                <span className="text-white font-medium">BellaBack | </span>
+                <a
+                  href="https://mrco-egypt.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="text-white hover:underline hover:text-brand-red transition-colors"
+                >
+                  Growth & Marketing by MRCO-Egypt
+                </a>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">
+                  {" "}a strategy-driven digital marketing and brand communication agency in Egypt
+                </span>
+              </p>
+
+              <Info
+                className={`w-3.5 h-3.5 transition-colors flex-shrink-0 inline-block ${
+                  showPartnership ? "text-gray-300" : "text-gray-400 group-hover:text-gray-300"
+                }`}
+              />
+
+              <div
+                className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-[90vw] sm:w-[450px] p-4 sm:p-5 bg-[#141E2E] rounded-xl border border-brand-red/30 shadow-2xl transition-all duration-300 z-50 text-left pointer-events-none ${
+                  showPartnership
+                    ? "opacity-100 visible translate-y-0"
+                    : "opacity-0 invisible translate-y-2 lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0"
+                }`}
+                dir="ltr"
+              >
+                <div className="flex items-center justify-between mb-3 border-b border-white/10 pb-2">
+                  <span className="text-brand-red font-bold text-xs uppercase tracking-wider">
+                    Growth & Marketing
+                  </span>
+                </div>
+                <p className="text-[11px] sm:text-[11.5px] font-light text-gray-200 leading-relaxed mb-3">
+                  BellaBack - Growth & Marketing by MRCO-Egypt , a strategy-driven digital marketing and brand communication agency in Egypt, for brand strategy, digital marketing, and web development.
+                </p>
+                <p className="text-[11px] sm:text-[11.5px] font-light text-gray-200 leading-relaxed">
+                  MRCO-Egypt specializes in brand strategy, brand identity, web development, SEO, Generative Engine Optimization (GEO), and AI Optimization (AIO), helping businesses build distinctive brands and achieve measurable digital growth.
+                </p>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-[7px] border-transparent border-t-brand-red/30"></div>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#141E2E] -mt-[1px]"></div>
+              </div>
+            </div>
           </div>
-          <div className="flex space-x-8 text-white/20 text-xs font-body shrink-0">
-            <Link href="/privacy-policy" className="text-white hover:text-blue-500 transition-colors underline underline-offset-2">PRIVACY POLICY</Link>
+
+          <div className="pt-2 text-center">
+            <Link
+              href="/privacy-policy"
+              className="text-white/40 hover:text-brand-red transition-colors text-[11px] font-body tracking-wider uppercase underline underline-offset-2"
+            >
+              PRIVACY POLICY
+            </Link>
           </div>
         </div>
       </div>
