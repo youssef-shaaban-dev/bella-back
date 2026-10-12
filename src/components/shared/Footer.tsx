@@ -150,7 +150,7 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-white/5 flex flex-col items-center justify-center text-center space-y-3 font-body">
           <p className="text-white/70 text-xs leading-relaxed max-w-4xl text-center">
-            &copy; 2026 Bella Back - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited.
+            &copy; 2027 Bella Back - All content is copyrighted. Unauthorized use, including AI training, reproduction, or commercial exploitation, is strictly prohibited.
           </p>
           <p className="text-white/80 text-xs sm:text-sm text-center">
             Proudly Crafted in Egypt with Love ❤️{" "}
